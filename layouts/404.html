@@ -1,0 +1,20 @@
+{{ define "main" }}
+  {{ with site.GetPage "404" }}
+    <section class="section-sm text-center">
+      <div class="container">
+        <div class="row justify-center">
+          <div class="sm:col-10 md:col-8 lg:col-6">
+            {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "mb-8") }}
+            <h1 class="h2 mb-4">{{ .Title }}</h1>
+            <div class="content">
+              {{ .Content }}
+            </div>
+            <a href="{{ site.BaseURL }}" class="btn btn-primary mt-8">
+              {{ i18n "back_to_home" }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  {{ end }}
+{{ end }}

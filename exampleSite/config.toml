@@ -1,0 +1,85 @@
+# DON'T REMOVE THIS FILE.
+# This file is for render site varibles and plugins
+#
+# The actual configuration files are stored in the `config/_default/` folder.
+
+
+######################### site variables ##############################
+# customize your color and font from here.
+[params.colors.default.theme_color]
+primary = "#121212"
+body = "#fff"
+border = "#eaeaea"
+theme_light = "#f6f6f6"
+theme_dark = ""
+
+[params.colors.default.text_color]
+default = "#444444"
+dark = "#040404"
+light = "#717171"
+
+[params.colors.darkmode.theme_color]
+primary = "#fff"
+body = "#1c1c1c"
+border = "#3E3E3E"
+theme_light = "#222222"
+theme_dark = ""
+
+[params.colors.darkmode.text_color]
+default = "#B4AFB6"
+dark = "#fff"
+light = "#B4AFB6"
+
+[params.fonts.font_family]
+primary = "Heebo:wght@400;600"
+primary_type = "sans-serif"
+secondary = "Signika:wght@500;700"
+secondary_type = "sans-serif"
+
+[params.fonts.font_size]
+base = "16"    # default is 16px
+scale = "1.25" # default is "majorThird": 1.25
+
+
+############################# Plugins ##############################
+
+# CSS Plugins
+[[params.plugins.css]]
+link = "plugins/swiper/swiper-bundle.css"
+[[params.plugins.css]]
+link = "plugins/glightbox/glightbox.css"
+[[params.plugins.css]]
+link = "plugins/font-awesome/v6/brands.css"
+[[params.plugins.css]]
+link = "plugins/font-awesome/v6/solid.css"
+[[params.plugins.css]]
+link = "plugins/font-awesome/v6/icons.css"
+# [[params.plugins.css]]
+# link = "plugins/themify-icons/icons.css"
+
+# JS Plugins
+# [[params.plugins.js]]
+# link = "plugins/jquery/jquery.js"
+[[params.plugins.js]]
+link = "js/search.js"
+[[params.plugins.js]]
+link = "plugins/swiper/swiper-bundle.js"
+[[params.plugins.js]]
+link = "plugins/glightbox/glightbox.js"
+[[params.plugins.js]]
+link = "js/gallery-slider.js"
+[[params.plugins.js]]
+link = "js/accordion.js"
+[[params.plugins.js]]
+link = "js/tab.js"
+[[params.plugins.js]]
+link = "js/modal.js"
+[[params.plugins.js]]
+link = "plugins/cookie.js"
+[[params.plugins.js]]
+link = "plugins/lazy-loader.js"
+[[params.plugins.js]]
+link = "https://cpwebassets.codepen.io/assets/embed/ei.js"
+attributes = "async"
+[[params.plugins.js]]
+link = "plugins/youtube-lite.js"

@@ -1,0 +1,28 @@
+{
+  "name": "hugoplate",
+  "description": "hugo tailwindcss boilerplate",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "zeon.studio",
+  "scripts": {
+    "dev": "cd exampleSite; hugo server 2> /dev/null || hugo server --themesDir ../..",
+    "test": "cd exampleSite; hugo server --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --verbose --verboseLog --buildDrafts --buildExpired --buildFuture --watch --forceSyncStatic -e production --minify 2> /dev/null || hugo server --themesDir ../.. --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --verbose --verboseLog --buildDrafts --buildExpired --buildFuture --watch --forceSyncStatic -e production --minify",
+    "build": "cd exampleSite; hugo --gc --minify --templateMetrics --templateMetricsHints --verbose --verboseLog --buildDrafts --buildExpired --buildFuture --forceSyncStatic 2> /dev/null || hugo --themesDir ../.. --gc --minify --templateMetrics --templateMetricsHints --verbose --verboseLog --buildDrafts --buildExpired --buildFuture --forceSyncStatic",
+    "update-modules": "hugo mod clean && hugo mod get -u ./... && hugo mod tidy",
+    "format": "prettier -w ."
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "^0.5.9",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.23",
+    "postcss-cli": "^10.1.0",
+    "prettier": "^2.8.8",
+    "prettier-plugin-go-template": "0.0.13",
+    "prettier-plugin-tailwindcss": "^0.3.0",
+    "tailwind-bootstrap-grid": "^5.0.1",
+    "tailwindcss": "^3.3.2",
+    "toml": "^3.0.0"
+  }
+}
