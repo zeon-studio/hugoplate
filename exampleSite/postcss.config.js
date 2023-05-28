@@ -20,6 +20,7 @@ const purgecss = {
     /^zoom/,
     /^:is/,
     /^dark/,
+    /^search/,
     /dark/,
     /show/,
     /dragging/,

@@ -51,17 +51,17 @@
     @apply dark:bg-darkmode-theme-light dark:shadow-none;
   }
   .search-result-item {
-    @apply dark:bg-darkmode-body dark:border-darkmode-border;
+    @apply dark:bg-darkmode-body dark:border-darkmode-border p-4;
     .search-title {
       @apply dark:text-darkmode-dark;
     }
     u {
       @apply dark:text-darkmode-primary;
     }
-    [data-result-item]:focus,
-    [data-result-item][aria-selected="true"],
-    [data-result-item]:hover {
-      @apply dark:bg-darkmode-primary/10;
-    }
+    // &:focus,
+    // &[aria-selected="true"],
+    // &:hover {
+    //   @apply dark:bg-darkmode-primary/10;
+    // }
   }
 }
