@@ -37,6 +37,7 @@ function removeDarkModeFromPages(directoryPath) {
     } else if (stats.isFile()) {
       removeDarkModeFromFiles(filePath, [
         '(?:(?!["])\\S)*dark:(?:(?![,;"])\\S)*',
+        "@apply?(\\s)*;",
       ]);
     }
   });
