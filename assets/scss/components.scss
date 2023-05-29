@@ -34,16 +34,6 @@
   }
 }
 
-.share-icons {
-  .share-link {
-    @apply h-9 w-9 rounded leading-9;
-    @apply bg-primary hover:bg-primary dark:bg-darkmode-primary dark:hover:bg-darkmode-primary;
-  }
-  .share-icon svg {
-    @apply dark:fill-dark;
-  }
-}
-
 // swiper pagination
 .swiper-pagination-bullet {
   @apply bg-theme-light dark:bg-darkmode-theme-light h-2.5 w-2.5 opacity-100;
