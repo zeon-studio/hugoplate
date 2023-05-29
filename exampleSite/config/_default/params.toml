@@ -19,8 +19,6 @@ theme_switcher = true
 theme_default = "dark" # available options [light/dark/system]
 # Main Sections
 mainSections = ["blog"]
-# image gallery shortcode
-image_gallery = true
 # contact form action
 contact_form_action = "#" # contact form works with [https://airform.io/] or [https://formspree.io]
 # google tag manager, see https://developers.google.com/tag-manager/

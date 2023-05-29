@@ -50,6 +50,14 @@
   .search-wrapper-body {
     @apply dark:bg-darkmode-theme-light dark:shadow-none;
   }
+  &.search-page {
+    .search-wrapper-body {
+      @apply dark:bg-transparent;
+    }
+  }
+  .search-result-info em {
+    @apply dark:text-white;
+  }
   .search-result-item {
     @apply dark:bg-darkmode-body dark:border-darkmode-border p-4;
     .search-title {
@@ -58,10 +66,10 @@
     u {
       @apply dark:text-darkmode-primary;
     }
-    // &:focus,
-    // &[aria-selected="true"],
-    // &:hover {
-    //   @apply dark:bg-darkmode-primary/10;
-    // }
+    &:focus,
+    &[aria-selected="true"],
+    &:hover {
+      @apply dark:bg-darkmode-primary/10;
+    }
   }
 }

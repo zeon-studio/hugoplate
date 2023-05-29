@@ -20,16 +20,14 @@
     {{ else }}
       {{ partial "preloader.html" . }}
 
-
       <!-- tailwind size indicator -->
-      {{ partialCached "components/tw-size-indicator.html" . }}
+      {{ partial "components/tw-size-indicator.html" . }}
     {{ end }}
 
 
     <!-- header (don't cache it) -->
     {{ partial "essentials/header.html" . }}
     {{ partial "search-modal.html" (dict "Context" . ) }}
-
 
     <main>
       {{ block "main" . }}{{ end }}
