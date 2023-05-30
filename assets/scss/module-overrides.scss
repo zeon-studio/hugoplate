@@ -78,7 +78,7 @@
       @apply dark:text-darkmode-primary;
     }
     &:focus,
-    &[aria-selected="true"],
+    &.search-item-selected,
     &:hover {
       @apply dark:bg-darkmode-primary/10;
     }

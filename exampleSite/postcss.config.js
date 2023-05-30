@@ -19,7 +19,6 @@ const purgecss = {
     /^desc/,
     /^zoom/,
     /^search/,
-    /^[aria-selected]/,
     /^:is/,
     /dark/,
     /show/,
