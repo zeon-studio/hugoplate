@@ -2,7 +2,7 @@
 
 # default versions
 if [ -z $GO_VERSION ]; then GO_VERSION='1.19.3'; fi
-if [ -z $HUGO_VERSION ]; then HUGO_VERSION='0.112.3'; fi
+if [ -z $HUGO_VERSION ]; then HUGO_VERSION='0.112.5'; fi
 
 # install Go
 curl -sSOL https://dl.google.com/go/go${GO_VERSION}.linux-amd64.tar.gz

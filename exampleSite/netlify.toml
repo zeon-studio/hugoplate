@@ -3,7 +3,7 @@ publish = "public"
 command = "yarn build"
 
 [build.environment]
-HUGO_VERSION = "0.112.3"
+HUGO_VERSION = "0.112.5"
 GO_VERSION = "1.19.4"
 HUGO_BASEURL = "/"
 
