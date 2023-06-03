@@ -1,6 +1,8 @@
 const toml = require("toml");
 const fs = require("fs");
-const getConfig = fs.readFileSync("config.toml", "utf8");
+const path = require("path");
+const configPath = path.join(__dirname, "config.toml");
+const getConfig = fs.readFileSync(configPath, "utf8");
 const theme = JSON.parse(JSON.stringify(toml.parse(getConfig)));
 
 let font_base = Number(theme.params.fonts.font_size.base.replace("px", ""));
