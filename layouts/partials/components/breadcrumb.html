@@ -1,9 +1,9 @@
 {{ $context := .Context }}
 {{ $class := .Class }}
 {{ $base := site.BaseURL }}
-{{ $url := replace $context.Permalink ( printf "%s" $base) "" }}
+{{ $pageLink := replace $context.Permalink $base "" }}
 {{ $lang := $context.Lang }}
-{{ $.Scratch.Add "path" $base }}
+{{ $context.Scratch.Set "path" "/" }}
 
 
 <ul class="{{ $class }} inline-flex">
@@ -14,22 +14,28 @@
       {{ i18n "home" | default "Home" }}
     </a>
   </li>
-  {{ range $index, $element := split $url "/" }}
+  {{ range $index, $element := split $pageLink "/" }}
     {{ if ne $element $lang }}
-      {{ $.Scratch.Add "path" $element }}
+      {{ $context.Scratch.Add "path" $element }}
     {{ else }}
-      {{ $.Scratch.Add "path" (add $element "/") }}
+      {{ $context.Scratch.Add "path" (add $element "/") }}
     {{ end }}
     {{ if and (ne $element "") (ne $element $lang) }}
       <li class="text-light dark:text-darkmode-light mx-1 capitalize">
         <span class="inlin-block mr-1">/</span>
-        <a
-          class="text-primary dark:text-darkmode-primary"
-          href="{{ $.Scratch.Get `path` }}"
-          >{{ . }}
-        </a>
+        {{ if eq $element (path.BaseName $pageLink) }}
+          <span class="text-primary dark:text-darkmode-primary">
+            {{ . }}
+          </span>
+        {{ else }}
+          <a
+            class="text-primary dark:text-darkmode-primary"
+            href="{{ $context.Scratch.Get `path` }}/">
+            {{ . }}
+          </a>
+        {{ end }}
       </li>
-      {{ $.Scratch.Add "path" "/" }}
+      {{ $context.Scratch.Add "path" "/" }}
     {{ end }}
   {{ end }}
 </ul>
