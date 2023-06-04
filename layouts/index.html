@@ -4,7 +4,7 @@
     <section class="section pt-14">
       <div class="container">
         <div class="row justify-center">
-          <div class="lg:col-7 mb-16 text-center">
+          <div class="lg:col-7 mb-8 text-center">
             <h1 class="mb-4">
               {{ .title | markdownify }}
             </h1>
@@ -21,7 +21,7 @@
             {{ end }}
           </div>
           <div class="col-12">
-            {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto") }}
+            {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto" "Size" "800x") }}
           </div>
         </div>
       </div>

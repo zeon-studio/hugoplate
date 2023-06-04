@@ -1,0 +1,26 @@
+{{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+{{ $lang := .Lang | urlize }}
+{{ $.Scratch.Add "path" .Site.BaseURL }}
+<ul class="breadcrumb mt-6 inline-flex">
+  <li class="mx-1 capitalize">
+    <a class="text-primary dark:text-darkmode-primary" href="/">Home</a>
+  </li>
+  {{ range $index, $element := split $url "/" }}
+    {{ if ne $element $lang }}
+      {{ $.Scratch.Add "path" $element }}
+    {{ else }}
+      {{ $.Scratch.Add "path" (add $element "/") }}
+    {{ end }}
+    {{ if and (ne $element "") (ne $element $lang) }}
+      <li class="text-light dark:text-darkmode-light mx-1 capitalize">
+        <span class="inlin-block mr-1">/</span>
+        <a
+          class="text-primary dark:text-darkmode-primary"
+          href="{{ $.Scratch.Get `path` }}"
+          >{{ . }}
+        </a>
+      </li>
+      {{ $.Scratch.Add "path" "/" }}
+    {{ end }}
+  {{ end }}
+</ul>

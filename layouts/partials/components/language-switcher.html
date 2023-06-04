@@ -1,18 +1,25 @@
 <!-- Language List -->
 {{ $class := .Class }}
 {{ $context := .Context }}
+{{ $siteLanguages := site.Home.AllTranslations }}
+{{ $pageLang := $context.Lang }}
+{{ $pageLink := replace $context.RelPermalink $pageLang "" }}
+{{ $pageLink = replace $pageLink "//" "/" }}
 
 {{ if $context.IsTranslated }}
   <select class="{{ $class }}" onchange="location = this.value">
-    {{ $siteLanguages := site.Home.AllTranslations }}
-    {{ $pageLang := $context.Lang }}
     {{ range $siteLanguages }}
       {{ if eq (string $pageLang) (string .Language) }}
-        <option id="{{ .Language }}" value="{{ .RelPermalink }}" selected>
+        <option
+          id="{{ .Language }}"
+          value="{{ replace (add .RelPermalink $pageLink) `//` `/` }}"
+          selected>
           {{ .Language.LanguageName }}
         </option>
       {{ else }}
-        <option id="{{ .Language }}" value="{{ .RelPermalink }}">
+        <option
+          id="{{ .Language }}"
+          value="{{ replace (add .RelPermalink $pageLink) `//` `/` }}">
           {{ .Language.LanguageName }}
         </option>
       {{ end }}
