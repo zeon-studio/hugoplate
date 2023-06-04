@@ -1,10 +1,10 @@
 <!-- Language List -->
 {{ $class := .Class }}
 {{ $context := .Context }}
-{{ $siteLanguages := site.Home.AllTranslations }}
 {{ $pageLang := $context.Lang }}
-{{ $pageLink := replace $context.RelPermalink $pageLang "" }}
-{{ $pageLink = replace $pageLink "//" "/" }}
+{{ $base:= urls.Parse site.BaseURL }}
+{{ $siteLanguages := site.Home.AllTranslations }}
+{{ $pageLink := replace (replace (replace $context.RelPermalink $pageLang "") "//" "/") $base.Path "" }}
 
 {{ if $context.IsTranslated }}
   <select class="{{ $class }}" onchange="location = this.value">
