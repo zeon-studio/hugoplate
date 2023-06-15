@@ -9,7 +9,8 @@
     "test": "cd exampleSite; hugo server --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --verbose --verboseLog --buildDrafts --buildExpired --buildFuture --watch --forceSyncStatic -e production --minify 2> /dev/null || hugo server --themesDir ../.. --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --verbose --verboseLog --buildDrafts --buildExpired --buildFuture --watch --forceSyncStatic -e production --minify",
     "build": "cd exampleSite; hugo --gc --minify --templateMetrics --templateMetricsHints --verbose --verboseLog --buildDrafts --buildExpired --buildFuture --forceSyncStatic 2> /dev/null || hugo --themesDir ../.. --gc --minify --templateMetrics --templateMetricsHints --verbose --verboseLog --buildDrafts --buildExpired --buildFuture --forceSyncStatic",
     "update-modules": "hugo mod clean && hugo mod get -u ./... && hugo mod tidy",
-    "format": "prettier -w ."
+    "format": "prettier -w .",
+    "remove-darkmode": "node ./scripts/removeDarkmode.js && yarn format"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^5.0.0",
