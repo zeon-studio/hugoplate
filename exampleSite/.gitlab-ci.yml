@@ -1,0 +1,47 @@
+stages:
+  - build
+
+variables:
+  HUGO_ENV: production
+  HUGO_VERSION: "0.114.0"
+  GO_VERSION: "1.16.3"
+  NODE_VERSION: "18.15.0"
+
+cache:
+  paths:
+    - node_modules/
+
+default:
+  image: node:${NODE_VERSION}
+  before_script:
+    - echo "USING NODE ${NODE_VERSION}"
+    - apt-get update && apt-get install -y curl
+    - curl -LO "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz"
+    - tar -xvf hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
+    - mv hugo /usr/local/bin/
+    - rm hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
+    - echo "HUGO ${HUGO_VERSION} INSTALLED"
+    - curl -LO "https://dl.google.com/go/go${GO_VERSION}.linux-amd64.tar.gz"
+    - tar -C /usr/local -xzf go${GO_VERSION}.linux-amd64.tar.gz
+    - export PATH=$PATH:/usr/local/go/bin
+    - rm go${GO_VERSION}.linux-amd64.tar.gz
+    - echo "GO ${GO_VERSION} INSTALLED"
+    - npm install
+
+test:
+  stage: build
+  script:
+    - npm run build
+  rules:
+    - if: $CI_COMMIT_REF_NAME != $CI_DEFAULT_BRANCH
+
+pages:
+  stage: build
+  script:
+    - npm run build
+    - echo "SITE BUILT SUCCESSFULLY! LIVE AT https://$GITLAB_USER_LOGIN.gitlab.io/$CI_PROJECT_NAME/"
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
