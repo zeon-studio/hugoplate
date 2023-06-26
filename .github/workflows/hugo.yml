@@ -53,7 +53,12 @@ jobs:
         run: npm install
 
       - name: Publish to GitHub Pages
-        run: npm run build
+        run: |
+          hugo \
+          --gc \
+          --minify \
+          --baseURL "${{ steps.pages.outputs.base_url }}/"
+          echo "SITE BUILT SUCCESSFULLY! LIVE AT: ${{ steps.pages.outputs.base_url }}"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
