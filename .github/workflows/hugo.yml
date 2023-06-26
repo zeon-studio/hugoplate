@@ -19,8 +19,8 @@ env:
   HUGO_VERSION: "0.114.0"
   GO_VERSION: "1.16.3"
   NODE_VERSION: "18.15.0"
-  TINA_CLIENT_ID: ${{ secrets.TINA_CLIENT_ID }}
-  TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
+  TINA_CLIENT_ID: ${{ vars.TINA_CLIENT_ID }}
+  TINA_TOKEN: ${{ vars.TINA_TOKEN }}
 
 jobs:
   # Build job
@@ -58,7 +58,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: ./public
+          path: ./exampleSite/public
 
   # Deployment job
   deploy:
