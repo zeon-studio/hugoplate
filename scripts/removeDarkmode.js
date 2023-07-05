@@ -8,7 +8,7 @@ const configFiles = [
     patterns: ["darkmode:\\s*{[^}]*},", 'darkMode:\\s*"class",'],
   },
   {
-    filePath: "exampleSite/config.toml",
+    filePath: "exampleSite/hugo.toml",
     patterns: ["\\S*\\.darkmode[^\\]]*\\]\\n*([\\s\\S]*?)(?=\\[|$)"],
   },
 ];

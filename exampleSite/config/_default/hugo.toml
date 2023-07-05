@@ -1,15 +1,15 @@
 ######################## default configuration ####################
 baseURL = "https://hugoplate.netlify.app/"
 title = "Hugoplate"
-theme = ["hugoplate"]
+theme = "hugoplate"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
-timeZone = "UTC"
+timeZone = "America/New_York"
 # post pagination
-paginate = "2" # see https://gohugo.io/extras/pagination/
+paginate = 2 # see https://gohugo.io/extras/pagination/
 # post excerpt
-summaryLength = "10" # see https://gohugo.io/content-management/excerpts/
+summaryLength = 10 # see https://gohugo.io/content-management/excerpts/
 # google analytics
-googleAnalytics = "" # example: UA-123-45, for more info, read the article https://support.google.com/analytics/answer/1008080?hl=en
+googleAnalytics = "UA-123456-78" # example: UA-123456-78, for more info, read the article https://support.google.com/analytics/answer/1008080?hl=en
 # disqus short name
 disqusShortname = "themefisher-template" # we use disqus to show comments in blog posts . To install disqus please follow this tutorial https://portfolio.peter-baumgartner.net/2017/09/10/how-to-install-disqus-on-hugo/
 # disable language
@@ -36,11 +36,22 @@ target = "assets/watching/hugo_stats.json"
 
 ############################# Build ##############################
 [build]
-writeStats = true
-
+noJSConfigInAssets = false
+useResourceCacheWhen = 'fallback'
+[build.buildStats]
+enable = true
 [[build.cachebusters]]
-source = "assets/watching/hugo_stats\\.json"
-target = "style\\.css"
+source = 'assets/.*\.(js|ts|jsx|tsx)'
+target = '(js|scripts|javascript)'
+[[build.cachebusters]]
+source = 'assets/.*\.(css|sass|scss)$'
+target = '(css|styles|scss|sass)'
+[[build.cachebusters]]
+source = '(postcss|tailwind)\.config\.js'
+target = '(css|styles|scss|sass)'
+[[build.cachebusters]]
+source = 'assets/.*\.(.*)$'
+target = '$1'
 
 
 ############################# Outputs ############################
@@ -83,10 +94,6 @@ ordered = true
 [mediaTypes]
 [mediaTypes."application/manifest+json"]
 suffixes = ["webmanifest"]
-
-[mediaTypes."text/netlify"]
-delimiter = ""
-suffixes = [""]
 
 
 ########################### Output Format ##########################
