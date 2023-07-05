@@ -62,7 +62,6 @@ const setupTheme = () => {
     ];
 
     const folder = createNewfolder(rootFolder, "exampleSite");
-    console.log({ folder });
 
     fs.readdirSync(rootFolder, { withFileTypes: true }).forEach((file) => {
       if (includesFiles.includes(file.name)) {
