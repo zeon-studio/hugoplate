@@ -63,6 +63,12 @@
 - Npm v9.5+
 - Tailwindcss v3+
 
+### 👉 Project Setup
+
+```
+npm run project-setup
+```
+
 ### 👉 Development Command
 
 ```

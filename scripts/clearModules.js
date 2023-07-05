@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-const clearMode = (filePath) => {
+const clearModules = (filePath) => {
   if (fs.existsSync(filePath)) {
     let fileContent = fs.readFileSync(filePath, "utf8");
     fileContent = fileContent.replace(/require\s*\([\s\S]*?\)/, "");
@@ -10,5 +10,5 @@ const clearMode = (filePath) => {
   }
 };
 
-clearMode("go.mod");
-clearMode("exampleSite/go.mod");
+clearModules("go.mod");
+clearModules("exampleSite/go.mod");

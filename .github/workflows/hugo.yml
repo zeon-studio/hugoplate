@@ -16,8 +16,8 @@ permissions:
 # Environment variables available to all jobs and steps in this workflow
 env:
   HUGO_ENV: production
-  HUGO_VERSION: "0.114.0"
-  GO_VERSION: "1.16.3"
+  HUGO_VERSION: "0.115.1"
+  GO_VERSION: "1.20.5"
   NODE_VERSION: "18.15.0"
   TINA_CLIENT_ID: ${{ vars.TINA_CLIENT_ID }}
   TINA_TOKEN: ${{ vars.TINA_TOKEN }}
@@ -49,6 +49,9 @@ jobs:
           rm go${{ env.GO_VERSION }}.linux-amd64.tar.gz
           go version
 
+      - name: Setup Project
+        run: npm run project-setup
+
       - name: Install npm dependencies
         run: npm install
 
@@ -58,7 +61,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: ./exampleSite/public
+          path: ./public
 
   # Deployment job
   deploy:

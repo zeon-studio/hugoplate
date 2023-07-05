@@ -3,9 +3,9 @@ stages:
 
 variables:
   HUGO_ENV: production
-  HUGO_VERSION: "0.114.0"
-  GO_VERSION: "1.16.3"
-  NODE_VERSION: "18.15.0"
+  HUGO_VERSION: "0.115.1"
+  GO_VERSION: "1.20.5"
+  NODE_VERSION: "18.16.1"
 
 cache:
   paths:
@@ -28,20 +28,12 @@ default:
     - echo "GO ${GO_VERSION} INSTALLED"
     - npm install
 
-test:
-  stage: build
-  script:
-    - npm run build
-  rules:
-    - if: $CI_COMMIT_REF_NAME != $CI_DEFAULT_BRANCH
-
 pages:
   stage: build
   script:
+    - npm run project-setup
     - npm run build
     - echo "SITE BUILT SUCCESSFULLY! LIVE AT https://$GITLAB_USER_LOGIN.gitlab.io/$CI_PROJECT_NAME/"
   artifacts:
     paths:
       - public
-  rules:
-    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH

@@ -13,12 +13,13 @@ googleAnalytics = "" # example: UA-123-45, for more info, read the article https
 # disqus short name
 disqusShortname = "themefisher-template" # we use disqus to show comments in blog posts . To install disqus please follow this tutorial https://portfolio.peter-baumgartner.net/2017/09/10/how-to-install-disqus-on-hugo/
 # disable language
-disableLanguages = [] # example: ["fr"] for disable french language. see https://gohugo.io/content-management/multilingual/
+disableLanguages = [
+] # example: ["fr"] for disable french language. see https://gohugo.io/content-management/multilingual/
 hasCJKLanguage = false #  If hasCJKLanguage true, auto-detect Chinese/Japanese/Korean Languages in the content. see: https://gohugo.io/getting-started/configuration/#hascjklanguage
 
 
 ########################## Permalinks ############################
-[permalinks]
+[permalinks.page]
 "pages" = "/:slugorfilename/"
 
 

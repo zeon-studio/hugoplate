@@ -1,18 +1,8 @@
 [build]
-publish = "exampleSite/public"
-command = "yarn build"
+publish = "public"
+command = "yarn project-setup && yarn build"
 
 [build.environment]
-HUGO_VERSION = "0.112.5"
-GO_VERSION = "1.19.4"
-HUGO_THEME = "repo"
+HUGO_VERSION = "0.115.1"
+GO_VERSION = "1.20.5"
 HUGO_BASEURL = "/"
-
-# [[headers]]
-# for = "/*" # This defines which paths this specific [[headers]] block will cover.
-
-# [headers.values]
-# X-Frame-Options = "DENY"
-# X-XSS-Protection = "1; mode=block"
-# Referrer-Policy = "same-origin"
-# Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
