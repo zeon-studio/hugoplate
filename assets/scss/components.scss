@@ -12,7 +12,7 @@ main {
 
 // container
 .container {
-  @apply mx-auto 2xl:max-w-[1320px] px-4;
+  @apply mx-auto px-4 2xl:max-w-[1320px];
 }
 
 // form style

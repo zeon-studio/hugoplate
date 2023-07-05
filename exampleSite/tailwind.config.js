@@ -1,7 +1,7 @@
 const toml = require("toml");
 const fs = require("fs");
 const path = require("path");
-const configPath = path.join(__dirname, "config.toml");
+const configPath = path.join(__dirname, "hugo.toml");
 const getConfig = fs.readFileSync(configPath, "utf8");
 const theme = JSON.parse(JSON.stringify(toml.parse(getConfig)));
 
@@ -29,7 +29,7 @@ if (theme.params.fonts.font_family.secondary) {
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./hugo_stats.json'],
+  content: ["./hugo_stats.json"],
   safelist: [{ pattern: /^swiper-/ }],
   darkMode: "class",
   theme: {
