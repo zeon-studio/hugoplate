@@ -69,6 +69,12 @@
 npm run project-setup
 ```
 
+### 👉 Install Dependencies
+
+```
+npm install
+```
+
 ### 👉 Development Command
 
 ```
