@@ -4,16 +4,8 @@ const path = require("path");
 const rootDirs = ["assets/scss", "layouts"];
 const configFiles = [
   {
-    filePath: "tailwind.config.js",
-    patterns: ["darkmode:\\s*{[^}]*},", 'darkMode:\\s*"class",'],
-  },
-  {
     filePath: "exampleSite/tailwind.config.js",
     patterns: ["darkmode:\\s*{[^}]*},", 'darkMode:\\s*"class",'],
-  },
-  {
-    filePath: "hugo.toml",
-    patterns: ["\\S*\\.darkmode[^\\]]*\\]\\n*([\\s\\S]*?)(?=\\[|$)"],
   },
   {
     filePath: "exampleSite/hugo.toml",
