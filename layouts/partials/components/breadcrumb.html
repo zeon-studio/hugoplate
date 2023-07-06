@@ -14,8 +14,6 @@
   {{ range $i, $e:= $context.Ancestors.Reverse }}
     {{ if ne .Title "Pages" }}
       <li>
-        {{ if ne $i 0 }}
-        {{ end }}
         <a
           class="text-primary dark:text-darkmode-primary"
           href="{{ .RelPermalink }}">
