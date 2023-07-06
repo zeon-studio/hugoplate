@@ -12,16 +12,18 @@
     </a>
   </li>
   {{ range $i, $e:= $context.Ancestors.Reverse }}
-    <li>
-      {{ if ne $i 0 }}
-      {{ end }}
-      <a
-        class="text-primary dark:text-darkmode-primary"
-        href="{{ .RelPermalink }}">
-        {{ .Title }}
-      </a>
-      <span class="inlin-block mr-1">/</span>
-    </li>
+    {{ if ne .Title "Pages" }}
+      <li>
+        {{ if ne $i 0 }}
+        {{ end }}
+        <a
+          class="text-primary dark:text-darkmode-primary"
+          href="{{ .RelPermalink }}">
+          {{ .Title }}
+        </a>
+        <span class="inlin-block mr-1">/</span>
+      </li>
+    {{ end }}
   {{ end }}
   <li>
     <span class="text-primary dark:text-darkmode-primary">
