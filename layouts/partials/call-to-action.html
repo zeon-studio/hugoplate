@@ -18,9 +18,9 @@
               </p>
               {{ with .Params.button }}
                 {{ if .enable }}
-                  <a class="btn btn-primary" href="{{ .link | absURL }}"
-                    >{{ .label }}</a
-                  >
+                  <a class="btn btn-primary" href="{{ .link | absURL }}">
+                    {{ .label }}
+                  </a>
                 {{ end }}
               {{ end }}
             </div>

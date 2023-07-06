@@ -12,7 +12,6 @@ permissions:
   pages: write
   id-token: write
 
-
 # Environment variables available to all jobs and steps in this workflow
 env:
   HUGO_ENV: production

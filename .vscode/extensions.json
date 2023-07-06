@@ -1,3 +1,7 @@
 {
-  "recommendations": ["bradlc.vscode-tailwindcss", "budparr.language-hugo-vscode", "tamasfe.even-better-toml"]
+  "recommendations": [
+    "bradlc.vscode-tailwindcss",
+    "budparr.language-hugo-vscode",
+    "tamasfe.even-better-toml"
+  ]
 }
