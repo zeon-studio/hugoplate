@@ -1,7 +1,7 @@
 {
   "name": "hugoplate",
   "description": "hugo tailwindcss boilerplate",
-  "version": "1.3.1",
+  "version": "1.4.0",
   "license": "MIT",
   "author": "zeon.studio",
   "scripts": {
@@ -28,7 +28,6 @@
     "prettier-plugin-go-template": "0.0.13",
     "prettier-plugin-tailwindcss": "^0.3.0",
     "tailwind-bootstrap-grid": "^5.0.1",
-    "tailwindcss": "^3.3.2",
-    "toml": "^3.0.0"
+    "tailwindcss": "^3.3.2"
   }
 }
