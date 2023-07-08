@@ -8,8 +8,8 @@ const configFiles = [
     patterns: ["darkmode:\\s*{[^}]*},", 'darkMode:\\s*"class",'],
   },
   {
-    filePath: "exampleSite/hugo.toml",
-    patterns: ["\\S*\\.darkmode[^\\]]*\\]\\n*([\\s\\S]*?)(?=\\[|$)"],
+    filePath: "exampleSite/data/theme.json",
+    patterns: ["colors.darkmode"],
   },
 ];
 
@@ -45,5 +45,25 @@ function removeDarkModeFromPages(directoryPath) {
 
 function removeDarkMode(configFile) {
   const { filePath, patterns } = configFile;
-  removeDarkModeFromFiles(filePath, patterns);
+  if (filePath === "exampleSite/tailwind.config.js") {
+    removeDarkModeFromFiles(filePath, patterns);
+  } else {
+    const contentFile = JSON.parse(fs.readFileSync(filePath, "utf8"));
+    patterns.forEach((pattern) => deleteNestedProperty(contentFile, pattern));
+    fs.writeFileSync(filePath, JSON.stringify(contentFile));
+  }
+}
+
+function deleteNestedProperty(obj, propertyPath) {
+  const properties = propertyPath.split(".");
+  let currentObj = obj;
+  for (let i = 0; i < properties.length - 1; i++) {
+    const property = properties[i];
+    if (currentObj.hasOwnProperty(property)) {
+      currentObj = currentObj[property];
+    } else {
+      return; // Property not found, no need to continue
+    }
+  }
+  delete currentObj[properties[properties.length - 1]];
 }
