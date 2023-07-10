@@ -1,7 +1,6 @@
 ######################## default configuration ####################
 baseURL = "https://hugoplate.netlify.app/site/"
 title = "Hugoplate"
-theme = "hugoplate"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
 timeZone = "America/New_York"
 # post pagination
@@ -32,7 +31,6 @@ target = "assets"
 [[module.mounts]]
 source = "hugo_stats.json"
 target = "assets/watching/hugo_stats.json"
-
 
 ############################# Build ##############################
 [build]
