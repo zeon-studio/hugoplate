@@ -1,6 +1,29 @@
 const fs = require("fs");
 const path = require("path");
 
+const toggleComment = ({ filepath, regex }) => {
+  let updatedContent = fs.readFileSync(filepath, "utf8");
+  const match = updatedContent.match(regex);
+
+  if (match) {
+    const matchedContent = match[0];
+    const hasComment = matchedContent.startsWith("# ");
+    if (hasComment) {
+      const hasBreakline = matchedContent.includes("\n");
+      if (hasBreakline) {
+        updatedContent = updatedContent.replace(
+          regex,
+          matchedContent.replace(/# /gm, "")
+        );
+        fs.writeFileSync(filepath, updatedContent, "utf8");
+      }
+    } else {
+      updatedContent = updatedContent.replace(regex, "# " + matchedContent);
+      fs.writeFileSync(filepath, updatedContent, "utf8");
+    }
+  }
+};
+
 const createNewfolder = (rootfolder, folderName) => {
   const newFolder = path.join(rootfolder, folderName);
   fs.mkdirSync(newFolder, { recursive: true });
@@ -46,6 +69,18 @@ const setupTheme = () => {
   const rootFolder = path.join(__dirname, "../");
 
   if (!fs.existsSync(path.join(rootFolder, "exampleSite"))) {
+    // remove this part if you don't using theme demo as a module
+    [
+      {
+        filepath: path.join(rootFolder, "config/_default/module.toml"),
+        regex: /# \[\[imports\]\]\s*\r?\n# path = "([^"]+)"/,
+      },
+      {
+        filepath: path.join(rootFolder, "hugo.toml"),
+        regex: /^.*theme\s*=\s*("[^"\]]+"|\S+)/m,
+      },
+    ].forEach(toggleComment);
+
     const includesFiles = [
       "tailwind.config.js",
       "postcss.config.js",
