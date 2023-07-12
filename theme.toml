@@ -1,0 +1,30 @@
+name = "Theme Name"
+license = "MIT"
+licenselink = "Link to theme's license"
+description = "Theme description"
+homepage = "https://github.com/zeon-studio/hugoplate"
+demosite = "https://hugoplate.netlify.app/"
+
+tags = [
+  "blog",
+  "responsive",
+  "minimal",
+  "light",
+  "dark",
+  "multilingual",
+  "landing",
+  "contact",
+  "dark mode",
+  "tailwindcss",
+]
+
+features = ["Responsive", "Minimal", "Multilingual", "Dark Mode"]
+
+[author]
+name = "Zeon Studio"
+homepage = "https://zeon.studio"
+
+[original]
+author = "Zeon Studio"
+homepage = "https://zeon.studio"
+repo = "https://github.com/zeon-studio/themeplate"
