@@ -7,6 +7,7 @@
     <!-- head (don't cache it) -->
     {{ partial "essentials/head.html" . }}
 
+
     <!-- style (always cache it) -->
     {{ partialCached "essentials/style.html" . }}
   </head>
@@ -19,6 +20,7 @@
     {{ else }}
       {{ partial "preloader.html" . }}
 
+
       <!-- tailwind size indicator -->
       {{ partial "components/tw-size-indicator.html" . }}
     {{ end }}
@@ -27,6 +29,7 @@
     <!-- header (don't cache it) -->
     {{ partial "essentials/header.html" . }}
     {{ partial "search-modal.html" (dict "Context" . ) }}
+
 
     <main>
       {{ block "main" . }}{{ end }}

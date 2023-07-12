@@ -35,15 +35,15 @@
       <div class="container">
         <div class="row items-center justify-between">
           <div
-            class="mb:md-0 md:col-5 {{ if not (modBool $i 2) }}
+            class="mb:md-0 {{ if not (modBool $i 2) }}
               md:order-2
-            {{ end }} mb-6">
+            {{ end }} md:col-5 mb-6">
             {{ partial "image" (dict "Src" .image "Alt" "feature image") }}
           </div>
           <div
-            class="md:col-7 lg:col-6 {{ if not (modBool $i 2) }}
+            class="{{ if not (modBool $i 2) }}
               md:order-1
-            {{ end }}">
+            {{ end }} md:col-7 lg:col-6">
             <h2 class="mb-4">
               {{ .title | markdownify }}
             </h2>

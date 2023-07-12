@@ -12,23 +12,30 @@
 <!-- favicon -->
 {{ partialCached "favicon" . }}
 
+
 <!-- manifest -->
 {{ partialCached "manifest" . }}
+
 
 <!-- site verifications -->
 {{ partialCached "site-verifications.html" . }}
 
+
 <!-- opengraph and twitter card -->
 {{ partial "basic-seo.html" . }}
+
 
 <!-- custom script -->
 {{ partialCached "custom-script.html" . }}
 
+
 <!-- google analytics -->
 {{ template "_internal/google_analytics.html" . }}
 
+
 <!-- google tag manager -->
 {{ partialCached "gtm.html" . }}
+
 
 <!-- search index -->
 {{ partial "search-index.html" . }}
