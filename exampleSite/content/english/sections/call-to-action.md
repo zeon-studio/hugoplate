@@ -8,7 +8,7 @@ button:
   label: "Get Started Now"
   link: "https://github.com/zeon-studio/hugoplate"
 
-# don't create a separete page
+# don't create a separate page
 _build:
   render: "never"
 ---
