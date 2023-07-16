@@ -60,7 +60,7 @@
 - Hugo v0.115.1+
 - Node v18+
 - Npm v9.5+
-- Tailwindcss v3+
+- Go v1.20.5+
 
 ### 👉 Project Setup
 
