@@ -21,7 +21,11 @@
     <img src="https://img.shields.io/github/contributors/zeon-studio/hugoplate" alt="contributors"></a>
 </p>
 
-## 📌 Key Features
+## 🎁 What's Included
+
+We have included almost everything you need to start your Hugo project. Let's see what's included in this template:
+
+### 📌 Key Features
 
 - 👥 Multi-Authors
 - 🎯 Similar Posts Suggestion
@@ -157,12 +161,14 @@ And if you want to Host some other hosting platforms. then you can build your pr
 
 ---
 
-## 🐞 Reporting Issues
+## 🔒 Guide to Staying Compliant
+
+### 🐞 Reporting Issues
 
 We use GitHub Issues as the official bug tracker for this Template. Please Search [existing issues](https://github.com/zeon-studio/hugoplate/issues). It’s possible someone has already reported the same problem.
 If your problem or idea has not been addressed yet, feel free to [open a new issue](https://github.com/zeon-studio/hugoplate/issues).
 
-## 📝 License
+### 📝 License
 
 Copyright (c) 2023 - Present, Designed & Developed by [Zeon Studio](https://zeon.studio/)
 
