@@ -53,6 +53,22 @@
 - 🗂️ Category Single
 - 🔍 Search
 
+### 📦 Tech Stack
+
+- [Hugo](https://gohugo.io/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [PostCSS](https://postcss.org/)
+- [PurgeCSS](https://purgecss.com/)
+- [AutoPrefixer](https://autoprefixer.github.io/)
+- [Hugo Modules](https://gohugo.io/hugo-modules/)
+- [Markdown](https://markdownguide.org/)
+- [Prettier](https://prettier.io/)
+- [Jshint](https://jshint.com/)
+- [Netlify](https://www.netlify.com/)
+- [Vercel](https://vercel.com/)
+- [Github Actions](https://github.com/features/actions)
+- [Gitlab Ci](https://docs.gitlab.com/ee/ci/)
+
 ---
 
 ## 🚀 Getting Started
@@ -132,10 +148,10 @@ npm run build
 
 We have provided 4 different platform deploy platform configuration with this template, so you can deploy easily.
 
-- Netlify
-- Vercel
-- Github Pages
-- Gitlab Pages
+- [Netlify](https://www.netlify.com/)
+- [Vercel](https://vercel.com/)
+- [Github Actions](https://github.com/features/actions)
+- [Gitlab Ci](https://docs.gitlab.com/ee/ci/)
 
 And if you want to Host some other hosting platforms. then you can build your project, and you will get a `public` folder. that you can copy and paste on your hosting platform.
 
