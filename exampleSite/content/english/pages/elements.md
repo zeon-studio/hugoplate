@@ -199,12 +199,6 @@ print s
 
 <hr>
 
-### Codepen
-
-{{< codepen id="QWvKwmq" theme="light" height="600" >}}
-
-<hr>
-
 ### Tables
 
 | Tables        |      Are      |  Cool |

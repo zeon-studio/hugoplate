@@ -19,11 +19,15 @@
 {{ $sf:= site.Data.theme.fonts.font_family.secondary }}
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-  href="https://fonts.googleapis.com/css2?family={{- $pf | safeURL -}}{{- with $sf -}}
-    &family={{- . | safeURL -}}
-  {{- end -}}&display=swap"
-  rel="stylesheet" />
+<script>
+  (function () {
+    const googleFont = document.createElement("link");
+    googleFont.href = "https://fonts.googleapis.com/css2?family={{$pf | safeURL}}{{with $sf}}&family={{. | safeURL}}{{end}}&display=swap";
+    googleFont.type = "text/css";
+    googleFont.rel = "stylesheet";
+    document.head.appendChild(googleFont);
+  })();
+</script>
 
 <!-- plugins + stylesheet -->
 {{ $styles := slice }}

@@ -31,7 +31,7 @@ copyright = "Designed & Developed by [Zeon Studio](https://zeon.studio)"
 
 # Preloader
 [preloader]
-enable = true
+enable = false
 preloader = "" # use jpg, png, svg or gif format.
 
 # Navigation button
@@ -69,7 +69,7 @@ mastodon = "" # Your verification code
 
 # cookies
 [cookies]
-enable = true
+enable = false
 expire_days = 60
 content = "This site uses cookies. By continuing to use this website, you agree to their use."
 button = "I Accept"
