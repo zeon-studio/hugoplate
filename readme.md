@@ -53,38 +53,93 @@
 - 🗂️ Category Single
 - 🔍 Search
 
+---
+
 ## 🚀 Getting Started
 
-### 📦 Dependencies
+First you need to `clone` or `download` the template repository, and then let's get started with the following process:
 
-- Hugo v0.115.1+
+### ⚙️ Prerequisites
+
+To start using this template, you need to have some prerequisites installed on your machine.
+
+- Hugo Extended v0.115+
 - Node v18+
 - Npm v9.5+
-- Go v1.20.5+
+- Go v1.20+
 
 ### 👉 Project Setup
 
-```
+We build this custom script to make your project setup easier. It will create a new Hugo theme folder, and clone the Hugoplate theme into it. Then move the exampleSite folder into the root directory. So that you can start your Hugo server without going into the exampleSite folder. Use the following command to setup your project.
+
+```bash
 npm run project-setup
 ```
 
 ### 👉 Install Dependencies
 
-```
+Install all the dependencies using the following command.
+
+```bash
 npm install
 ```
 
 ### 👉 Development Command
 
-```
+Start the development server using the following command.
+
+```bash
 npm run dev
 ```
 
+---
+
+## 🛠 Advanced Usage
+
+We have added some custom scripts to make your life easier. You can use these scripts to help you with your development.
+
+### 👉 Update Modules
+
+We have added a lot of modules into this template. You can update all the modules using the following command.
+
+```bash
+npm run update-modules
+```
+
+### 👉 Remove Dark Mode
+
+If you want to remove dark mode from your project, then you had to do it manually from everywhere. So we build a custom script to do it for you. you can use the following command to remove dark mode from your project.
+
+```bash
+npm run remove-darkmode
+```
+
+---
+
+## 🚀 Build And Deploy
+
+After you finish your development, you can build or deploy your project to almost everywhere. Let's see the process:
+
 ### 👉 Build Command
 
-```
+To build your project locally, you can use the following command. It will purge all the unused CSS and minify all the files.
+
+```bash
 npm run build
 ```
+
+### 👉 Deploy Process
+
+We have provided 4 different platform deploy platform configuration with this template, so you can deploy easily.
+
+- Netlify
+- Vercel
+- Github Pages
+- Gitlab Pages
+
+And if you want to Host some other hosting platforms. then you can build your project, and you will get a `public` folder. that you can copy and paste on your hosting platform.
+
+---
 
 ## 🐞 Reporting Issues
 
