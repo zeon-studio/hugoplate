@@ -2,7 +2,7 @@
 
 <p align="center">Hugoplate is a free starter template built with Hugo, and TailwindCSS, providing everything you need to jumpstart your Hugo project and save valuable time.</p>
 
-<p align="center"> Made with ♥ by <a href="https://zeon.studio/">Zeon Studio</a></p>
+<p align="center">Made with ♥ by <a href="https://zeon.studio/">Zeon Studio</a></p>
 
 <h2 align="center"> <a target="_blank" href="https://hugoplate.netlify.app/" rel="nofollow">👀 Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/analysis/https-hugoplate-netlify-app/6lyxjw6t4r?form_factor=desktop">Page Speed (95+)🚀</a>
 </h2>
@@ -150,14 +150,17 @@ npm run build
 
 ### 👉 Deploy Process
 
-We have provided 4 different platform deploy platform configuration with this template, so you can deploy easily.
+We have provided 5 different platform deploy platform configuration with this template, so you can deploy easily.
 
 - [Netlify](https://www.netlify.com/)
 - [Vercel](https://vercel.com/)
 - [Github Actions](https://github.com/features/actions)
 - [Gitlab Ci](https://docs.gitlab.com/ee/ci/)
+- [AWS Amplify](https://aws.amazon.com/amplify/)
 
 And if you want to Host some other hosting platforms. then you can build your project, and you will get a `public` folder. that you can copy and paste on your hosting platform.
+
+> **Note:** You must change the `baseURL` in the `hugo.toml` file. Otherwise, your site will not work properly.
 
 ---
 

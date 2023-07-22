@@ -3,7 +3,7 @@ stages:
 
 variables:
   HUGO_ENV: production
-  HUGO_VERSION: "0.115.1"
+  HUGO_VERSION: "0.115.4"
   GO_VERSION: "1.20.5"
   NODE_VERSION: "18.16.1"
 
@@ -33,7 +33,6 @@ pages:
   script:
     - npm run project-setup
     - npm run build
-    - echo "SITE BUILT SUCCESSFULLY! LIVE AT https://$GITLAB_USER_LOGIN.gitlab.io/$CI_PROJECT_NAME/"
   artifacts:
     paths:
       - public
