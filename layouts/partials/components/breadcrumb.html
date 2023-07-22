@@ -10,9 +10,10 @@
       href="{{ $base | relLangURL }}">
       {{ i18n "home" | default "Home" }}
     </a>
+    <span class="inlin-block mr-1">/</span>
   </li>
   {{ range $i, $e:= $context.Ancestors.Reverse }}
-    {{ if ne .Title "Pages" }}
+    {{ if and (not .IsHome) (ne .Title "Pages") }}
       <li>
         <a
           class="text-primary dark:text-darkmode-primary"

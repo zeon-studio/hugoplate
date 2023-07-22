@@ -12,8 +12,7 @@
     <input id="nav-toggle" type="checkbox" class="hidden" />
     <label
       for="nav-toggle"
-      class="order-3 cursor-pointer text-dark dark:text-white lg:order-1"
-    >
+      class="order-3 cursor-pointer text-dark dark:text-white lg:order-1">
       <span id="show-button" class="flex items-center lg:order-1 lg:hidden">
         <svg class="h-6 fill-current" viewBox="0 0 20 20">
           <title>Menu Open</title>
@@ -23,14 +22,12 @@
       <span
         id="hide-button"
         for="nav-toggle"
-        class="hidden items-center lg:order-1"
-      >
+        class="hidden items-center lg:order-1">
         <svg class="h-6 fill-current" viewBox="0 0 20 20">
           <title>Menu Close</title>
           <polygon
             points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
-            transform="rotate(45 10 10)"
-          ></polygon>
+            transform="rotate(45 10 10)"></polygon>
         </svg>
       </span>
     </label>
@@ -68,17 +65,18 @@
                   <a
                     class="nav-dropdown-link {{ if $active }}
                       active
-                    {{ end }}"
+                    {{- end -}}"
                     {{ if findRE `^http` .URL }}
                       target="_blank" rel="noopener"
                     {{ end }}
-                    href="{{ if findRE `^#` .URL }}
-                      {{ if not $.IsHome }}
-                        {{ site.BaseURL | relLangURL }}
-                      {{ end }}{{ .URL }}
-                    {{ else }}
-                      {{ .URL | relLangURL }}
-                    {{ end }}">
+                    href="{{- if findRE `^#` .URL -}}
+                      {{- if not $.IsHome -}}
+                        {{- site.BaseURL | relLangURL -}}
+                      {{- end }}
+                      {{- .URL -}}
+                    {{- else -}}
+                      {{- .URL | relLangURL -}}
+                    {{- end -}}">
                     {{ .Name }}
                   </a>
                 </li>
@@ -88,17 +86,17 @@
         {{ else }}
           <li class="nav-item">
             <a
-              class="nav-link {{ if $active }}active{{ end }}"
+              class="nav-link {{ if $active }}active{{- end -}}"
               {{ if findRE `^http` .URL }}
                 target="_blank" rel="noopener"
               {{ end }}
-              href="{{ if findRE `^#` .URL }}
-                {{ if not $.IsHome }}
-                  {{ site.BaseURL | relLangURL }}
-                {{ end }}{{ .URL }}
-              {{ else }}
-                {{ .URL | relLangURL }}
-              {{ end }}"
+              href="{{- if findRE `^#` .URL -}}
+                {{- if not $.IsHome -}}
+                  {{- site.BaseURL | relLangURL -}}
+                {{- end }}{{- .URL -}}
+              {{- else -}}
+                {{- .URL | relLangURL -}}
+              {{- end -}}"
               >{{ .Name }}</a
             >
           </li>
