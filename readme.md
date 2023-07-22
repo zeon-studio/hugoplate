@@ -2,7 +2,9 @@
 
 <p align="center">Hugoplate is a free starter template built with Hugo, and TailwindCSS, providing everything you need to jumpstart your Hugo project and save valuable time.</p>
 
-<p align="center">Made with ♥ by <a href="https://zeon.studio/">Zeon Studio</a></p>
+<p align="center">Made with ♥ by <a href="https://zeon.studio/"> Zeon Studio</a></p>
+<p align=center> If you find this project useful, please give it a ⭐ to show your support. </p>
+
 
 <h2 align="center"> <a target="_blank" href="https://hugoplate.netlify.app/" rel="nofollow">👀 Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/analysis/https-hugoplate-netlify-app/6lyxjw6t4r?form_factor=desktop">Page Speed (95+)🚀</a>
 </h2>
