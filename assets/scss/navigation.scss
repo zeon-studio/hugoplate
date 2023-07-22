@@ -31,9 +31,9 @@ input#nav-toggle:checked ~ #nav-menu {
   @apply text-center lg:text-left;
 }
 
-.nav-item {
-  // @apply mx-3;
-}
+// .nav-item {
+//   @apply mx-3;
+// }
 
 .nav-link {
   @apply text-dark hover:text-primary dark:text-darkmode-dark block p-3 font-semibold transition lg:px-2 lg:py-3;
