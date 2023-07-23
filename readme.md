@@ -155,9 +155,9 @@ To build your project locally, you can use the following command. It will purge 
 npm run build
 ```
 
-### 👉 Deploy Process
+### 👉 Deploy Site
 
-We have provided 5 different platform deploy platform configuration with this template, so you can deploy easily.
+We have provided 5 different deploy platform configurations with this template, so you can deploy easily.
 
 - [Netlify](https://www.netlify.com/)
 - [Vercel](https://vercel.com/)
