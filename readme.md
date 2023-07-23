@@ -115,6 +115,11 @@ Start the development server using the following command.
 npm run dev
 ```
 
+### 🎬 Still Confused? Watch a Quick Video
+
+https://github.com/zeon-studio/hugoplate/assets/58769763/4a501831-cc79-4427-b2a5-3f1101e90466
+
+
 ---
 
 ## 🛠 Advanced Usage
