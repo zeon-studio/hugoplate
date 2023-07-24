@@ -17,6 +17,8 @@ const purgecss = {
     /^gs/,
     /^gi/,
     /^gz/,
+    /^gprev/,
+    /^gnext/,
     /^desc/,
     /^zoom/,
     /^search/,
