@@ -1,14 +1,14 @@
 // navbar toggler
-input#nav-toggle:checked ~ label#show-button {
+input#nav-toggle:checked + label #show-button {
   @apply hidden;
 }
 
-input#nav-toggle:checked ~ label#hide-button {
-  @apply flex lg:hidden;
+input#nav-toggle:checked + label #hide-button {
+  @apply block;
 }
 
 input#nav-toggle:checked ~ #nav-menu {
-  @apply block lg:flex;
+  @apply block;
 }
 
 .header {
