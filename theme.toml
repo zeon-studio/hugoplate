@@ -4,11 +4,13 @@ licenselink = "https://github.com/zeon-studio/hugoplate/blob/main/LICENSE"
 description = "Hugoplate is a free starter template built with Hugo, and TailwindCSS, providing everything you need to jumpstart your Hugo project and save valuable time."
 homepage = "https://github.com/zeon-studio/hugoplate"
 demosite = "https://hugoplate.netlify.app/"
+min_version = "0.115.4"
 
 tags = [
   "blog",
   "responsive",
   "minimal",
+  "personal",
   "light",
   "dark",
   "multilingual",
