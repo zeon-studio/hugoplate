@@ -1,8 +1,10 @@
 {{ define "main" }}
   {{ partial "page-header" . }}
+
+
   <section class="section">
-    <div class="container text-center">
-      <ul>
+    <div class="container">
+      <ul class="text-center">
         {{/* categories */}}
         {{ if eq .Permalink (`categories/` | absLangURL) }}
           {{ range site.Taxonomies.categories.ByCount }}
