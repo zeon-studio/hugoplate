@@ -119,6 +119,28 @@ https://github.com/zeon-studio/hugoplate/assets/58769763/c260c0ae-91be-42ce-b8db
 
 ---
 
+## 📝 Customization
+
+We have added a lot of customization options in this template. You can customize almost everything you want. Let's see what you can customize:
+
+### 👉 Site Config
+
+You can change the site configuration from the `hugo.toml` file. You can change the site title, baseURL, language, theme, plugins, and more.
+
+### 👉 Site Params
+
+You can customize all the parameters from `config/_default/params.toml` file. Including `logo`, `favicon`, `search`, `seo metadata` and more.
+
+### 👉 Colors and Fonts
+
+You can change the colors and fonts from the `data/theme.json` file. You can change the primary color, secondary color, and more. Also you can change the font family and font size from here.
+
+### 👉 Social Links
+
+You can change the social links from the `data/social.json` file. You can add your social links here, and it will automatically show on the site.
+
+---
+
 ## 🛠 Advanced Usage
 
 We have added some custom scripts to make your life easier. You can use these scripts to help you with your development.

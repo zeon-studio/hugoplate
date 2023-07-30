@@ -22,9 +22,6 @@
 - id: share
   translation: Share
 
-- id: back_to_home
-  translation: Back To Home
-
 - id: search_input_placeholder
   translation: Search Post ...
 

@@ -71,17 +71,20 @@
       </div>
 
       <!-- Related posts -->
-      <div class="section pb-0">
-        <h2 class="h3 mb-12">{{ i18n "related_posts" }}</h2>
-        <div class="row">
-          {{ $related := (where site.RegularPages "Section" "in" site.Params.mainSections) | intersect (where site.RegularPages ".Title" "!=" .Title) | union (site.RegularPages.Related . ) }}
-          {{ range first 3 $related }}
-            <div class="lg:col-4">
-              {{ partial "components/blog-card" . }}
-            </div>
-          {{ end }}
+      {{ $related := (where site.RegularPages "Section" "in" site.Params.mainSections) | intersect (where site.RegularPages ".Title" "!=" .Title) | union (site.RegularPages.Related . ) }}
+      {{ $related = $related | shuffle | first 3 }}
+      {{ with $related }}
+        <div class="section pb-0">
+          <h2 class="h3 mb-12">{{ i18n "related_posts" }}</h2>
+          <div class="row">
+            {{ range . }}
+              <div class="lg:col-4">
+                {{ partial "components/blog-card" . }}
+              </div>
+            {{ end }}
+          </div>
         </div>
-      </div>
+      {{ end }}
     </div>
   </section>
 {{ end }}
