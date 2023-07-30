@@ -129,7 +129,7 @@ You can change the site configuration from the `hugo.toml` file. You can change 
 
 ### 👉 Site Params
 
-You can customize all the parameters from `config/_default/params.toml` file. Including `logo`, `favicon`, `search`, `seo metadata` and more.
+You can customize all the parameters from `config/_default/params.toml` file. Including logo, favicon, search, seo metadata and more.
 
 ### 👉 Colors and Fonts
 
