@@ -20,33 +20,14 @@
             {{ .Content }}
           </div>
           <ul class="social-icons ml-4 mt-10 text-center">
-            {{ if .Params.social.facebook }}
+            {{ range .Params.social }}
               <li>
                 <a
-                  href="{{ . | safeURL }}"
+                  href="{{ .link | safeURL }}"
                   target="_blank"
                   rel="noopener nofollow">
-                  <i class="fa-brands fa-facebook-f"></i>
-                </a>
-              </li>
-            {{ end }}
-            {{ if .Params.social.twitter }}
-              <li>
-                <a
-                  href="{{ . | safeURL }}"
-                  target="_blank"
-                  rel="noopener nofollow">
-                  <i class="fa-brands fa-twitter"></i>
-                </a>
-              </li>
-            {{ end }}
-            {{ if .Params.social.instagram }}
-              <li>
-                <a
-                  href="{{ . | safeURL }}"
-                  target="_blank"
-                  rel="noopener nofollow">
-                  <i class="fa-brands fa-instagram"></i>
+                  <span class="sr-only">{{ .title }}</span>
+                  <i class="{{ .icon }}"></i>
                 </a>
               </li>
             {{ end }}
