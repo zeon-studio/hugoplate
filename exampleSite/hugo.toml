@@ -43,14 +43,14 @@ useResourceCacheWhen = 'fallback'
 [build.buildStats]
 enable = true
 [[build.cachebusters]]
-source = 'assets/.*\.(js|ts|jsx|tsx)'
-target = '(js|scripts|javascript)'
-[[build.cachebusters]]
-source = 'assets/.*\.(css|sass|scss)$'
-target = '(css|styles|scss|sass)'
+source = 'assets/watching/hugo_stats\.json'
+target = 'style\.css'
 [[build.cachebusters]]
 source = '(postcss|tailwind)\.config\.js'
-target = '(css|styles|scss|sass)'
+target = 'css'
+[[build.cachebusters]]
+source = 'assets/.*\.(js|ts|jsx|tsx)'
+target = 'js'
 [[build.cachebusters]]
 source = 'assets/.*\.(.*)$'
 target = '$1'
@@ -65,7 +65,7 @@ home = ["HTML", "RSS", "WebAppManifest", "SearchIndex"]
 # See https://github.com/disintegration/imaging
 # Default JPEG or WebP quality setting. Default is 75.
 quality = 90
-resampleFilter = "lanczos"
+resampleFilter = "Lanczos"
 
 ############################ Caches ##############################
 [caches]
