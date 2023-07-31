@@ -79,7 +79,7 @@ We have included almost everything you need to start your Hugo project. Let's se
 
 ## 🚀 Getting Started
 
-First you need to `clone` or `download` the template repository, and then let's get started with the following process:
+First you need to [clone](https://github.com/zeon-studio/hugoplate) or [download](https://github.com/zeon-studio/hugoplate/archive/refs/heads/main.zip) the template repository, and then let's get started with the following process:
 
 ### ⚙️ Prerequisites
 
