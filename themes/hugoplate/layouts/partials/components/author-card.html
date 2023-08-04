@@ -18,11 +18,24 @@
     {{ .Summary }}
   </p>
   <ul class="social-icons">
-    {{ range .Params.social }}
+    {{ if .Params.social.facebook }}
       <li>
-        <a href="{{ .link | safeURL }}" target="_blank" rel="noopener nofollow">
-          <span class="sr-only">{{ .title }}</span>
-          <i class="{{ .icon }}"></i>
+        <a href="{{ . | safeURL }}" target="_blank" rel="noopener nofollow">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+      </li>
+    {{ end }}
+    {{ if .Params.social.twitter }}
+      <li>
+        <a href="{{ . | safeURL }}" target="_blank" rel="noopener nofollow">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+      </li>
+    {{ end }}
+    {{ if .Params.social.instagram }}
+      <li>
+        <a href="{{ . | safeURL }}" target="_blank" rel="noopener nofollow">
+          <i class="fa-brands fa-instagram"></i>
         </a>
       </li>
     {{ end }}
