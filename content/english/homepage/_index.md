@@ -21,7 +21,7 @@ features:
 
   - title: "Services We Provide"
     image: "/images/creative-process.svg"
-    content: "With AI Technology On The Horizon, Creative Careers Are Under Threat."
+    content: "With AI technology on the horizon, creative careers are under threat."
     bulletpoints:
       - "But You'll Never Be Able To Fully Replace The Human Elment That Lives Within All Our Creations."
       - "Our Mission At Essential Millennial Is To Turn Human Creativity Into Marketable Content And Distribute It Through Social Media Channels And Other Digital Platforms While You Keep Focusing On Your Business."
@@ -33,7 +33,7 @@ features:
 
   - title: "Create A Digital Marketing Strategy"
     image: "/images/strategy.png"
-    content: "Whether you're an independent creator with no digital marketing know-how or a business looking to stay ahead of the competition, we're here to craft tailor- made packages to help get your personal or company brand out in the challenging online ether."
+    content: "Whether you're an independent creator with no digital marketing know-how or a business looking to stay ahead of the competition, we're here to craft tailor-made packages to help get your personal or company brand out in the challenging online ether."
     button:
       enable: false
       label: ""
