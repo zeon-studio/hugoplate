@@ -5,7 +5,7 @@ description: "We explain how small businesses with limited time and money can us
 date: 2023-08-16 T09:00:00Z
 image: "/images/9-tips.jpg"
 categories: ["SMEs", "Digital Marketing"]
-author: "Kyle Smith"
+author: "Forrest Smith"
 tags: ["SEO", "digital marketing", "small businesses"]
 draft: false
 ---
