@@ -16,7 +16,7 @@
                 {{ if .enable }}
                   <a class="btn btn-primary" href="{{ .link | absURL }}">
                     {{ .label }}
-                    <i class="fa fa-arrow-right"></i>
+                    <i class="fa fa-arrow-right pl-2"></i>
                   </a>
                 {{ end }}
               {{ end }}
@@ -59,6 +59,14 @@
                   </li>
                 {{ end }}
               </ul>
+              {{ with .button }}
+                {{ if .enable }}
+                  <a class="btn btn-primary mt-6" href="{{ .link | absURL }}">
+                    {{ .label }}
+                    <i class="fa fa-arrow-right pl-2"></i>
+                  </a>
+                {{ end }}
+              {{ end }}
             </div>
           </div>
         </div>
