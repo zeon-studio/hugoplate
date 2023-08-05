@@ -3,7 +3,7 @@ title: "5 Low-Cost Digital Marketing Strategies To Boost Your Small Business"
 meta_title: "Affordable Digital Marketing Strategies For Small Businesses"
 description: "This article covers some of the easiest digital marketing strategies that you can follow to improve your small businesses' digital presence."
 date: 2023-08-16 T09:00:00Z
-image: "/images/image-placeholder.png"
+image: "/images/5-strategies.jpg"
 categories: ["SMEs", "Digital Marketing"]
 author: "Forrest Smith"
 tags: ["social media", "digital marketing", "small business", "SEO", "blog", "influncer marketing"]

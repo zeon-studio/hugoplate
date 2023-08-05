@@ -7,7 +7,7 @@ image: "/images/image-placeholder.png"
 categories: ["Opinion", "Great Divide"]
 author: "Melissa Da Costa"
 tags: ["Billionaires", "Inequality"]
-draft: false
+draft: true
 ---
 
 As the world grapples with the COVID-19 pandemic, its

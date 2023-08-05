@@ -3,7 +3,7 @@ title: "EM Tutorials: Digital Marketing For TikTok"
 meta_title: "Digital Marketing Strategies For TikTok"
 description: "In this article we introduce you to TikTok and provide simple digital marketing strategies for you to use."
 date: 2023-08-16 T09:00:00Z
-image: "/images/image-placeholder.png"
+image: "/images/tiktok-phone-black.jpg"
 categories: ["Social Media", "Digital Marketing"]
 author: "Forrest Smith"
 tags: ["social media", "digital marketing", "tiktok"]

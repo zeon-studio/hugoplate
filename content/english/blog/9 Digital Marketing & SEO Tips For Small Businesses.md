@@ -3,7 +3,7 @@ title: "9 Digital Marketing & SEO Tips For Small Businesses"
 meta_title: "Digital Marketing For Small Business"
 description: "We explain how small businesses with limited time and money can use  informed digital marketing strategies to reach large audiences and increase sales."
 date: 2023-08-16 T09:00:00Z
-image: "/images/image-placeholder.png"
+image: "/images/9-tips.jpg"
 categories: ["SMEs", "Digital Marketing"]
 author: "Kyle Smith"
 tags: ["SEO", "digital marketing", "small businesses"]

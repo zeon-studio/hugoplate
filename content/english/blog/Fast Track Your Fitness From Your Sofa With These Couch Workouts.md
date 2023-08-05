@@ -7,7 +7,7 @@ image: "/images/image-placeholder.png"
 categories: ["Exercise", "Health"]
 author: "Melissa Da Costa"
 tags: ["Fitness", "Workouts"]
-draft: false
+draft: true
 ---
 Even though we may soon be allowed back in the gym in South Africa, not
 everyone might be ready for that. We are, after all, still in the middle of a

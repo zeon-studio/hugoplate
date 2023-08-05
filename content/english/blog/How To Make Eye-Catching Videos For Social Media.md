@@ -3,7 +3,7 @@ title: "5 Ways That AI Is Changing the Digital Marketing Landscape"
 meta_title: "How AI Is Changing Digital Marketing "
 description: "With social media videos, you can increase leads and conversions, and effectively capture your target audience and drive engagement. Here are some ways to create engaging videos on social media."
 date: 2023-08-16 T09:00:00Z
-image: "/images/image-placeholder.png"
+image: "/images/youtube-phone.jpg"
 categories: ["social media", "Digital Marketing", "video content"]
 author: "Forrest Smith"
 tags: ["social media", "digital marketing", "videos", "multinedia", "conversions", "leads"]
