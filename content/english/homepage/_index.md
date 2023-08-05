@@ -19,7 +19,7 @@ features:
       label: "Get Started Now"
       link: "#"
 
-  - title: "Services We Provide"
+  - title: "Services we provide"
     image: "/images/creative-process.svg"
     content: "With AI technology on the horizon, creative careers are under threat."
     bulletpoints:
@@ -31,7 +31,7 @@ features:
       label: "Get Started Now"
       link: "#"
 
-  - title: "Create A Digital Marketing Strategy"
+  - title: "Create a digital marketing strategy"
     image: "/images/strategy.png"
     content: "Whether you're an independent creator with no digital marketing know-how or a business looking to stay ahead of the competition, we're here to craft tailor-made packages to help get your personal or company brand out in the challenging online ether."
     button:

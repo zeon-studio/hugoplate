@@ -1,5 +1,5 @@
 ---
-title: "Blog Posts"
+title: "Our Blog"
 meta_title: ""
-description: "this is meta description"
+description: "ruminations and opinions"
 ---
