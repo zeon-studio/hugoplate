@@ -6,8 +6,8 @@ banner:
   image: "/images/freelancer.png"
   button:
     enable: true
-    label: "Get Started For Free"
-    link: "#"
+    label: "Get Started"
+    link: "/contact"
 
 # Features
 features:
