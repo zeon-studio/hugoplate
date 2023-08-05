@@ -11,7 +11,7 @@ banner:
 
 # Features
 features:
-  - title: "Equip yourself with digital marketing skills and Keep up with the latest trends"
+  - title: "Equip yourself with digital marketing skills and keep up with the latest trends"
     image: "/images/marketing.png"
     content: "Essential Millennial is a platform for creatives to thrive in the 21st Century."
     button:
