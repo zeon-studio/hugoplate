@@ -13,16 +13,18 @@
               </label>
               <input
                 id="name"
+                name="name"
                 class="form-input"
                 placeholder="John Doe"
                 type="text" />
             </div>
             <div class="mb-6">
-              <label for="mail" class="form-label">
+              <label for="email" class="form-label">
                 Working Mail <span class="text-red-500">*</span>
               </label>
               <input
-                id="mail"
+                id="email"
+                name="email"
                 class="form-input"
                 placeholder="john.doe@email.com"
                 type="email" />
@@ -32,9 +34,10 @@
                 Anything else? <span class="text-red-500">*</span>
               </label>
               <textarea
+                id="message"
+                name="message"
                 class="form-input"
                 placeholder="Message goes here..."
-                id="message"
                 rows="8"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>

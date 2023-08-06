@@ -13,7 +13,7 @@ const toggleComment = ({ filepath, regex }) => {
       if (hasBreakline) {
         updatedContent = updatedContent.replace(
           regex,
-          matchedContent.replace(/# /gm, "")
+          matchedContent.replace(/# /gm, ""),
         );
         fs.writeFileSync(filepath, updatedContent, "utf8");
       }
@@ -108,7 +108,7 @@ const setupTheme = () => {
         } else {
           fs.renameSync(
             path.join(rootFolder, file.name),
-            path.join(folder, file.name)
+            path.join(folder, file.name),
           );
         }
       }

@@ -164,7 +164,7 @@ function initialize() {
     null,
     null,
     null,
-    new google.maps.Size(30, 50)
+    new google.maps.Size(30, 50),
   );
   marker = new google.maps.Marker({
     position: nottingham,

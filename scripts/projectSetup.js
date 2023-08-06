@@ -11,7 +11,7 @@ const toggleComment = ({ filepath, regex }) => {
     if (hasComment) {
       updatedContent = updatedContent.replace(
         regex,
-        matchedContent.replace("# ", "")
+        matchedContent.replace("# ", ""),
       );
       fs.writeFileSync(filepath, updatedContent, "utf8");
     } else {
@@ -81,7 +81,7 @@ const setupProject = () => {
       {
         filepath: path.join(
           rootfolder,
-          "exampleSite/config/_default/module.toml"
+          "exampleSite/config/_default/module.toml",
         ),
         regex: /\[\[imports\]\]\s*\r?\npath = "([^"]+)"/,
       },
@@ -91,7 +91,7 @@ const setupProject = () => {
     const folderName = getFolderName(rootfolder);
     const newfolderName = createNewfolder(
       path.join(rootfolder, "themes"),
-      folderName
+      folderName,
     );
 
     folderList.forEach((folder) => {
