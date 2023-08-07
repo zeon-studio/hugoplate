@@ -133,7 +133,7 @@ You can customize all the parameters from the `config/_default/params.toml` file
 
 ### 👉 Colors and Fonts
 
-You can change the colors and fonts from the `data/theme.json file`. This includes the primary color, secondary color, font family, and font size.
+You can change the colors and fonts from the `data/theme.json` file. This includes the primary color, secondary color, font family, and font size.
 
 ### 👉 Social Links
 
