@@ -121,23 +121,23 @@ https://github.com/zeon-studio/hugoplate/assets/58769763/c260c0ae-91be-42ce-b8db
 
 ## 📝 Customization
 
-We have added a lot of customization options in this template. You can customize almost everything you want. Let's see what you can customize:
+This template has been designed with a lot of customization options in mind. You can customize almost anything you want, including:
 
 ### 👉 Site Config
 
-You can change the site configuration from the `hugo.toml` file. You can change the site title, baseURL, language, theme, plugins, and more.
+You can change the site title, base URL, language, theme, plugins, and more from the `hugo.toml` file.
 
 ### 👉 Site Params
 
-You can customize all the parameters from `config/_default/params.toml` file. Including logo, favicon, search, seo metadata and more.
+You can customize all the parameters from the `config/_default/params.toml` file. This includes the logo, favicon, search, SEO metadata, and more.
 
 ### 👉 Colors and Fonts
 
-You can change the colors and fonts from the `data/theme.json` file. You can change the primary color, secondary color, and more. Also you can change the font family and font size from here.
+You can change the colors and fonts from the `data/theme.json file`. This includes the primary color, secondary color, font family, and font size.
 
 ### 👉 Social Links
 
-You can change the social links from the `data/social.json` file. You can add your social links here, and it will automatically show on the site.
+You can change the social links from the `data/social.json` file. Add your social links here, and they will automatically be displayed on the site.
 
 ---
 
@@ -147,7 +147,7 @@ We have added some custom scripts to make your life easier. You can use these sc
 
 ### 👉 Update Modules
 
-We have added a lot of modules into this template. You can update all the modules using the following command.
+We have added a lot of modules to this template. You can update all the modules using the following command.
 
 ```bash
 npm run update-modules
@@ -155,7 +155,7 @@ npm run update-modules
 
 ### 👉 Remove Dark Mode
 
-If you want to remove dark mode from your project, then you had to do it manually from everywhere. So we build a custom script to do it for you. you can use the following command to remove dark mode from your project.
+If you want to remove dark mode from your project, then you have to do it manually from everywhere. So we build a custom script to do it for you. you can use the following command to remove dark mode from your project.
 
 ```bash
 npm run remove-darkmode
@@ -165,7 +165,7 @@ npm run remove-darkmode
 
 ## 🚀 Build And Deploy
 
-After you finish your development, you can build or deploy your project to almost everywhere. Let's see the process:
+After you finish your development, you can build or deploy your project almost everywhere. Let's see the process:
 
 ### 👉 Build Command
 
