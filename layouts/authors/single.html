@@ -3,7 +3,7 @@
     <div class="container">
       <div
         class="row border-border dark:border-darkmode-border justify-center border-b pb-14">
-        <div class="lg:col-4 text-center">
+        <div class="text-center">
           {{ $image:= .Params.image }}
           {{ if $image }}
             {{ partial "image" (dict "Src" $image "Alt" .Title "Class" "mx-auto" "size" "200x200") }}
