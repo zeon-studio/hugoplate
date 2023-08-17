@@ -52,6 +52,9 @@ target = 'css'
 source = 'assets/.*\.(js|ts|jsx|tsx)'
 target = 'js'
 [[build.cachebusters]]
+source = 'assets/.*\.(css|scss|sass)'
+target = 'css'
+[[build.cachebusters]]
 source = 'assets/.*\.(.*)$'
 target = '$1'
 

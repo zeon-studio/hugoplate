@@ -1,7 +1,7 @@
 {
   "name": "hugoplate",
   "description": "hugo tailwindcss boilerplate",
-  "version": "1.7.2",
+  "version": "1.7.3",
   "license": "MIT",
   "author": "zeon.studio",
   "scripts": {
@@ -21,12 +21,12 @@
     "@fullhuman/postcss-purgecss": "^5.0.0",
     "@tailwindcss/forms": "^0.5.4",
     "@tailwindcss/typography": "^0.5.9",
-    "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.27",
+    "autoprefixer": "^10.4.15",
+    "postcss": "^8.4.28",
     "postcss-cli": "^10.1.0",
-    "prettier": "^3.0.1",
+    "prettier": "^3.0.2",
     "prettier-plugin-go-template": "0.0.15",
-    "prettier-plugin-tailwindcss": "^0.5.2",
+    "prettier-plugin-tailwindcss": "^0.5.3",
     "tailwind-bootstrap-grid": "^5.0.1",
     "tailwindcss": "^3.3.3"
   }
