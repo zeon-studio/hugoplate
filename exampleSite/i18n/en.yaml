@@ -30,3 +30,15 @@
 
 - id: empty_search_results_placeholder
   translation: Type something to search..
+
+- id: note
+  translation: Note
+
+- id: tip
+  translation: Tip
+
+- id: info
+  translation: Info
+
+- id: warning
+  translation: Warning
