@@ -2,7 +2,20 @@
 (function () {
   "use strict";
 
-  // ####################### Testimonial Slider #########################
+  // Dropdown Menu Toggler For Mobile
+  // ----------------------------------------
+  const dropdownMenuToggler = document.querySelectorAll(
+    ".nav-dropdown > .nav-link",
+  );
+
+  dropdownMenuToggler.forEach((toggler) => {
+    toggler?.addEventListener("click", (e) => {
+      e.target.parentElement.classList.toggle("active");
+    });
+  });
+
+  // Testimonial Slider
+  // ----------------------------------------
   new Swiper(".testimonial-slider", {
     spaceBetween: 24,
     loop: true,

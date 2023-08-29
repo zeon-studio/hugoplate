@@ -41,14 +41,22 @@ input#nav-toggle:checked ~ #nav-menu {
 
 .nav-dropdown {
   @apply mr-0;
+  & > svg {
+    @apply pointer-events-none;
+  }
+  &.active {
+    .nav-dropdown-list {
+      @apply block;
+    }
+  }
 }
 
 .nav-dropdown-list {
-  @apply bg-body dark:bg-darkmode-body z-10 min-w-[180px] rounded p-4 shadow;
+  @apply bg-body dark:bg-darkmode-body z-10 min-w-[180px] rounded p-4 shadow hidden lg:invisible lg:absolute lg:block lg:opacity-0;
 }
 
 .nav-dropdown-item {
-  @apply mb-2;
+  @apply [&:not(:last-child)]:mb-2;
 }
 
 .nav-dropdown-link {
