@@ -3,25 +3,6 @@ const path = require("path");
 const themePath = path.join(__dirname, "data/theme.json");
 const themeRead = fs.readFileSync(themePath, "utf8");
 const theme = JSON.parse(themeRead);
-const hugoStatsPath = path.join(__dirname, "hugo_stats.json");
-const hugoStatsRead = fs.readFileSync(hugoStatsPath, "utf8");
-
-// Function to decode Unicode escape sequences
-function decodeUnicode(json) {
-  return JSON.parse(json, (key, value) => {
-    if (typeof value === "string") {
-      return value.replace(/\\u[\dA-Fa-f]{4}/g, (match) => {
-        return String.fromCharCode(parseInt(match.slice(2), 16));
-      });
-    }
-    return value;
-  });
-}
-
-fs.writeFileSync(
-  "hugo_stats_decoded.json",
-  JSON.stringify(decodeUnicode(hugoStatsRead), null, 2),
-);
 
 let font_base = Number(theme.fonts.font_size.base.replace("px", ""));
 let font_scale = Number(theme.fonts.font_size.scale);
@@ -47,7 +28,7 @@ if (theme.fonts.font_family.secondary) {
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./hugo_stats_decoded.json"],
+  content: ["./hugo_stats.json"],
   safelist: [{ pattern: /^swiper-/ }],
   darkMode: "class",
   theme: {
