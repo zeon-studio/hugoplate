@@ -20,6 +20,12 @@ disableLanguages = [
 ] # example: ["fr"] for disable french language. see https://gohugo.io/content-management/multilingual/
 hasCJKLanguage = false #  If hasCJKLanguage true, auto-detect Chinese/Japanese/Korean Languages in the content. see: https://gohugo.io/getting-started/configuration/#hascjklanguage
 
+######################### Default Parameters ###########################
+
+[params]
+# contact form action
+contact_form_action = "https://fabform.io/f/<insert-fabform-endpoint-id-here>"
+
 
 ########################## Permalinks ############################
 [permalinks.page]
