@@ -6,7 +6,7 @@
         <div class="lg:col-4 text-center">
           {{ $image:= .Params.image }}
           {{ if $image }}
-            {{ partial "image" (dict "Src" $image "Alt" .Title "Class" "mx-auto" "size" "200x200") }}
+            {{ partial "image" (dict "Src" $image "Alt" .Title "Class" "mx-auto" "Size" "200x200") }}
           {{ else if .Params.Email }}
             <img
               class="mx-auto"
