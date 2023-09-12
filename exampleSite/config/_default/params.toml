@@ -30,6 +30,7 @@ custom_script = ""
 copyright = "Designed & Developed by [Zeon Studio](https://zeon.studio)"
 
 # Preloader
+# preloader module: https://github.com/gethugothemes/hugo-modules/tree/master/components/preloader
 [preloader]
 enable = false
 preloader = "" # use jpg, png, svg or gif format.
@@ -41,6 +42,7 @@ label = "get a quote"
 link = "contact"
 
 # search
+# search module: https://github.com/gethugothemes/hugo-modules/tree/master/search
 [search]
 enable = true
 primary_color = "#121212"
@@ -52,6 +54,7 @@ show_categories = true
 
 
 # seo meta data for OpenGraph / Twitter Card
+# seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
 [metadata]
 keywords = ["Boilerplate", "Hugo"]
 description = "Hugo & Tailwindcss Starter"
@@ -60,6 +63,7 @@ image = "images/og-image.png"
 
 
 # site verifications
+# verification module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/site-verifications
 [site_verification]
 google = ""   # Your verification code
 bing = ""     # Your verification code
@@ -68,6 +72,7 @@ facebook = "" # Your verification code
 mastodon = "" # Your verification code
 
 # cookies
+# cookies module: https://github.com/gethugothemes/hugo-modules/tree/master/components/cookie-consent
 [cookies]
 enable = false
 expire_days = 60
