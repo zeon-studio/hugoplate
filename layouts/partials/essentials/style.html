@@ -31,6 +31,7 @@
 
 <!-- plugins + stylesheet -->
 {{ $styles := slice }}
+{{ $stylesLazy := slice }}
 {{ range site.Params.plugins.css }}
   {{ if findRE "^http" .link }}
     <link
@@ -40,20 +41,40 @@
       href="{{ .link | relURL }}"
       {{ .attributes | safeHTMLAttr }} />
   {{ else }}
-    {{ $styles = $styles | append (resources.Get .link) }}
+    {{ if not .lazy }}
+      {{ $styles = $styles | append (resources.Get .link) }}
+    {{ else }}
+      {{ $stylesLazy = $stylesLazy | append (resources.Get .link) }}
+    {{ end }}
   {{ end }}
 {{ end }}
-{{ $styles := $styles | append (resources.Get "scss/main.scss" | toCSS) }}
-{{ $styles := $styles | resources.Concat "css/style.css" }}
+
+{{/* main style */}}
+{{ $styles = $styles | append (resources.Get "scss/main.scss" | toCSS) }}
+{{ $styles = $styles | resources.Concat "css/style.css" }}
 {{ $styles = $styles | resources.PostCSS }}
+
+{{ $stylesLazy = $stylesLazy | resources.Concat "css/style-lazy.css" }}
+{{ $stylesLazy = $stylesLazy | resources.PostCSS }}
+
 {{ if hugo.IsProduction }}
   {{ $styles = $styles | resources.ExecuteAsTemplate "css/style.css" . | minify | fingerprint | resources.PostProcess }}
+  {{ $stylesLazy = $stylesLazy | resources.ExecuteAsTemplate "css/style-lazy.css" . | minify | fingerprint | resources.PostProcess }}
 {{ else }}
   {{ $styles = $styles | resources.ExecuteAsTemplate "css/style.css" . }}
+  {{ $stylesLazy = $stylesLazy | resources.ExecuteAsTemplate "css/style-lazy.css" . }}
 {{ end }}
 
-
+{{/* styles */}}
 <link
   href="{{ $styles.RelPermalink }}"
   integrity="{{ $styles.Data.Integrity }}"
   rel="stylesheet" />
+
+{{/* styles lazy */}}
+<link
+  rel="stylesheet"
+  href="{{ $stylesLazy.RelPermalink }}"
+  integrity="{{ $stylesLazy.Data.Integrity }}"
+  media="print"
+  onload="this.media='all'; this.onload=null;" />
