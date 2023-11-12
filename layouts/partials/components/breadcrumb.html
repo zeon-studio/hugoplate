@@ -1,13 +1,13 @@
 {{ $context := .Context }}
 {{ $class := .Class }}
-{{ $base := site.BaseURL }}
+{{ $base := site.Home.Permalink }}
 
 
 <ul class="{{ $class }} inline-flex space-x-1 capitalize">
   <li>
     <a
       class="text-primary dark:text-darkmode-primary"
-      href="{{ $base | relLangURL }}">
+      href="{{ $base }}">
       {{ i18n "home" | default "Home" }}
     </a>
     <span class="inlin-block mr-1">/</span>
