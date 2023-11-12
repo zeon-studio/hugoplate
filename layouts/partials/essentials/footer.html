@@ -5,7 +5,7 @@
         <!-- navbar brand/logo -->
         <a
           class="navbar-brand inline-block"
-          href="{{ site.BaseURL | relLangURL }}">
+          href="{{ site.Home.Permalink }}">
           {{ partial "logo" }}
         </a>
       </div>
@@ -19,7 +19,7 @@
                 {{ end }}
                 href="{{ if findRE `^#` .URL }}
                   {{ if not $.IsHome }}
-                    {{ site.BaseURL | relLangURL }}
+                    {{ site.Home.Permalink }}
                   {{ end }}{{ .URL }}
                 {{ else }}
                   {{ .URL | relLangURL }}
