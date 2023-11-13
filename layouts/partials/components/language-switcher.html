@@ -2,7 +2,7 @@
 {{ $class := .Class }}
 {{ $context := .Context }}
 {{ $pageLang := $context.Lang }}
-{{ $base:= urls.Parse site.BaseURL }}
+{{ $base:= urls.Parse site.Home.Permalink }}
 {{ $siteLanguages := site.Home.AllTranslations }}
 {{ $pageLink := replace (replace $context.RelPermalink (add $pageLang "/") "") $base.Path "/" }}
 
