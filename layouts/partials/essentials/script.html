@@ -36,10 +36,11 @@
 
 {{/* scripts lazy */}}
 <script
+  defer
+  async
   crossorigin="anonymous"
   integrity="{{ $scriptsLazy.Data.Integrity }}"
-  src="{{ $scriptsLazy.RelPermalink }}"
-  defer></script>
+  src="{{ $scriptsLazy.RelPermalink }}"></script>
 
 <!-- progressive web app -->
 {{ partialCached "pwa.html" . }}
