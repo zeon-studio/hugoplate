@@ -122,7 +122,7 @@ notAlternative = true
 # CSS Plugins
 [[params.plugins.css]]
 link = "plugins/swiper/swiper-bundle.css"
-lazy = false
+lazy = true
 [[params.plugins.css]]
 link = "plugins/glightbox/glightbox.css"
 lazy = true

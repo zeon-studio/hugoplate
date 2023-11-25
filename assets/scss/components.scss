@@ -40,10 +40,10 @@ main {
 
 // swiper pagination
 .swiper-pagination-bullet {
-  @apply bg-theme-light dark:bg-darkmode-theme-light h-2.5 w-2.5 opacity-100;
+  @apply bg-theme-light dark:bg-darkmode-theme-light h-2.5 w-2.5 opacity-100 mx-1.5 #{!important};
 
   &-active {
-    @apply bg-primary dark:bg-darkmode-primary h-4 w-4;
+    @apply bg-primary dark:bg-darkmode-primary h-4 w-4 #{!important};
   }
 }
 
