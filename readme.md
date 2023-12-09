@@ -165,6 +165,8 @@ If you want to remove dark mode from your project, then you have to do it manual
 npm run remove-darkmode
 ```
 
+> **Note:** This command will work before running `project-setup` script. If you already run the `project-setup` command, then you have to run `npm run theme-setup` first, and then you can run this command. afterward, you can run `npm run project-setup` again.
+
 ---
 
 ## 🚀 Build And Deploy
@@ -212,7 +214,7 @@ Copyright (c) 2023 - Present, Designed & Developed by [Zeon Studio](https://zeon
 
 ---
 
-## 🖼️ Showcase 
+## 🖼️ Showcase
 
 List of projects people are building with **Hugoplate**! Have you built a project with Hugoplate? Submit it by creating a pull request and we'll feature it here!
 
