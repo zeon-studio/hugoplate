@@ -34,7 +34,6 @@
   </div>
 
   <!-- theme switcher -->
-  {{ if site.Params.theme_switcher }}
   <script>
     var darkMode = {{if eq site.Params.theme_default "dark"}}true{{else}}false{{end}};
 
@@ -60,6 +59,4 @@
       });
     });
   </script>
-  {{ end }}
-
 {{ end }}
