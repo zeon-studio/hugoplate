@@ -47,44 +47,6 @@
   @apply rounded-lg #{!important};
 }
 
-// search
-.search-wrapper {
-  .search-wrapper-content {
-    @apply dark:bg-darkmode-body;
-  }
-  input {
-    @apply dark:bg-darkmode-theme-light dark:text-darkmode-text dark:border-darkmode-border dark:focus:border-darkmode-primary focus:ring-0;
-  }
-  kbd {
-    @apply dark:bg-darkmode-theme-light;
-  }
-  .search-wrapper-body {
-    @apply dark:bg-darkmode-theme-light dark:shadow-none;
-  }
-  &.search-page {
-    .search-wrapper-body {
-      @apply dark:bg-transparent;
-    }
-  }
-  .search-result-info em {
-    @apply dark:text-white;
-  }
-  .search-result-item {
-    @apply dark:bg-darkmode-body dark:border-darkmode-border p-4;
-    .search-title {
-      @apply dark:text-darkmode-dark;
-    }
-    u {
-      @apply dark:text-darkmode-primary;
-    }
-    &:focus,
-    &.search-item-selected,
-    &:hover {
-      @apply dark:bg-darkmode-primary/10;
-    }
-  }
-}
-
 // slider
 .gallery-slider {
   @apply ml-0 #{!important};
