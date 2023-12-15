@@ -3,7 +3,7 @@
   {{ with .Params.banner }}
     <section class="section pt-14">
       <div class="container">
-        <div class="flex justify-center my-8 gap-12">
+        <div class="flex justify-center gap-12">
           <div class="lg:col-5 m-8 text-center justify-center flex flex-col ">
             <h1 class="mb-4">
               {{ .title | markdownify }}
@@ -136,6 +136,31 @@
     {{ end }}
   {{ end }}
   <!-- /Testimonials -->  */}}
+
+  <!--  Counter Section -->
+      <section class="section pt-14">
+  {{ with .Params.counter }}
+        <div class="container flex flex-row gap-12 justify-between">
+          <div class="justify-center flex flex-col align-middle text-center">
+            <p class="text-center text-9xl" id="counter_number">{{.events | markdownify}}</p>
+            <h3>EVENTS</h3>
+          </div>
+          <div class="justify-center flex flex-col align-middle text-center">
+            <p class="text-center text-9xl" id="counter_number">{{.members | markdownify}}</p>
+            <h3>MEMBERS</h3>
+          </div>
+          <div class="justify-center flex flex-col align-middle text-center">
+            <p class="text-center text-9xl" id="counter_number">{{.awards | markdownify}}</p>
+            <h3>AWARDS</h3>
+          </div>
+          <div class="justify-center flex flex-col align-middle text-center">
+            <p class="text-center text-9xl" id="counter_number">{{.years | markdownify}}</p>
+            <h3>YEARS</h3>
+          </div>
+        </div>
+        {{end}}
+      </section>
+  <!--  Counter Section -->
 {{ end }}
 
 

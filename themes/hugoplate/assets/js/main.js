@@ -14,6 +14,15 @@
     });
   });
 
+
+  //Counter
+  counterNumbers = document.querySelectorAll('#counter_number');
+  console.log(counterNumbers);
+  for (let index = 0; index < counterNumbers.length; index++) {
+    const element = counterNumbers[index];
+    element.innerHtml++;
+  }
+  
   // Testimonial Slider
   // ----------------------------------------
   new Swiper(".testimonial-slider", {

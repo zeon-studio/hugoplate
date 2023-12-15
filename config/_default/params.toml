@@ -13,7 +13,7 @@ logo_webp = true
 # logo text will only show when logo is missing.
 logo_text = "Microsoft Bahria University Club"
 # navbar fixed to top
-navbar_fixed = true
+navbar_fixed = false
 # theme-mode
 theme_switcher = true
 theme_default = "system" # available options [light/dark/system]

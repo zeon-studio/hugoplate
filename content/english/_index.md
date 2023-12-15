@@ -50,4 +50,11 @@ features:
       enable: false
       label: ""
       link: ""
+
+counter:
+  events: "20"
+  members: "20"
+  awards: "20"
+  years: "20"
+
 ---
