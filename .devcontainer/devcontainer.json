@@ -1,24 +1,51 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/kubernetes-helm
 {
-	"name": "Hugo",
-	"build": {
-		"dockerfile": "Dockerfile",
-		"args": {
-			"NODE_VERSION": "20",
-			"GO_VERSION": "1.21.4",
-			"HUGO_VERSION": "0.120.4"
-		}
+	"name": "Kubernetes - Local Configuration",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
+
+	"features": {
+		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
+			"enableNonRootDocker": "true",
+			"moby": "true"
+		},
+		"ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {
+			"version": "latest",
+			"helm": "latest",
+			"minikube": "none"
+		},
+		"./local-features/copy-kube-config": {}
 	},
-	"customizations": {
-		"vscode": {
-			"settings": {},
-			"extensions": [
-				"bradlc.vscode-tailwindcss",
-				"budparr.language-hugo-vscode",
-				"tamasfe.even-better-toml"
-			]
-		}
+
+	"remoteEnv": {
+		"SYNC_LOCALHOST_KUBECONFIG": "true"
 	},
-	"remoteUser": "node",
-	"postCreateCommand": "npm install && npm run dev:example",
-	"forwardPorts": [1313]
+
+	"initializeCommand": "cd .devcontainer && bash ensure-mount-sources",
+	"mounts": [
+		{
+			"source": "${env:HOME}${env:USERPROFILE}/.kube",
+			"target": "/usr/local/share/kube-localhost",
+			"type": "bind"
+		},
+		// Optional mount to also sync certs in your .minikube folder
+		{
+			"source": "${env:HOME}${env:USERPROFILE}/.minikube",
+			"target": "/usr/local/share/minikube-localhost",
+			"type": "bind"
+		}
+	]
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "kubectl version",
+
+	// Configure tool-specific properties.
+	// "customizations": {},
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
 }

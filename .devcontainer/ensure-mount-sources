@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# This Linux/macOS shell script ensures that the source mount points in devcontainer.json exist on the host.
+
+echo "Ensuring mount points exist..."
+mkdir -p "$HOME/.kube" "$HOME/.minikube"

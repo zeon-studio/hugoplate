@@ -1,2 +1,14 @@
-// DO NOT WRITE ANY STYLE IN THIS FILE
-// If you want to add your own styles, please write it in the `./assets/scss/custom.scss` file.
+// Add your own custom styles here
+
+@import url('https://fonts.googleapis.com/css2?family=Afacad&family=Young+Serif&display=swap');
+
+@font-face {
+    font-family: 'GiestVF';
+    src: url('/themes/hugoplate/assets/fonts/GeistVF.ttf');
+}
+
+
+// body , h1 , h2 , h3 , h4 , h5 , h6{
+//     font-family: 'Afacad';
+    
+// }
