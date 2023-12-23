@@ -52,9 +52,9 @@ features:
       link: ""
 
 counter:
-  events: "20"
-  members: "20"
-  awards: "20"
-  years: "20"
+  events: 20
+  members: 20
+  awards: 20
+  years: 100
 
 ---
