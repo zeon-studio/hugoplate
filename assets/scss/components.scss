@@ -50,7 +50,7 @@ main {
 // content style
 .content {
   @apply prose max-w-none;
-  @apply prose-headings:mb-[.3em] prose-headings:mt-[.6em];
+  @apply prose-headings:mb-[.3em] prose-headings:mt-[.6em] prose-headings:text-dark prose-headings:dark:text-darkmode-dark;
   @apply prose-h1:text-h1-sm md:prose-h1:text-h1;
   @apply prose-h2:text-h2-sm md:prose-h2:text-h2;
   @apply prose-h3:text-h3-sm md:prose-h3:text-h3;
