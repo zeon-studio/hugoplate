@@ -15,7 +15,7 @@ permissions:
 # Environment variables available to all jobs and steps in this workflow
 env:
   HUGO_ENV: production
-  HUGO_VERSION: "0.118.2"
+  HUGO_VERSION: "0.121.2"
   GO_VERSION: "1.20.5"
   NODE_VERSION: "18.15.0"
   TINA_CLIENT_ID: ${{ vars.TINA_CLIENT_ID }}

@@ -9,8 +9,8 @@
 </h2>
 
 <p align="center">
-  <a href="https://github.com/gohugoio/hugo/releases/tag/v0.118.2" alt="Contributors">
-    <img src="https://img.shields.io/static/v1?label=min-HUGO-version&message=0.118.2&color=f00&logo=hugo" />
+  <a href="https://github.com/gohugoio/hugo/releases/tag/v0.121.2" alt="Contributors">
+    <img src="https://img.shields.io/static/v1?label=min-HUGO-version&message=0.121.2&color=f00&logo=hugo" />
   </a>
 
   <a href="https://github.com/zeon-studio/hugoplate/blob/main/LICENSE">
@@ -148,6 +148,16 @@ You can change the social links from the `data/social.json` file. Add your socia
 ## 🛠 Advanced Usage
 
 We have added some custom scripts to make your life easier. You can use these scripts to help you with your development.
+
+### 👉 Update Theme
+
+If you want to update the theme, then you can use the following command. It will update the theme to the latest version.
+
+```bash
+npm run update-theme
+```
+
+> **Note:** This command will work after running `project-setup` script.
 
 ### 👉 Update Modules
 
