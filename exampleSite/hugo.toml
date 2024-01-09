@@ -148,6 +148,9 @@ lazy = false
 link = "plugins/swiper/swiper-bundle.js"
 lazy = false
 [[params.plugins.js]]
+link = "plugins/cookie.js"
+lazy = false
+[[params.plugins.js]]
 link = "plugins/glightbox/glightbox.js"
 lazy = true
 [[params.plugins.js]]
@@ -161,9 +164,6 @@ link = "js/tab.js"
 lazy = true
 [[params.plugins.js]]
 link = "js/modal.js"
-lazy = true
-[[params.plugins.js]]
-link = "plugins/cookie.js"
 lazy = true
 [[params.plugins.js]]
 link = "plugins/youtube-lite.js"
