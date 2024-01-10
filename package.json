@@ -15,6 +15,7 @@
     "remove-darkmode": "node ./scripts/removeDarkmode.js && yarn format",
     "project-setup": "node ./scripts/projectSetup.js",
     "theme-setup": "node ./scripts/themeSetup.js",
+    "update-theme": "node ./scripts/themeUpdate.js",
     "format": "prettier -w ."
   },
   "devDependencies": {
