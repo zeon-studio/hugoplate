@@ -13,7 +13,12 @@
             </p>
             {{ with .button }}
               {{ if .enable }}
-                <a class="btn btn-primary" href="{{ .link | absURL }}">
+                <a
+                  class="btn btn-primary"
+                  href="{{ .link | absURL }}"
+                  {{ if strings.HasPrefix .link `http` }}
+                    target="_blank" rel="noopener"
+                  {{ end }}>
                   {{ .label }}
                   <i class="fa fa-arrow-right pl-2"></i>
                 </a>
