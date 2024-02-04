@@ -31,6 +31,7 @@ const purgecss = {
     /visible/,
     /current/,
     /active/,
+    /mark/,
   ],
 };
 

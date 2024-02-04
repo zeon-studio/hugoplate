@@ -20,19 +20,21 @@
                 >{{ .Params.author }}
               </a>
             </li>
-            <li class="mr-4 inline-block">
-              <i class="fa-regular fa-folder mr-2"></i>
-              {{ $categories:= .Params.categories }}
-              {{ range $i,$p:= $categories }}
-                <a
-                  href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}/"
-                  class="ms-1"
-                  >{{ . | humanize }}{{ if ne $i (sub (len $categories) 1) }}
-                    {{ ", " }}
-                  {{ end }}
-                </a>
-              {{ end }}
-            </li>
+            {{ $categories:= .Params.categories }}
+            {{ if $categories }}
+              <li class="mr-4 inline-block">
+                <i class="fa-regular fa-folder mr-2"></i>
+                {{ range $i,$p:= $categories }}
+                  <a
+                    href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}/"
+                    class=""
+                    >{{ . | humanize }}{{ if ne $i (sub (len $categories) 1) }}
+                      {{ "," }}
+                    {{ end }}
+                  </a>
+                {{ end }}
+              </li>
+            {{ end }}
             <li class="mr-4 inline-block">
               <i class="fa-regular fa-clock mr-2"></i>
               {{ time.Format ":date_long" .PublishDate }}
@@ -42,23 +44,25 @@
             {{ .Content }}
           </div>
           <div class="row items-start justify-between">
-            <div class="lg:col-5 mb-10 flex items-center lg:mb-0">
-              <h5 class="mr-3">{{ i18n "tags" }} :</h5>
-              <ul>
-                {{ $tags:= .Params.tags }}
-                {{ range $i,$p:= $tags }}
-                  <li class="inline-block">
-                    <a
-                      class="bg-theme-light hover:bg-primary dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark m-1 block rounded px-3 py-1 hover:text-white"
-                      href="{{ `tags/` | relLangURL }}{{ . | urlize | lower }}/">
-                      {{ . | humanize }}
-                    </a>
-                  </li>
-                {{ end }}
-              </ul>
-            </div>
+            {{ $tags:= .Params.tags }}
+            {{ if $tags }}
+              <div class="lg:col-5 mb-10 flex items-center lg:mb-0">
+                <h5 class="mr-3">{{ i18n "tags" }} :</h5>
+                <ul>
+                  {{ range $i,$p:= $tags }}
+                    <li class="inline-block">
+                      <a
+                        class="bg-theme-light hover:bg-primary dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark m-1 block rounded px-3 py-1 hover:text-white"
+                        href="{{ `tags/` | relLangURL }}{{ . | urlize | lower }}/">
+                        {{ . | humanize }}
+                      </a>
+                    </li>
+                  {{ end }}
+                </ul>
+              </div>
+            {{ end }}
             <div class="lg:col-4 flex items-center">
-              {{ partial "social-share" (dict "Context" . "Class" "share-icons" "Title" (i18n "share") "Whatsapp" false "Telegram" false) }}
+              {{ partial "social-share" (dict "Context" . "Class" "share-icons" "Title" (i18n "share") "Whatsapp" false "Telegram" false "Linkedin" false "Pinterest" false "Tumblr" false "Vk" false) }}
             </div>
           </div>
           <!-- comments -->
