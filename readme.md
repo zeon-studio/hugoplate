@@ -69,7 +69,7 @@ We have included almost everything you need to start your Hugo project. Let's se
 - [PostCSS](https://postcss.org/)
 - [PurgeCSS](https://purgecss.com/)
 - [AutoPrefixer](https://autoprefixer.github.io/)
-- [Hugo Modules](https://gohugo.io/hugo-modules/)
+- [Hugo Modules](https://gohugo.io/hugo-modules/) by [Gethugothemes](https://gethugothemes.com/hugo-modules)
 - [Markdown](https://markdownguide.org/)
 - [Prettier](https://prettier.io/)
 - [Jshint](https://jshint.com/)
