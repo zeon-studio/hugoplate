@@ -17,7 +17,7 @@ env:
   HUGO_ENV: production
   HUGO_VERSION: "0.121.2"
   GO_VERSION: "1.20.5"
-  NODE_VERSION: "18.15.0"
+  NODE_VERSION: "20.0.0"
   TINA_CLIENT_ID: ${{ vars.TINA_CLIENT_ID }}
   TINA_TOKEN: ${{ vars.TINA_TOKEN }}
 
