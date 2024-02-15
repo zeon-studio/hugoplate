@@ -121,9 +121,9 @@ This is a simple warning.
 {{< tabs >}}
 {{< tab "Tab 1" >}}
 
-{{< notice "note" >}}
-This is a simple note.
-{{< /notice >}}
+#### Hey There, I am a tab
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
 {{< /tab >}}
 
