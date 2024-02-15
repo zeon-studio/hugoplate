@@ -14,6 +14,11 @@
   }
 }
 
+// notice
+.notice {
+  @apply rounded-lg;
+}
+
 // tab
 .tab {
   @apply border-border dark:border-darkmode-border overflow-hidden rounded-lg border;
