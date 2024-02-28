@@ -16,7 +16,7 @@
         <a
           class="text-primary dark:text-darkmode-primary"
           href="{{ .RelPermalink }}">
-          {{ .Title }}
+          {{ i18n (printf "%s" (lower .Title)) | default .Title }}
         </a>
         <span class="inlin-block mr-1">/</span>
       </li>
@@ -24,7 +24,7 @@
   {{ end }}
   <li>
     <span class="text-primary dark:text-darkmode-primary">
-      {{ $context.Title }}
+      {{ i18n (printf "%s" (lower $context.Title)) | default $context.Title }}
     </span>
   </li>
 </ul>
