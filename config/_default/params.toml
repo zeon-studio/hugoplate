@@ -38,7 +38,7 @@ preloader = "" # use jpg, png, svg or gif format.
 # Navigation button
 [navigation_button]
 enable = true
-label = "get a quote"
+label = "contact me"
 link = "contact"
 
 # search
