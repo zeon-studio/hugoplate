@@ -11,12 +11,12 @@ logo_height = "32px"
 # if logo_webp set false, will not generate WEBP version of logo | default is true
 logo_webp = true
 # logo text will only show when logo is missing.
-logo_text = "Hugoplate"
+logo_text = "Ádám Sárpátki"
 # navbar fixed to top
 navbar_fixed = true
 # theme-mode
 theme_switcher = true
-theme_default = "system" # available options [light/dark/system]
+theme_default = "light" # available options [light/dark/system]
 # Main Sections
 mainSections = ["blog"]
 # contact form action
@@ -27,7 +27,7 @@ google_adsense = ""     # example: ca-pub-xxxxxxxxxxxxxxxx
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>"
 custom_script = ""
 # copyright
-copyright = "Designed & Developed by [Zeon Studio](https://zeon.studio)"
+copyright = "2024 © Ádám Sárpátki | Hugoplate theme designed & developed by [Zeon Studio](https://zeon.studio)"
 
 # Preloader
 # preloader module: https://github.com/gethugothemes/hugo-modules/tree/master/components/preloader
