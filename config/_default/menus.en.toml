@@ -21,6 +21,16 @@ name = "Categories"
 url = "categories/"
 weight = 5
 
+[[main]]
+name = "CV"
+url = "curriculumvitae/"
+weight = 6
+
+[[main]]
+name = "Publications"
+url = "publications/"
+weight = 7
+
 # footer menu
 [[footer]]
 name = "About"
