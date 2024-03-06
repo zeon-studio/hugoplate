@@ -1,0 +1,14 @@
+{
+  "eslint.validate": ["javascript", "typescript"],
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "css.lint.unknownAtRules": "ignore",
+  "files.exclude": {
+    "**/*.js": {"when": "$(basename).ts"},
+    "**/*.d.ts": true
+  },
+  "css.customData": [".vscode/tailwind.json"],
+  "scss.lint.unknownAtRules": "ignore"
+}
