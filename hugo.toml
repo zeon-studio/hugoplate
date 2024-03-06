@@ -143,30 +143,31 @@ link = "plugins/font-awesome/v6/icons.css"
 lazy = true
 
 # JS Plugins
-[[params.plugins.js]]
-link = "js/search.js"
-lazy = false
-[[params.plugins.js]]
-link = "plugins/swiper/swiper-bundle.js"
-lazy = false
-[[params.plugins.js]]
-link = "plugins/cookie.js"
-lazy = false
-[[params.plugins.js]]
-link = "plugins/glightbox/glightbox.js"
-lazy = true
-[[params.plugins.js]]
-link = "js/gallery-slider.js"
-lazy = true
-[[params.plugins.js]]
-link = "js/accordion.js"
-lazy = true
-[[params.plugins.js]]
-link = "js/tab.js"
-lazy = true
-[[params.plugins.js]]
-link = "js/modal.js"
-lazy = true
-[[params.plugins.js]]
-link = "plugins/youtube-lite.js"
-lazy = true
+# Disable all initially until we actually use them
+# [[params.plugins.js]]
+# link = "js/search.js"
+# lazy = false
+# [[params.plugins.js]]
+# link = "plugins/swiper/swiper-bundle.js"
+# lazy = false
+# [[params.plugins.js]]
+# link = "plugins/cookie.js"
+# lazy = false
+# [[params.plugins.js]]
+# link = "plugins/glightbox/glightbox.js"
+# lazy = true
+# [[params.plugins.js]]
+# link = "js/gallery-slider.js"
+# lazy = true
+# [[params.plugins.js]]
+# link = "js/accordion.js"
+# lazy = true
+# [[params.plugins.js]]
+# link = "js/tab.js"
+# lazy = true
+# [[params.plugins.js]]
+# link = "js/modal.js"
+# lazy = true
+# [[params.plugins.js]]
+# link = "plugins/youtube-lite.js"
+# lazy = true
