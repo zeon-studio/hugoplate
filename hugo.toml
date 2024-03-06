@@ -126,12 +126,12 @@ notAlternative = true
 ############################# Plugins ##############################
 
 # CSS Plugins
-[[params.plugins.css]]
-link = "plugins/swiper/swiper-bundle.css"
-lazy = true
-[[params.plugins.css]]
-link = "plugins/glightbox/glightbox.css"
-lazy = true
+# [[params.plugins.css]]
+# link = "plugins/swiper/swiper-bundle.css"
+# lazy = true
+# [[params.plugins.css]]
+# link = "plugins/glightbox/glightbox.css"
+# lazy = true
 [[params.plugins.css]]
 link = "plugins/font-awesome/v6/brands.css"
 lazy = true
@@ -143,10 +143,9 @@ link = "plugins/font-awesome/v6/icons.css"
 lazy = true
 
 # JS Plugins
-# Disable all initially until we actually use them
-# [[params.plugins.js]]
-# link = "js/search.js"
-# lazy = false
+[[params.plugins.js]]
+link = "js/search.js"
+lazy = false
 # [[params.plugins.js]]
 # link = "plugins/swiper/swiper-bundle.js"
 # lazy = false
