@@ -126,9 +126,9 @@ notAlternative = true
 ############################# Plugins ##############################
 
 # CSS Plugins
-# [[params.plugins.css]]
-# link = "plugins/swiper/swiper-bundle.css"
-# lazy = true
+[[params.plugins.css]]
+link = "plugins/swiper/swiper-bundle.css"
+lazy = true
 # [[params.plugins.css]]
 # link = "plugins/glightbox/glightbox.css"
 # lazy = true
@@ -146,9 +146,9 @@ lazy = true
 [[params.plugins.js]]
 link = "js/search.js"
 lazy = false
-# [[params.plugins.js]]
-# link = "plugins/swiper/swiper-bundle.js"
-# lazy = false
+[[params.plugins.js]]
+link = "plugins/swiper/swiper-bundle.js"
+lazy = true
 # [[params.plugins.js]]
 # link = "plugins/cookie.js"
 # lazy = false

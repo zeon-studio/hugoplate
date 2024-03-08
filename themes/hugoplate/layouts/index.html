@@ -1,6 +1,47 @@
 {{ define "main" }}
+
+<section class="container grid justify-items-center pt-[64px]">
+  <div class="w-80">
+    {{ partial "image.html" (dict "Src" .Params.logo "Class" "dark:hidden" ) }}
+    {{ partial "image.html" (dict "Src" .Params.logoDark "Class" "hidden dark:block"  ) }}
+  </div>
+  <h1 class="mt-6 text-2xl font-mono">Maison autonome dans les Hautes-Pyrénées</h1>
+</section>
+
+<section class="mt-16">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="swiper home-photos-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div
+                class="bg-theme-light dark:bg-darkmode-theme-light rounded-lg px-7 py-7">
+                {{ partial "image" (dict "Src" "/images/grange/01.jpg" "Webp" false "Class" "rounded-md" "Alt" "Grange foraine") }}
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="bg-theme-light dark:bg-darkmode-theme-light rounded-lg px-7 py-7">
+                {{ partial "image" (dict "Src" "/images/grange/02.jpg" "Webp" false "Class" "rounded-md" "Alt" "Grange foraine") }}
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="bg-theme-light dark:bg-darkmode-theme-light rounded-lg px-7 py-7">
+                {{ partial "image" (dict "Src" "/images/grange/03.jpg" "Webp" false "Class" "rounded-md" "Alt" "Grange foraine") }}
+              </div>
+            </div>
+          </div>
+
+          <div class="photos-slider-pagination mt-9 mb-16 flex items-center justify-center text-center"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
   <!-- Banner -->
-  {{ with .Params.banner }}
+  {{/*  {{ with .Params.banner }}
     <section class="section pt-14">
       <div class="container">
         <div class="row justify-center">
@@ -31,11 +72,11 @@
         </div>
       </div>
     </section>
-  {{ end }}
+  {{ end }}  */}}
   <!-- /Banner -->
 
   <!-- Features -->
-  {{ range $i, $e:= .Params.features }}
+  {{/*  {{ range $i, $e:= .Params.features }}
     <section class="section-sm {{ if (modBool $i 2) }}bg-gradient{{ end }}">
       <div class="container">
         <div class="row items-center justify-between">
@@ -75,11 +116,11 @@
         </div>
       </div>
     </section>
-  {{ end }}
+  {{ end }}  */}}
   <!-- /Features -->
 
   <!-- Testimonials -->
-  {{ with site.GetPage "sections/testimonial" }}
+  {{/*  {{ with site.GetPage "sections/testimonial" }}
     {{ if .Params.enable }}
       <section class="section">
         <div class="container">
@@ -139,6 +180,6 @@
         </div>
       </section>
     {{ end }}
-  {{ end }}
+  {{ end }}  */}}
   <!-- /Testimonials -->
 {{ end }}
