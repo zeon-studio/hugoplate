@@ -2,7 +2,7 @@
   "main": [
     {
       "name": "instagram",
-      "icon": "fab fa-instagram",
+      "icon": "fab fa-instagram fa-lg",
       "link": "https://www.instagram.com/"
     }
   ]

@@ -31,6 +31,9 @@ module.exports = {
   content: ["./hugo_stats.json"],
   safelist: [{ pattern: /^swiper-/ }],
   darkMode: "class",
+  corePlugins: {
+    divideStyle: true,
+  },
   theme: {
     screens: {
       sm: "540px",

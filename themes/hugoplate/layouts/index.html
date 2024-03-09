@@ -1,45 +1,93 @@
 {{ define "main" }}
 
-<section class="container grid justify-items-center pt-[64px]">
-  <div class="w-80">
-    {{ partial "image.html" (dict "Src" .Params.logo "Class" "dark:hidden" ) }}
-    {{ partial "image.html" (dict "Src" .Params.logoDark "Class" "hidden dark:block"  ) }}
-  </div>
-  <h1 class="mt-6 text-2xl font-mono">Maison autonome dans les Hautes-Pyrénées</h1>
-</section>
+  {{/*  Hero  */}}
+  <section class="container grid justify-items-center pt-[64px]">
+    <div class="w-80">
+      {{ partial "image.html" (dict "Src" .Params.logo "Class" "dark:hidden" ) }}
+      {{ partial "image.html" (dict "Src" .Params.logoDark "Class" "hidden dark:block"  ) }}
+    </div>
+    <h1 class="mt-6 text-2xl font-mono">{{.Params.banner.title}}</h1>
+    {{/*  <h1 class="mt-6 text-2xl font-mono">Maison autonome dans les Hautes-Pyrénées</h1>  */}}
+  </section>
 
-<section class="mt-16">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="swiper home-photos-slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div
-                class="bg-theme-light dark:bg-darkmode-theme-light rounded-lg px-7 py-7">
-                {{ partial "image" (dict "Src" "/images/grange/01.jpg" "Webp" false "Class" "rounded-md" "Alt" "Grange foraine") }}
-              </div>
+  {{/*  Photo slider  */}}
+  <section class="mt-16">
+    <div class="container">
+      <div class="swiper home-photos-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div
+              class="bg-theme-light dark:bg-darkmode-theme-light rounded-lg px-7 py-7">
+              {{ partial "image" (dict "Src" "/images/grange/01.jpg" "Webp" false "Class" "rounded-md" "Alt" "Grange foraine") }}
             </div>
-            <div class="swiper-slide">
-              <div
-                class="bg-theme-light dark:bg-darkmode-theme-light rounded-lg px-7 py-7">
-                {{ partial "image" (dict "Src" "/images/grange/02.jpg" "Webp" false "Class" "rounded-md" "Alt" "Grange foraine") }}
-              </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="bg-theme-light dark:bg-darkmode-theme-light rounded-lg px-7 py-7">
+              {{ partial "image" (dict "Src" "/images/grange/02.jpg" "Webp" false "Class" "rounded-md" "Alt" "Grange foraine") }}
             </div>
-            <div class="swiper-slide">
-              <div
-                class="bg-theme-light dark:bg-darkmode-theme-light rounded-lg px-7 py-7">
-                {{ partial "image" (dict "Src" "/images/grange/03.jpg" "Webp" false "Class" "rounded-md" "Alt" "Grange foraine") }}
-              </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="bg-theme-light dark:bg-darkmode-theme-light rounded-lg px-7 py-7">
+              {{ partial "image" (dict "Src" "/images/grange/03.jpg" "Webp" false "Class" "rounded-md" "Alt" "Grange foraine") }}
+            </div>
+          </div>
+        </div>
+
+        <div class="photos-slider-pagination mt-9 flex items-center justify-center text-center"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-16 md:mt-24 lg:mt-32 mb-16">
+    <div class="container pb-16">
+      <div class="grid grid-cols-3 gap-0">
+        <div class="col-span-3 md:col-start-2 md:col-span-2">
+          <div class="grid grid-cols-1 divide-y divide-slate-100 dark:divide-slate-800 gap-6">
+            <div class="grid grid-cols-12 gap-4">
+                <div class="col-span-3">
+                  <div class="text-lg font-mono">5 sept.</div>
+                  <span class="text-xs font-mono">2024</span>
+                </div>
+                <div class="col-span-9">
+                  <h2 class="text-lg md:text-2xl font-mono">Découverte du lieu</h2>
+                  <p class="mt-4">Dans ce premier post vous allez découvrir notre découverte de ce lieu magique.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-12 gap-4 pt-6">
+                <div class="col-span-3">
+                  <div class="text-lg font-mono">5 sept.</div>
+                  <span class="text-xs font-mono">2024</span>
+                </div>
+                <div class="col-span-9">
+                  <h2 class="text-lg md:text-2xl font-mono">Découverte du lieu</h2>
+                  <p class="mt-4">Dans ce premier post vous allez découvrir notre découverte de ce lieu magique.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-12 gap-4 pt-6">
+                <div class="col-span-3">
+                  <div class="text-lg font-mono">5 sept.</div>
+                  <span class="text-xs font-mono">2024</span>
+                </div>
+                <div class="col-span-9">
+                  <h2 class="text-lg md:text-2xl font-mono">Découverte du lieu</h2>
+                  <p class="mt-4">Dans ce premier post vous allez découvrir notre découverte de ce lieu magique.</p>
+                </div>
             </div>
           </div>
 
-          <div class="photos-slider-pagination mt-9 mb-16 flex items-center justify-center text-center"></div>
+          <a class="btn btn-outline-primary btn-sm mt-8" href="{{ "blog/" | relLangURL }}">
+            {{ i18n "all_blog_posts" }}
+          </a>
+
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
   <!-- Banner -->
   {{/*  {{ with .Params.banner }}
     <section class="section pt-14">
