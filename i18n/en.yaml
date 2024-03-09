@@ -33,3 +33,12 @@
 
 - id: all_blog_posts
   translation: All blog posts
+
+- id: help_navigate
+  translation: to navigate
+
+- id: help_select
+  translation: to select
+
+- id: help_close
+  translation: to close

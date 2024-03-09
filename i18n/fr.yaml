@@ -29,10 +29,19 @@
   translation: Aucun résultats pour
 
 - id: empty_search_results_placeholder
-  translation: Ecris quelque chose pour chercher..
+  translation: Ecris quelques charactères pour commencer la recherche..
 
 - id: all_blog_posts
   translation: Tous les articles
 
 - id: last_posts
   translation: Derniers articles
+
+- id: help_navigate
+  translation: pour naviguer
+
+- id: help_select
+  translation: pour sélectionner
+
+- id: help_close
+  translation: pour fermer
