@@ -6,23 +6,35 @@
 {{ $siteLanguages := site.Home.AllTranslations }}
 {{ $pageLink := replace (replace $context.RelPermalink (add $pageLang "/") "") $base.Path "/" }}
 
+<script>
+window.navigateToHome = (lang) => {
+  location = "/" + lang;
+}
+</script>
+
 {{ if $context.IsTranslated }}
-  <select class="{{ $class }}" onchange="location = this.value">
+  <select  class="{{ $class }}" onchange="navigateToHome(this.value)">
     {{ range $siteLanguages }}
       {{ if eq (string $pageLang) (string .Language) }}
         <option
           id="{{ .Language }}"
-          value="{{ replace (add .RelPermalink $pageLink) `//` `/` }}"
+          value="{{ .Language }}"
           selected>
           {{ .Language.LanguageName }}
         </option>
-      {{ else }}
+        {{ else }}
         <option
-          id="{{ .Language }}"
-          value="{{ replace (add .RelPermalink $pageLink) `//` `/` }}">
-          {{ .Language.LanguageName }}
-        </option>
+        id="{{ .Language }}"
+        value="{{ .Language }}">
+        {{ .Language.LanguageName }}
+      </option>
       {{ end }}
-    {{ end }}
+      {{ end }}
   </select>
 {{ end }}
+
+{{/*  Note: previously, the value was the current page with the language code so we
+can see the page translated. The problem is that some URLs are translated and
+we can't use that logic as we get a 404 error. For that reason, for now we navigate
+to the home page when switching language.  */}}
+{{/*  value="{{ replace (add .RelPermalink $pageLink) `//` `/` }}"  */}}

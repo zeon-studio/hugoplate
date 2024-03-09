@@ -1,15 +1,7 @@
 <footer class="bg-theme-light dark:bg-darkmode-theme-light">
   <div class="container">
-    <div class="row items-center py-10">
-      <div class="lg:col-3 mb-8 text-center lg:mb-0 lg:text-left">
-        <!-- navbar brand/logo -->
-        <a
-          class="navbar-brand inline-block"
-          href="{{ site.Home.RelPermalink }}">
-          {{ partial "logo" }}
-        </a>
-      </div>
-      <div class="lg:col-6 mb-8 text-center lg:mb-0">
+    <div class="row items-center py-10 justify-between">
+      <div class="lg:col-6 text-center lg:text-left">
         <ul>
           {{ range site.Menus.footer }}
             <li class="m-3 inline-block">
@@ -19,10 +11,10 @@
                 {{ end }}
                 href="{{ if findRE `^#` .URL }}
                   {{ if not $.IsHome }}
-                    {{ site.Home.RelPermalink }}
+                    {{- site.Home.RelPermalink -}}
                   {{ end }}{{ .URL }}
                 {{ else }}
-                  {{ .URL | relLangURL }}
+                  {{- .URL | relLangURL -}}
                 {{ end }}"
                 >{{ .Name }}</a
               >
@@ -30,7 +22,7 @@
           {{ end }}
         </ul>
       </div>
-      <div class="lg:col-3 mb-8 text-center lg:mb-0 lg:mt-0 lg:text-right">
+      <div class="lg:col-3 text-center lg:mt-0 lg:text-right">
         <ul class="social-icons">
           {{ range site.Data.social.main }}
             <li>
