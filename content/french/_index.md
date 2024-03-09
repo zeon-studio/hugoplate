@@ -1,7 +1,7 @@
 ---
 # Banner
 banner:
-  title: "Autonomous house in the French Hautes-Pyrénées"
+  title: "Maison autonome dans les Hautes-Pyrénées"
   content: ""
 
   button:

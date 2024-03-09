@@ -30,3 +30,6 @@
 
 - id: empty_search_results_placeholder
   translation: Type something to search..
+
+- id: all_blog_posts
+  translation: All blog posts

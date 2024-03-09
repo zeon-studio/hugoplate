@@ -1,0 +1,33 @@
+############# English navigation ##############
+
+# main menu
+[[main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[main]]
+name = "Le projet"
+url = "le-projet/"
+weight = 2
+
+[[main]]
+name = "Blog"
+url = "blog/"
+weight = 3
+
+# footer menu
+[[footer]]
+name = "Le projet"
+url = "le-projet/"
+weight = 1
+
+[[footer]]
+name = "Blog"
+url = "blog/"
+weight = 2
+
+[[footer]]
+name = "Catégories"
+url = "categories/"
+weight = 3
