@@ -2,7 +2,7 @@
 # Banner
 banner:
   title: "Autonomous house in the French Hautes-Pyrénées"
-  content: "We are embarking on the adventure of building a 100% autonomous house in the heart of nature. <br>Follow our adventure and discover the secrets of ecological construction."
+  content: "We are embarking on the adventure of building a 100% autonomous house in the heart of nature. <br>Follow our adventure and discover the secrets of ecological construction!"
 
   button:
     enable: true

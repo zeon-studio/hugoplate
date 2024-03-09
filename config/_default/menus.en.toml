@@ -27,7 +27,7 @@ name = "Blog"
 url = "blog/"
 weight = 2
 
-[[footer]]
-name = "Categories"
-url = "categories/"
-weight = 3
+# [[footer]]
+# name = "Categories"
+# url = "categories/"
+# weight = 3

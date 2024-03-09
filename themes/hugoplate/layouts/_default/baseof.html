@@ -15,7 +15,7 @@
     {{ partialCached "essentials/style.html" . }}
   </head>
 
-  <body>
+  <body class="flex flex-col min-h-svh">
     <!-- cache partial only in production -->
     {{ if hugo.IsProduction }}
       {{ partialCached "preloader.html" . }}
