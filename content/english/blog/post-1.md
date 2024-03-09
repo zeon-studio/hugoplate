@@ -1,5 +1,5 @@
 ---
-title: "How it all started"
+title: "Discovery of the land"
 meta_title: ""
 description: "So how did we get here?"
 date: 2022-04-04T05:00:00Z

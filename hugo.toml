@@ -18,6 +18,7 @@ hasCJKLanguage = false #  If hasCJKLanguage true, auto-detect Chinese/Japanese/K
 # default language
 defaultContentLanguage = 'fr'
 defaultContentLanguageInSubdir = false
+removePathAccents = true
 
 ########################### Services #############################
 [services]

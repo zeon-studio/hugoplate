@@ -23,7 +23,7 @@
   translation: Partager
 
 - id: search_input_placeholder
-  translation: Chercher articles ...
+  translation: Chercher un article ...
 
 - id: no_results_for
   translation: Aucun résultats pour
@@ -33,3 +33,6 @@
 
 - id: all_blog_posts
   translation: Tous les articles
+
+- id: last_posts
+  translation: Derniers articles

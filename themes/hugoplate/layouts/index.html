@@ -7,11 +7,11 @@
       {{ partial "image.html" (dict "Src" .Params.logoDark "Class" "hidden dark:block"  ) }}
     </div>
     <h1 class="mt-6 text-2xl font-mono">{{.Params.banner.title}}</h1>
-    {{/*  <h1 class="mt-6 text-2xl font-mono">Maison autonome dans les Hautes-Pyrénées</h1>  */}}
+    <p class="mt-4 text-center">{{.Params.banner.content  | safeHTML}}</p>
   </section>
 
   {{/*  Photo slider  */}}
-  <section class="mt-16">
+  <section class="section">
     <div class="container">
       <div class="swiper home-photos-slider">
         <div class="swiper-wrapper">
@@ -40,48 +40,34 @@
     </div>
   </section>
 
-  <section class="mt-16 md:mt-24 lg:mt-32 mb-16">
+  <section class="section pt-0">
     <div class="container pb-16">
       <div class="grid grid-cols-3 gap-0">
         <div class="col-span-3 md:col-start-2 md:col-span-2">
           <div class="grid grid-cols-1 divide-y divide-slate-100 dark:divide-slate-800 gap-6">
-            <div class="grid grid-cols-12 gap-4">
-                <div class="col-span-3">
-                  <div class="text-lg font-mono">5 sept.</div>
-                  <span class="text-xs font-mono">2024</span>
-                </div>
-                <div class="col-span-9">
-                  <h2 class="text-lg md:text-2xl font-mono">Découverte du lieu</h2>
-                  <p class="mt-4">Dans ce premier post vous allez découvrir notre découverte de ce lieu magique.</p>
-                </div>
-            </div>
+            {{ $totalPages := len (where .Site.RegularPages "Section" "blog") }}
 
-            <div class="grid grid-cols-12 gap-4 pt-6">
+            {{ range $i, $v := where .Site.RegularPages "Section" "blog" | first 3 }}
+              {{ $t := time.AsTime .Date }}
+              <div class="grid grid-cols-12 gap-4 {{if ne $i 0 }}pt-6{{end}}">
                 <div class="col-span-3">
-                  <div class="text-lg font-mono">5 sept.</div>
-                  <span class="text-xs font-mono">2024</span>
+                  <div class="text-lg font-mono">{{.Date | time.Format ":date_medium"}}</div>
                 </div>
                 <div class="col-span-9">
-                  <h2 class="text-lg md:text-2xl font-mono">Découverte du lieu</h2>
-                  <p class="mt-4">Dans ce premier post vous allez découvrir notre découverte de ce lieu magique.</p>
+                  <a href="{{ .RelPermalink }}">
+                    <h2 class="text-lg md:text-2xl font-mono">{{ .Title }}</h2>
+                  </a>
+                  <p class="mt-4">{{ .Summary }}</p>
                 </div>
             </div>
-
-            <div class="grid grid-cols-12 gap-4 pt-6">
-                <div class="col-span-3">
-                  <div class="text-lg font-mono">5 sept.</div>
-                  <span class="text-xs font-mono">2024</span>
-                </div>
-                <div class="col-span-9">
-                  <h2 class="text-lg md:text-2xl font-mono">Découverte du lieu</h2>
-                  <p class="mt-4">Dans ce premier post vous allez découvrir notre découverte de ce lieu magique.</p>
-                </div>
-            </div>
+            {{ end }}
           </div>
 
-          <a class="btn btn-outline-primary btn-sm mt-8" href="{{ "blog/" | relLangURL }}">
-            {{ i18n "all_blog_posts" }}
-          </a>
+          {{ if gt $totalPages 3 }}
+              <a class="btn btn-outline-primary btn-sm mt-8" href="{{ "blog/" | relLangURL }}">
+                {{ i18n "all_blog_posts" }}
+              </a>
+            {{ end }}
 
         </div>
       </div>

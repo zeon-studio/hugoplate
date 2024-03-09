@@ -1,14 +1,17 @@
 ---
-title: "How it all started"
+title: "Découverte du lieu"
 meta_title: ""
 description: "So how did we get here?"
-date: 2022-04-04T05:00:00Z
+date: 2024-03-01T07:30:00Z
 image: "/images/image-placeholder.png"
-categories: ["Renovation"]
+categories: ["Le projet"]
 author: "Sébastien"
-tags: ["renovation"]
+tags: ["découverte"]
 draft: false
+# summary: "Ici on peut overrider le summary de l'article."
 ---
+
+Texte d'introduction qui explique la découverte du lieu.
 
 Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.
 

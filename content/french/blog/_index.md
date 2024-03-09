@@ -1,5 +1,5 @@
 ---
 title: "Blog Posts"
 meta_title: ""
-description: "We'll share our thoughts, ideas, and experiences here."
+description: "Nous partageons notre expérience de rénovation de notre maison autonome dans les Hautes-Pyrénées."
 ---

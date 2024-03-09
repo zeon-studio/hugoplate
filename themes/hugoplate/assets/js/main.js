@@ -15,22 +15,31 @@
   });
 
   const initHomeSlider = () => {
-    const swiper = new Swiper(".home-photos-slider", {
-      spaceBetween: 24,
-      loop: true,
-      pagination: {
-        el: ".photos-slider-pagination",
-        type: "bullets",
-        clickable: true,
-      },
-    });
-  };
+    // Wait up to 30 seconds for the Swiper to load as it loads asynchronously
+    let counter = 0;
+    const interval = setInterval(() => {
+      if (typeof Swiper !== "undefined") {
+        clearInterval(interval);
 
-  // Testimonial Slider
-  // ----------------------------------------
-  document.addEventListener("DOMContentLoaded", () => {
-    setTimeout(() => {
-      initHomeSlider();
+        new Swiper(".home-photos-slider", {
+          spaceBetween: 24,
+          loop: true,
+          pagination: {
+            el: ".photos-slider-pagination",
+            type: "bullets",
+            clickable: true,
+          },
+        });
+      } else {
+        counter++;
+        if (counter >= 300) {
+          clearInterval(interval);
+        }
+      }
     }, 100);
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    initHomeSlider();
   });
 })();

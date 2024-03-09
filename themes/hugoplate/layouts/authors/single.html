@@ -35,14 +35,19 @@
         </div>
       </div>
 
+      {{ $totalPosts := len (where (where site.RegularPages "Section" "blog" ) "Params.author" "==" .Title) }}
+
+      {{ if gt $totalPosts 0 }}
       <div class="row pb-16 pt-14">
-        {{ $filterByAuthor := where site.RegularPages "Params.author" "==" .Title }}
+        <h2 class="mb-8">{{ i18n "last_posts" }}</h2>
+        {{ $filterByAuthor := where site.RegularPages "Params.author" "==" .Title | first 3 }}
         {{ range $filterByAuthor }}
           <div class="md:col-6 lg:col-4 mb-12">
             {{ partial "components/blog-card" . }}
           </div>
         {{ end }}
       </div>
+      {{ end }}
     </div>
   </section>
 {{ end }}

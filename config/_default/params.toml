@@ -58,7 +58,7 @@ show_categories = true
 [metadata]
 keywords = ["grange", "foraine", "barn", "autonomous", "house", "offgrid", "pyrenees"]
 description = "An autonomous house in the Pyrenees"
-author = "seb"
+author = "Sébastien"
 image = "images/og-image.png"
 
 

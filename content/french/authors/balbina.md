@@ -1,6 +1,6 @@
 ---
-title: William Jacob
-email: williamjacob@email.com
+title: Balbina
+email: balbina@email.com
 image: "/images/avatar.png"
 description: this is meta description
 social:
@@ -16,5 +16,7 @@ social:
     icon: fa-brands fa-linkedin
     link: https://linkedin.com
 ---
+
+Hey! I'm Balbina :) 
 
 lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostr navigation et dolore magna aliqua.
