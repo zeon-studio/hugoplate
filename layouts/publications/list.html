@@ -1,94 +1,13 @@
 {{ define "main" }}
-  <section class="section pt-7">
+  <section class="section-sm">
     <div class="container">
       <div class="justify-center row">
-        <article class="lg:col-10">
-          {{ $image:= .Params.image }}
-          {{ if $image }}
-            <div class="mb-10">
-              {{ partial "image" (dict "Src" $image "Alt" .Title "Class" "w-full rounded") }}
-            </div>
-          {{ end }}
-          <h1 class="mb-4 h2">
-            {{ .Title }}
-          </h1>
-          <ul class="mb-4">
-            <li class="inline-block mr-4">
-              <a
-                href="{{ `authors/` | relLangURL }}{{ .Params.Author | urlize }}/">
-                <i class="mr-2 fa-regular fa-circle-user"></i
-                >{{ .Params.author }}
-              </a>
-            </li>
-            {{ $categories:= .Params.categories }}
-            {{ if $categories }}
-              <li class="inline-block mr-4">
-                <i class="mr-2 fa-regular fa-folder"></i>
-                {{ range $i,$p:= $categories }}
-                  <a
-                    href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}/"
-                    class=""
-                    >{{ . | humanize }}{{ if ne $i (sub (len $categories) 1) }}
-                      {{ "," }}
-                    {{ end }}
-                  </a>
-                {{ end }}
-              </li>
-            {{ end }}
-            <li class="inline-block mr-4">
-              <i class="mr-2 fa-regular fa-clock"></i>
-              {{ time.Format ":date_long" .PublishDate }}
-            </li>
-          </ul>
-          <div class="mb-10 content">
-            {{ .Content }}
-          </div>
-          <div class="items-start justify-between row">
-            {{ $tags:= .Params.tags }}
-            {{ if $tags }}
-              <div class="flex items-center mb-10 lg:col-5 lg:mb-0">
-                <h5 class="mr-3">{{ i18n "tags" }} :</h5>
-                <ul>
-                  {{ range $i,$p:= $tags }}
-                    <li class="inline-block">
-                      <a
-                        class="block px-3 py-1 m-1 rounded bg-theme-light hover:bg-primary dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark hover:text-white"
-                        href="{{ `tags/` | relLangURL }}{{ . | urlize | lower }}/">
-                        {{ . | humanize }}
-                      </a>
-                    </li>
-                  {{ end }}
-                </ul>
-              </div>
-            {{ end }}
-            <div class="flex items-center lg:col-4">
-              {{ partial "social-share" (dict "Context" . "Class" "share-icons" "Title" (i18n "share") "Whatsapp" false "Telegram" false "Linkedin" false "Pinterest" false "Tumblr" false "Vk" false) }}
-            </div>
-          </div>
-          <!-- comments -->
-          {{ if site.Config.Services.Disqus.Shortname }}
-            <div class="mt-20">
-              {{ template "_internal/disqus.html" . }}
-            </div>
-          {{ end }}
-        </article>
-      </div>
-
-      <!-- Related posts -->
-      {{ $related := (where site.RegularPages "Section" "in" site.Params.mainSections) | intersect (where site.RegularPages ".Title" "!=" .Title) | union (site.RegularPages.Related . ) }}
-      {{ $related = $related | shuffle | first 3 }}
-      {{ with $related }}
-        <div class="pb-0 section">
-          <h2 class="mb-12 h3">{{ i18n "related_posts" }}</h2>
-          <div class="row">
-            {{ range . }}
-              <div class="lg:col-4">
-                {{ partial "components/blog-card" . }}
-              </div>
-            {{ end }}
-          </div>
+        <div class="text-left md:col-10 lg:col-7">
+          {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "mx-auto mb-6" "Size" "200x200") }}
+          <h2 class="mb-6 text-center h2">{{ .Title }}</h2>
+          <div class="content">{{ .Content }}</div>
         </div>
-      {{ end }}
+      </div>
     </div>
   </section>
 {{ end }}
