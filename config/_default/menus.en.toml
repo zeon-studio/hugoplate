@@ -17,14 +17,19 @@ url = "blog/"
 weight = 3
 
 [[main]]
-name = "CV"
-url = "curriculum/"
+name = "Resume"
+url = "resume/"
 weight = 4
 
 [[main]]
 name = "Publications"
 url = "publications/"
 weight = 5
+
+[[main]]
+name = "Gallery"
+url = "gallery/"
+weight = 6
 
 # footer menu
 [[footer]]
