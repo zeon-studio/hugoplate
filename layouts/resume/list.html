@@ -1,13 +1,46 @@
 {{ define "main" }}
+<!-- Features -->
   <section class="section-sm">
-    <div class="container">
-      <div class="justify-center row">
-        <div class="text-center md:col-10 lg:col-7">
-          {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "mx-auto mb-6" "Size" "200x200") }}
-          <h2 class="mb-6 h3">{{ .Title }}</h2>
-          <div class="content">{{ .Content }}</div>
+      {{ range $i, $e:= .Params.features }}
+      <section class="section-sm {{ if (modBool $i 2) }}bg-gradient{{ end }}">
+        <div class="container">
+          <div class="items-center justify-between row">
+            <div
+              class="mb:md-0 {{ if not (modBool $i 2) }}
+                md:order-2
+              {{ end }} md:col-5 mb-6">
+              {{ partial "image" (dict "Src" .image "Alt" "feature image" "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x") }}
+            </div>
+            <div
+              class="{{ if not (modBool $i 2) }}
+                md:order-1
+              {{ end }} md:col-7 lg:col-6">
+              <h2 class="mb-4">
+                {{ .title | markdownify }}
+              </h2>
+              <p class="mb-8 text-lg">
+                {{ .content | markdownify }}
+              </p>
+              <ul>
+                {{ range .bulletpoints }}
+                  <li class="relative pl-6 mb-4">
+                    <i class="fa fa-check absolute left-0 top-1.5"></i>
+                    {{ . | markdownify }}
+                  </li>
+                {{ end }}
+              </ul>
+              {{ with .button }}
+                {{ if .enable }}
+                  <a class="mt-6 btn btn-primary" href="{{ .link | absURL }}">
+                    {{ .label }}
+                    <i class="pl-2 fa fa-arrow-right"></i>
+                  </a>
+                {{ end }}
+              {{ end }}
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+    {{ end }}
   </section>
 {{ end }}
