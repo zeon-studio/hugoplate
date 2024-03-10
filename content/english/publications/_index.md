@@ -9,6 +9,8 @@ draft: false
 
 <p class="italic text-center">Updated: 10-03-2024</p>
 
+{{< toc >}}
+
 ### Literary translations
 
 - V. E. Schwab: A hatalom törékeny szálai. Budapest : Agave Könyvek, 2023. 640 p.
