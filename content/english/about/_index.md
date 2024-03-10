@@ -2,7 +2,7 @@
 title: "Hi, I'm Adam!"
 meta_title: "About"
 description: "this is meta description"
-image: "/images/avatar.png"
+image: "/images/adam_sarpatki_avatar.jpg"
 draft: false
 ---
 
