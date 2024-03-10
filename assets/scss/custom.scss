@@ -1,1 +1,9 @@
 // Add your own custom styles here
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-secondary font-bold leading-tight text-slate-900 dark:text-darkmode-dark;
+}
