@@ -169,7 +169,7 @@ npm run update-modules
 
 ### 👉 Remove Dark Mode
 
-If you want to remove dark mode from your project, then you have to do it manually from everywhere. So we build a custom script to do it for you. you can use the following command to remove dark mode from your project.
+If you want to remove dark mode from your project, you can use the following command to remove dark mode from your project.
 
 ```bash
 npm run remove-darkmode
@@ -226,7 +226,7 @@ Copyright (c) 2023 - Present, Designed & Developed by [Zeon Studio](https://zeon
 
 ## 🖼️ Showcase
 
-List of projects people are building with **Hugoplate**! Have you built a project with Hugoplate? Submit it by creating a pull request and we'll feature it here!
+List of some projects people are building with **Hugoplate**! 
 
 | [![Open Neuromorphic](https://tinyurl.com/hp7avtje)](https://open-neuromorphic.org/) | [![AI Models](https://tinyurl.com/mu4p7dhb)](https://aimodels.org/) | [![Hugobricks](https://tinyurl.com/4x3uwhm9)](https://www.hugobricks.preview.usecue.com/) | [![ONO LLC](https://tinyurl.com/yxnu6whn)](https://ono.day/) 
 |:---:|:---:|:---:|:---:|
