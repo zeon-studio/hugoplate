@@ -7,7 +7,7 @@ url = "/"
 weight = 1
 
 [[main]]
-name = "About"
+name = "About Me"
 url = "about/"
 weight = 2
 
@@ -15,11 +15,6 @@ weight = 2
 name = "Blog"
 url = "blog/"
 weight = 3
-
-[[main]]
-name = "Resume"
-url = "resume/"
-weight = 4
 
 [[main]]
 name = "Publications"
