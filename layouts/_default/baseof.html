@@ -38,13 +38,11 @@
       {{ block "main" . }}{{ end }}
     </main>
 
-    <!-- cache partial only in production -->
-    {{ if hugo.IsProduction }}
-      {{ partialCached "essentials/footer.html" . }}
-      {{ partialCached "essentials/script.html" . }}
-    {{ else }}
-      {{ partial "essentials/footer.html" . }}
-      {{ partial "essentials/script.html" . }}
-    {{ end }}
+    <!-- footer -->
+    {{ partial "essentials/footer.html" . }}
+
+
+    <!-- script (always cache it) -->
+    {{ partialCached "essentials/script.html" . }}
   </body>
 </html>
