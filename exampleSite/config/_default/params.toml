@@ -81,6 +81,7 @@ button = "I Accept"
 
 ######################## sidebar widgets #########################
 [widgets]
+enable = true
 sidebar = ["categories", "tags"]
 
 
