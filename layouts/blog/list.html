@@ -6,11 +6,20 @@
     <div class="container">
       <div class="row gx-5">
         <!-- blog posts -->
+        {{ if (site.Params.widgets.enable | default true) }}
         <div class="lg:col-8">
+        {{ else }}
+        <div class="lg:col-12">
+        {{ end }}
           <div class="row">
             {{ $paginator:= .Paginate .RegularPages }}
             {{ range $paginator.Pages }}
-              <div class="md:col-6 mb-14">
+              <div class="
+              {{- if and (gt $paginator.Pages 2) (not (site.Params.widgets.enable | default true)) -}}
+                md:col-6 lg:col-4 
+              {{- else -}}
+                md:col-6
+              {{- end }} mb-14">
                 {{ partial "components/blog-card" . }}
               </div>
             {{ end }}
@@ -18,11 +27,13 @@
           {{ partial "components/pagination.html" . }}
         </div>
         <!-- sidebar -->
+        {{ if (site.Params.widgets.enable | default true) }}
         <div class="lg:col-4">
           <!-- widget -->
           {{ $widget:= site.Params.widgets.sidebar }}
           {{ partialCached "widgets/widget-wrapper" ( dict "Widgets" $widget "Scope" . ) }}
         </div>
+        {{ end }}
       </div>
     </div>
   </section>
