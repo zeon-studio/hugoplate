@@ -6,7 +6,7 @@ const theme = JSON.parse(themeRead);
 
 let font_base = Number(theme.fonts.font_size.base.replace("px", ""));
 let font_scale = Number(theme.fonts.font_size.scale);
-let h6 = font_base / font_base;
+let h6 = font_scale;
 let h5 = h6 * font_scale;
 let h4 = h5 * font_scale;
 let h3 = h4 * font_scale;
@@ -68,12 +68,13 @@ module.exports = {
       },
       fontSize: {
         base: font_base + "px",
+        "base-sm": font_base * 0.8 + "px",
         h1: h1 + "rem",
-        "h1-sm": h1 * 0.8 + "rem",
+        "h1-sm": h1 * 0.9 + "rem",
         h2: h2 + "rem",
-        "h2-sm": h2 * 0.8 + "rem",
+        "h2-sm": h2 * 0.9 + "rem",
         h3: h3 + "rem",
-        "h3-sm": h3 * 0.8 + "rem",
+        "h3-sm": h3 * 0.9 + "rem",
         h4: h4 + "rem",
         h5: h5 + "rem",
         h6: h6 + "rem",

@@ -1,5 +1,5 @@
 html {
-  @apply text-base;
+  @apply text-base-sm md:text-base;
 }
 
 body {
@@ -32,17 +32,17 @@ h3,
 
 h4,
 .h4 {
-  @apply text-h4 font-medium;
+  @apply text-h4;
 }
 
 h5,
 .h5 {
-  @apply text-h5 font-medium;
+  @apply text-h5;
 }
 
 h6,
 .h6 {
-  @apply text-h6 font-medium;
+  @apply text-h6;
 }
 
 b,
