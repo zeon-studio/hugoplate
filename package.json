@@ -1,7 +1,7 @@
 {
   "name": "hugoplate",
   "description": "hugo tailwindcss boilerplate",
-  "version": "1.13.0",
+  "version": "1.13.1",
   "license": "MIT",
   "author": "zeon.studio",
   "scripts": {
