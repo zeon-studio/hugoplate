@@ -12,19 +12,25 @@ url = "about/"
 weight = 2
 
 [[main]]
-name = "Blog"
-url = "blog/"
-weight = 3
-
-[[main]]
 name = "Publications"
 url = "publications/"
-weight = 5
+weight = 4
 
 [[main]]
 name = "Gallery"
 url = "gallery/"
-weight = 6
+weight = 5
+
+# tech editing dropdown
+[[main]]
+weight = 3
+name = "Tech Editing"
+
+[[main]]
+parent = "Tech Editing"
+name = "Services"
+weight = 1
+pageRef = "/services"
 
 # footer menu
 [[footer]]
