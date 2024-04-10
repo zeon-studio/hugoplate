@@ -7,12 +7,14 @@ toc: true
 draft: false
 ---
 
-<p class="italic text-center">Updated: 10-03-2024</p>
+<p class="italic text-center">Updated: 10-04-2024</p>
 
 {{< toc >}}
 
+
 ### Literary translations
 
+- Shelley Parker-Chan: A sötétségbe fojtott világ. Budapest : Agave Könyvek, 2024. 576 p.
 - V. E. Schwab: A hatalom törékeny szálai. Budapest : Agave Könyvek, 2023. 640 p.
 - Christopher Buehlman: Két tűz között. Budapest : Agave Könyvek, 2023. 448 p.
 - Brandon Sanderson: A háború ritmusa I-II. Budapest : Delta Vision, 2023. 1752 p.
