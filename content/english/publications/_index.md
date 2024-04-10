@@ -11,7 +11,6 @@ draft: false
 
 {{< toc >}}
 
-
 ### Literary translations
 
 - Shelley Parker-Chan: A sötétségbe fojtott világ. Budapest : Agave Könyvek, 2024. 576 p.
