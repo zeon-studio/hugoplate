@@ -1,46 +1,44 @@
 {{ define "main" }}
 <!-- Features -->
-  <section class="section-sm">
-      {{ range $i, $e:= .Params.features }}
-      <section class="section-sm {{ if (modBool $i 2) }}bg-slate-50{{ end }}">
+<section class="section-sm">
+    {{ range $i, $e := .Params.features }}
+    <section class="section-sm {{ if (modBool $i 2) }}bg-slate-50{{ end }}">
         <div class="container">
-          <div class="items-center justify-between row">
-            <div
-              class="mb:md-0 {{ if not (modBool $i 2) }}
-                md:order-2
-              {{ end }} md:col-5 mb-6">
-              {{ partial "image" (dict "Src" .image "Alt" "feature image" "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x") }}
+            <div class="items-center justify-between row">
+                <div
+                    class="mb:md-0 {{ if not (modBool $i 2) }}
+                    md:order-2
+                    {{ end }} md:col-5 mb-6">
+                    {{ partial "image" (dict "Src" .image "Alt" "feature image" "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x") }}
+                </div>
+                <div
+                    class="{{ if not (modBool $i 2) }}
+                    md:order-1
+                    {{ end }} md:col-7 lg:col-6">
+                    <h2 class="mb-4">
+                        {{ .title | markdownify }}
+                    </h2>
+                    <p class="mb-8 blockquote">
+                        {{ .content | markdownify }}
+                    </p>
+                    <!-- Long text field with markdown -->
+                    <div class="mb-8">
+                        {{ range $j, $paragraph := split .long_text "\n" }}
+                        <p class="mb-4{{ if eq $j 0 }} mt-0{{ end }}">{{ $paragraph | markdownify }}</p>
+                        {{ end }}
+                    </div>
+                    {{ with .button }}
+                    {{ if .enable }}
+                    <a class="mt-6 btn btn-primary" href="{{ .link | absURL }}">
+                        {{ .label }}
+                        <i class="pl-2 fa fa-arrow-right"></i>
+                    </a>
+                    {{ end }}
+                    {{ end }}
+                </div>
             </div>
-            <div
-              class="{{ if not (modBool $i 2) }}
-                md:order-1
-              {{ end }} md:col-7 lg:col-6">
-              <h2 class="mb-4">
-                {{ .title | markdownify }}
-              </h2>
-              <p class="mb-8 text-lg">
-                {{ .content | markdownify }}
-              </p>
-              <ul>
-                {{ range .bulletpoints }}
-                  <li class="relative pl-6 mb-4">
-                    <i class="fa fa-check absolute left-0 top-1.5"></i>
-                    {{ . | markdownify }}
-                  </li>
-                {{ end }}
-              </ul>
-              {{ with .button }}
-                {{ if .enable }}
-                  <a class="mt-6 btn btn-primary" href="{{ .link | absURL }}">
-                    {{ .label }}
-                    <i class="pl-2 fa fa-arrow-right"></i>
-                  </a>
-                {{ end }}
-              {{ end }}
-            </div>
-          </div>
         </div>
-      </section>
+    </section>
     {{ end }}
-  </section>
+</section>
 {{ end }}
