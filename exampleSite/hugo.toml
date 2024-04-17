@@ -17,7 +17,8 @@ disableLanguages = [
 hasCJKLanguage = false #  If hasCJKLanguage true, auto-detect Chinese/Japanese/Korean Languages in the content. see: https://gohugo.io/getting-started/configuration/#hascjklanguage
 # default language
 defaultContentLanguage = 'en'
-defaultContentLanguageInSubdir = true
+# defaultContentLanguageInSubdir need to be true if you want to use the language code as a subdirectory and language specific 404 page
+defaultContentLanguageInSubdir = false
 
 ########################### Services #############################
 [services]
