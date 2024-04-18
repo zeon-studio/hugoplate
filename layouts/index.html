@@ -4,7 +4,7 @@
     <section class="section pt-14">
       <div class="container">
         <div class="grid grid-cols-12 gap-x-4 gap-y-4">
-          <div class="content-center col-span-12 mb-8 md:col-start-1 md:col-end-8 lg:col-start-2 text-auto">
+          <div class="content-center col-span-12 mb-8 md:col-start-1 md:col-end-8 lg:col-start-1 text-auto">
             <h1 class="mb-4 text-h3 lg:text-h1">
               {{ .title | markdownify }}
             </h1>
@@ -27,8 +27,8 @@
               {{ end }}
             {{ end }}
           </div>
-          <div class="content-center col-span-12 md:col-start-8 md:col-end-13 lg:col-end-12 xl:col-start-9 xl:col-end-12">
-            {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto rounded-lg lg:!max-w-auto" "DisplayXL" "800x" ) }}
+          <div class="content-center col-span-12 lg:py-4 lg:pl-4 xl:py-10 xl:pl-10 md:col-start-8 md:col-end-13">
+            {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto rounded-lg" "DisplayXL" "800x" ) }}
           </div>
         </div>
       </div>
