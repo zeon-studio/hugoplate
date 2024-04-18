@@ -8,9 +8,11 @@
             <h1 class="mb-4 text-h3 lg:text-h1">
               {{ .title | markdownify }}
             </h1>
-            <p class="mb-8">
-              {{ .content | markdownify }}
-            </p>
+            <div class="mb-8">
+              {{ range $j, $paragraph := split .intro "\n" }}
+              <p class="mb-4{{ if eq $j 0 }} mt-0{{ end }}">{{ $paragraph | markdownify }}</p>
+              {{ end }}
+          </div>
             {{ with .button }}
               {{ if .enable }}
                 <a

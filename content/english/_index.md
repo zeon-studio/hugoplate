@@ -1,13 +1,19 @@
 ---
 # Banner
 banner:
-  title: "The Ultimate Starter Template You Need To Start Your Hugo Project"
-  content: "Hugoplate is a free starter template built with Hugo and TailwindCSS, providing everything you need to jumpstart your Hugo project and save valuable time."
+  title: "Hi, I'm Ádám Sárpátki,"
+  intro: | 
+    an enthusiastic UX designer based in Budapest, Hungary, with a professional background in library and information science, and translation.
+    
+    I want to solve real problems in a friendly, diverse and inclusive environment, with incredible people.
+    
+    Are you interested in working together?
+
   image: "/images/adam_sarpatki_avatar.jpg"
   button:
     enable: true
-    label: "Get Started For Free"
-    link: "https://github.com/zeon-studio/hugoplate"
+    label: "Let's Work Together"
+    link: /contact
 
 # Features
 features:
