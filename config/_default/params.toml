@@ -15,7 +15,7 @@ logo_text = "Ádám Sárpátki"
 # navbar fixed to top
 navbar_fixed = true
 # theme-mode
-theme_switcher = true
+theme_switcher = false
 theme_default = "light" # available options [light/dark/system]
 # Main Sections
 mainSections = ["blog"]
