@@ -2,7 +2,7 @@
 # Features
 features:
   - title: "2012-2016"
-    image: "/images/little_things.png"
+    image: "/images/cserka.jpg"
     content: "*Helping people, finding things...*"
     long_text: |
         Let's start at the beginning.
@@ -14,7 +14,7 @@ features:
         During the next few years I worked at two quite prominent libraries: the Central Library of the Hungarian Province of the Piarist Order, and the Library of the Hungarian Central Statistical Office. I got to work as a cataloguing librarian, as well as at the circulation desk at the public library section of the Library of the HCSO. And while I never became a wise and awe-inspiring owl, certainly not at 27 years of age, both were exciting opportunities, I met many great people, including one of my best friends. However, another passion of mine was calling my name...
 
   - title: "2016-2018"
-    image: "/images/yellow_flat.png"
+    image: "/images/konyvfeszt_2017.jpg"
     content: |
       *\"There’s no freedom quite like the freedom of being constantly underestimated.\"* ― Scott Lynch, *The Lies of Locke Lamora*
     long_text: |
@@ -29,7 +29,7 @@ features:
       Then, in 2018, Delta Vision offered me my first opportunity to edit a novel. I never got any formal education in editing, but I had many an editor work on my translations by then, so I gave it a go.
 
   - title: "2018-2024"
-    image: "/images/daily_desk.png"
+    image: "/images/pear_tree.jpg"
     content: |
       *\"And he dreamed the dream of all those who publish books, which was to have so much gold in your pockets that you would have to employ two people just to hold your trousers up.\"* - Terry Pratchett, *Maskerade*
     long_text: |
