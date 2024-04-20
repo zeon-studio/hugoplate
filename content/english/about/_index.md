@@ -50,8 +50,7 @@ features:
   - title: "So, what's next?"
     image: "/images/group_call.png"
     content: |
-        *I have found, through painful experience, that the most important step a person can take is always the next one.*  
-        ― Brandon Sanderson, *Oathbringer*
+        *"I have found, through painful experience, that the most important step a person can take is always the next one."* ― Brandon Sanderson, *Oathbringer*
 
 
     long_text: |
