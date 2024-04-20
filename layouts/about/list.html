@@ -1,4 +1,16 @@
 {{ define "main" }}
+<section class="section-sm">
+    <div class="container">
+      <div class="justify-center row">
+        <div class="md:col-10 lg:col-7">
+          {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "mx-auto mb-6" "Size" "200x200") }}
+          <h2 class="mb-6 text-center h2">{{ .Title }}</h2>
+          <p class="text-center">From librarian to literary translator, editor, and now tech editor—my career journey.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
 <!-- Features -->
 <section class="section-sm">
     {{ range $i, $e := .Params.features }}
@@ -18,7 +30,7 @@
                     <h2 class="mb-4">
                         {{ .title | markdownify }}
                     </h2>
-                    <p class="mb-8 blockquote">
+                    <p class="mb-8">
                         {{ .content | markdownify }}
                     </p>
                     <!-- Long text field with markdown -->
