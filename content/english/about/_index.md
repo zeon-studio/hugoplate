@@ -10,7 +10,9 @@ draft: false
 features:
   - title: "2012-2016"
     image: "/images/cserka.jpg"
-    content: "*Helping people, finding things...*"
+    content: |
+        *"Stand aside, and try not to catch fire if I shed sparks of genius."*  
+         ― Scott Lynch, *Republic of Thieves*
     long_text: |
       Let's start at the beginning.
 
@@ -23,7 +25,10 @@ features:
   - title: "2016-2018"
     image: "/images/konyvfeszt_2017.jpg"
     content: |
-      *\"There’s no freedom quite like the freedom of being constantly underestimated.\"* ― Scott Lynch, *The Lies of Locke Lamora*
+        *"I kind of lost track of time..."  
+         "For two hours?"  
+         Elend nodded sheepishly. "There were books involved."*  
+         ― Brandon Sanderson, *The Well of Ascension*
     long_text: |
       I was always fascinated by books. As a teenager, I aspired to become a writer—we had a small writing group in high school; we would read and critique each other's work. That's when I first got interested in editing and translation, too. I attribute it all to Tamás Boldizsár Tóth, the Hungarian translator of the Harry Potter books. Between 1999 and 2008, regardless of how the author's public perception changed since then, the series left a big impression on me.
 
@@ -45,9 +50,9 @@ features:
   - title: "So, what's next?"
     image: "/images/group_call.png"
     content: |
-        *\"Elend: I kind of lost track of time…  
-        Breeze: For two hours?  
-        Elend: There were books involved.\"* ― Brandon Sanderson, *The Well of Ascension*
+        *I have found, through painful experience, that the most important step a person can take is always the next one.*  
+        ― Brandon Sanderson, *Oathbringer*
+
 
     long_text: |
       In the last few years, I've been exploring new hobbies.
