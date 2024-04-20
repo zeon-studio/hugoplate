@@ -4,7 +4,7 @@
       <div class="justify-center row">
         <div class="text-left md:col-10 lg:col-7">
           {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "mx-auto mb-6" "Size" "200x200") }}
-          <h2 class="mb-6 text-center h2">{{ .Title }}</h2>
+          <h1 class="mb-6 text-center">{{ .Title }}</h1>
           <div class="content">{{ .Content }}</div>
         </div>
       </div>
