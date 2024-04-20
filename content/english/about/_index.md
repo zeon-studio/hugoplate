@@ -34,7 +34,7 @@ features:
   - title: "2018-2024"
     image: "/images/pear_tree.jpg"
     content: |
-      *\"And he dreamed the dream of all those who publish books, which was to have so much gold in your pockets that you would have to employ two people just to hold your trousers up.\"* - Terry Pratchett, *Maskerade*
+      *\"And he dreamed the dream of all those who publish books, which was to have so much gold in your pockets that you would have to employ two people just to hold your trousers up.\"* ― Terry Pratchett, *Maskerade*
     long_text: |
         I like learning new things. So when I received my first editing assignment from Delta Vision in 2018, I was over the moon. And it was a book by Brandon Sanderson! I already worked as a translator on his works, but editing some of them as well was a dream come true.
 
@@ -47,7 +47,7 @@ features:
     content: |
         *\"Elend: I kind of lost track of time…  
         Breeze: For two hours?  
-        Elend: There were books involved.\"* - Brandon Sanderson, *The Well of Ascension*
+        Elend: There were books involved.\"* ― Brandon Sanderson, *The Well of Ascension*
 
     long_text: |
       In the last few years, I've been exploring new hobbies.
