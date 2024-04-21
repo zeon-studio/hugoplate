@@ -1,4 +1,26 @@
-// Add your own custom styles here
+// Import Tailwind base styles
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Custom styles for links
+a {
+  @apply text-blue-800 no-underline transition duration-300 ease-in-out font-semibold;
+}
+
+a:hover {
+  @apply text-blue-500;
+}
+
+a:active {
+  @apply text-blue-500;
+}
+
+// Optional: special styles for links in specific sections or contexts
+.featured a {
+  @apply text-orange-500; // Orange text for links in the 'featured' section
+}
+
 h1,
 h2,
 h3,
