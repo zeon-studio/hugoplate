@@ -7,7 +7,7 @@ banner:
 
     As of 2024, I added technical editing for knitting patterns to my services.
 
-    When working with my clients, I aim to create a drama-free, respectful and detail-oriented atmosphere, where the quality of the end product is one of the most important things, whether it's a 1000-page novel or a two-paragraph blurb.
+    When working with my clients, I aim to create a drama-free, respectful and detail-oriented atmosphere. To me, the quality of the end product is one of the most important things, whether it's a 1000-page novel or a two-paragraph blurb.
 
     Are you interested in collaborating?
 
@@ -15,7 +15,7 @@ banner:
   image: "/images/adam_sarpatki_avatar.jpg"
   button:
     enable: true
-    label: "Let's Work Together"
+    label: "Let's work together"
     link: /contact
   secondButton:
     enable: true
