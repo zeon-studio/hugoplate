@@ -228,7 +228,7 @@ Copyright (c) 2023 - Present, Designed & Developed by [Zeon Studio](https://zeon
 
 List of some projects people are building with **Hugoplate**!
 
-| [![Open Neuromorphic](https://tinyurl.com/hp7avtje)](https://open-neuromorphic.org/) | [![AI Models](https://tinyurl.com/mu4p7dhb)](https://aimodels.org/) | [![Hugobricks](https://tinyurl.com/4x3uwhm9)](https://www.hugobricks.preview.usecue.com/) | [![ONO LLC](https://tinyurl.com/yxnu6whn)](https://ono.day/)
+| [![Open Neuromorphic](https://tinyurl.com/hp7avtje)](https://open-neuromorphic.org/) | [![AI Models](https://tinyurl.com/mu4p7dhb)](https://aimodels.org/) | [![Hugobricks](https://tinyurl.com/4x3uwhm9)](https://www.hugobricks.preview.usecue.com/) | [![ONO LLC](https://tinyurl.com/2fbjzwzn)](https://ono.day/)
 |:---:|:---:|:---:|:---:|
 | **Open Neuromorphic** | **AI Models** | **Hugobricks** | **ONO LLC** |
 
