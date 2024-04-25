@@ -17,8 +17,8 @@
   // Testimonial Slider
   // ----------------------------------------
   new Swiper(".testimonial-slider", {
-    spaceBetween: 24,
-    loop: true,
+    spaceBetween: 32,
+    loop: false,
     pagination: {
       el: ".testimonial-slider-pagination",
       type: "bullets",
