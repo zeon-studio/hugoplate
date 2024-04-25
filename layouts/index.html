@@ -1,7 +1,7 @@
 {{ define "main" }}
 <!-- Banner -->
 {{ with .Params.banner }}
-<section class="section pt-14">
+<section class="section">
   <div class="container">
     <div class="grid grid-cols-12 gap-x-4 gap-y-4">
       <div class="content-center col-span-12 mb-8 md:col-start-1 md:col-end-8 lg:col-start-1 text-auto">
@@ -48,7 +48,7 @@
 <!-- Expertise -->
 {{ with site.GetPage "sections/expertise" }}
 {{ if .Params.enable }}
-<section class="section">
+<section class="section bg-slate-50">
   <div class="container">
     <div class="row">
       <div class="mx-auto mb-12 text-center md:col-10 lg:col-8 xl:col-6">
@@ -84,50 +84,6 @@
 {{ end }}
 {{ end }}
 <!-- /Expertise -->
-
-
-<!-- Features -->
-{{/* {{ range $i, $e:= .Params.features }}
-<section class="section-sm {{ if (modBool $i 2) }}bg-slate-50{{ end }}">
-  <div class="container">
-    <div class="items-center justify-between row">
-      <div class="mb:md-0 {{ if not (modBool $i 2) }}
-              md:order-2
-            {{ end }} md:col-5 mb-6">
-        {{ partial "image" (dict "Src" .image "Alt" "feature image" "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD"
-        "360x") }}
-      </div>
-      <div class="{{ if not (modBool $i 2) }}
-              md:order-1
-            {{ end }} md:col-7 lg:col-6">
-        <h2 class="mb-4">
-          {{ .title | markdownify }}
-        </h2>
-        <p class="mb-8 text-lg">
-          {{ .content | markdownify }}
-        </p>
-        <ul>
-          {{ range .bulletpoints }}
-          <li class="relative pl-6 mb-4">
-            <i class="fa fa-check absolute left-0 top-1.5"></i>
-            {{ . | markdownify }}
-          </li>
-          {{ end }}
-        </ul>
-        {{ with .button }}
-        {{ if .enable }}
-        <a class="mt-6 btn btn-primary" href="{{ .link | absURL }}">
-          {{ .label }}
-          <i class="pl-2 fa fa-arrow-right"></i>
-        </a>
-        {{ end }}
-        {{ end }}
-      </div>
-    </div>
-  </div>
-</section>
-{{ end }} */}}
-<!-- /Features -->
 
 <!-- Testimonials -->
 {{ with site.GetPage "sections/testimonial" }}
