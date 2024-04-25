@@ -12,7 +12,7 @@ input#nav-toggle:checked + label #show-button {
   }
   
   .header {
-    @apply bg-body dark:bg-darkmode-body py-6;
+    @apply bg-theme-light dark:bg-darkmode-body py-6 shadow-lg;
   }
   
   // navbar items
