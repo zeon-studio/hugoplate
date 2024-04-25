@@ -32,6 +32,12 @@ name = "Services"
 weight = 1
 pageRef = "/services"
 
+[[main]]
+parent = "Tech Editing"
+name = "Working with Me"
+weight = 2
+pageRef = "/process"
+
 # footer menu
 [[footer]]
 name = "About"
