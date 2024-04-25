@@ -1,7 +1,7 @@
 ---
 enable: true
-title: "What Users Are Saying About Hugoplate"
-description: "Don't just take our word for it - hear from some of our satisfied users!  Check out some of our testimonials below to see what others are saying about Hugoplate."
+title: "What My Clients Say About Me"
+description: "Over the years I've worked with some of the best publishing houses of Hungary that operate in the science fiction and fantasy genres—and this is their opinion of me."
 
 # Testimonials
 testimonials:
