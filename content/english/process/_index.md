@@ -53,8 +53,8 @@ I will send you back a flattened PDF, this way we won't run into any compatibili
 
 ## Credit
 
-While I won't have any claim over your pattern copyright-wise, I would be over the moon if you would credit me in the colophon of your pattern. I think it's generally a nice thing to do (I come from publishing, where you must credit an editor of a book, but I realise knitting patterns handle this differently), and it also gives credibility to your work, showing people that "Yes, this pattern was professionally tech edited. This designer cares."
+While it's not necessary to do so, I would be over the moon if you would credit me in the colophon of your pattern. I think it's generally a nice thing to do, and what's more it also gives credibility to your work, showing people that "Yes, this pattern was professionally tech edited. This designer cares."
 
 ## Confidentiality
 
-I will keep our every e-mail and every file confidential, and I will never send or say anyone anything about our work, unless you instruct me to. In return, I ask you to do the same.
+I will keep our every e-mail and file confidential, and I will never send or say anyone anything about our work, unless you instruct me to. In return, I ask you to do the same.
