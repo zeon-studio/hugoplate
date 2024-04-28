@@ -15,5 +15,5 @@
 }
 
 .btn-secondary {
-  @apply border-primary bg-white dark:border-darkmode-primary dark:text-dark text-dark dark:bg-white hover:text-white hover:bg-primary;
+  @apply dark:border-darkmode-primary dark:text-dark text-dark dark:bg-white hover:text-white hover:bg-primary;
 }
