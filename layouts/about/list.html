@@ -1,56 +1,68 @@
 {{ define "main" }}
 <section class="section-sm">
     <div class="container">
-      <div class="justify-center row">
-        <div class="md:col-10 lg:col-7">
-          {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "mx-auto mb-6" "Size" "200x200") }}
-          <h1 class="mb-6 text-center">{{ .Title }}</h1>
-          <p class="text-center">From librarian to literary translator, editor, and now tech editor—my career journey.</p>
+        <div class="justify-center row">
+            <div class="md:col-10 lg:col-7">
+                {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "mx-auto mb-6" "Size" "200x200") }}
+                <h1 class="mb-6 text-center">{{ .Title }}</h1>
+                <p class="text-center">From librarian to literary translator, editor, and now tech editor—my career
+                    journey.</p>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
-  
+</section>
+
 <!-- Features -->
 <section class="section-sm">
     {{ range $i, $e := .Params.features }}
-    <section class="section-sm {{ if (modBool $i 2) }}bg-slate-50{{ end }}">
-        <div class="container">
-            <div class="items-center justify-between row">
-                <div
-                    class="mb:md-0 {{ if not (modBool $i 2) }}
+
+    <!-- Shape divider -->
+    <div class="{{ if (modBool $i 2) }}bg-slate-100{{else}}bg-slate-50{{ end }}">
+        <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 150" version="1.1"
+            xmlns="http://www.w3.org/2000/svg">
+            <path class="{{ if (modBool $i 2) }}fill-slate-50{{else}}fill-slate-100{{ end }}"
+                style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+                d="M0,45L16,60C32,75,64,105,96,100C128,95,160,55,192,35C224,15,256,15,288,22.5C320,30,352,45,384,65C416,85,448,110,480,100C512,90,544,45,576,37.5C608,30,640,60,672,65C704,70,736,50,768,57.5C800,65,832,100,864,95C896,90,928,45,960,37.5C992,30,1024,60,1056,60C1088,60,1120,30,1152,15C1184,0,1216,0,1248,17.5C1280,35,1312,70,1344,72.5C1376,75,1408,45,1440,30C1472,15,1504,15,1536,32.5C1568,50,1600,85,1632,105C1664,125,1696,130,1728,110C1760,90,1792,45,1824,40C1856,35,1888,70,1920,82.5C1952,95,1984,85,2016,87.5C2048,90,2080,105,2112,100C2144,95,2176,70,2208,55C2240,40,2272,35,2288,32.5L2304,30L2304,150L2288,150C2272,150,2240,150,2208,150C2176,150,2144,150,2112,150C2080,150,2048,150,2016,150C1984,150,1952,150,1920,150C1888,150,1856,150,1824,150C1792,150,1760,150,1728,150C1696,150,1664,150,1632,150C1600,150,1568,150,1536,150C1504,150,1472,150,1440,150C1408,150,1376,150,1344,150C1312,150,1280,150,1248,150C1216,150,1184,150,1152,150C1120,150,1088,150,1056,150C1024,150,992,150,960,150C928,150,896,150,864,150C832,150,800,150,768,150C736,150,704,150,672,150C640,150,608,150,576,150C544,150,512,150,480,150C448,150,416,150,384,150C352,150,320,150,288,150C256,150,224,150,192,150C160,150,128,150,96,150C64,150,32,150,16,150L0,150Z">
+            </path>
+        </svg>
+        <!-- /Shape divider -->
+
+        <section class="section-sm py-0 {{ if (modBool $i 2) }}bg-slate-50{{else}}bg-slate-100{{ end }}">
+            <div class="container">
+                <div class="items-center justify-between row">
+                    <div class="mb:md-0 {{ if not (modBool $i 2) }}
                     md:order-2
                     {{ end }} md:col-5 mb-6">
-                    {{ partial "image" (dict "Src" .image "Alt" "feature image" "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x") }}
-                </div>
-                <div
-                    class="{{ if not (modBool $i 2) }}
+                        {{ partial "image" (dict "Src" .image "Alt" "feature image" "DisplayXL" "520x" "DisplayLG"
+                        "425x" "DisplayMD" "360x") }}
+                    </div>
+                    <div class="{{ if not (modBool $i 2) }}
                     md:order-1
                     {{ end }} md:col-7 lg:col-6">
-                    <h2 class="mb-4">
-                        {{ .title | markdownify }}
-                    </h2>
-                    <p class="mb-8">
-                        {{ .content | markdownify }}
-                    </p>
-                    <!-- Long text field with markdown -->
-                    <div class="mb-8">
-                        {{ range $j, $paragraph := split .long_text "\n" }}
-                        <p class="mb-4{{ if eq $j 0 }} mt-0{{ end }}">{{ $paragraph | markdownify }}</p>
+                        <h2 class="mb-4">
+                            {{ .title | markdownify }}
+                        </h2>
+                        <p class="mb-8">
+                            {{ .content | markdownify }}
+                        </p>
+                        <!-- Long text field with markdown -->
+                        <div class="mb-8">
+                            {{ range $j, $paragraph := split .long_text "\n" }}
+                            <p class="mb-4{{ if eq $j 0 }} mt-0{{ end }}">{{ $paragraph | markdownify }}</p>
+                            {{ end }}
+                        </div>
+                        {{ with .button }}
+                        {{ if .enable }}
+                        <a class="mt-6 btn btn-primary" href="{{ .link | absURL }}">
+                            {{ .label }}
+                            <i class="pl-2 fa fa-arrow-right"></i>
+                        </a>
+                        {{ end }}
                         {{ end }}
                     </div>
-                    {{ with .button }}
-                    {{ if .enable }}
-                    <a class="mt-6 btn btn-primary" href="{{ .link | absURL }}">
-                        {{ .label }}
-                        <i class="pl-2 fa fa-arrow-right"></i>
-                    </a>
-                    {{ end }}
-                    {{ end }}
                 </div>
             </div>
-        </div>
-    </section>
-    {{ end }}
+        </section>
+        {{ end }}
 </section>
 {{ end }}
