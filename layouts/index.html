@@ -45,100 +45,122 @@
 {{ end }}
 <!-- /Banner -->
 
-<!-- Expertise -->
-{{ with site.GetPage "sections/expertise" }}
-{{ if .Params.enable }}
-<section class="section bg-slate-50">
-  <div class="container">
-    <div class="row">
-      <div class="mx-auto mb-12 text-center md:col-10 lg:col-8 xl:col-6">
-        <h2 class="mb-4">
-          {{ .Title | markdownify }}
-        </h2>
-        <p>
-          {{ .Params.description | markdownify }}
-        </p>
-      </div>
-    </div>
-  </div>
+<!-- Shape divider -->
+<div class="bg-slate-100">
+  <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 150" version="1.1"
+    xmlns="http://www.w3.org/2000/svg">
+    <path class="fill-slate-50"
+      style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+      d="M0,45L16,60C32,75,64,105,96,100C128,95,160,55,192,35C224,15,256,15,288,22.5C320,30,352,45,384,65C416,85,448,110,480,100C512,90,544,45,576,37.5C608,30,640,60,672,65C704,70,736,50,768,57.5C800,65,832,100,864,95C896,90,928,45,960,37.5C992,30,1024,60,1056,60C1088,60,1120,30,1152,15C1184,0,1216,0,1248,17.5C1280,35,1312,70,1344,72.5C1376,75,1408,45,1440,30C1472,15,1504,15,1536,32.5C1568,50,1600,85,1632,105C1664,125,1696,130,1728,110C1760,90,1792,45,1824,40C1856,35,1888,70,1920,82.5C1952,95,1984,85,2016,87.5C2048,90,2080,105,2112,100C2144,95,2176,70,2208,55C2240,40,2272,35,2288,32.5L2304,30L2304,150L2288,150C2272,150,2240,150,2208,150C2176,150,2144,150,2112,150C2080,150,2048,150,2016,150C1984,150,1952,150,1920,150C1888,150,1856,150,1824,150C1792,150,1760,150,1728,150C1696,150,1664,150,1632,150C1600,150,1568,150,1536,150C1504,150,1472,150,1440,150C1408,150,1376,150,1344,150C1312,150,1280,150,1248,150C1216,150,1184,150,1152,150C1120,150,1088,150,1056,150C1024,150,992,150,960,150C928,150,896,150,864,150C832,150,800,150,768,150C736,150,704,150,672,150C640,150,608,150,576,150C544,150,512,150,480,150C448,150,416,150,384,150C352,150,320,150,288,150C256,150,224,150,192,150C160,150,128,150,96,150C64,150,32,150,16,150L0,150Z">
+    </path>
+  </svg>
+  <!-- /Shape divider -->
 
-  <div class="container flex flex-row flex-wrap justify-center gap-x-8 gap-y-4">
-    {{ range .Params.expertise }}
-    <div class="py-10 mb-4 rounded-lg md:col-6 lg:col-4 bg-theme-light dark:bg-darkmode-theme-light px-7">
-      <div class="flex flex-row items-center ml-4 gap-x-4">
-        <div class="text-dark dark:text-white">
-          {{ partial "image" (dict "Src" .icon "Size" "50x50" "Class" "" "Alt" .keyword) }}
+  <!-- Expertise -->
+  {{ with site.GetPage "sections/expertise" }}
+  {{ if .Params.enable }}
+  <section class="section bg-slate-50">
+    <div class="container">
+      <div class="row">
+        <div class="mx-auto mb-12 text-center md:col-10 lg:col-8 xl:col-6">
+          <h2 class="mb-4">
+            {{ .Title | markdownify }}
+          </h2>
+          <p>
+            {{ .Params.description | markdownify }}
+          </p>
         </div>
-        <h3 class="font-semibold h5 font-primary">
-          {{ .keyword }}
-        </h3>
-      </div>
-      <div class="p-4">
-        {{ .content | markdownify }}
       </div>
     </div>
 
-    {{ end }}
-  </div>
-</section>
-{{ end }}
-{{ end }}
-<!-- /Expertise -->
-
-<!-- Testimonials -->
-{{ with site.GetPage "sections/testimonial" }}
-{{ if .Params.enable }}
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="mx-auto mb-12 text-center md:col-10 lg:col-8 xl:col-6">
-        <h2 class="mb-4">
-          {{ .Title | markdownify }}
-        </h2>
-        <p>
-          {{ .Params.description | markdownify }}
-        </p>
+    <div class="container flex flex-row flex-wrap justify-center gap-x-8 gap-y-4">
+      {{ range .Params.expertise }}
+      <div class="py-10 mb-4 rounded-lg md:col-6 lg:col-4 bg-theme-light dark:bg-darkmode-theme-light px-7">
+        <div class="flex flex-row items-center ml-4 gap-x-4">
+          <div class="text-dark dark:text-white">
+            {{ partial "image" (dict "Src" .icon "Size" "50x50" "Class" "" "Alt" .keyword) }}
+          </div>
+          <h3 class="font-semibold h5 font-primary">
+            {{ .keyword }}
+          </h3>
+        </div>
+        <div class="p-4">
+          {{ .content | markdownify }}
+        </div>
       </div>
-      <div class="col-12">
-        <div class="swiper testimonial-slider">
-          <div class="swiper-wrapper">
-            {{ range .Params.testimonials }}
-            <div class="swiper-slide">
-              <div class="py-10 rounded-lg bg-theme-light dark:bg-darkmode-theme-light px-7">
-                <div class="text-dark dark:text-white">
-                  <svg width="33" height="20" viewBox="0 0 33 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M1.28375 19.41L0.79375 18.64C1.21375 17.0067 1.75042 15.07 2.40375 12.83C3.05708 10.5433 3.75708 8.28 4.50375 6.04C5.29708 3.75333 6.06708 1.77 6.81375 0.0899959H15.3538C14.9338 2.09666 14.4904 4.26667 14.0238 6.6C13.5571 8.88666 13.1371 11.15 12.7638 13.39C12.4371 15.5833 12.1571 17.59 11.9238 19.41H1.28375ZM31.69 0.0899959L32.18 0.859998C31.76 2.54 31.2233 4.5 30.57 6.74C29.9167 8.98 29.2167 11.2433 28.47 13.53C27.7233 15.77 26.9533 17.73 26.16 19.41H17.69C18.0167 17.9167 18.3433 16.33 18.67 14.65C18.9967 12.9233 19.3 11.22 19.58 9.54C19.9067 7.81333 20.1867 6.15667 20.42 4.57C20.7 2.93666 20.91 1.44333 21.05 0.0899959H31.69Z"
-                      fill="currentColor" />
-                  </svg>
-                </div>
-                <blockquote class="mt-8">
-                  {{ .content | markdownify }}
-                </blockquote>
-                <div class="flex items-center mt-11">
+
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+  {{ end }}
+  <!-- /Expertise -->
+
+<!-- Shape divider -->
+<div class="bg-slate-50">
+  <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 150" version="1.1"
+    xmlns="http://www.w3.org/2000/svg">
+    <path class="fill-slate-100"
+      style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+      d="M0,45L16,60C32,75,64,105,96,100C128,95,160,55,192,35C224,15,256,15,288,22.5C320,30,352,45,384,65C416,85,448,110,480,100C512,90,544,45,576,37.5C608,30,640,60,672,65C704,70,736,50,768,57.5C800,65,832,100,864,95C896,90,928,45,960,37.5C992,30,1024,60,1056,60C1088,60,1120,30,1152,15C1184,0,1216,0,1248,17.5C1280,35,1312,70,1344,72.5C1376,75,1408,45,1440,30C1472,15,1504,15,1536,32.5C1568,50,1600,85,1632,105C1664,125,1696,130,1728,110C1760,90,1792,45,1824,40C1856,35,1888,70,1920,82.5C1952,95,1984,85,2016,87.5C2048,90,2080,105,2112,100C2144,95,2176,70,2208,55C2240,40,2272,35,2288,32.5L2304,30L2304,150L2288,150C2272,150,2240,150,2208,150C2176,150,2144,150,2112,150C2080,150,2048,150,2016,150C1984,150,1952,150,1920,150C1888,150,1856,150,1824,150C1792,150,1760,150,1728,150C1696,150,1664,150,1632,150C1600,150,1568,150,1536,150C1504,150,1472,150,1440,150C1408,150,1376,150,1344,150C1312,150,1280,150,1248,150C1216,150,1184,150,1152,150C1120,150,1088,150,1056,150C1024,150,992,150,960,150C928,150,896,150,864,150C832,150,800,150,768,150C736,150,704,150,672,150C640,150,608,150,576,150C544,150,512,150,480,150C448,150,416,150,384,150C352,150,320,150,288,150C256,150,224,150,192,150C160,150,128,150,96,150C64,150,32,150,16,150L0,150Z">
+    </path>
+  </svg>
+  <!-- /Shape divider -->
+
+  <!-- Testimonials -->
+  {{ with site.GetPage "sections/testimonial" }}
+  {{ if .Params.enable }}
+  <section class="section bg-slate-100">
+    <div class="container">
+      <div class="row">
+        <div class="mx-auto mb-12 text-center md:col-10 lg:col-8 xl:col-6">
+          <h2 class="mb-4">
+            {{ .Title | markdownify }}
+          </h2>
+          <p>
+            {{ .Params.description | markdownify }}
+          </p>
+        </div>
+        <div class="col-12">
+          <div class="swiper testimonial-slider">
+            <div class="swiper-wrapper">
+              {{ range .Params.testimonials }}
+              <div class="swiper-slide">
+                <div class="py-10 rounded-lg bg-theme-light dark:bg-darkmode-theme-light px-7">
                   <div class="text-dark dark:text-white">
-                    {{ partial "image" (dict "Src" .avatar "Size" "50x50" "Class" "rounded-full" "Alt" .name) }}
+                    <svg width="33" height="20" viewBox="0 0 33 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1.28375 19.41L0.79375 18.64C1.21375 17.0067 1.75042 15.07 2.40375 12.83C3.05708 10.5433 3.75708 8.28 4.50375 6.04C5.29708 3.75333 6.06708 1.77 6.81375 0.0899959H15.3538C14.9338 2.09666 14.4904 4.26667 14.0238 6.6C13.5571 8.88666 13.1371 11.15 12.7638 13.39C12.4371 15.5833 12.1571 17.59 11.9238 19.41H1.28375ZM31.69 0.0899959L32.18 0.859998C31.76 2.54 31.2233 4.5 30.57 6.74C29.9167 8.98 29.2167 11.2433 28.47 13.53C27.7233 15.77 26.9533 17.73 26.16 19.41H17.69C18.0167 17.9167 18.3433 16.33 18.67 14.65C18.9967 12.9233 19.3 11.22 19.58 9.54C19.9067 7.81333 20.1867 6.15667 20.42 4.57C20.7 2.93666 20.91 1.44333 21.05 0.0899959H31.69Z"
+                        fill="currentColor" />
+                    </svg>
                   </div>
-                  <div class="ml-4">
-                    <h3 class="font-semibold h5 font-primary">
-                      {{ .name }}
-                    </h3>
-                    <p class="text-dark dark:text-white">
-                      {{ .designation | markdownify }}
-                    </p>
+                  <blockquote class="mt-8">
+                    {{ .content | markdownify }}
+                  </blockquote>
+                  <div class="flex items-center mt-11">
+                    <div class="text-dark dark:text-white">
+                      {{ partial "image" (dict "Src" .avatar "Size" "50x50" "Class" "rounded-full" "Alt" .name) }}
+                    </div>
+                    <div class="ml-4">
+                      <h3 class="font-semibold h5 font-primary">
+                        {{ .name }}
+                      </h3>
+                      <p class="text-dark dark:text-white">
+                        {{ .designation | markdownify }}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
+              {{ end }}
             </div>
-            {{ end }}
+            <div class="flex items-center justify-center text-center testimonial-slider-pagination mt-9"></div>
           </div>
-          <div class="flex items-center justify-center text-center testimonial-slider-pagination mt-9"></div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-{{ end }}
-{{ end }}
-<!-- /Testimonials -->
-{{ end }}
+  </section>
+  {{ end }}
+  {{ end }}
+  <!-- /Testimonials -->
+  {{ end }}
