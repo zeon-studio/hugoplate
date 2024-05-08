@@ -17,10 +17,7 @@ banner:
     enable: true
     label: "Let's work together"
     link: /contact
-  secondButton:
-    enable: true
-    label: "Subscribe to my newsletter"
-    link: /about
+
 
 # Features
 features:
