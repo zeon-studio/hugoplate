@@ -17,8 +17,8 @@ url = "publications/"
 weight = 4
 
 [[main]]
-name = "Gallery"
-url = "gallery/"
+name = "Newsletter"
+url = "https://yarnboundtales.substack.com/"
 weight = 5
 
 # tech editing dropdown
