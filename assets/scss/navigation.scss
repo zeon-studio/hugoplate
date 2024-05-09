@@ -12,7 +12,7 @@ input#nav-toggle:checked + label #show-button {
   }
   
   .header {
-    @apply bg-theme-light dark:bg-darkmode-body py-6 shadow-lg;
+    @apply bg-slate-900 dark:bg-darkmode-body py-6 shadow-lg;
   }
   
   // navbar items
@@ -21,7 +21,7 @@ input#nav-toggle:checked + label #show-button {
   }
   
   .navbar-brand {
-    @apply text-dark hover:text-dark dark:text-darkmode-dark text-xl font-semibold;
+    @apply text-slate-50 hover:text-slate-50 dark:text-darkmode-dark text-xl font-semibold;
     image {
       @apply max-h-full max-w-full;
     }
@@ -36,7 +36,7 @@ input#nav-toggle:checked + label #show-button {
 } */
   
   .nav-link {
-    @apply text-dark dark:text-darkmode-dark dark:hover:text-darkmode-primary block p-3 cursor-pointer font-semibold transition lg:px-2 lg:py-3 hover:text-blue-500;
+    @apply text-slate-50 dark:text-darkmode-dark dark:hover:text-darkmode-primary block p-3 cursor-pointer font-light transition lg:px-2 lg:py-3 hover:text-blue-500;
   }
   
   .nav-dropdown {
@@ -52,7 +52,7 @@ input#nav-toggle:checked + label #show-button {
   }
   
   .nav-dropdown-list {
-    @apply bg-body dark:bg-darkmode-body z-10 min-w-[180px] rounded p-4 shadow hidden lg:invisible lg:absolute lg:block lg:opacity-0;
+    @apply bg-slate-900 dark:bg-darkmode-body z-10 min-w-[180px] rounded p-4 shadow hidden lg:invisible lg:absolute lg:block lg:opacity-0;
   }
   
   .nav-dropdown-item {
@@ -60,7 +60,11 @@ input#nav-toggle:checked + label #show-button {
   }
   
   .nav-dropdown-link {
-    @apply text-dark dark:text-darkmode-text dark:hover:text-darkmode-primary block py-1 font-semibold transition;
+    @apply text-slate-50 dark:text-darkmode-text dark:hover:text-darkmode-primary block py-1 font-light transition;
+  }
+
+  footer a {
+    @apply text-slate-50 font-light
   }
   
   //theme-switcher

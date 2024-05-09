@@ -28,10 +28,6 @@ a:active {
   @apply text-blue-500;
 }
 
-footer a {
-  @apply text-dark;
-}
-
 // Optional: special styles for links in specific sections or contexts
 .featured a {
   @apply text-orange-500; // Orange text for links in the 'featured' section
