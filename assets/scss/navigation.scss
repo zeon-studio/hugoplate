@@ -31,12 +31,12 @@ input#nav-toggle:checked + label #show-button {
     @apply text-center lg:text-left;
   }
   
-  // .nav-item {
-  //   @apply mx-3;
-  // }
+/* .nav-item {
+  @apply mx-10;
+} */
   
   .nav-link {
-    @apply text-dark hover:text-primary dark:text-darkmode-dark dark:hover:text-darkmode-primary block p-3 cursor-pointer font-semibold transition lg:px-2 lg:py-3;
+    @apply text-dark dark:text-darkmode-dark dark:hover:text-darkmode-primary block p-3 cursor-pointer font-semibold transition lg:px-2 lg:py-3 hover:text-blue-500;
   }
   
   .nav-dropdown {
@@ -60,7 +60,7 @@ input#nav-toggle:checked + label #show-button {
   }
   
   .nav-dropdown-link {
-    @apply text-dark hover:text-primary dark:text-darkmode-text dark:hover:text-darkmode-primary block py-1 font-semibold transition;
+    @apply text-dark dark:text-darkmode-text dark:hover:text-darkmode-primary block py-1 font-semibold transition;
   }
   
   //theme-switcher
