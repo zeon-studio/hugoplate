@@ -5,27 +5,27 @@
 
 // Custom styles for links
 a {
-  @apply text-blue-800 no-underline transition duration-300 ease-in-out font-semibold;
+  @apply text-amber-500 no-underline transition duration-300 ease-in-out font-semibold;
 }
 
 a:hover {
-  @apply text-blue-500;
+  @apply text-amber-400;
 }
 
 a:active {
-  @apply text-blue-500;
+  @apply text-amber-500;
 }
 
 .content a {
-  @apply text-blue-800 no-underline transition duration-300 ease-in-out font-semibold;
+  @apply text-amber-500 no-underline transition duration-300 ease-in-out font-semibold;
 }
 
 .content a:hover {
-  @apply text-blue-500;
+  @apply text-amber-400;
 }
 
 .content a:active {
-  @apply text-blue-500;
+  @apply text-amber-500;
 }
 
 // Optional: special styles for links in specific sections or contexts
