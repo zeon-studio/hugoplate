@@ -36,7 +36,7 @@ pageRef = "/services"
 parent = "Tech Editing"
 name = "Working with Me"
 weight = 2
-pageRef = "/process"
+pageRef = "/working-with-me"
 
 # footer menu
 [[footer]]
