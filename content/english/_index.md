@@ -2,6 +2,7 @@
 # Banner
 banner:
   title: "Hi, I'm Ádám Sárpátki,"
+  phonetics: "[ʃaːɾpaːtki]"
   intro: | 
     a literary translator and editor. The main body of my work is in the fantasy and science fiction genres, but since 2013 I have also worked on some YA fiction, non-fiction and popular science books.
 
