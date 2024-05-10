@@ -12,7 +12,7 @@
     <input id="nav-toggle" type="checkbox" class="hidden" />
     <label
       for="nav-toggle"
-      class="flex items-center order-3 cursor-pointer lg:hidden text-dark dark:text-white lg:order-1">
+      class="flex items-center order-3 cursor-pointer lg:hidden text-slate-50 dark:text-white lg:order-1">
       <svg id="show-button" class="block h-6 fill-current" viewBox="0 0 20 20">
         <title>Menu Open</title>
         <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
@@ -98,7 +98,7 @@
       {{ if site.Params.navigation_button.enable }}
         <li class="inline-block mt-4 lg:hidden">
           <a
-            class="btn btn-outline-primary btn-sm"
+            class="btn-outline-primary btn-sm"
             href="{{ site.Params.navigation_button.link | relLangURL }}">
             {{ site.Params.navigation_button.label }}
           </a>
@@ -111,7 +111,7 @@
         {{ if .enable }}
           <button
             aria-label="search"
-            class="inline-block pr-5 mr-5 text-xl border-r border-border text-slate-50 hover:text-blue-500 dark:border-darkmode-border dark:text-white dark:hover:text-darkmode-primary"
+            class="inline-block pr-5 mr-5 text-xl border-r border-border text-slate-50 hover:text-amber-500 dark:border-darkmode-border dark:text-white dark:hover:text-darkmode-primary"
             data-target="search-modal">
             <i class="fa-solid fa-search "></i>
           </button>
@@ -126,7 +126,7 @@
       {{ if site.Params.navigation_button.enable }}
         <a
           href="{{ site.Params.navigation_button.link | relLangURL }}"
-          class="hidden btn btn-primary lg:flex">
+          class="hidden btn-primary btn-sm lg:flex">
           {{ site.Params.navigation_button.label }}
         </a>
       {{ end }}

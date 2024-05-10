@@ -1,17 +1,17 @@
 .btn {
-  @apply rounded-lg border border-transparent min-h-16 align-middle items-center flex flex-row px-5 py-5 font-thin tracking-wide uppercase transition;
+  @apply rounded-lg border border-transparent min-h-16 align-middle items-center flex flex-row px-6 py-5 font-thin tracking-wide uppercase transition;
 }
 
 .btn-sm {
-  @apply rounded-sm px-4 py-1.5 text-sm;
+  @apply rounded-lg text-sm border border-transparent align-middle items-center flex flex-row min-h-10 px-4 py-3 font-thin tracking-wide uppercase transition;
 }
 
 .btn-primary {
-  @apply border-indigo-900 hover:border-indigo-950 bg-indigo-800 dark:border-darkmode-primary dark:text-dark text-slate-50 hover:text-slate-50 dark:bg-white  hover:bg-indigo-900 transition-all duration-300;
+  @apply border-indigo-900 bg-indigo-800 dark:border-darkmode-primary dark:text-dark text-slate-50 hover:text-slate-50 dark:bg-white  hover:bg-indigo-900 transition-all duration-300 hover:border-amber-600;
 }
 
 .btn-outline-primary {
-  @apply border-dark text-dark hover:bg-dark dark:hover:text-dark bg-transparent hover:text-white dark:border-white dark:text-white dark:hover:bg-white;
+  @apply border-indigo-900 bg-indigo-800 text-slate-50 hover:bg-indigo-900 dark:hover:text-dark hover:text-slate-50 dark:border-white dark:text-white dark:hover:bg-white transition-all duration-300 rounded-lg;
 }
 
 .btn-secondary {

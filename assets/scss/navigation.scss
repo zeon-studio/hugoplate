@@ -60,7 +60,7 @@ input#nav-toggle:checked + label #show-button {
   }
   
   .nav-dropdown-link {
-    @apply text-slate-50 dark:text-darkmode-text dark:hover:text-darkmode-primary block py-1 font-light transition;
+    @apply text-slate-50 dark:text-darkmode-text dark:hover:text-darkmode-primary block py-1 font-light transition hover:text-amber-500;
   }
 
   footer a {
