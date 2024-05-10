@@ -66,6 +66,10 @@ input#nav-toggle:checked + label #show-button {
   footer a {
     @apply text-slate-50 font-light
   }
+
+  footer a:hover {
+    @apply text-amber-500
+  }
   
   //theme-switcher
   .theme-switcher {
