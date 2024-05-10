@@ -72,7 +72,7 @@
 
     <div class="container flex flex-row flex-wrap justify-center gap-x-8 gap-y-4">
       {{ range .Params.expertise }}
-      <div class="py-10 mb-4 rounded-lg md:col-6 lg:col-4 bg-theme-light dark:bg-darkmode-theme-light px-7">
+      <div class="expertise-box">
         <div class="flex flex-row items-center ml-4 gap-x-4">
           <div class="text-dark dark:text-white">
             {{ partial "image" (dict "Src" .icon "Size" "50x50" "Class" "" "Alt" .keyword) }}
