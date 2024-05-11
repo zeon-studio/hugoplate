@@ -46,7 +46,7 @@ features:
         I love the people I work with, and since I'm an introvert, I enjoy spending a lot of my time alone with one text or another. It's not all sunshine and rainbows, but I am able to set much healthier boundaries for myself, like not working after 5 p.m., and not working on the weekends. Sometimes it's unavoidable, but most of the time no lives are lost if I rest and recharge a bit.
 
   - title: "2024-"
-    image: "/images/group_call.png"
+    image: "/images/about_collage.jpg"
     content: |
         *"I have found, through painful experience, that the most important step a person can take is always the next one."* ― Brandon Sanderson, *Oathbringer*
 
