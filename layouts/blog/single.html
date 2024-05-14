@@ -41,6 +41,7 @@
             </li>
           </ul>
           <div class="content mb-10">
+            {{ partial "toc.html" (dict "Class" "blog" "Collapsed" false "TableOfContents" .TableOfContents ) }}
             {{ .Content }}
           </div>
           <div class="row items-start justify-between">
