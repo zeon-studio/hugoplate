@@ -3,8 +3,8 @@
 {{ with .Params.banner }}
 <section class="section bg-slate-900">
   <div class="container">
-    <div class="grid grid-cols-12 gap-x-4 gap-y-4">
-      <div class="content-center col-span-12 mb-8 md:col-start-1 md:col-end-8 lg:col-start-1 text-auto">
+    <div class="grid grid-cols-1 align-middle md:grid-cols-2 gap-x-4 gap-y-4">
+      <div class="content-center mb-8 text-auto">
         <h1 class="tracking-wide text-h3 lg:text-h1 text-slate-50">
           {{ .title | markdownify }}
         </h1>
@@ -40,7 +40,7 @@
         </div>
       </div>
       <div
-        class="content-center col-span-12 md:content-normal lg:content-center lg:py-4 lg:pl-4 xl:py-10 xl:pl-10 md:col-start-8 md:col-end-13">
+        class="content-center md:content-normal lg:content-center lg:py-4 lg:pl-4 xl:py-10 xl:pl-10">
         {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto rounded-lg shadow-[0px_0px_34px_0px] shadow-indigo-900"
         "DisplayXL" "800x" ) }}
       </div>
