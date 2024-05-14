@@ -64,7 +64,7 @@
 <!-- Expertise -->
 {{ with site.GetPage "sections/expertise" }}
 {{ if .Params.enable }}
-<section class="py-10 section bg-slate-50">
+<section class="pt-10 pb-20 section bg-slate-50">
   <div class="container">
     <div class="row">
       <div class="mx-auto mb-12 text-center md:col-10 lg:col-8 xl:col-6">
@@ -78,7 +78,7 @@
     </div>
   </div>
 
-  <div class="container flex flex-row flex-wrap justify-center gap-x-8 gap-y-4">
+  <div class="container flex flex-row flex-wrap justify-center gap-x-8 gap-y-8">
     {{ range .Params.expertise }}
     <div class="expertise-box">
       <div class="flex flex-row items-center ml-4 gap-x-4">
@@ -104,14 +104,14 @@
 <!-- Newsletter promo -->
 {{ with site.GetPage "sections/newsletter-promo" }}
 {{ if .Params.enable }}
-<section class="py-10 section bg-slate-900">
+<section class="pt-20 pb-10 section bg-slate-900">
   <div class="container">
     {{ range .Params.promo }}
-    <div class="grid items-center grid-cols-12 ml-4 gap-x-4 gap-y-4">
-      <div class="col-span-12 md:col-start-1 md:col-end-6 lg:col-start-1">
-        {{ partial "image" (dict "Src" .img "Size" "" "Class" "" "Alt" .keyword) }}
+    <div class="grid items-center grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+      <div class="">
+        {{ partial "image" (dict "Src" .img "Size" "" "Class" "rounded-lg" "Alt" .keyword) }}
       </div>
-      <div class="col-span-12 p-4 lg:py-4 lg:pl-4 xl:py-10 xl:pl-10 md:col-start-6 md:col-end-13">
+      <div class="lg:py-4 xl:py-10 xl:pl-10">
         <h2 class="mb-4 text-slate-50">
           {{ .title | markdownify }}
         </h2>
