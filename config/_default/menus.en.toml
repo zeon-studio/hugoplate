@@ -39,17 +39,38 @@ weight = 2
 pageRef = "/working-with-me"
 
 # footer menu
+
 [[footer]]
-name = "About"
-url = "about/"
+name = "Home"
+url = "/"
 weight = 1
 
 [[footer]]
-name = "Elements"
-url = "elements/"
+name = "About Me"
+url = "about/"
 weight = 2
+
+[[footer]]
+name = "Services"
+weight = 3
+pageRef = "/services"
+
+[[footer]]
+name = "Working with Me"
+weight = 4
+pageRef = "/working-with-me"
+
+[[footer]]
+name = "Publications"
+url = "publications/"
+weight = 5
+
+[[footer]]
+name = "Newsletter"
+url = "https://yarnboundtales.substack.com/"
+weight = 6
 
 [[footer]]
 name = "Privacy Policy"
 url = "privacy-policy/"
-weight = 3
+weight = 7
