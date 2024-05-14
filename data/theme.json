@@ -31,10 +31,10 @@
   },
   "fonts": {
     "font_family": {
-      "primary": "Spline Sans:wght@400;600",
-      "primary_type": "sans-serif",
-      "secondary": "EB Garamond:wght@500;700",
-      "secondary_type": "serif"
+      "primary": "Inter:wght@400;600",
+      "primary_type": "sans",
+      "secondary": "Inter:wght@500;700",
+      "secondary_type": "sans"
     },
     "font_size": {
       "base": "16",

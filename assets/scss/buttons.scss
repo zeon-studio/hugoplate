@@ -1,9 +1,9 @@
 .btn {
-  @apply rounded-lg border border-transparent min-h-16 align-middle items-center flex flex-row px-6 py-5 font-thin tracking-wide uppercase transition;
+  @apply rounded-lg border border-transparent min-h-16 align-middle items-center flex flex-row px-6 py-5 tracking-wide uppercase transition;
 }
 
 .btn-sm {
-  @apply rounded-lg text-sm border border-transparent align-middle items-center flex flex-row min-h-10 px-4 py-3 font-thin tracking-wide uppercase transition;
+  @apply rounded-lg text-sm border border-transparent align-middle items-center flex flex-row min-h-10 px-4 py-3 tracking-wide uppercase transition;
 }
 
 .btn-primary {
