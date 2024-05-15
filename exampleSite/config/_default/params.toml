@@ -85,6 +85,10 @@ expire_days = 60
 content = "This site uses cookies. By continuing to use this website, you agree to their use."
 button = "I Accept"
 
+# diagrams
+[mermaid]
+js_url = 'https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.esm.min.mjs'
+
 ######################## sidebar widgets #########################
 [widgets]
 sidebar = ["categories", "tags"]
