@@ -5,11 +5,16 @@ enable: true
 promo:
   - title: "Yarnbound Tales\ newsletter"
     img: "/images/pexels-cottonbro-4065155.jpg"
-    content: "As a relatively new knitter, I'm aware of the challenges beginners face, which helps me make sure the patterns I edit are clear and beginner-friendly. I also think that although English is not my native language, that's actually an advantage. Due to the fact that I spend most of my days immersed in English, either for work or for entertainment, I can spot sentences that are confusing from a non-native perspective."
+    content: |
+      Once a month I send out a short but sweet newsletter that includes my current available tech editing spots, as well as some stuff I found useful or interesting in the previous month—whether it's a video, a podcast episode, an article or a conversation.
+
+      The topics include knitting, cooking, books, video games, TTRPGs, or anything, really, that interests me at the time.
+
+      It's free, there's no catch, and you can unsubscribe at any time. Clicking the button below will take you to my Substack page.
 
     button:
         enable: true
-        label: "Subscribe"
+        label: "Subscribe now"
         link: https://yarnboundtales.substack.com/
 
 # don't create a separate page
