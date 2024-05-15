@@ -6,7 +6,7 @@
 <ul class="{{ $class }} inline-flex space-x-1 capitalize">
   <li>
     <a class="text-primary dark:text-darkmode-primary" href="{{ $base }}">
-      {{ i18n "home" | default "Home" }}
+      {{ T "home" | default "Home" }}
     </a>
     <span class="inlin-block mr-1">/</span>
   </li>
@@ -16,7 +16,7 @@
         <a
           class="text-primary dark:text-darkmode-primary"
           href="{{ .RelPermalink }}">
-          {{ i18n (printf "%s" (lower .Title)) | default .Title }}
+          {{ T (printf "%s" (lower .Title)) | default .Title }}
         </a>
         <span class="inlin-block mr-1">/</span>
       </li>
@@ -24,7 +24,7 @@
   {{ end }}
   <li>
     <span class="text-primary dark:text-darkmode-primary">
-      {{ i18n (printf "%s" (lower $context.Title)) | default $context.Title }}
+      {{ T (printf "%s" (lower $context.Title)) | default $context.Title }}
     </span>
   </li>
 </ul>
