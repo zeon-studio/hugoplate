@@ -10,6 +10,7 @@ draft: false
 features:
   - title: "2012-2016"
     image: "/images/cserka.jpg"
+    alt: "Our mixed-breed dog, captured in our garden one May afternoon in 2024."
     content: |
         *"In the beginning, there was nothing, which exploded."*  
          ― Terry Pratchett, *Lords and Ladies*
@@ -22,6 +23,7 @@ features:
 
   - title: "2016-2018"
     image: "/images/konyvfeszt_2017.jpg"
+    alt: "Rows of books at the 2017 International Book Festival in Budapest."
     content: |
         *"I kind of lost track of time..."  
          "For two hours?"  
@@ -36,6 +38,7 @@ features:
 
   - title: "2018-2023"
     image: "/images/pear_tree.jpg"
+    alt: "A pear tree in our garden, in full autumnal colours."
     content: |
       *\"And he dreamed the dream of all those who publish books, which was to have so much gold in your pockets that you would have to employ two people just to hold your trousers up.\"* ― Terry Pratchett, *Maskerade*
     long_text: |
@@ -47,6 +50,7 @@ features:
 
   - title: "2024-"
     image: "/images/2024-collage.jpg"
+    alt: "This collage shows my interests: fantasy maps, knitting, TTRPGs and minipainting."
     content: |
         *"I have found, through painful experience, that the most important step a person can take is always the next one."* ― Brandon Sanderson, *Oathbringer*
 

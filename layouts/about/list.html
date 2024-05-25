@@ -33,7 +33,7 @@
                     <div class="mb:md-0 {{ if not (modBool $i 2) }}
                     md:order-2
                     {{ end }} md:col-5 mb-6">
-                        {{ partial "image" (dict "Src" .image "Alt" "feature image" "Class" "rounded-lg" "DisplayXL"
+                        {{ partial "image" (dict "Src" .image "Alt" .alt "Class" "rounded-lg" "DisplayXL"
                         "520x" "DisplayLG"
                         "425x" "DisplayMD" "360x") }}
                     </div>
