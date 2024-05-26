@@ -1,7 +1,7 @@
 {{ define "main" }}
 <!-- Banner -->
 {{ with .Params.banner }}
-<section class="section bg-slate-900">
+<section class="section dark-bg">
   <div class="container">
     <div class="grid grid-cols-1 align-middle md:grid-cols-2 gap-x-4 gap-y-4">
       <div class="content-center mb-8 text-auto">
@@ -15,7 +15,7 @@
         </div>
         <div class="mb-8 text-lg text-slate-50">
           {{ range $j, $paragraph := split .intro "\n" }}
-          <p class="lg:pr-8 mb-6{{ if eq $j 0 }} mt-0{{ end }}">{{ $paragraph | markdownify }}</p>
+          <p class="lg:pr-8 mb-6{{ if eq $j 0 }} mt-0{{ end }}">{{ $paragraph | safeHTML }}</p>
           {{ end }}
         </div>
         {{ with .button }}
@@ -49,7 +49,7 @@
 <!-- /Banner -->
 
 <!-- Shape divider -->
-<div class="bg-slate-900">
+<div class="dark-bg">
   <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 98" preserveAspectRatio="xMinYMin"
     version="1.1" xmlns="http://www.w3.org/2000/svg">
     <path class="fill-slate-50" style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
@@ -62,7 +62,7 @@
 <!-- Expertise -->
 {{ with site.GetPage "sections/expertise" }}
 {{ if .Params.enable }}
-<section class="pt-10 pb-20 section bg-slate-50">
+<section class="pt-10 pb-20 section light-bg">
   <div class="container">
     <div class="row">
       <div class="mx-auto mb-12 text-center md:col-10 lg:col-8 xl:col-6">
@@ -102,7 +102,7 @@
 <!-- Newsletter promo -->
 {{ with site.GetPage "sections/newsletter-promo" }}
 {{ if .Params.enable }}
-<section class="pt-20 pb-10 section bg-slate-900">
+<section class="pt-20 pb-10 section dark-bg">
   <div class="container">
     {{ range .Params.promo }}
     <div class="grid items-center grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
@@ -139,7 +139,7 @@
 <!-- /Newsletter promo -->
 
 <!-- Shape divider -->
-<div class="bg-slate-900">
+<div class="dark-bg">
   <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" preserveAspectRatio="xMinYMin" viewBox="0 0 1440 98"
     version="1.1" xmlns="http://www.w3.org/2000/svg">
     <path class="fill-slate-50" style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
@@ -152,7 +152,7 @@
 <!-- Testimonials -->
 {{ with site.GetPage "sections/testimonial" }}
 {{ if .Params.enable }}
-<section class="py-10 section bg-slate-50">
+<section class="py-10 section light-bg">
   <div class="container">
     <div class="row">
       <div class="mx-auto mb-12 text-center md:col-10 lg:col-8 xl:col-6 ">

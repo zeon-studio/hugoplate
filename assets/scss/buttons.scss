@@ -1,5 +1,5 @@
 .btn {
-  @apply rounded-lg border border-transparent min-h-16 align-middle items-center flex flex-row px-6 py-5 tracking-wide uppercase transition;
+  @apply rounded-lg text-slate-50 border border-transparent min-h-16 align-middle items-center flex flex-row px-6 py-5 tracking-wide uppercase transition;
 }
 
 .btn-sm {
@@ -7,7 +7,7 @@
 }
 
 .btn-primary {
-  @apply border-indigo-900 bg-indigo-800 dark:border-darkmode-primary dark:text-dark text-slate-50 hover:text-slate-50 dark:bg-white  hover:bg-indigo-900 transition-all duration-300 hover:border-amber-600;
+  @apply border-indigo-900 bg-indigo-800 text-slate-50 hover:text-slate-50 hover:bg-indigo-900 transition-all duration-300 hover:border-amber-600;
 }
 
 .btn-outline-primary {
@@ -15,5 +15,5 @@
 }
 
 .btn-secondary {
-  @apply dark:border-darkmode-primary dark:text-dark text-dark dark:bg-white hover:text-white hover:bg-primary;
+  @apply dark:border-darkmode-primary text-dark hover:text-white hover:bg-primary;
 }

@@ -3,29 +3,64 @@
 @tailwind components;
 @tailwind utilities;
 
+// Custom bg colors
+.light-bg {
+  @apply bg-slate-50;
+}
+
+.dark-bg {
+  @apply bg-slate-900;
+}
+
 // Custom styles for links
-a {
+a, .dark-bg a {
   @apply text-amber-500 no-underline transition duration-300 ease-in-out font-semibold;
 }
 
-a:hover {
+a:hover, .dark-bg a:hover {
   @apply text-amber-400;
 }
 
-a:active {
+a:active, .dark-bg a:active {
   @apply text-amber-500;
 }
 
-.content a {
-  @apply text-amber-500 no-underline transition duration-300 ease-in-out font-semibold;
+.content a, .light-bg a {
+  @apply text-indigo-800 no-underline transition duration-300 ease-in-out font-semibold;
 }
 
-.content a:hover {
-  @apply text-amber-400;
+.content a:hover, .light-bg a:hover {
+  @apply text-indigo-900;
 }
 
-.content a:active {
-  @apply text-amber-500;
+.content a:active, .light-bg a:active {
+  @apply text-indigo-800;
+}
+
+/* Ensure button text color remains slate-50 for links styled as buttons */
+a.btn, a.btn-primary {
+  @apply text-slate-50;
+}
+
+a.btn:hover, a.btn-primary:hover {
+  @apply text-slate-50;
+}
+
+a.btn:active, a.btn-primary:active {
+  @apply text-slate-50;
+}
+
+/* Override for buttons in dark background contexts */
+.dark-bg .btn, .dark-bg .btn-primary {
+  @apply text-slate-50;
+}
+
+.dark-bg .btn:hover, .dark-bg .btn-primary:hover {
+  @apply text-slate-50;
+}
+
+.dark-bg .btn:active, .dark-bg .btn-primary:active {
+  @apply text-slate-50;
 }
 
 // Optional: special styles for links in specific sections or contexts

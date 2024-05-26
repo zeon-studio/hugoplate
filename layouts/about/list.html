@@ -1,5 +1,5 @@
 {{ define "main" }}
-<section class="section-sm bg-slate-900">
+<section class="section-sm dark-bg">
     <div class="container">
         <div class="justify-center row">
             <div class="md:col-10 lg:col-7">
@@ -13,7 +13,7 @@
 </section>
 
 <!-- Shape divider -->
-<div class="bg-slate-900">
+<div class="dark-bg">
     <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 98" preserveAspectRatio="xMinYMin"
       version="1.1" xmlns="http://www.w3.org/2000/svg">
       <path class="fill-slate-50" style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
@@ -27,7 +27,7 @@
 <section class="pt-0">
     {{ range $i, $e := .Params.eras }}
 
-            <section class="section-sm py-20 {{ if (modBool $i 2) }}bg-slate-50{{else}}bg-slate-900{{ end }}">
+            <section class="section-sm py-20 {{ if (modBool $i 2) }}light-bg{{else}}dark-bg{{ end }}">
             <div class="container">
                 <div class="items-center justify-between row">
                     <div class="mb:md-0 {{ if not (modBool $i 2) }}
