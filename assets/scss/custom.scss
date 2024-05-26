@@ -14,7 +14,7 @@
 
 // Custom styles for links
 a, .dark-bg a {
-  @apply text-amber-500 no-underline transition duration-300 ease-in-out font-semibold;
+  @apply text-amber-500 no-underline transition duration-300 ease-in-out font-bold;
 }
 
 a:hover, .dark-bg a:hover {
@@ -26,15 +26,15 @@ a:active, .dark-bg a:active {
 }
 
 .content a, .light-bg a {
-  @apply text-indigo-800 no-underline transition duration-300 ease-in-out font-semibold;
+  @apply text-violet-800 no-underline transition duration-300 ease-in-out font-bold;
 }
 
 .content a:hover, .light-bg a:hover {
-  @apply text-indigo-900;
+  @apply text-violet-900;
 }
 
 .content a:active, .light-bg a:active {
-  @apply text-indigo-800;
+  @apply text-violet-800;
 }
 
 /* Ensure button text color remains slate-50 for links styled as buttons */

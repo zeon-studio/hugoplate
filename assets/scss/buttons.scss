@@ -7,11 +7,11 @@
 }
 
 .btn-primary {
-  @apply border-indigo-900 bg-indigo-800 text-slate-50 hover:text-slate-50 hover:bg-indigo-900 transition-all duration-300 hover:border-amber-600;
+  @apply border-violet-900 bg-violet-800 text-slate-50 hover:text-slate-50 hover:bg-violet-900 transition-all duration-300 hover:border-amber-600;
 }
 
 .btn-outline-primary {
-  @apply border-indigo-900 bg-indigo-800 text-slate-50 hover:bg-indigo-900 dark:hover:text-dark hover:text-slate-50 dark:border-white dark:text-white dark:hover:bg-white transition-all duration-300 rounded-lg;
+  @apply border-violet-900 bg-violet-800 text-slate-50 hover:bg-violet-900 dark:hover:text-dark hover:text-slate-50 dark:border-white dark:text-white dark:hover:bg-white transition-all duration-300 rounded-lg;
 }
 
 .btn-secondary {
