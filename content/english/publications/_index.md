@@ -19,6 +19,7 @@ draft: false
 - Brandon Sanderson: Hajnalszilánk. Budapest : Delta Vision, 2023. 320 p.
 - Catherine Saunders: Marvel – Pókember zsebkönyv. Budapest : Kolibri Kiadó, 2023. 80 p.
 - Shelley Parker-Chan: A nappá vált lány. Budapest : Agave Könyvek, 2023. 448 p.
+- 5 perces Star Wars-történetek. 2. kiad. Budapest : Kolibri, 2023. 176 p.
 - Adam Bray: Marvel Studios – Szereplők nagykönyve. Jav. utánny. Budapest : Kolibri, 2022. 176 p.
 - Melanie Scott: Pókember – Szereplők nagykönyve. Budapest : Kolibri Kiadó, 2022. 208 p.
 - Vanessa Len: Only a Monster – Csak egy szörnyeteg. Budapest : Anassa Kiadó, 2022. 368 p.
