@@ -1,7 +1,7 @@
 ---
 title: "Services"
 meta_title: "Services"
-description: "What services do I offer as a tech editor for knitting patterns"
+description: "The services I offer as a tech editor for knitting patterns"
 image: false
 toc: true
 draft: false
