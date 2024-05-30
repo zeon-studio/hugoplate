@@ -14,7 +14,7 @@ columns:
   secondButton:
     enable: true
     label: "Book a meeting"
-    link: /contact
+    link: ""
   content: |
     Even though my calendar for any given year is usually filled with projects from my current clients, I would be happy to talk shop, and maybe make space for new projects.
 
@@ -31,13 +31,13 @@ columns:
   secondButton:
     enable: true
     label: "Book a slot"
-    link: /contact
+    link: ""
   content: |
-    The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.
+    For now, I have limited availability for tech editing projects. I can usually guarantee one or two slots per week.
 
-    She packed her seven versalia, put her initial into the belt and made herself on the way.
+    I like planning ahead, so **please contact me in time about your project.** The earlier you contact me, the more likely I will be able to fit your design into my schedule. 😊
 
-    When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then
+    Before contacting me, [please read about my Tech Editing services](/services), if you haven't done so already.
 
 ---
 
