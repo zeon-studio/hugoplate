@@ -1,0 +1,76 @@
+<meta charset="utf-8" />
+
+<!-- responsive meta -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+
+<!-- theme meta -->
+<meta name="theme-name" content="hugoplate" />
+
+<!-- favicon -->
+{{ partialCached "favicon" . }}
+
+
+<!-- manifest -->
+{{ partialCached "manifest" . }}
+
+
+<!-- site verifications -->
+{{ partialCached "site-verifications.html" . }}
+
+
+<!-- opengraph and twitter card -->
+{{ partial "basic-seo.html" . }}
+
+
+<!-- custom script -->
+{{ partialCached "custom-script.html" . }}
+
+
+<!-- google analytics -->
+{{ if and site.Config.Services.GoogleAnalytics.ID (ne site.Config.Services.GoogleAnalytics.ID "G-MEASUREMENT_ID") }}
+{{ template "_internal/google_analytics.html" . }}
+{{ end }}
+
+
+<!-- google tag manager -->
+{{ partialCached "gtm.html" . }}
+
+
+<!-- search index -->
+{{ partial "search-index.html" . }}
+
+<!-- Cal element-click embed code begins -->
+{{/*  60 minute meeting  */}}
+<script type="text/javascript">
+  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+  Cal("init", { origin: "https://cal.com" });
+
+  Cal("ui", { "styles": { "branding": { "brandColor": "#000000" } }, "hideEventTypeDetails": false, "layout": "month_view" });
+</script>
+<!-- Cal element-click embed code ends -->
+
+<!-- Cal element-click embed code begins -->
+{{/*  Tech editing slots  */}}
+<script type="text/javascript">
+  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+  Cal("init", { origin: "https://cal.com" });
+
+
+  Cal("ui", { "styles": { "branding": { "brandColor": "#000000" } }, "hideEventTypeDetails": false, "layout": "month_view" });
+</script>
+<!-- Cal element-click embed code ends -->
+
+<!-- matomo analytics -->
+{{/* {{ partialCached "matomo-analytics.html" . }} */}}
+
+<!--  Baidu analytics -->
+{{/* {{ partialCached "baidu-analytics.html" . }} */}}
+
+<!-- Plausible Analytics -->
+{{/* {{ partialCached "plausible-analytics.html" . }} */}}
+
+<!-- Counter Analytics -->
+{{/* {{ partialCached "counter-analytics.html" . }} */}}
+
+<!-- Crisp Chat -->
+{{/* {{ partialCached "crisp-chat.html" . }} */}}

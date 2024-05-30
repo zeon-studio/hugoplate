@@ -1,0 +1,59 @@
+{{ define "main" }}
+{{ partial "page-header" . }}
+
+<section class="section-sm light-bg">
+  <div class="container pb-10">
+    <div class="justify-center row ">
+      <div class="text-left md:col-10 lg:col-7">
+        <div class="content">{{ .Content }}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container flex flex-row flex-wrap justify-center gap-x-8 gap-y-8">
+    {{ range .Params.columns }}
+    <div class="expertise-box">
+      <div class="flex flex-col items-center order-1 gap-y-6">
+        <div class="text-dark dark:text-white">
+          {{ partial "image" (dict "Src" .icon "Size" "50x50" "Class" "" "Alt" "") }}
+        </div>
+        <h3 class="order-2 font-semibold h5 font-primary">
+          {{ .title }}
+        </h3>
+      </div>
+      <div class="p-4 pt-6">
+        {{ range $j, $paragraph := split .content "\n" }}
+        <p class="mb-4{{ if eq $j 0 }} mt-0{{ end }}">{{ $paragraph | markdownify }}</p>
+        {{ end }}
+      </div>
+      <div class="px-4">
+        {{ with .button }}
+        {{ if .enable }}
+        <div class="flex flex-col flex-wrap max-w-full gap-y-4">
+          <a class="btn btn-primary" href="{{ .link | absURL }}" {{ if strings.HasPrefix .link `http` }} target="_blank"
+            rel="noopener" {{ end }}>
+            {{ .label }}
+          </a>
+          {{ end }}
+          {{ end }}
+          {{ with .secondButton }}
+          {{ if .enable }}
+            {{ if eq .label "Book a slot" }}
+              <a class="btn btn-secondary" href="#" onclick="openCalPopup('adamsarpatki/tech-editing-slot'); return false;" data-cal-link="adamsarpatki/tech-editing-slot" data-cal-namespace="" data-cal-config='{"layout":"month_view"}'>
+                {{ .label }}
+              </a>
+            {{ else if eq .label "Book a meeting" }}
+              <a class="btn btn-secondary" href="#" onclick="openCalPopup('adamsarpatki/60-min-meeting'); return false;" data-cal-link="adamsarpatki/60-min-meeting" data-cal-namespace="" data-cal-config='{"layout":"month_view"}'>
+                {{ .label }}
+              </a>
+            {{ end }}
+          {{ end }}
+        </div>
+      {{ end }}
+      
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
