@@ -39,15 +39,15 @@ a:active, .dark-bg a:active {
 
 /* Ensure button text color remains slate-50 for links styled as buttons */
 a.btn, a.btn-primary {
-  @apply text-slate-50;
+  @apply text-slate-50 font-semibold;
 }
 
 a.btn:hover, a.btn-primary:hover {
-  @apply text-slate-50;
+  @apply text-slate-50 font-semibold;
 }
 
 a.btn:active, a.btn-primary:active {
-  @apply text-slate-50;
+  @apply text-slate-50 font-semibold;
 }
 
 a.btn-secondary {
