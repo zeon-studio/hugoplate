@@ -17,26 +17,16 @@ url = "translation-and-editing/"
 weight = 3
 
 [[main]]
+name = "Technical Editing"
+url = "technical-editing/"
+weight = 4
+
+[[main]]
 name = "Publications"
 url = "publications/"
 weight = 5
 
-# tech editing dropdown
-[[main]]
-weight = 4
-name = "Tech Editing"
 
-[[main]]
-parent = "Tech Editing"
-name = "Services"
-weight = 1
-pageRef = "/services"
-
-[[main]]
-parent = "Tech Editing"
-name = "Working with Me"
-weight = 2
-pageRef = "/working-with-me"
 
 # footer menu
 
@@ -56,26 +46,21 @@ url = "translation-and-editing/"
 weight = 3
 
 [[footer]]
-name = "Services"
+name = "Technical Editing"
 weight = 4
-pageRef = "/services"
-
-[[footer]]
-name = "Working with Me"
-weight = 5
-pageRef = "/working-with-me"
+pageRef = "technical-editing/"
 
 [[footer]]
 name = "Publications"
 url = "publications/"
-weight = 6
+weight = 5
 
 [[footer]]
 name = "Newsletter"
 url = "https://yarnboundtales.substack.com/"
-weight = 7
+weight = 6
 
 [[footer]]
 name = "Privacy Policy"
 url = "privacy-policy/"
-weight = 8
+weight = 7
