@@ -14,7 +14,7 @@ columns:
   secondButton:
     enable: true
     label: "Book a meeting"
-    link: ""
+    link: "https://cal.com/adamsarpatki/60-min-meeting"
   content: |
     Even though my calendar for any given year is usually filled with projects from my current clients, I would be happy to talk shop, and maybe make space for new projects.
 
@@ -31,7 +31,7 @@ columns:
   secondButton:
     enable: true
     label: "Book a slot"
-    link: ""
+    link: "https://cal.com/adamsarpatki/tech-editing-slot"
   content: |
     For now, I have limited availability for tech editing projects. I can usually guarantee one or two slots per week.
 

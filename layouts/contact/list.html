@@ -38,19 +38,13 @@
           {{ end }}
           {{ with .secondButton }}
           {{ if .enable }}
-            {{ if eq .label "Book a slot" }}
-              <a class="btn btn-secondary" href="javascript:void(0)" onclick="openCalPopup('adamsarpatki/tech-editing-slot'); return false;" data-cal-link="adamsarpatki/tech-editing-slot" data-cal-namespace="" data-cal-config='{"layout":"month_view"}'>
-                {{ .label }}
-              </a>
-            {{ else if eq .label "Book a meeting" }}
-              <a class="btn btn-secondary" href="javascript:void(0)" onclick="openCalPopup('adamsarpatki/60-min-meeting'); return false;" data-cal-link="adamsarpatki/60-min-meeting" data-cal-namespace="" data-cal-config='{"layout":"month_view"}'>
-                {{ .label }}
-              </a>
-            {{ end }}
+          <a class="btn btn-secondary" href="{{ .link | absURL }}" {{ if strings.HasPrefix .link `http` }}
+            target="_blank" rel="noopener" {{ end }}>
+            {{ .label }}
+          </a>
+          {{ end }}
           {{ end }}
         </div>
-      {{ end }}
-      
       </div>
     </div>
     {{ end }}
