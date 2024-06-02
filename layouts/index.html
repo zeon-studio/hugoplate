@@ -121,7 +121,7 @@
         <div class="flex mt-8">
           {{ with .button }}
           {{ if .enable }}
-          <a class="btn btn-primary" href="{{ .link | absURL }}" {{ if strings.HasPrefix .link `http` }} target="_blank"
+          <a class="btn btn-primary" href="{{ .link | absURL }}" {{ if strings.HasPrefix .link `http` }}
             rel="noopener" {{ end }}>
             {{ .label }}
           </a>
