@@ -6,7 +6,7 @@ modal:
   - title: "Yarnbound Tales"
     img: "/images/pexels-cottonbro-4065155.jpg"
     content: |
-      Subscribe to my once-a-month newsletter, and receive info about my currently available tech editing spots, as well as my musings about knitting, cooking, books, video games or TTRPGs.
+      Subscribe to my monthly newsletter to get updates on my availability, articles about knitting, books, cooking, video games, TTRPGs and other topics. 
 
     button:
         enable: true

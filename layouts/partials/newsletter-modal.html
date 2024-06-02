@@ -1,18 +1,32 @@
+{{ with site.GetPage "sections/newsletter-modal" }}
+{{ if .Params.enable }}
 <div id="bottom-right-modal"
     class="fixed bottom-0 right-0 z-50 hidden m-4 bg-white rounded-lg shadow-lg shadow-indigo-600/40 w-72">
-    <div class="flex items-start justify-end pt-2 pr-4 align-top bg-indigo-500 rounded-t-lg h-14">
-        <button id="close-modal" class="text-indigo-900 hover:text-amber-700">&times;</button>
+    {{ range .Params.modal }}
+    <div class="flex items-start justify-end h-20 pt-2 pr-4 align-top bg-indigo-500 rounded-t-lg">
+        <div><button id="close-modal" class="text-indigo-900 hover:text-amber-700">&times;</button></div>
     </div>
     <div class="flex flex-col items-center p-4 my-2 text-center gap-y-5">
         <div>
-            <h2 class="text-lg font-bold">Yarnbound Tales</h2>
-            <p class="mt-2">Subscribe to my once-a-month newsletter, and receive info about my currently available tech
-                editing spots, as well as my musings about knitting, cooking, books, video games or TTRPGs.</p>
-            <p class="mt-2">It's free.</p>
+            <h5 class="font-bold">{{ .title | markdownify }}</h5>
         </div>
         <div>
-            <button class="btn-sm btn-primary" type="button"><a href="https://yarnboundtales.substack.com/"
-                class="btn-primary">Subscribe now</a></button>
-            </div>
+            {{ range $j, $paragraph := split .content "\n" }}
+            <p class="mt-2">{{ $paragraph | markdownify }}</p>
+            {{ end }}
         </div>
+        <div>
+            {{ with .button }}
+            {{ if .enable }}
+            <a class="btn-primary btn-sm" href="{{ .link | absURL }}" {{ if strings.HasPrefix .link `http` }}
+                rel="noopener" {{ end }}>
+                {{ .label }}
+            </a>
+            {{ end }}
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
 </div>
+{{ end }}
+{{ end }}
