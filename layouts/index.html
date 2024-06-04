@@ -3,8 +3,8 @@
 {{ with .Params.banner }}
 <section class="section dark-bg">
   <div class="container">
-    <div class="grid grid-cols-1 align-top md:grid-cols-2 gap-x-4 gap-y-4">
-      <div class="mb-8 content-top text-auto">
+    <div class="flex flex-col md:flex-row md:justify-between lg:px-0 md:gap-x-8">
+      <div class="flex flex-col mb-8 text-center md:text-left gap-y-2">
         <h1 class="tracking-wide text-h3 lg:text-h1 text-slate-50">
           {{ .title | markdownify }}
         </h1>
@@ -13,14 +13,14 @@
             {{ .phonetics | markdownify }}
           </p>
         </div>
-        <div class="mb-8 text-lg text-slate-50">
+        <div class="text-lg text-slate-50">
           {{ range $j, $paragraph := split .intro "\n" }}
           <p class="lg:pr-8 mb-6{{ if eq $j 0 }} mt-0{{ end }}">{{ $paragraph | safeHTML }}</p>
           {{ end }}
         </div>
         {{ with .button }}
         {{ if .enable }}
-        <div class="flex gap-4 col">
+        <div class="flex flex-row">
           <a class="btn btn-primary" href="{{ .link | absURL }}" {{ if strings.HasPrefix .link `http` }} target="_blank"
             rel="noopener" {{ end }}>
             {{ .label }}
@@ -37,9 +37,8 @@
         {{ end }}
         </div>
       </div>
-      <div
-        class="content-top md:content-normal lg:content-top lg:pl-4 xl:pl-10">
-        {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto rounded-lg shadow-[0px_0px_34px_0px] shadow-indigo-900") }}
+      <div class="xl:pl-10">
+        {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "rounded-lg shadow-[0px_0px_34px_0px] shadow-indigo-900") }}
       </div>
     </div>
   </div>
