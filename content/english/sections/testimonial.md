@@ -8,8 +8,8 @@ testimonials:
   - name: "Zoltán Velkei"
     designation: "Chief of Publishing"
     company: "Agave Könyvek"
-    avatar: "/images/velkei_cropped_1.jpg"
-    content: "Each time Ádám works on one of our books, I always feel like they’re in safe hands, whether they need translating or editing. He has an excellent sense of language and style, and it’s great to see the dedication and care he puts into each project. On top of that, his work on especially lengthy novels is always up to an outstanding standard. I regard him as one of the most talented professionals among his younger peers."
+    avatar: "/images/testimonial_velkei.jpg"
+    content: "Each time Ádám works on one of our books, whether it needs translating or editing, I know it’s in safe hands. He has an outstanding sense of language and style, and it’s great to see the dedication and care he devotes to each project. Additionally, his work on decidedly lengthy novels is always of exceptional quality. I consider him one of the most talented professionals among his younger peers."
 
   - name: "Marvin McKinney"
     designation: "Web Designer"
