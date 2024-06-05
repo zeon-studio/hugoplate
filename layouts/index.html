@@ -20,7 +20,7 @@
         </div>
         {{ with .button }}
         {{ if .enable }}
-        <div class="flex flex-row">
+        <div class="flex flex-row justify-center md:justify-start">
           <a class="btn btn-primary" href="{{ .link | absURL }}" {{ if strings.HasPrefix .link `http` }} target="_blank"
             rel="noopener" {{ end }}>
             {{ .label }}
