@@ -104,7 +104,7 @@ draft: false
 
 ## Articles about speculative fiction
 
-- Legendás állatok – Grindelwald Bűntettei. In: SFmag, 2018. november 14. http://sfmag.hu/2018/11/14/legendas-allatok-grindelwald-buntettei-filmkritika/
+- Legendás állatok – Grindelwald bűntettei. In: SFmag, 2018. november 14. http://sfmag.hu/2018/11/14/legendas-allatok-grindelwald-buntettei-filmkritika/
 - George R. R. Martin: Álomdalok (1. kötet). In: SFmag, 2018. február 28. http://sfmag.hu/2018/02/28/george-r-r-martin-alomdalok-1-kotet/
 - Critical Role RPG show. In: 2017 legmaradandóbb sorozatos élményei. Ekultura.hu, 2018. január 5. http://ekultura.hu/latnivalo/egyeb/cikk/2018-01-05+10%3A00%3A00/2017-legmaradandobb-sorozatos-elmenyei
 - Robin Hobb: Az orgyilkos tanítványa. In: 2017 legmaradandóbb könyvélményei. Ekultura.hu, 2018. január 2. http://ekultura.hu/olvasnivalo/egyeb/cikk/2018-01-02+10%3A00%3A00/2017-legmaradandobb-konyvelmenyei

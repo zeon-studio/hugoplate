@@ -15,7 +15,7 @@
             <li class="inline-block m-3 ">
               <a
                 {{ if findRE `^http` .URL }}
-                  target="_blank" rel="noopener"
+                  rel="noopener"
                 {{ end }}
                 href="{{ if findRE `^#` .URL }}
                   {{ if not $.IsHome }}
@@ -35,7 +35,6 @@
           {{ range site.Data.social.main }}
             <li>
               <a
-                target="_blank"
                 aria-label="{{ .name }}"
                 rel="nofollow noopener"
                 href="{{ .link | safeURL }}">

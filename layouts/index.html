@@ -21,7 +21,7 @@
         {{ with .button }}
         {{ if .enable }}
         <div class="flex flex-row justify-center md:justify-start">
-          <a class="btn btn-primary" href="{{ .link | absURL }}" {{ if strings.HasPrefix .link `http` }} target="_blank"
+          <a class="btn btn-primary" href="{{ .link | absURL }}" {{ if strings.HasPrefix .link `http` }} 
             rel="noopener" {{ end }}>
             {{ .label }}
           </a>
@@ -30,7 +30,7 @@
         {{ with .secondButton }}
         {{ if .enable }}
           <a class="btn btn-secondary" href="{{ .link | absURL }}" {{ if strings.HasPrefix .link `http` }}
-            target="_blank" rel="noopener" {{ end }}>
+            rel="noopener" {{ end }}>
             {{ .label }}
           </a>
         {{ end }}
