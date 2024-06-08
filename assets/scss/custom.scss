@@ -92,3 +92,21 @@ h6 {
 .expertise-box {
   @apply py-10 rounded-lg md:col-6 lg:col-4 bg-white dark:bg-darkmode-theme-light px-7 border border-indigo-100;
 }
+
+// Newlsetter modal animation
+/* Add animation keyframes */
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to the modal only on md screens and larger */
+@media (min-width: 768px) {
+  .slide-in-md {
+    animation: slideInFromBottom 0.5s ease forwards;
+  }
+}

@@ -41,8 +41,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const modal = document.getElementById("bottom-right-modal");
   const closeModal = document.getElementById("close-modal");
 
-  // Show the modal on page load
-  modal.classList.remove("hidden");
+  // Add a small delay before showing the modal with the animation
+  setTimeout(function() {
+    modal.classList.remove("hidden");
+    // Apply the animation only on md screens and larger
+    if (window.innerWidth >= 768) {
+      modal.classList.add("slide-in-md");
+    }
+  }, 100); // Adjust the delay as needed
 
   // Close the modal on click
   closeModal.addEventListener("click", function () {
