@@ -1,5 +1,4 @@
-<header
-  class="header {{ if site.Params.navbar_fixed }}sticky top-0{{ end }} z-30">
+<header class="header {{ if site.Params.navbar_fixed }}sticky top-0{{ end }} z-30">
   <nav class="container navbar">
     <!-- logo -->
     <div class="order-0">
@@ -10,8 +9,7 @@
     </div>
     <!-- navbar toggler -->
     <input id="nav-toggle" type="checkbox" class="hidden" />
-    <label
-      for="nav-toggle"
+    <label for="nav-toggle"
       class="flex items-center order-3 cursor-pointer lg:hidden text-slate-50 dark:text-white lg:order-1">
       <svg id="show-button" class="block h-6 fill-current" viewBox="0 0 20 20">
         <title>Menu Open</title>
@@ -19,50 +17,40 @@
       </svg>
       <svg id="hide-button" class="hidden h-6 fill-current" viewBox="0 0 20 20">
         <title>Menu Close</title>
-        <polygon
-          points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
-          transform="rotate(45 10 10)"></polygon>
+        <polygon points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2" transform="rotate(45 10 10)">
+        </polygon>
       </svg>
     </label>
     <!-- /navbar toggler -->
 
     <!-- main navbar -->
-    <ul
-      id="nav-menu"
+    <ul id="nav-menu"
       class="order-3 hidden w-full pb-6 navbar-nav lg:flex lg:order-1 lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8">
       {{ $currentPage := . }}
       {{ range site.Menus.main }}
-        {{ $menuURL := .URL | absLangURL }}
-        {{ $pageURL:= $currentPage.Permalink | absLangURL }}
-        {{ $active := eq $menuURL $pageURL }}
-        {{ if .HasChildren }}
-          <li class="relative nav-item nav-dropdown group">
-            <span
-              class="nav-link {{ range .Children }}
+      {{ $menuURL := .URL | absLangURL }}
+      {{ $pageURL:= $currentPage.Permalink | absLangURL }}
+      {{ $active := eq $menuURL $pageURL }}
+      {{ if .HasChildren }}
+      <li class="relative nav-item nav-dropdown group">
+        <span class="nav-link {{ range .Children }}
                 {{ $childURL := .URL | absLangURL }}
                 {{ $active := eq $childURL $pageURL }}
                 {{ if $active }}active{{ end }}
               {{ end }} inline-flex items-center">
-              {{ .Name }}
-              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                <path
-                  d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-              </svg>
-            </span>
-            <ul
-              class="nav-dropdown-list lg:group-hover:visible lg:group-hover:opacity-100">
-              {{ range .Children }}
-                {{ $childURL := .URL | absLangURL }}
-                {{ $active := eq $childURL $pageURL }}
-                <li class="nav-dropdown-item">
-                  <a
-                    class="nav-dropdown-link {{ if $active }}
+          {{ .Name }}
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+          </svg>
+        </span>
+        <ul class="nav-dropdown-list lg:group-hover:visible lg:group-hover:opacity-100">
+          {{ range .Children }}
+          {{ $childURL := .URL | absLangURL }}
+          {{ $active := eq $childURL $pageURL }}
+          <li class="nav-dropdown-item">
+            <a class="nav-dropdown-link {{ if $active }}
                       active
-                    {{- end -}}"
-                    {{ if findRE `^http` .URL }}
-                      rel="noopener"
-                    {{ end }}
-                    href="{{- if findRE `^#` .URL -}}
+                    {{- end -}}" {{ if findRE `^http` .URL }} rel="noopener" {{ end }} href="{{- if findRE `^#` .URL -}}
                       {{- if not $.IsHome -}}
                         {{- site.Home.RelPermalink -}}
                       {{- end }}
@@ -70,66 +58,58 @@
                     {{- else -}}
                       {{- .URL | relLangURL -}}
                     {{- end -}}">
-                    {{ .Name }}
-                  </a>
-                </li>
-              {{ end }}
-            </ul>
+              {{ .Name }}
+            </a>
           </li>
-        {{ else }}
-          <li class="nav-item">
-            <a
-              class="nav-link {{ if $active }}active{{- end -}}"
-              {{ if findRE `^http` .URL }}
-                rel="noopener"
-              {{ end }}
-              href="{{- if findRE `^#` .URL -}}
+          {{ end }}
+        </ul>
+      </li>
+      {{ else }}
+      <li class="nav-item">
+        <a class="nav-link {{ if $active }}active{{- end -}}" {{ if findRE `^http` .URL }} rel="noopener" {{ end }}
+          href="{{- if findRE `^#` .URL -}}
                 {{- if not $.IsHome -}}
                   {{- site.Home.RelPermalink -}}
                 {{- end }}{{- .URL -}}
               {{- else -}}
                 {{- .URL | relLangURL -}}
-              {{- end -}}"
-              >{{ .Name }}</a
-            >
-          </li>
-        {{ end }}
+              {{- end -}}">{{ .Name }}</a>
+      </li>
+      {{ end }}
       {{ end }}
       {{ if site.Params.navigation_button.enable }}
-        <li class="inline-block mt-4 lg:hidden">
-          <a
-            class="btn-outline-primary btn-sm"
-            href="{{ site.Params.navigation_button.link | relLangURL }}">
-            {{ site.Params.navigation_button.label }}
-          </a>
-        </li>
+      <li class="inline-block mt-4 lg:hidden">
+        <a class="btn-primary btn-sm" href="{{ site.Params.navigation_button.link | relLangURL }}">
+          {{ site.Params.navigation_button.label }}
+        </a>
+      </li>
       {{ end }}
-    </ul>
 
-    <div class="flex items-center order-1 ml-auto md:order-2 lg:ml-0">
-      {{ with site.Params.search }}
-        {{ if .enable }}
-          <button
-            aria-label="search"
+      <li class="nav-item">
+        <div class="flex items-center order-1 ml-auto md:order-2 lg:ml-0">
+          {{ with site.Params.search }}
+          {{ if .enable }}
+          <button aria-label="search"
             class="inline-block pr-5 mr-5 text-xl border-r border-border text-slate-50 hover:text-amber-500 dark:border-darkmode-border dark:text-white dark:hover:text-darkmode-primary"
             data-target="search-modal">
             <i class="fa-solid fa-search "></i>
           </button>
-        {{ end }}
-      {{ end }}
+          {{ end }}
+          {{ end }}
 
-      {{ partial "components/language-switcher" (dict "Context" . "Class" "mr-5 pl-2 py-1 dark:bg-darkmode-theme-light rounded") }}
-      {{ partial "components/theme-switcher" (dict "Class" "mr-5") }}
+          {{ partial "components/language-switcher" (dict "Context" . "Class" "mr-5 pl-2 py-1 dark:bg-darkmode-theme-light rounded") }}
+          {{ partial "components/theme-switcher" (dict "Class" "mr-5") }}
 
 
-      <!-- navigation btn -->
-      {{ if site.Params.navigation_button.enable }}
-        <a
-          href="{{ site.Params.navigation_button.link | relLangURL }}"
-          class="hidden btn-primary btn-sm lg:flex">
-          {{ site.Params.navigation_button.label }}
-        </a>
-      {{ end }}
-    </div>
+          <!-- navigation btn -->
+          {{ if site.Params.navigation_button.enable }}
+          <a href="{{ site.Params.navigation_button.link | relLangURL }}" class="hidden btn-primary btn-sm lg:flex">
+            {{ site.Params.navigation_button.label }}
+          </a>
+          {{ end }}
+        </div>
+      </li>
+    </ul>
+
   </nav>
 </header>
