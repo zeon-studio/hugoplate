@@ -6,6 +6,9 @@
 <!-- theme meta -->
 <meta name="theme-name" content="hugoplate" />
 
+<!-- preload fonts -->
+<link rel="preload" href="/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+
 <!-- favicon -->
 {{ partialCached "favicon" . }}
 
@@ -38,6 +41,7 @@
 
 <!-- search index -->
 {{ partial "search-index.html" . }}
+
 
 <!-- matomo analytics -->
 {{/* {{ partialCached "matomo-analytics.html" . }} */}}

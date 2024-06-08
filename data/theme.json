@@ -30,15 +30,16 @@
     }
   },
   "fonts": {
-    "font_family": {
-      "primary": "Inter:wght@400;600",
-      "primary_type": "sans",
-      "secondary": "Inter:wght@500;700",
-      "secondary_type": "sans"
-    },
-    "font_size": {
-      "base": "16",
-      "scale": "1.250"
-    }
+  "font_family": {
+    "primary": "Inter",
+    "primary_type": "serif",
+    "secondary": "Inter",
+    "secondary_type": "serif"
+  },
+  "font_size": {
+    "base": "16",
+    "scale": "1.250"
   }
+}
+
 }
