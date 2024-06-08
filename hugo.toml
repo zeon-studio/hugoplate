@@ -97,7 +97,7 @@ maxAge = "720h"
 unsafe = true
 
 [markup.highlight]
-style = 'fruity' # see https://xyproto.github.io/splash/docs/all.html
+style = 'catppuccin-frappe' # see https://xyproto.github.io/splash/docs/all.html
 
 [markup.tableOfContents]
 startLevel = 2
