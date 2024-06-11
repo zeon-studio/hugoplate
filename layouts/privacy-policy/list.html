@@ -1,10 +1,11 @@
 {{ define "main" }}
-  <section class="section-sm">
-    <div class="container">
-      <div class="justify-center row">
+  {{ partial "page-header" . }}
+
+
+  <section class="pt-10 section-sm xl:pt-0 light-bg min-h-96">
+    <div class="container ">
+      <div class="justify-center row ">
         <div class="text-left md:col-10 lg:col-7">
-          {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "mx-auto mb-6" "Size" "200x200") }}
-          <h1 class="text-center mb-14">{{ .Title }}</h1>
           <div class="content">{{ .Content }}</div>
           
         </div>
