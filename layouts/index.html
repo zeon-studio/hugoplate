@@ -150,7 +150,7 @@
           {{ .Params.description | markdownify }}
         </p>
       </div>
-      <div class="container flex flex-row flex-wrap justify-center gap-x-4">
+      <div class="container flex flex-row flex-wrap justify-center gap-x-8 gap-y-8">
             {{ range .Params.testimonials }}
               <div class="flex flex-col expertise-box items-left gap-x-4">
                 <div class="px-4 text-dark dark:text-white ">
@@ -207,7 +207,7 @@
   <div class="container">
     {{ range .Params.promo }}
     <div class="flex flex-col items-center justify-center lg:flex-row lg:justify-between lg:px-0 lg:gap-x-8 gap-y-8">
-        <div class="flex flex-col text-center md:px-10 lg:px-0 lg:text-left gap-y-2 lg:py-4 xl:py-10 xl:pl-10">
+        <div class="flex flex-col order-1 text-center md:px-10 lg:px-0 lg:text-left gap-y-2 lg:py-4 xl:py-10 xl:pl-10 lg:order-0">
           <h2 class="mb-4 text-slate-50">
             {{ .title | markdownify }}
           </h2>
@@ -227,7 +227,7 @@
             {{ end }}
           </div>
         </div>
-        <div class="max-w-[500px]">
+        <div class="max-w-[500px] lg:order-1 order-0">
           {{ partial "image" (dict "Src" .img "Alt" "Banner image" "Loading" "eager" "Class" "rounded-lg shadow-[0px_0px_34px_0px] shadow-indigo-900 aspect-square object-cover") }}
         </div>
       </div>
