@@ -4,7 +4,7 @@ enable: true
 # Promo content
 promo:
   - title: "The Flightless Manticore"
-    img: "/images/pexels-cottonbro-4065155.jpg"
+    img: "/images/scallyburg_blog_promo.jpg"
     content: |
       Once a month I send out a short but sweet newsletter that includes my current available tech editing spots, as well as some stuff I found useful or interesting in the previous month—whether it's a video, a podcast episode, an article or a conversation.
 

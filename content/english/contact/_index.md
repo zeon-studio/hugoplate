@@ -13,8 +13,8 @@ columns:
     link: "mailto:hello@adamsarpatki.com"
   secondButton:
     enable: true
-    label: "Book a meeting"
-    link: "https://cal.com/adamsarpatki/60-min-meeting"
+    label: "Book a chat"
+    link: "https://cal.com/adamsarpatki/30min"
   content: |
     Even though my calendar for any given year is usually filled with projects from my current clients, I would be happy to talk shop, and maybe make space for new projects.
 

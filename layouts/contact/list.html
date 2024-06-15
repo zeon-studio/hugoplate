@@ -59,7 +59,7 @@
     {{ range .Params.promo }}
     <div class="flex flex-col items-center justify-center lg:flex-row lg:justify-between lg:px-0 lg:gap-x-8 gap-y-8">
       <div class="max-w-[500px]">
-        {{ partial "image" (dict "Src" .img "Alt" "Banner image" "Loading" "eager" "Class" "rounded-lg shadow-[0px_0px_34px_0px] shadow-indigo-900 aspect-square object-cover") }}
+        {{ partial "image" (dict "Src" .img "Alt" "Banner image" "Loading" "eager" "Class" "rounded-lg aspect-square object-cover") }}
       </div>
         <div class="flex flex-col text-center md:px-10 lg:px-0 lg:text-left gap-y-2 lg:py-4 xl:py-10 xl:pl-10">
           <h2 class="mb-4 text-slate-50">
