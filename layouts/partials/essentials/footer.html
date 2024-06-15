@@ -1,6 +1,6 @@
 <footer class="bg-slate-900 dark:bg-darkmode-theme-light">
   <div class="container">
-    <div class="items-center py-10 row">
+    <div class="items-start py-10 row">
       <div class="mb-8 text-center lg:col-3 lg:mb-0 lg:text-left">
         <!-- navbar brand/logo -->
         <a
@@ -12,7 +12,7 @@
       <div class="mb-8 text-center lg:col-6 lg:mb-0">
         <ul>
           {{ range site.Menus.footer }}
-            <li class="inline-block m-3 ">
+            <li class="inline-block mx-3 mb-3">
               <a
                 {{ if findRE `^http` .URL }}
                   rel="noopener"
@@ -47,7 +47,7 @@
     </div>
   </div>
   <div class="py-4 bg-slate-950">
-    <div class="container font-light text-center text-slate-50 dark:text-darkmode-light">
+    <div class="container text-sm font-light text-center text-slate-50 dark:text-darkmode-light">
       <p>
         {{ site.Params.copyright | markdownify }}
       </p>
