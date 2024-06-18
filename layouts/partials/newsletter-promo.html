@@ -1,0 +1,36 @@
+{{ with site.GetPage "sections/newsletter-promo" }}
+{{ if .Params.enable }}
+<section class="pt-20 pb-20 section dark-bg">
+  <div class="container">
+    {{ range .Params.promo }}
+    <div class="flex flex-col items-center justify-center lg:flex-row lg:justify-between lg:px-0 lg:gap-x-8 gap-y-8">
+      <div class="max-w-[500px] lg:min-w-[500px]">
+        {{ partial "image" (dict "Src" .img "Alt" "Banner image" "Loading" "eager" "Class" "rounded-lg aspect-square object-cover") }}
+      </div>
+        <div class="flex flex-col text-center md:px-10 lg:px-0 lg:text-left gap-y-2 lg:py-4 xl:py-10 xl:pl-10">
+          <h2 class="mb-4 text-slate-50">
+            {{ .title | markdownify }}
+          </h2>
+          <div class="text-slate-50">
+            {{ range $j, $paragraph := split .content "\n" }}
+            <p class="mb-4{{ if eq $j 0 }} mt-0{{ end }}">{{ $paragraph | markdownify }}</p>
+            {{ end }}
+          </div>
+          <div class="flex justify-center lg:justify-start">
+            {{ with .button }}
+            {{ if .enable }}
+            <a class="btn btn-primary" href="{{ .link | absURL }}" {{ if strings.HasPrefix .link `http` }}
+              rel="noopener" {{ end }}>
+              {{ .label }}
+            </a>
+            {{ end }}
+            {{ end }}
+          </div>
+        </div>
+      </div>
+  </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+{{ end }}

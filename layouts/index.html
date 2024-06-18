@@ -47,15 +47,8 @@
 <!-- /Banner -->
 
 <!-- Shape divider -->
-<div class="dark-bg">
-  <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 98" preserveAspectRatio="xMinYMin"
-    version="1.1" xmlns="http://www.w3.org/2000/svg">
-    <path class="fill-slate-50" style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
-      d="M0,0L21.8,10C43.6,20,87,40,131,53.3C174.5,67,218,73,262,66.7C305.5,60,349,40,393,28.3C436.4,17,480,13,524,21.7C567.3,30,611,50,655,53.3C698.2,57,742,43,785,36.7C829.1,30,873,30,916,35C960,40,1004,50,1047,45C1090.9,40,1135,20,1178,16.7C1221.8,13,1265,27,1309,26.7C1352.7,27,1396,13,1440,20C1483.6,27,1527,53,1571,60C1614.5,67,1658,53,1702,50C1745.5,47,1789,53,1833,51.7C1876.4,50,1920,40,1964,40C2007.3,40,2051,50,2095,53.3C2138.2,57,2182,53,2225,43.3C2269.1,33,2313,17,2356,11.7C2400,7,2444,13,2487,26.7C2530.9,40,2575,60,2618,70C2661.8,80,2705,80,2749,75C2792.7,70,2836,60,2880,46.7C2923.6,33,2967,17,3011,8.3C3054.5,0,3098,0,3120,0L3141.8,0L3141.8,100L3120,100C3098.2,100,3055,100,3011,100C2967.3,100,2924,100,2880,100C2836.4,100,2793,100,2749,100C2705.5,100,2662,100,2618,100C2574.5,100,2531,100,2487,100C2443.6,100,2400,100,2356,100C2312.7,100,2269,100,2225,100C2181.8,100,2138,100,2095,100C2050.9,100,2007,100,1964,100C1920,100,1876,100,1833,100C1789.1,100,1745,100,1702,100C1658.2,100,1615,100,1571,100C1527.3,100,1484,100,1440,100C1396.4,100,1353,100,1309,100C1265.5,100,1222,100,1178,100C1134.5,100,1091,100,1047,100C1003.6,100,960,100,916,100C872.7,100,829,100,785,100C741.8,100,698,100,655,100C610.9,100,567,100,524,100C480,100,436,100,393,100C349.1,100,305,100,262,100C218.2,100,175,100,131,100C87.3,100,44,100,22,100L0,100Z">
-    </path>
-  </svg>
-</div>
-  <!-- /Shape divider -->
+{{ partial "components/shape-divider-dark.html" . }}
+<!-- /Shape divider -->
 
 <!-- Expertise -->
 {{ with site.GetPage "sections/expertise" }}
@@ -98,145 +91,19 @@
 <!-- /Expertise -->
 
 <!-- Newsletter promo -->
-{{ with site.GetPage "sections/newsletter-promo" }}
-{{ if .Params.enable }}
-<section class="pt-20 pb-20 section dark-bg">
-  <div class="container">
-    {{ range .Params.promo }}
-    <div class="flex flex-col items-center justify-center lg:flex-row lg:justify-between lg:px-0 lg:gap-x-8 gap-y-8">
-      <div class="max-w-[500px] lg:min-w-[500px]">
-        {{ partial "image" (dict "Src" .img "Alt" "Banner image" "Loading" "eager" "Class" "rounded-lg aspect-square object-cover") }}
-      </div>
-        <div class="flex flex-col text-center md:px-10 lg:px-0 lg:text-left gap-y-2 lg:py-4 xl:py-10 xl:pl-10">
-          <h2 class="mb-4 text-slate-50">
-            {{ .title | markdownify }}
-          </h2>
-          <div class="text-slate-50">
-            {{ range $j, $paragraph := split .content "\n" }}
-            <p class="mb-4{{ if eq $j 0 }} mt-0{{ end }}">{{ $paragraph | markdownify }}</p>
-            {{ end }}
-          </div>
-          <div class="flex justify-center lg:justify-start">
-            {{ with .button }}
-            {{ if .enable }}
-            <a class="btn btn-primary" href="{{ .link | absURL }}" {{ if strings.HasPrefix .link `http` }}
-              rel="noopener" {{ end }}>
-              {{ .label }}
-            </a>
-            {{ end }}
-            {{ end }}
-          </div>
-        </div>
-      </div>
-  </div>
-    {{ end }}
-  </div>
-</section>
-{{ end }}
-{{ end }}
+{{ partial "newsletter-promo.html" . }}
 <!-- /Newsletter promo -->
 
 <!-- Testimonials -->
-{{ with site.GetPage "sections/testimonial" }}
-{{ if .Params.enable }}
-<section class="pt-20 pb-10 section light-bg">
-  <div class="container">
-    <div class="row">
-      <div class="mx-auto mb-12 text-center md:col-10 lg:col-8 xl:col-6 ">
-        <h2 class="mb-4 text-slate-900">
-          {{ .Title | markdownify }}
-        </h2>
-        <p class="text-slate-900">
-          {{ .Params.description | markdownify }}
-        </p>
-      </div>
-      <div class="container flex flex-row flex-wrap justify-center gap-x-8 gap-y-8">
-            {{ range .Params.testimonials }}
-              <div class="flex flex-col expertise-box items-left gap-x-4">
-                <div class="px-4 text-dark dark:text-white ">
-                  <svg width="33" height="20" viewBox="0 0 33 20" fill="none" class="fill-slate-200" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M1.28375 19.41L0.79375 18.64C1.21375 17.0067 1.75042 15.07 2.40375 12.83C3.05708 10.5433 3.75708 8.28 4.50375 6.04C5.29708 3.75333 6.06708 1.77 6.81375 0.0899959H15.3538C14.9338 2.09666 14.4904 4.26667 14.0238 6.6C13.5571 8.88666 13.1371 11.15 12.7638 13.39C12.4371 15.5833 12.1571 17.59 11.9238 19.41H1.28375ZM31.69 0.0899959L32.18 0.859998C31.76 2.54 31.2233 4.5 30.57 6.74C29.9167 8.98 29.2167 11.2433 28.47 13.53C27.7233 15.77 26.9533 17.73 26.16 19.41H17.69C18.0167 17.9167 18.3433 16.33 18.67 14.65C18.9967 12.9233 19.3 11.22 19.58 9.54C19.9067 7.81333 20.1867 6.15667 20.42 4.57C20.7 2.93666 20.91 1.44333 21.05 0.0899959H31.69Z" />
-                  </svg>
-                </div>
-                <div class="px-4 my-8">
-                  {{ .content | markdownify }}
-                </div>
-                <div class="flex items-center px-4 mt-auto ">
-                  <div class="text-dark dark:text-white">
-                    {{ partial "image" (dict "Src" .avatar "Size" "110x110" "Class" "rounded rounded-full" "Alt" .name) }}
-                  </div>
-                  <div class="ml-4">
-                    <h3 class="font-semibold h5 font-primary">
-                      {{ .name }}
-                    </h3>
-                    <p class="text-dark dark:text-white">
-                      {{ .designation | markdownify }}
-                    </p>
-                    <p class="text-dark dark:text-white">
-                      {{ .company | markdownify }}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            {{ end }}
-          </div>
-          <div class="flex items-center justify-center text-center testimonial-slider-pagination mt-9"></div>
-        </div>
-      </div>
-</section>
-{{ end }}
-{{ end }}
+{{ partial "testimonials.html" . }}
 <!-- /Testimonials -->
 
 <!-- Shape divider -->
-<div class="light-bg">
-  <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 98" preserveAspectRatio="xMinYMin"
-    version="1.1" xmlns="http://www.w3.org/2000/svg">
-    <path class="fill-slate-900" style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
-      d="M0,0L21.8,10C43.6,20,87,40,131,53.3C174.5,67,218,73,262,66.7C305.5,60,349,40,393,28.3C436.4,17,480,13,524,21.7C567.3,30,611,50,655,53.3C698.2,57,742,43,785,36.7C829.1,30,873,30,916,35C960,40,1004,50,1047,45C1090.9,40,1135,20,1178,16.7C1221.8,13,1265,27,1309,26.7C1352.7,27,1396,13,1440,20C1483.6,27,1527,53,1571,60C1614.5,67,1658,53,1702,50C1745.5,47,1789,53,1833,51.7C1876.4,50,1920,40,1964,40C2007.3,40,2051,50,2095,53.3C2138.2,57,2182,53,2225,43.3C2269.1,33,2313,17,2356,11.7C2400,7,2444,13,2487,26.7C2530.9,40,2575,60,2618,70C2661.8,80,2705,80,2749,75C2792.7,70,2836,60,2880,46.7C2923.6,33,2967,17,3011,8.3C3054.5,0,3098,0,3120,0L3141.8,0L3141.8,100L3120,100C3098.2,100,3055,100,3011,100C2967.3,100,2924,100,2880,100C2836.4,100,2793,100,2749,100C2705.5,100,2662,100,2618,100C2574.5,100,2531,100,2487,100C2443.6,100,2400,100,2356,100C2312.7,100,2269,100,2225,100C2181.8,100,2138,100,2095,100C2050.9,100,2007,100,1964,100C1920,100,1876,100,1833,100C1789.1,100,1745,100,1702,100C1658.2,100,1615,100,1571,100C1527.3,100,1484,100,1440,100C1396.4,100,1353,100,1309,100C1265.5,100,1222,100,1178,100C1134.5,100,1091,100,1047,100C1003.6,100,960,100,916,100C872.7,100,829,100,785,100C741.8,100,698,100,655,100C610.9,100,567,100,524,100C480,100,436,100,393,100C349.1,100,305,100,262,100C218.2,100,175,100,131,100C87.3,100,44,100,22,100L0,100Z">
-    </path>
-  </svg>
-</div>
-  <!-- /Shape divider -->
+{{ partial "components/shape-divider-light.html" . }}
+<!-- /Shape divider -->
 
 <!-- Manticore promo -->
-{{ with site.GetPage "sections/manticore-promo" }}
-{{ if .Params.enable }}
-<section class="pt-10 pb-20 section dark-bg xl:pt-0">
-  <div class="container">
-    {{ range .Params.promo }}
-    <div class="flex flex-col items-center justify-center lg:flex-row lg:justify-between lg:px-0 lg:gap-x-8 gap-y-8">
-        <div class="flex flex-col order-1 text-center md:px-10 lg:px-0 lg:text-left gap-y-2 lg:py-4 xl:py-10 xl:pl-10 lg:order-0">
-          <h2 class="mb-4 text-slate-50">
-            {{ .title | markdownify }}
-          </h2>
-          <div class="text-slate-50">
-            {{ range $j, $paragraph := split .content "\n" }}
-            <p class="mb-4{{ if eq $j 0 }} mt-0{{ end }}">{{ $paragraph | markdownify }}</p>
-            {{ end }}
-          </div>
-          <div class="flex justify-center lg:justify-start">
-            {{ with .button }}
-            {{ if .enable }}
-            <a class="btn btn-primary" href="{{ .link | absURL }}" {{ if strings.HasPrefix .link `http` }}
-              rel="noopener" {{ end }}>
-              {{ .label }}
-            </a>
-            {{ end }}
-            {{ end }}
-          </div>
-        </div>
-        <div class="max-w-[500px] lg:min-w-[500px] lg:order-1 order-0">
-          {{ partial "image" (dict "Src" .img "Alt" "Banner image" "Loading" "eager" "Class" "rounded-lg aspect-square object-cover") }}
-        </div>
-      </div>
-  </div>
-    {{ end }}
-  </div>
-</section>
-{{ end }}
-{{ end }}
+{{ partial "manticore-promo.html" . }}
 <!-- /Manticore promo -->
 
 
