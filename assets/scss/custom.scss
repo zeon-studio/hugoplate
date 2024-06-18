@@ -110,3 +110,7 @@ h6 {
     animation: slideInFromBottom 0.5s ease forwards;
   }
 }
+
+.highlight {
+  @apply bg-slate-300 border-l-4 border-slate-500 p-4;
+}

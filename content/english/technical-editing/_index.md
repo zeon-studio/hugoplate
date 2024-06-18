@@ -11,7 +11,9 @@ draft: false
 
 Anyone who publishes some kind of text needs an editor, a fresh set of eyes to catch mistakes. And since knitting is a specialized area, that editor needs to be a person who knows the ins and outs of knitting.
 
+{{< highlight >}}
 **Technical editing for knitting patterns is the process of checking a pattern to make sure the numbers are correct, the style is consistent throughout, all the necessary instructions are there, and it is ready for publication.**
+{{< /highlight >}}
 
 A technical editor does not knit the pattern, but checks it theoretically, with a calculator and/or a spreadsheet. The process, depending on the pattern's complexity, takes roughly 2-4 hours vs. the many weeks or even months a test knitter works on a pattern.
 
