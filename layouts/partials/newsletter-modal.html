@@ -3,9 +3,20 @@
 <div id="bottom-right-modal"
     class="fixed bottom-0 right-0 z-50 hidden m-4 bg-white rounded-lg shadow-lg shadow-indigo-600/40 w-72">
     {{ range .Params.modal }}
-    <div class="flex items-start justify-end h-20 pt-2 pr-4 align-top bg-indigo-500 rounded-t-lg">
-        <div><button id="close-modal" class="text-indigo-900 hover:text-amber-700">&times;</button></div>
+    <!-- Header with background image -->
+    {{ $image := resources.Get .img }}
+    {{ if $image }}
+    {{ $processedImage := $image.Resize "576x160" }}
+    <div class="flex items-start justify-end h-20 pt-2 pr-4 align-top rounded-t-lg"
+         style="background-image: url('{{ $processedImage.Permalink }}'); background-size: cover; background-color: #3b82f6;">
+        <div><button id="close-modal" class="text-indigo-100 hover:text-amber-700">&times;</button></div>
     </div>
+    {{ else }}
+    <div class="flex items-start justify-end h-20 pt-2 pr-4 align-top bg-indigo-500 rounded-t-lg">
+        <div><button id="close-modal" class="text-indigo-100 hover:text-amber-700">&times;</button></div>
+    </div>
+    {{ end }}
+    <!-- Content section -->
     <div class="flex flex-col items-center p-4 my-2 text-center gap-y-5">
         <div>
             <h5 class="font-bold">{{ .title | markdownify }}</h5>
@@ -25,8 +36,8 @@
             {{ end }}
             {{ end }}
         </div>
-        {{ end }}
     </div>
+    {{ end }}
 </div>
 {{ end }}
 {{ end }}
