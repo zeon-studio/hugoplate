@@ -1,7 +1,7 @@
 ---
 title: "Technical Editing"
 meta_title: "Technical Editing"
-description: "My services as a tech editor for knitting patterns"
+description: "How I help you create the best patterns possible"
 image: false
 toc: true
 draft: false
