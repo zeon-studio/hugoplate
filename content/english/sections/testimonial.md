@@ -1,7 +1,7 @@
 ---
 enable: true
-title: "What My Clients Say About Me"
-description: "Over the years I've worked with some of the best publishing houses of Hungary that operate in the science fiction and fantasy genres—and this is their opinion of me."
+title: "What Others Say About Me"
+description: "Testimonials from clients and colleagues"
 
 # Testimonials
 testimonials:
