@@ -39,6 +39,8 @@ columns:
 
     Before contacting me, [please read about my Tech Editing services](/technical-editing), if you haven't done so already.
 
+    If this would be our first contact, **please don't book a slot**, but instead e-mail me so we can hash out the details.
+
 ---
 
 **For publishers and designers:** Depending on whether you're interested in working with me on a translation/editing project, or a knitting pattern, you have different options of contacting me. I will have different timeslots available for each category, so please choose the one that best describes you.
