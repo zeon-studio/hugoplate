@@ -14,9 +14,7 @@ Az alábbiakban tájékoztatjuk Önt a személyes adatok kezelésével kapcsolat
 ### Adatkezelő:
 
 - **Név:** Sárpátki Ádám
-- **Székhely:** 9093 Győrasszonyfa, Rózsadomb utca 10.
 - **Elérhetőség:** hello@adamsarpatki.com
-- **Adószám:** 66744467-1-28
 
 ### Az adatkezelés célja:
 
@@ -61,7 +59,8 @@ Az Ön személyes adatait biztonságos rendszerekben tároljuk, és megfelelő t
 ### Adatok továbbítása:
 
 Az Ön személyes adatait harmadik fél részére nem továbbítjuk, kivéve, ha jogszabály vagy hatóság ezt előírja.
-Kapcsolat:
+
+### Kapcsolat:
 
 Ha bármilyen kérdése vagy kérése van az adatkezeléssel kapcsolatban, kérjük, vegye fel velünk a kapcsolatot a hello@adamsarpatki.com címen.
 
@@ -74,9 +73,7 @@ We hereby inform you about the handling of your personal data:
 ### Data Controller:
 
 - **Name:** Ádám Sárpátki
-- **Registered Address:** 9093 Győrasszonyfa, Rózsadomb utca 10.
 - **Contact Information:** hello@adamsarpatki.com
-- **Tax Number:** 66744467-1-28
 
 ### Purpose of Data Processing:
 
