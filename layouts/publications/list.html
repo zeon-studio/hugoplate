@@ -1,23 +1,8 @@
 {{ define "main" }}
-  <section class="section-sm dark-bg">
-    <div class="container">
-      <div class="justify-center row ">
-        <div class="md:col-10 lg:col-7 ">
-          {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "mx-auto mb-6" "Size" "200x200") }}
-          <h1 class="mb-6 text-center text-slate-50">{{ .Title }}</h1>
-          <p class="text-center text-slate-50"> {{ .Description }} </p>
-          
-        </div>
-      </div>
-    </div>
-  </section>
-
-<!-- Shape divider -->
-{{ partial "components/shape-divider-dark.html" . }}
-<!-- /Shape divider -->
+  {{ partial "page-header" . }}
 
 
-  <section class="pt-10 section-sm light-bg xl:pt-0">
+  <section class="pt-10 section-sm xl:pt-0 light-bg">
     <div class="container">
       <div class="justify-center row ">
         <div class="text-left md:col-10 lg:col-7">
