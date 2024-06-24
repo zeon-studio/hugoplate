@@ -1,13 +1,13 @@
 ---
 enable: true
 title: "Why Work with Me?"
-description: "Here are some of my advantages to help you decide if we should work together or not."
+description: "What sets me apart and how my expertise can contribute to our successful collaboration."
 
 # Expertise
 expertise:
   - keyword: "Stengths, not weaknesses"
     icon: "/images/strength.png"
-    content: "As a relatively new knitter, I'm aware of the challenges beginners face, which helps me make sure the patterns I edit are clear and beginner-friendly. I also think that although English is not my native language, that's actually an advantage. Due to the fact that I spend most of my days immersed in English, either for work or for entertainment, I can spot sentences that are confusing from a non-native perspective."
+    content: "As a relatively new knitter, I'm aware of the challenges beginners face, which helps me make sure the patterns I edit are clear and beginner-friendly. And even though English is not my native language, that's actually an advantage. Due to the fact that I spend most of my days immersed in English, either for work or for entertainment, I can spot sentences that are confusing from a non-native perspective."
 
   - keyword: "Detail-oriented"
     icon: "/images/book.png"
