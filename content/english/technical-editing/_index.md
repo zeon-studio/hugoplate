@@ -58,7 +58,7 @@ When you're ready to jump right in, please read the details below carefully. And
 - The date by which you would send me the version to be edited.
 - Your deadline if you already have one.
 - Whether your pattern has already been test knitted or not—see my note regarding test knitting below.
-- Whether there are parts of your pattern I should pay extra attention to, or if there are parts I shouldn't bother with (e.g. if the pattern has a chart, and you exported the written instructions from Stitchmastery, they likely won't need to be checked).
+- Whether there are parts of your pattern I should pay extra attention to, or if there are any parts I shouldn't bother with (e.g. if the pattern has a chart, and you exported the written instructions from Stitchmastery, they likely won't need to be checked).
 
 **Step 2.** — I respond to your e-mail with my turnaround time and my fee. I usually answer within 24-48 hours if it's a workday, and on the next workday if it's a weekend or a holiday. I will let you know if I cannot take on your pattern. I regularly check my spam folder, so it's highly unlikely I will miss your e-mail, but feel free to send a follow-up if I'm suspiciously silent. (Should I be on a holiday, I will set up auto-reply.)
 
