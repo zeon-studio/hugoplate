@@ -35,7 +35,11 @@
                       {{ .designation | markdownify }}
                     </p>
                     <p class="text-dark dark:text-white">
-                      {{ .company | markdownify }}
+                      {{ if or (strings.HasPrefix .company "http://") (strings.HasPrefix .company "https://") }}
+                        <a href="{{ .company }}">Website</a>
+                      {{ else }}
+                        {{ .company | markdownify }}
+                      {{ end }}
                     </p>
                   </div>
                 </div>
