@@ -1,7 +1,7 @@
 ---
 title: "About Me"
 meta_title: "About Me"
-description: "The summary of Adam Sarpatki's career so far."
+description: "From librarian to literary translator, editor, and now tech editor—my career journey"
 image: false
 toc: true
 draft: false

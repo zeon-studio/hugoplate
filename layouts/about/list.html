@@ -5,9 +5,7 @@
             <div class="md:col-10 lg:col-7">
                 {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "mx-auto mb-6" "Size" "200x200") }}
                 <h1 class="mb-6 text-center text-slate-50">{{ .Title }}</h1>
-                <p class="text-center text-slate-50">From librarian to literary translator, editor, and now tech
-                    editor—my career
-                    journey.</p>
+                <p class="text-center text-slate-50">{{ .Description }}</p>
             </div>
         </div>
     </div>
