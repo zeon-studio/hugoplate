@@ -15,7 +15,7 @@
         </div>
         <div class="text-lg text-slate-50">
           {{ range $j, $paragraph := split .intro "\n" }}
-          <p class="lg:pr-8 mb-6{{ if eq $j 0 }} mt-0{{ end }}">{{ $paragraph | safeHTML }}</p>
+          <p class="lg:pr-8 mb-6{{ if eq $j 0 }} mt-0{{ end }}">{{ $paragraph | markdownify }}</p>
           {{ end }}
         </div>
         {{ with .button }}
