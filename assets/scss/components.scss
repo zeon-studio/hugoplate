@@ -33,7 +33,7 @@ main {
     @apply inline-block;
 
     a {
-      @apply bg-slate-50 dark:bg-darkmode-primary dark:text-dark flex h-9 w-9 items-center justify-center rounded text-center leading-9 text-slate-900 hover:text-dark hover:bg-amber-500 border-primary border;
+      @apply bg-slate-50 dark:bg-darkmode-primary dark:text-dark flex h-9 w-9 items-center justify-center rounded text-center leading-9 text-slate-900 hover:text-dark hover:bg-indigo-500 border-primary border;
 
       svg {
         @apply h-5 w-5;

@@ -36,7 +36,7 @@ input#nav-toggle:checked + label #show-button {
 } */
   
   .nav-link {
-    @apply text-slate-50 dark:text-darkmode-dark dark:hover:text-darkmode-primary block p-3 cursor-pointer transition lg:px-2 lg:py-3 hover:text-amber-500 font-normal;
+    @apply text-slate-50 dark:text-darkmode-dark dark:hover:text-darkmode-primary block p-3 cursor-pointer transition lg:px-2 lg:py-3 hover:text-indigo-500 font-normal;
   }
   
   .nav-dropdown {
@@ -60,7 +60,7 @@ input#nav-toggle:checked + label #show-button {
   }
   
   .nav-dropdown-link {
-    @apply text-slate-50 dark:text-darkmode-text dark:hover:text-darkmode-primary block py-1 transition hover:text-amber-500 font-normal;
+    @apply text-slate-50 dark:text-darkmode-text dark:hover:text-darkmode-primary block py-1 transition hover:text-indigo-500 font-normal;
   }
 
   footer a {
@@ -68,7 +68,7 @@ input#nav-toggle:checked + label #show-button {
   }
 
   footer a:hover {
-    @apply text-amber-500
+    @apply text-indigo-500
   }
   
   //theme-switcher
