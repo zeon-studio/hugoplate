@@ -50,49 +50,13 @@
 {{ partial "components/shape-divider-dark.html" . }}
 <!-- /Shape divider -->
 
-<!-- Expertise -->
-{{ with site.GetPage "sections/expertise" }}
-{{ if .Params.enable }}
-<section class="pt-10 pb-20 section light-bg xl:pt-0">
-  <div class="container">
-    <div class="row">
-      <div class="mx-auto mb-12 text-center md:col-10 lg:col-8 xl:col-6">
-        <h2 class="mb-4">
-          {{ .Title | markdownify }}
-        </h2>
-        <p>
-          {{ .Params.description | markdownify }}
-        </p>
-      </div>
-    </div>
-  </div>
+<!-- My Services -->
+{{ partial "services.html" . }}
+<!-- /My Services -->
 
-  <div class="container flex flex-row flex-wrap justify-center gap-x-8 gap-y-8">
-    {{ range .Params.expertise }}
-    <div class="expertise-box">
-      <div class="flex flex-row items-center ml-4 gap-x-4">
-        <div class="text-dark dark:text-white">
-          {{ partial "image" (dict "Src" .icon "Size" "50x50" "Class" "" "Alt" .keyword) }}
-        </div>
-        <h3 class="font-semibold h5 font-primary">
-          {{ .keyword }}
-        </h3>
-      </div>
-      <div class="p-4">
-        {{ .content | markdownify }}
-      </div>
-    </div>
-
-    {{ end }}
-  </div>
-</section>
-{{ end }}
-{{ end }}
-<!-- /Expertise -->
-
-<!-- Newsletter promo -->
-{{ partial "newsletter-promo.html" . }}
-<!-- /Newsletter promo -->
+<!-- How I Work -->
+{{ partial "how-i-work.html" . }}
+<!-- /How I Work -->
 
 <!-- Testimonials -->
 {{ partial "testimonials.html" . }}
@@ -101,6 +65,11 @@
 <!-- Shape divider -->
 {{ partial "components/shape-divider-light.html" . }}
 <!-- /Shape divider -->
+
+<!-- Newsletter promo -->
+{{ partial "newsletter-promo.html" . }}
+<!-- /Newsletter promo -->
+
 
 <!-- Manticore promo -->
 {{ partial "manticore-promo.html" . }}
