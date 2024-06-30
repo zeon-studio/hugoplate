@@ -1,0 +1,37 @@
+{{ with site.GetPage "sections/how-i-work" }}
+{{ if .Params.enable }}
+<section class="pt-20 pb-20 section dark-bg">
+  <div class="container">
+    <div class="row">
+      <div class="mx-auto mb-12 text-center md:col-10 lg:col-8 xl:col-6 ">
+        <h2 class="mb-4 text-slate-50">
+          {{ .Title | markdownify }}
+        </h2>
+        <p class="text-slate-50">
+          {{ .Params.description | markdownify }}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container flex flex-row flex-wrap justify-center gap-x-8 gap-y-8">
+    {{ range .Params.expertise }}
+    <div class="expertise-box">
+      <div class="flex flex-row items-center ml-4 gap-x-4">
+        <div class="text-dark dark:text-white">
+          {{ partial "image" (dict "Src" .icon "Size" "50x50" "Class" "" "Alt" .keyword) }}
+        </div>
+        <h3 class="font-semibold h5 font-primary">
+          {{ .keyword }}
+        </h3>
+      </div>
+      <div class="p-4">
+        {{ .content | markdownify }}
+      </div>
+    </div>
+
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+{{ end }}
