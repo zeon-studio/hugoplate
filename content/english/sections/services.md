@@ -1,46 +1,44 @@
 ---
-title: "Contact Me"
-meta_title: "Contact Me"
-description: "Get in touch through any of the channels below. I can't wait to hear from you!"
+title: "My Services"
+meta_title: "My Services"
+description: "Currently, I offer literary translation and editing services for publishers, and technical editing solutions for knitting pattern designers"
 enable: true
 draft: false
 
 columns:
-- title: "For publishers"
+- title: "Literary translation & editing"
   icon: "/images/books.png"
   button:
     enable: true
-    label: "E-mail me"
-    link: "mailto:hello@adamsarpatki.com"
+    label: "Read more"
+    link: "/translation-and-editing"
   secondButton:
-    enable: true
-    label: "Book a chat"
-    link: "https://cal.com/adamsarpatki/30min"
+    enable: false
+    label: ""
+    link: ""
   content: |
-    Even though my calendar for any given year is usually filled with projects from my current clients, I would be happy to talk shop, and maybe make space for new projects.
-
-    Feel free to contact me via e-mail, or book a spot on my calendar so we can have a chat.
+    **Since 2012, I’ve worked on over 60 novels and short stories as a literary translator, and edited more than 20 novels.** I’ve also written numerous articles on various topics. I have extensive experience working in different genres and collaborating with translators and editors from diverse backgrounds.
+    
+    Even though my calendar for any given year is usually filled with projects from my current clients, I would be happy to talk shop, and maybe make space for new projects. 😎
 
     **Important to note: currently I only translate from English to Hungarian, and I only edit texts written in Hungarian.**
 
-- title: "For pattern designers"
+- title: "Technical editing"
   icon: "/images/wool.png"
   button:
     enable: true
-    label: "E-mail me"
-    link: "mailto:hello@adamsarpatki.com"
+    label: "Read more"
+    link: "/technical-editing"
   secondButton:
-    enable: true
-    label: "Book a slot"
-    link: "https://cal.com/adamsarpatki/tech-editing-slot"
+    enable: false
+    label: ""
+    link: ""
   content: |
-    For now, I have limited availability for tech editing projects. I can usually guarantee one or two slots per week.
+    **In 2024, I completed the technical editing course offered by The Tech Editor Hub.** Joeli is a wonderful teacher who has taught me a great deal about the mechanics of tech editing for knitting patterns and the philosophy of working with pattern designers. 😊
 
-    I like planning ahead, so **please contact me in time about your project.** The earlier you contact me, the more likely I will be able to fit your design into my schedule. 😊
+    **I currently offer tech editing for accessories, mainly for socks, mittens, hats, shawls, scarfs and other small items.**
 
-    Before contacting me, [please read about my Tech Editing services](/technical-editing), if you haven't done so already.
-
-    If this would be our first contact, **please don't book a slot**, but instead e-mail me so we can hash out the details.
+    My services include checking your pattern for inconsistencies and errors both in the math and in the style. I'll also flag any grammatical errors or typos.
 
 
 # don't create a separate page
@@ -49,9 +47,7 @@ _build:
 
 ---
 
-**For publishers and designers:** Depending on whether you're interested in working with me on a translation/editing project, or a knitting pattern, you have different options of contacting me. I will have different timeslots available for each category, so please choose the one that best describes you.
-
-**If you just want to chat,** please use my social media channels linked in the footer. 😊
+Currently, I offer literary translation and editing services for publishers, and technical editing solutions for knitting pattern designers
 
 <!-- <a href="https://www.flaticon.com/free-icons/books" title="books icons">Books icons created by Freepik - Flaticon</a> -->
 <!-- <a href="https://www.flaticon.com/free-icons/wool" title="wool icons">Wool icons created by Freepik - Flaticon</a> -->
