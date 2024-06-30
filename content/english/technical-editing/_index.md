@@ -51,7 +51,7 @@ So don't worry, I'm here to make your pattern look good, and to make this proces
 
 My services include checking your pattern for inconsistencies and errors both in the math and in the style. I'll also flag any grammatical errors or typos.
 
-So, in more detail, I will check: spelling, grammar, use of style, written instructions (including clarity and accuracy), consistency, abbreviations, stitch counts, stitch patterns and repeats, measurements, conversions, schematics, charts with key.
+This means that I will check: spelling, grammar, use of style, written instructions (including clarity and accuracy), consistency, abbreviations, stitch counts, stitch patterns and repeats, measurements, conversions, schematics, charts with key.
 
 **I'm planning these services in the future:**
 
@@ -109,7 +109,7 @@ The following outlines the ideal process, the happy path, but some minor changes
 
 ## FAQ
 
-If you have a question, please start here. 😊
+If you have any questions, please start here. 😊
 
 {{< accordion title="Guarantee" class="border-indigo-900 border-1 bg-slate-50" >}}
 
@@ -119,7 +119,9 @@ While I do everything in my power to do a good job, mistakes happen. If you disc
 
 {{< accordion title="About test knitting before/instead of editing" class="border-indigo-900 border-1 bg-slate-50" >}}
 
-I firmly believe that test knitting should follow tech editing, since you don't want to give a pattern with errors to your test knitters. Just like you don't publish a book before an editor and a proofreader had a chance to work on it. Test knitters will spend a lot of time creating an item using your design, so the process should be as smooth for them as possible. Let's be honest, test knitting is basically free marketing, and you want your test knitters to write good things about your pattern. They are not tech editors, it is not their job to edit your patterns, especially for free. So I highly, *highly* recommend that you start the test knitting process *after* your tech editor is finished with your pattern.
+I firmly believe that test knitting should follow tech editing, since you don't want to give a pattern with errors to your test knitters. Think of it like this: it's not a reader's job to correct mistakes in an author's novel, but the editor's and the proofreader's. 🙂
+
+Test knitters will spend a lot of time creating an item using your design, so the process should be as smooth for them as possible. Let's be honest: test knitting is basically free marketing, and you want your test knitters to write good things about your pattern. They are not tech editors; it is not their job to edit your patterns, especially for free. So I highly, *highly* recommend that you start the test knitting process *after* your tech editor is finished with your pattern.
 
 {{< /accordion >}}
 
