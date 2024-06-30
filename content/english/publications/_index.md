@@ -11,6 +11,8 @@ draft: false
 
 ## Literary translations
 
+- Michael Witwer: Dungeons and Dragons – Drizzt legendája. Képes útmutató. Budapest : Kolibri Kiadó, 2024. 200 p.
+- Adam Bray, Kelly Knox: Marvel Studios – Szereplők nagykönyve. Bővített kiadás. Budapest : Kolibri Kiadó, 2024. 240 p.
 - Shelley Parker-Chan: A sötétségbe fojtott világ. Budapest : Agave Könyvek, 2024. 576 p.
 - V. E. Schwab: A hatalom törékeny szálai. Budapest : Agave Könyvek, 2023. 640 p.
 - Christopher Buehlman: Két tűz között. Budapest : Agave Könyvek, 2023. 448 p.
@@ -78,6 +80,7 @@ draft: false
 
 ## Editorial work
 
+- Jason M. Hough: Vérvonalak. Ford. Szántai Zsolt. Budapest : Delta Vision, 2024. 466 p.
 - Edward Ashton: Antianyag blues. Ford: Horváth Norbert. Budapest : Agave Könyvek, 2024. 288 p.
 - A. K. Larkwood: Az Ezerszemű Úrnő. Ford. Tamás Gábor. Budapest : Agave Könyvek, 2024. 520 p.
 - R. F. Kuang: Bábel, avagy az erőszak szükségszerűsége. Ford. Horváth Vivien. Budapest : Agave Könyvek, 2023. 640 p.
