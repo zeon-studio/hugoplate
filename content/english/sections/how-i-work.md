@@ -1,7 +1,7 @@
 ---
 enable: true
 title: "How I Work"
-description: "What sets me apart and how my expertise can contribute to our successful collaboration."
+description: "What sets me apart and how my expertise can contribute to our successful collaboration"
 
 # Expertise
 expertise:
@@ -27,9 +27,3 @@ expertise:
 _build:
   render: "never"
 ---
-
-<!-- <a href="https://www.flaticon.com/free-icons/research" title="research icons">Research icons created by Freepik - Flaticon</a>
-<a href="https://www.flaticon.com/free-icons/calendar" title="calendar icons">Calendar icons created by Freepik - Flaticon</a>
-<a href="https://www.flaticon.com/free-icons/strength" title="strength icons">Strength icons created by surang - Flaticon</a>
-<a href="https://www.flaticon.com/free-icons/advantage" title="advantage icons">Advantage icons created by zero_wing - Flaticon</a>
-<a href="https://www.flaticon.com/free-icons/communications" title="communications icons">Communications icons created by Smashicons - Flaticon</a> -->

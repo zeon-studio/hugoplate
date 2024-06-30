@@ -46,6 +46,3 @@ columns:
 **For publishers and designers:** Depending on whether you're interested in working with me on a translation/editing project, or a knitting pattern, you have different options of contacting me. I will have different timeslots available for each category, so please choose the one that best describes you.
 
 **If you just want to chat,** please use my social media channels linked in the footer. 😊
-
-<!-- <a href="https://www.flaticon.com/free-icons/books" title="books icons">Books icons created by Freepik - Flaticon</a> -->
-<!-- <a href="https://www.flaticon.com/free-icons/wool" title="wool icons">Wool icons created by Freepik - Flaticon</a> -->

@@ -122,3 +122,7 @@ Your personal data will not be transferred to third parties, except as required 
 ### Contact:
 
 If you have any questions or requests regarding the data processing, please contact us at hello@adamsarpatki.com.
+
+### Copyright info
+
+<a href="https://www.flaticon.com/free-icons/research" title="research icons">Research icons created by Freepik - Flaticon</a> | <a href="https://www.flaticon.com/free-icons/calendar" title="calendar icons">Calendar icons created by Freepik - Flaticon</a> | <a href="https://www.flaticon.com/free-icons/advantage" title="advantage icons">Advantage icons created by zero_wing - Flaticon</a> | <a href="https://www.flaticon.com/free-icons/communications" title="communications icons">Communications icons created by Smashicons - Flaticon</a> | <a href="https://www.flaticon.com/free-icons/books" title="books icons">Books icons created by Freepik - Flaticon</a> | <a href="https://www.flaticon.com/free-icons/wool" title="wool icons">Wool icons created by Freepik - Flaticon</a>
