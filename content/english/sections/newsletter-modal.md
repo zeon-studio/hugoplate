@@ -4,7 +4,7 @@ enable: true
 # Modal content
 modal:
   - title: "Yarnbound Tales"
-    img: "/images/pexels-cottonbro-4065155.jpg"
+    img: "/images/modal-header-img.jpg"
     content: |
       Subscribe to my monthly newsletter to get updates on my availability, articles about knitting, books, cooking, video games, TTRPGs and other topics. 
 
