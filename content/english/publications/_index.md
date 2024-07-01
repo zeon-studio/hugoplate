@@ -2,7 +2,7 @@
 title: "Publications"
 meta_title: "Publications"
 summary: "Publications by freelance literary translator and editor Ádám Sárpátki."
-description: "Updated: 2024-04-10"
+description: "Updated: 2024-07-01"
 image: false
 toc: true
 draft: false
