@@ -17,7 +17,7 @@ columns:
     label: ""
     link: ""
   content: |
-    **Since 2012, I’ve worked on over 60 novels and short stories as a literary translator, and edited more than 20 novels.** I’ve also written numerous articles on various topics. I have extensive experience working in different genres and collaborating with translators and editors from diverse backgrounds.
+    **Since 2012, I’ve worked on over 60 novels and short stories as a literary translator, and edited more than 20 novels.** I’ve also written numerous articles on various topics. I have extensive experience working with different genres and collaborating with translators and editors from diverse backgrounds.
     
     Even though my calendar for any given year is usually filled with projects from my current clients, I would be happy to talk shop, and maybe make space for new projects. 😎
 
