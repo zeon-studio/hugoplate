@@ -14,7 +14,7 @@ testimonials:
   - name: "Balázs Farkas"
     designation: "Writer"
     company: "https://balazsfarkas.com/"
-    avatar: "/images/avatar-sm.png"
+    avatar: "/images/man.png"
     content: "Ádám was my colleague in the Hungarian Central Statistical Office Library, and we stayed friends even after we eventually moved on to work in separate (but related) creative fields. I often turn to him for advice, as he always provides excellent insights. He is thorough, willing to double-check everything. Remarkably patient and generous. He even made this website from scratch - I’m always impressed by his versatility!"
 
 # don't create a separate page
