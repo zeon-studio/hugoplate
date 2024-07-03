@@ -7,54 +7,23 @@ toc: true
 draft: false
 ---
 
+## My Experience
+
+In 2011 and 2012, while at university, I attended a literary translation workshop led by Zsuzsa Hetényi, where we had the opportunity to work on texts both as translators and editors. At the end of the year, these texts were published in two anthologies that I’m still immensely proud of—my first proper translations were two short stories by Sir Terry Pratchett.
+
+Ever since then, I've been honing my craft and working with some of the pillars of the speculative fiction genre, such as [Agave Könyvek,](https://agavekonyvek.hu/) [Fumax,](https://fumax.hu/) [GABO,](https://gabo.hu/) and [Delta Vision,](https://www.facebook.com/DeltaVisionKiado) as well as [Kolibri,](https://www.facebook.com/kolibrikiado/?locale=hu_HU) a publisher of young adult and children's books. I have had the opportunity to work on the writings of some of the biggest names in the genre, like Brandon Sanderson, Robin Hobb, Shelley Parker-Chan, Jenn Lyons, Scott Lynch,  R. F. Kuang and Christopher Buehlman.
+
+Feel free to check out the list of my publications [here.](/publications)
+
 ## My Philosophy
+**Translation to me is a lot like co-authoring a work of literature.** I firmly believe that the translator's influence is inseparable from the work, and their performance can determine its success.
 
-Giving your pattern you've worked on so hard to someone else can be a nerve-wracking experience. I get it, I've been there—even after a decade I feel the same every time I turn in one of my translations. What if they'll mess everything up? What if they'll think I'm a fake or bad at my job?
+While authors have creative freedom, translators must faithfully convey the original meaning in another language. To achieve this, I think accuracy is paramount. A translator must possess a deep understanding of the source language's grammatical nuances, vocabulary, and idiomatic expressions, while skillfully articulating the author's ideas in their native tongue.
 
-Don't worry, I won't think that, and I won't mess up your pattern. I'll point out errors and places where something is not right, but I won't change a comma, and most of the time won't even offer solutions—this way the final decision will always be yours on how to handle certain issues, and you won't have to check if my solution is the correct one.
+But translation is about more than mere accuracy. We also have to convey the author's style and the mood of their work to readers, which can be difficult, especially if an author has a vastly different style than ours.
 
-So don't worry, I'm here to make you look good, and to make this process go as painlessly as possible. Here's what you can generally expect from me:
+**Balancing style, mood, and accuracy is a challenging but essential part of the job, for which few of us get enough credit, often being an afterthought in readers' minds.** *#namethetranslator*
 
-## The Process
+**Editors are crucial partners in the creative process.** They bring a fresh perspective that's needed after working for months on any given text. Editors may even save a poor translation.
 
-**Step 1.** — You [contact me](/contact) for availability through e-mail. Please include the following files and info:
-
-- Your pattern, even if it's not yet the version you want edited.
-- Some photos of the finished item, so I can check if the pattern would produce the item or not. These images don't have to be fancy, I just need to see details like the ribbing, the stitch pattern, the general shape etc.
-- Your style sheet if you have one.
-- The date by which you would send me the version to be edited.
-- Your deadline if you already have one.
-- Whether your pattern has already been test knitted or not—see my note regarding test knitting below.
-- Whether there are parts of your pattern I should pay extra attention to, or if there are parts I shouldn't bother with (e.g. if the pattern has a chart, and you exported the written instructions from Stitchmastery, they likely won't need to be checked).
-
-**Step 2.** — I respond to your e-mail with my turnaround time and my fee. I usually answer within 24-48 hours if it's a workday, and on the next workday if it's a weekend or a holiday. I will let you know if I cannot take on your pattern. I regularly check my spam folder, so it's highly unlikely I will miss your e-mail, but feel free to send a follow-up if I'm suspiciously silent.
-
-**Step 3.** — Hopefully you'll agree to my terms. If so, I'll send you a simple agreement to be signed digitally, through DocuSign. This way we'll both know what to expect, and can hopefully avoid any misunderstandings. (If you need help with DocuSign, check out [this article](https://support.docusign.com/s/articles/How-do-I-sign-a-DocuSign-document-Basic-Signing?language=en_US) on how to use their service.)
-
-**Step 4.** — After we both sign the agreement, I start editing the pattern. I will contact you immediately if I have any questions or concerns.
-
-**Step 5.** — I send you back my edits. You review them, make the necessary changes, then send me the corrected version, so I can check if everything's in order. If it is, I sign off on the pattern. If it's not, we repeat the process. After the final round I'll ask you to send back the corrected version, just for one last check. This last step is free.
-
-**Step 6.** — I send you my invoice which you can pay through bank transfer, or directly through Wise, using your credit card, within 15 days.
-
-**Step 7.** — After your pattern has been test knit, and you've received your feedback from your test knitters, I will be happy to take a look at the pattern again for any additional corrections, just in case we missed something. This step is free.
-
-**Step 8.** — Yay, you've got a finished pattern! Let's shout it from the rooftops! Do let me know when you publish it, so I can share the news with everyone.
-
-## Test knitting
-
-I firmly believe that test knitting should follow tech editing, since you don't want to give a pattern riddled with errors to your test knitters. They will spend a lot of time creating your item, so the process should be as smooth for them as possible. Let's be honest, test knitting is basically free marketing, and you want your test knitters to write good things about your pattern. They are not tech editors, it is not their job to edit your patterns, especially for free. So I highly, *highly* recommend that you start the test knitting process *after* your tech editor is finished with your pattern.
-
-## PDF, DOC or something else?
-
-When you send me your pattern, please send it as a PDF, just to make sure we don't run into any formatting issues between operating systems and word processing software. I always have the latest version of Microsoft Word and Pages, so their native format is always an option, but I'll most likely save your file as a PDF before I start working on it, so I don't change anything by mistake.
-
-I will send you back a flattened PDF, this way we won't run into any compatibility issues. (A flattened PDF just means that you won't be able to move or accidentally delete my comments.)
-
-## Credit
-
-While it's not necessary to do so, I would be over the moon if you would credit me in the colophon of your pattern. I think it's generally a nice thing to do, and what's more it also gives credibility to your work, showing people that "Yes, this pattern was professionally tech edited. This designer cares."
-
-## Confidentiality
-
-I will keep our every e-mail and file confidential, and I will never send or say anyone anything about our work, unless you instruct me to. In return, I ask you to do the same.
+I think the best editors approach their work with sensitivity. They understand the collaborative and artistic nature of literary translation, knowing when to ask questions rather than impose changes. They acknowledge that, despite their expertise, they spend less time with the text than the translator and may not grasp all its nuances.

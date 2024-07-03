@@ -34,7 +34,7 @@ eras:
     long_text: |
       I was always fascinated by books. As a teenager, I aspired to become a writer—we had a writing group in high school where we read and critiqued each other's work. That's when I first got interested in editing and translation, too. I attribute it all to Tamás Boldizsár Tóth, the Hungarian translator of the Harry Potter books. Between 1999 and 2008,  the series left a big impression on me, regardless of how the author's public perception changed since then.
 
-      In 2011 and 2012, while at university, I attended a literary translator workshop where we each had the opportunity to work on texts both as translators and editors. At the end of the year, these texts  got published in two anthologies that I'm still immensely proud of—my first proper translations were two short stories by Sir Terry Pratchett.
+      In 2011 and 2012, while at university, I attended a literary translation workshop where we each had the opportunity to work on texts both as translators and editors. At the end of the year, these texts  got published in two anthologies that I'm still immensely proud of—my first proper translations were two short stories by Sir Terry Pratchett.
 
       By 2016, I had a number of short stories and shorter novels under my belt, and I started working with a Hungarian publisher of science fiction and fantasy works—in my free time, of course, since by then I had a job at a well-known Hungarian publishing group. It was during this period that I learned how to effectively manage deadlines and establish healthy boundaries.
 
