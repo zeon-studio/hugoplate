@@ -1,0 +1,52 @@
+/* Code Copy */
+.highlight-wrapper {
+  display: block;
+}
+
+.highlight {
+  position: relative;
+  z-index: 0;
+}
+
+.highlight:hover > .copy-button {
+  visibility: visible;
+}
+
+.copy-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  visibility: invisible;
+  width: 5rem; /* 20 / 16 = 1.25rem */
+  padding: 0.25rem 0; /* Assuming py-1 is 0.25rem */
+  font-family: monospace;
+  font-size: 0.875rem; /* Assuming text-sm is 0.875rem */
+  cursor: pointer;
+  opacity: 0.9;
+  background-color: #e5e5e5; /* Assuming bg-neutral-200 is #e5e5e5 */
+  white-space: nowrap;
+  border-bottom-left-radius: 0.25rem; /* Assuming rounded-bl-md is 0.25rem */
+  border-top-right-radius: 0.25rem; /* Assuming rounded-tr-md is 0.25rem */
+  color: #525252; /* Assuming text-neutral-700 is #525252 */
+  @media (prefers-color-scheme: dark) {
+      background-color: #3f3f3f; /* Assuming dark:bg-neutral-600 is #3f3f3f */
+      color: #e5e5e5; /* Assuming dark:text-neutral-200 is #e5e5e5 */
+  }
+}
+
+.copy-button:hover,
+.copy-button:focus,
+.copy-button:active,
+.copy-button:active:hover {
+  background-color: #f3e8ff; /* Assuming bg-primary-100 is #f3e8ff */
+  @media (prefers-color-scheme: dark) {
+      background-color: #5b21b6; /* Assuming dark:bg-primary-600 is #5b21b6 */
+  }
+}
+
+.copy-textarea {
+  position: absolute;
+  opacity: 0.05;
+  z-index: -10;
+}
