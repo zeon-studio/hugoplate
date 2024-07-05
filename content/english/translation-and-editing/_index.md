@@ -43,6 +43,6 @@ I think the best editors approach their work with sensitivity. They understand t
 
 **Genres I'm especially interested in:** fantasy, science fiction, comic books, crime fiction, historical fantasy, historical romance, non-fiction books, popular science books, YA and children's literature.
 
-**Authors whose works I especially enjoy:** Terry Pratchett, Neil Gaiman, Brandon Sanderson, Anne Rice, Robin Hobb, Arthur Conan Doyle, Robert Jordan, Susanna Clarke.
+**Authors whose works I especially enjoy:** Terry Pratchett, Brandon Sanderson, Anne Rice, Robin Hobb, Arthur Conan Doyle, Robert Jordan, Susanna Clarke.
 
 My calendar is usually quite full, but feel free to [contact me,](/contact) and let's have a chat. 😊
