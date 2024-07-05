@@ -16,7 +16,7 @@
     <div class="container flex flex-row flex-wrap justify-center gap-x-8 gap-y-8">
         {{ range .Params.columns }}
         <div class="flex flex-col content-box">
-            <div class="flex flex-col items-center gap-y-6">
+            <div class="flex flex-col items-center gap-y-4">
                 <div class="text-dark dark:text-white">
                     {{ partial "image" (dict "Src" .icon "Size" "50x50" "Class" "" "Alt" "") }}
                 </div>
@@ -24,7 +24,7 @@
                     {{ .title }}
                 </h3>
             </div>
-            <div class="py-6">
+            <div class="pt-10 pb-6">
                 {{ range $j, $paragraph := split .content "\n" }}
                 <p class="mb-4{{ if eq $j 0 }} mt-0{{ end }}">{{ $paragraph | markdownify }}</p>
                 {{ end }}
