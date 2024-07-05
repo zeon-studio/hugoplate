@@ -13,7 +13,7 @@
       </div>
       <div class="container flex flex-row flex-wrap justify-center gap-x-8 gap-y-8">
             {{ range .Params.testimonials }}
-              <div class="flex flex-col expertise-box items-left gap-x-4">
+              <div class="flex flex-col content-box items-left gap-x-4">
                 <div class="px-4 text-dark dark:text-white ">
                   <svg width="33" height="20" viewBox="0 0 33 20" fill="none" class="fill-slate-200" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -35,11 +35,7 @@
                       {{ .designation | markdownify }}
                     </p>
                     <p class="text-dark dark:text-white">
-                      {{ if or (strings.HasPrefix .company "http://") (strings.HasPrefix .company "https://") }}
-                        <a href="{{ .company }}">Website</a>
-                      {{ else }}
-                        {{ .company | markdownify }}
-                      {{ end }}
+                      <a href="{{ .link }}"> {{ .company | markdownify }} </a>
                     </p>
                   </div>
                 </div>
