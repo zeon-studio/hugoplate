@@ -164,7 +164,7 @@ draft: false
 
 ## Misc.
 
-- Olvasószerkesztő. Nemzetközi Statisztikai Figyelő. Budapest : KSH Könyvtár, 2015. http://konyvtar.ksh.hu/index.php?s=kiadvany_nsf
+- Olvasószerkesztő. Nemzetközi Statisztikai Figyelő. Budapest : KSH Könyvtár, 2015. https://www.kshkonyvtar.hu/article/67/25/nemzetkoezi-statisztikai-figyelo
 - Sebők László (szerk.): Az 1949. évi népszámlálás anyanyelvi és nemzetiségi adatai településenként. A fordítást ellenőrizte: Pékné Nagy Edit, Sárpátki Ádám. Budapest : KSH Könyvtár, 2014. (Számok és történelem, 4.) pp. 15–21.
 - Névmutató. In: Dukkon Ágnes: Az Aranykortól az Ezüstkorig – Fejezetek az orosz kritika és irodalomtudomány történetéből. Budapest : Protea Kulturális Egyesület, 2014. pp. 273–283.
 - Könyvtáros szakmai sztereotípiák és azok PR-vonatkozásai. [Szakdolgozat] Budapest : ELTE BTK, 2012. 67 p.
