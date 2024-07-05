@@ -17,7 +17,7 @@
   <div class="container flex flex-row flex-wrap justify-center gap-x-8 gap-y-8">
     {{ range .Params.expertise }}
     <div class="content-box">
-      <div class="flex flex-row items-center ml-4 gap-x-4">
+      <div class="flex flex-row items-center gap-x-4">
         <div class="text-dark dark:text-white">
           {{ partial "image" (dict "Src" .icon "Size" "50x50" "Class" "" "Alt" .keyword) }}
         </div>
@@ -25,7 +25,7 @@
           {{ .keyword }}
         </h3>
       </div>
-      <div class="p-4">
+      <div class="py-4">
         {{ .content | markdownify }}
       </div>
     </div>

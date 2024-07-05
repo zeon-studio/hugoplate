@@ -21,12 +21,12 @@
           {{ .title }}
         </h3>
       </div>
-      <div class="p-4 pt-6">
+      <div class="py-6">
         {{ range $j, $paragraph := split .content "\n" }}
         <p class="mb-4{{ if eq $j 0 }} mt-0{{ end }}">{{ $paragraph | markdownify }}</p>
         {{ end }}
       </div>
-      <div class="px-4 mt-auto">
+      <div class="mt-auto">
         {{ with .button }}
         {{ if .enable }}
         <div class="flex flex-col flex-wrap max-w-full gap-y-4">
