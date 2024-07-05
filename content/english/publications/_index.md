@@ -142,10 +142,10 @@ draft: false
 
 ## Articles about library science
 
-- E-könyv, e-olvasás, e-könyvészet. Szakmai nap az ELTE BTK-n. In: Könyvtári Levelező/lap, 26. évf. 11. sz. (2014) pp. 13–15.
-- „Könyvtáros vagyok. A hét minden napján. Még vasárnap is.” : Farkas Balázs könyvbemutatója a KSH Könyvtárban. In: Könyvtári Levelező/lap, 26. évf. 7. sz. (2014) pp. 10–11.
-- Mit gondolnak a tizenévesek az olvasási stratégiákról? In: Könyvtári Levelező/lap, 26. évf. 1–2. sz. (2014) pp. 32–33.
-- Könyvtáros szakmai sztereotípiák és azok PR-vonatkozásai. In: Tudományos és Műszaki Tájékoztatás, 60. évf. 8. sz. (2013) pp. 331–345.
+- E-könyv, e-olvasás, e-könyvészet. Szakmai nap az ELTE BTK-n. In: Könyvtári Levelező/lap, 26. évf. 11. sz. (2014) pp. 13–15. https://epa.oszk.hu/00300/00365/00158/pdf/EPA00365_konyvtari_levelezo_lap_2014_11_13-15.pdf
+- „Könyvtáros vagyok. A hét minden napján. Még vasárnap is.” : Farkas Balázs könyvbemutatója a KSH Könyvtárban. In: Könyvtári Levelező/lap, 26. évf. 7. sz. (2014) pp. 10–11. https://epa.oszk.hu/00300/00365/00154/pdf/EPA00365_konyvtari_levelezo_lap_2014_07_10-11.pdf
+- Mit gondolnak a tizenévesek az olvasási stratégiákról? In: Könyvtári Levelező/lap, 26. évf. 1–2. sz. (2014) pp. 32–33. https://epa.oszk.hu/00300/00365/00149/pdf/EPA00365_konyvtari_levelezo_lap_2014_01-02_32-33.pdf
+- Könyvtáros szakmai sztereotípiák és azok PR-vonatkozásai. In: Tudományos és Műszaki Tájékoztatás, 60. évf. 8. sz. (2013) pp. 331–345. https://epa.oszk.hu/03000/03071/00068/pdf/EPA03071_tmt_2013_08_331-345.pdf
 
 ## Entries for a bibliographical dictionary
 
