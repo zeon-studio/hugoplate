@@ -12,7 +12,7 @@
 
   <div class="container flex flex-row flex-wrap justify-center gap-x-8 gap-y-8">
     {{ range .Params.columns }}
-    <div class="flex flex-col expertise-box">
+    <div class="flex flex-col content-box">
       <div class="flex flex-col items-center gap-y-6">
         <div class="text-dark dark:text-white">
           {{ partial "image" (dict "Src" .icon "Size" "50x50" "Class" "" "Alt" "") }}
