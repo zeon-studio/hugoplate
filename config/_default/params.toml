@@ -18,7 +18,7 @@ navbar_fixed = true
 theme_switcher = false
 theme_default = "light" # available options [light/dark/system]
 # Main Sections
-mainSections = ["blog"]
+mainSections = ""
 # contact form action
 contact_form_action = "#" # contact form works with [https://airform.io/] or [https://formspree.io]
 # google tag manager, see https://developers.google.com/tag-manager/
@@ -27,7 +27,7 @@ google_adsense = ""     # example: ca-pub-xxxxxxxxxxxxxxxx
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>"
 custom_script = ""
 # copyright
-copyright = "2024 © Ádám Sárpátki. All rights reserved. Based on the Hugoplate theme designed & developed by [Zeon Studio](https://zeon.studio)"
+copyright = "2024 © Ádám Sárpátki. All rights reserved. Based on the Hugoplate theme designed & developed by [Zeon Studio.](https://zeon.studio)"
 
 # Preloader
 # preloader module: https://github.com/gethugothemes/hugo-modules/tree/master/components/preloader
@@ -56,10 +56,10 @@ show_categories = true
 # seo meta data for OpenGraph / Twitter Card
 # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
 [metadata]
-keywords = ["Boilerplate", "Hugo"]
-description = "Hugo & Tailwindcss Starter"
-author = "zeon.studio"
-image = "images/og-image.png"
+keywords = ["literary translator", "technical editor", "knitting patterns", "tech editor knitting", "technical editor knitting", "knitting pattern editor", "knitting tech editor", "translator", "fiber arts", "speculative fiction translator", "science fiction translator"]
+description = "The official website of Ádám Sárpátki, a literary translator, editor, and technical editor for knitting patterns."
+author = "Ádám Sárpátki"
+image = "images/favicon.png"
 
 
 # site verifications
