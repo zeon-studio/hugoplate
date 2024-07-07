@@ -24,7 +24,9 @@ testimonials:
     company: "Delta Vision"
     link: "https://www.facebook.com/DeltaVisionKiado"
     avatar: "/images/testimonial_erika.jpeg"
-    content: "When it comes to accuracy and literary style, Ádám is an exceptionally meticulous and precise translator, who reliably meets his commitments and deadlines. He is an expert at his craft, and his linguistic inventiveness and creativity are combined with remarkable organisational skills. He puts all his heart into his work, while remaining flexible and collaborative during the publishing process. It’s a pleasure working with him. He is consistent in his editing work, always looking to come to an agreement, and is always glad to help the development of colleagues who are open to his guidance."
+    content: "When it comes to accuracy and literary style, Ádám is an exceptionally meticulous and precise translator, who reliably meets his commitments and deadlines. He is an expert at his craft, and his linguistic ingenuity and creativity are combined with remarkable organisational skills. He puts all his heart into his work while remaining flexible and collaborative during the publishing process. It’s a pleasure working with him. He is consistent in his editing work, always striving to reach consensus, and is more than happy to help the development of colleagues who are open to his guidance."
+
+    
 # don't create a separate page
 _build:
   render: "never"
