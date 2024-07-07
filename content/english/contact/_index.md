@@ -37,7 +37,7 @@ columns:
 
     I like planning ahead, so **please contact me in time about your project.** The earlier you contact me, the more likely I will be able to fit your design into my schedule. 😊
 
-    Before contacting me, [please read about my Tech Editing services](/technical-editing), if you haven't done so already.
+    Before contacting me, [please read about my Tech Editing services,](/technical-editing) if you haven't done so already.
 
     If this would be our first contact, **please don't book a slot**, but instead e-mail me so we can hash out the details.
 
