@@ -9,11 +9,11 @@
     {{ $processedImage := $image.Resize "576x160" }}
     <div class="flex items-start justify-end h-20 pt-2 pr-4 align-top rounded-t-lg"
          style="background-image: url('{{ $processedImage.Permalink }}'); background-size: cover; background-color: #3b82f6;">
-        <div><button id="close-modal" class="text-indigo-100 hover:text-amber-700">&times;</button></div>
+        <div><button class="text-xl text-indigo-100 close-modal hover:text-amber-700">&times;</button></div>
     </div>
     {{ else }}
     <div class="flex items-start justify-end h-20 pt-2 pr-4 align-top bg-indigo-500 rounded-t-lg">
-        <div><button id="close-modal" class="text-indigo-100 hover:text-amber-700">&times;</button></div>
+        <div><button class="text-xl text-indigo-100 close-modal hover:text-amber-700">&times;</button></div>
     </div>
     {{ end }}
     <!-- Content section -->
