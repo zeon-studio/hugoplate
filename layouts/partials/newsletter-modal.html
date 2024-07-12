@@ -1,7 +1,7 @@
 {{ with site.GetPage "sections/newsletter-modal" }}
 {{ if .Params.enable }}
 <div id="bottom-right-modal"
-    class="fixed bottom-0 right-0 z-50 hidden m-4 bg-white rounded-lg shadow-lg shadow-indigo-600/40 w-72">
+    class="fixed bottom-0 right-0 z-50 invisible m-4 bg-white rounded-lg shadow-lg md:visible shadow-indigo-600/40 w-72">
     {{ range .Params.modal }}
     <!-- Header with background image -->
     {{ $image := resources.Get .img }}
