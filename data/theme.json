@@ -32,9 +32,9 @@
   "fonts": {
   "font_family": {
     "primary": "Inter",
-    "primary_type": "serif",
+    "primary_type": "sans-serif",
     "secondary": "Inter",
-    "secondary_type": "serif"
+    "secondary_type": "sans-serif"
   },
   "font_size": {
     "base": "16",
