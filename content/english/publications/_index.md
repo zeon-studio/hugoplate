@@ -107,45 +107,45 @@ draft: false
 
 ## Articles about speculative fiction
 
-- Legendás állatok – Grindelwald bűntettei. In: SFmag, 2018. november 14. http://sfmag.hu/2018/11/14/legendas-allatok-grindelwald-buntettei-filmkritika/
-- George R. R. Martin: Álomdalok (1. kötet). In: SFmag, 2018. február 28. http://sfmag.hu/2018/02/28/george-r-r-martin-alomdalok-1-kotet/
-- Critical Role RPG show. In: 2017 legmaradandóbb sorozatos élményei. Ekultura.hu, 2018. január 5. http://ekultura.hu/latnivalo/egyeb/cikk/2018-01-05+10%3A00%3A00/2017-legmaradandobb-sorozatos-elmenyei
-- Robin Hobb: Az orgyilkos tanítványa. In: 2017 legmaradandóbb könyvélményei. Ekultura.hu, 2018. január 2. http://ekultura.hu/olvasnivalo/egyeb/cikk/2018-01-02+10%3A00%3A00/2017-legmaradandobb-konyvelmenyei
-- Szvetelszky Zsuzsanna: Rejtett szervezetek. In: Ekultura.hu, 2017. június 2. http://ekultura.hu/olvasnivalo/ajanlok/cikk/2017-06-02+13%3A00%3A00/szvetelszky-zsuzsanna-rejtett-szervezetek
-- Sense8 – A második évad. In: SFmag, 2017. június 1. http://sfmag.hu/2017/06/01/sense8-a-masodik-evad/
-- Amadeus (film). In: Ekultura.hu, 2017. március 16. http://ekultura.hu/latnivalo/ajanlok/cikk/2017-03-16+13%3A00%3A00/amadeus-film
-- Daredevil. In: SFmag, 2017. január 25. http://sfmag.hu/2017/01/25/daredevil/
-- Legendás állatok és megfigyelésük – filmkritika. In: SFmag, 2016. november 17. http://sfmag.hu/2016/11/17/legendas-allatok-es-megfigyelesuk-filmkritika/
-- Interjú Dan Wellsszel, a John Cleaver-sorozat és a Részlegesek-trilógia szerzőjével. In: SFmag, 2016. október 24. http://sfmag.hu/2016/10/24/interju-dan-wellsszel-a-john-cleaver-sorozat-es-a-reszlegesek-trilogia-szerzojevel/
-- Interview with Dan Wells, the writer of the John Cleaver series and the Partials sequence. In: SFmag, 2016. október 24. http://sfmag.hu/2016/10/24/interview-with-dan-wells-the-writer-of-the-john-cleaver-series-and-the-partials-sequence/
-- The Tomorrow Children. In: SFmag, 2016. október 10. http://sfmag.hu/2016/10/10/the-tomorrow-children/
-- Klausz Melinda: A közösségi média nagykönyve. In: Ekultura.hu, 2016. augusztus 11. http://ekultura.hu/olvasnivalo/ajanlok/cikk/2016-08-11+13%3A00%3A00/klausz-melinda-a-kozossegi-media-nagykonyve
-- Chuck Wendig: Vészmadarak. In: SFmag, 2016. július 20. http://sfmag.hu/2016/07/20/chuck-wendig-veszmadarak-2/
-- Gerald Durrell: A susogó táj. In: Ekultura.hu, 2016. július 11. http://ekultura.hu/olvasnivalo/ajanlok/cikk/2016-07-11+10%3A00%3A00/gerald-durrell-a-susogo-taj
-- Terry Pratchett: Moving Pictures. In: SFmag, 2016. július 11. http://sfmag.hu/2016/07/11/terry-pratchett-moving-pictures/
-- Scott Hawkins: Az Égett-hegyi könyvtár – Frenetikus és agyzsibbasztó. In: SFmag, 2016. június 6. http://sfmag.hu/2016/06/06/scott-hawkins-az-egett-hegyi-konyvtar-frenetikus-es-agyzsibbaszto/
-- Until Dawn – Rettegés hajnalig. In: SFmag, 2016. április 20. http://sfmag.hu/2016/04/20/until-dawn-retteges-hajnalig/
-- Dragon Age: Inquisition – Gyönyörű és monumentális. In: SFmag, 2016. február 11. http://sfmag.hu/2016/02/11/dragon-age-inquisition-gyonyoru-es-monumentalis/
-- James Goss, Douglas Adams: A halál városa. In: SFmag, 2015. december 22. http://sfmag.hu/2015/12/22/james-goss-douglas-adams-a-halal-varosa/
-- George R. R. Martin: Tuf Voyaging. In: SFmag, 2015. december 7. http://sfmag.hu/2015/12/07/george-r-r-martin-tuf-voyaging/
-- Shadows Beneath – The Writing Excuses Anthology. In: SFmag, 2015. október 12. http://sfmag.hu/2015/10/12/shadows-beneath-the-writing-excuses-anthology/
-- Susanna Clarke: A Hollókirály (minisorozat). In: SFmag, 2015. október 7. http://sfmag.hu/2015/10/07/susanna-clarke-a-hollokiraly-minisorozat/
-- Brian Staveley: A császár pengéi. In: SFmag, 2015. július 6. http://sfmag.hu/2015/07/06/brian-staveley-a-csaszar-pengei/
-- The Flash – az első évad. In: SFmag, 2015. május 27. http://sfmag.hu/2015/05/27/the-flash-az-elso-evad/
-- Kathy Reichs és a Fertőzöttek-sorozat. In: SFmag, 2015. április 27. http://sfmag.hu/2015/04/27/kathy-reichs-es-a-fertozottek-sorozat/
-- Emmi Itäranta: Memory of Water. In: SFmag, 2015. április 7. http://sfmag.hu/2015/04/07/emmi-itaranta-memory-of-water/
-- Terry Pratchettre emlékezünk. In: SFmag, 2015. március 17. http://sfmag.hu/2015/03/17/terry-pratchettre-emlekezunk/
-- Neill Blomkamp: Chappie. In: SFmag, 2015. március 9. http://sfmag.hu/2015/03/09/neill-blomkamp-chappie/
-- George R. R. Martin: A Hét Királyság lovagja. In: SFmag, 2014. december 15. http://sfmag.hu/2014/12/15/george-r-r-martin-a-het-kiralysag-lovagja/
-- Philip Pullman: Grimm Tales. In: SFmag, 2014. november 10. http://sfmag.hu/2014/11/10/philip-pullman-grimm-tales/
-- Tíz éves az új Galaktika. In: SFmag, 2014. november 3. http://sfmag.hu/2014/11/03/tiz-eves-az-uj-galaktika/
+- Legendás állatok – Grindelwald bűntettei. In: SFmag, 2018. november 14. [Link](http://sfmag.hu/2018/11/14/legendas-allatok-grindelwald-buntettei-filmkritika/)
+- George R. R. Martin: Álomdalok (1. kötet). In: SFmag, 2018. február 28. [Link](http://sfmag.hu/2018/02/28/george-r-r-martin-alomdalok-1-kotet/)
+- Critical Role RPG show. In: 2017 legmaradandóbb sorozatos élményei. Ekultura.hu, 2018. január 5. [Link](http://ekultura.hu/latnivalo/egyeb/cikk/2018-01-05+10%3A00%3A00/2017-legmaradandobb-sorozatos-elmenyei)
+- Robin Hobb: Az orgyilkos tanítványa. In: 2017 legmaradandóbb könyvélményei. Ekultura.hu, 2018. január 2. [Link](http://ekultura.hu/olvasnivalo/egyeb/cikk/2018-01-02+10%3A00%3A00/2017-legmaradandobb-konyvelmenyei)
+- Szvetelszky Zsuzsanna: Rejtett szervezetek. In: Ekultura.hu, 2017. június 2. [Link](http://ekultura.hu/olvasnivalo/ajanlok/cikk/2017-06-02+13%3A00%3A00/szvetelszky-zsuzsanna-rejtett-szervezetek)
+- Sense8 – A második évad. In: SFmag, 2017. június 1. [Link](http://sfmag.hu/2017/06/01/sense8-a-masodik-evad/)
+- Amadeus (film). In: Ekultura.hu, 2017. március 16. [Link](http://ekultura.hu/latnivalo/ajanlok/cikk/2017-03-16+13%3A00%3A00/amadeus-film)
+- Daredevil. In: SFmag, 2017. január 25. [Link](http://sfmag.hu/2017/01/25/daredevil/)
+- Legendás állatok és megfigyelésük – filmkritika. In: SFmag, 2016. november 17. [Link](http://sfmag.hu/2016/11/17/legendas-allatok-es-megfigyelesuk-filmkritika/)
+- Interjú Dan Wellsszel, a John Cleaver-sorozat és a Részlegesek-trilógia szerzőjével. In: SFmag, 2016. október 24. [Link](http://sfmag.hu/2016/10/24/interju-dan-wellsszel-a-john-cleaver-sorozat-es-a-reszlegesek-trilogia-szerzojevel/)
+- Interview with Dan Wells, the writer of the John Cleaver series and the Partials sequence. In: SFmag, 2016. október 24. [Link](http://sfmag.hu/2016/10/24/interview-with-dan-wells-the-writer-of-the-john-cleaver-series-and-the-partials-sequence/)
+- The Tomorrow Children. In: SFmag, 2016. október 10. [Link](http://sfmag.hu/2016/10/10/the-tomorrow-children/)
+- Klausz Melinda: A közösségi média nagykönyve. In: Ekultura.hu, 2016. augusztus 11. [Link](http://ekultura.hu/olvasnivalo/ajanlok/cikk/2016-08-11+13%3A00%3A00/klausz-melinda-a-kozossegi-media-nagykonyve)
+- Chuck Wendig: Vészmadarak. In: SFmag, 2016. július 20. [Link](http://sfmag.hu/2016/07/20/chuck-wendig-veszmadarak-2/)
+- Gerald Durrell: A susogó táj. In: Ekultura.hu, 2016. július 11. [Link](http://ekultura.hu/olvasnivalo/ajanlok/cikk/2016-07-11+10%3A00%3A00/gerald-durrell-a-susogo-taj)
+- Terry Pratchett: Moving Pictures. In: SFmag, 2016. július 11. [Link](http://sfmag.hu/2016/07/11/terry-pratchett-moving-pictures/)
+- Scott Hawkins: Az Égett-hegyi könyvtár – Frenetikus és agyzsibbasztó. In: SFmag, 2016. június 6. [Link](http://sfmag.hu/2016/06/06/scott-hawkins-az-egett-hegyi-konyvtar-frenetikus-es-agyzsibbaszto/)
+- Until Dawn – Rettegés hajnalig. In: SFmag, 2016. április 20. [Link](http://sfmag.hu/2016/04/20/until-dawn-retteges-hajnalig/)
+- Dragon Age: Inquisition – Gyönyörű és monumentális. In: SFmag, 2016. február 11. [Link](http://sfmag.hu/2016/02/11/dragon-age-inquisition-gyonyoru-es-monumentalis/)
+- James Goss, Douglas Adams: A halál városa. In: SFmag, 2015. december 22. [Link](http://sfmag.hu/2015/12/22/james-goss-douglas-adams-a-halal-varosa/)
+- George R. R. Martin: Tuf Voyaging. In: SFmag, 2015. december 7. [Link](http://sfmag.hu/2015/12/07/george-r-r-martin-tuf-voyaging/)
+- Shadows Beneath – The Writing Excuses Anthology. In: SFmag, 2015. október 12. [Link](http://sfmag.hu/2015/10/12/shadows-beneath-the-writing-excuses-anthology/)
+- Susanna Clarke: A Hollókirály (minisorozat). In: SFmag, 2015. október 7. [Link](http://sfmag.hu/2015/10/07/susanna-clarke-a-hollokiraly-minisorozat/)
+- Brian Staveley: A császár pengéi. In: SFmag, 2015. július 6. [Link](http://sfmag.hu/2015/07/06/brian-staveley-a-csaszar-pengei/)
+- The Flash – az első évad. In: SFmag, 2015. május 27. [Link](http://sfmag.hu/2015/05/27/the-flash-az-elso-evad/)
+- Kathy Reichs és a Fertőzöttek-sorozat. In: SFmag, 2015. április 27. [Link](http://sfmag.hu/2015/04/27/kathy-reichs-es-a-fertozottek-sorozat/)
+- Emmi Itäranta: Memory of Water. In: SFmag, 2015. április 7. [Link](http://sfmag.hu/2015/04/07/emmi-itaranta-memory-of-water/)
+- Terry Pratchettre emlékezünk. In: SFmag, 2015. március 17. [Link](http://sfmag.hu/2015/03/17/terry-pratchettre-emlekezunk/)
+- Neill Blomkamp: Chappie. In: SFmag, 2015. március 9. [Link](http://sfmag.hu/2015/03/09/neill-blomkamp-chappie/)
+- George R. R. Martin: A Hét Királyság lovagja. In: SFmag, 2014. december 15. [Link](http://sfmag.hu/2014/12/15/george-r-r-martin-a-het-kiralysag-lovagja/)
+- Philip Pullman: Grimm Tales. In: SFmag, 2014. november 10. [Link](http://sfmag.hu/2014/11/10/philip-pullman-grimm-tales/)
+- Tíz éves az új Galaktika. In: SFmag, 2014. november 3. [Link](http://sfmag.hu/2014/11/03/tiz-eves-az-uj-galaktika/)
 
 ## Articles about library science
 
-- E-könyv, e-olvasás, e-könyvészet. Szakmai nap az ELTE BTK-n. In: Könyvtári Levelező/lap, 26. évf. 11. sz. (2014) pp. 13–15. https://epa.oszk.hu/00300/00365/00158/pdf/EPA00365_konyvtari_levelezo_lap_2014_11_13-15.pdf
-- „Könyvtáros vagyok. A hét minden napján. Még vasárnap is.” : Farkas Balázs könyvbemutatója a KSH Könyvtárban. In: Könyvtári Levelező/lap, 26. évf. 7. sz. (2014) pp. 10–11. https://epa.oszk.hu/00300/00365/00154/pdf/EPA00365_konyvtari_levelezo_lap_2014_07_10-11.pdf
-- Mit gondolnak a tizenévesek az olvasási stratégiákról? In: Könyvtári Levelező/lap, 26. évf. 1–2. sz. (2014) pp. 32–33. https://epa.oszk.hu/00300/00365/00149/pdf/EPA00365_konyvtari_levelezo_lap_2014_01-02_32-33.pdf
-- Könyvtáros szakmai sztereotípiák és azok PR-vonatkozásai. In: Tudományos és Műszaki Tájékoztatás, 60. évf. 8. sz. (2013) pp. 331–345. https://epa.oszk.hu/03000/03071/00068/pdf/EPA03071_tmt_2013_08_331-345.pdf
+- E-könyv, e-olvasás, e-könyvészet. Szakmai nap az ELTE BTK-n. In: Könyvtári Levelező/lap, 26. évf. 11. sz. (2014) pp. 13–15. [Link](https://epa.oszk.hu/00300/00365/00158/pdf/EPA00365_konyvtari_levelezo_lap_2014_11_13-15.pdf)
+- „Könyvtáros vagyok. A hét minden napján. Még vasárnap is.” : Farkas Balázs könyvbemutatója a KSH Könyvtárban. In: Könyvtári Levelező/lap, 26. évf. 7. sz. (2014) pp. 10–11. [Link](https://epa.oszk.hu/00300/00365/00154/pdf/EPA00365_konyvtari_levelezo_lap_2014_07_10-11.pdf)
+- Mit gondolnak a tizenévesek az olvasási stratégiákról? In: Könyvtári Levelező/lap, 26. évf. 1–2. sz. (2014) pp. 32–33. [Link](https://epa.oszk.hu/00300/00365/00149/pdf/EPA00365_konyvtari_levelezo_lap_2014_01-02_32-33.pdf)
+- Könyvtáros szakmai sztereotípiák és azok PR-vonatkozásai. In: Tudományos és Műszaki Tájékoztatás, 60. évf. 8. sz. (2013) pp. 331–345. [Link](https://epa.oszk.hu/03000/03071/00068/pdf/EPA03071_tmt_2013_08_331-345.pdf)
 
 ## Entries for a bibliographical dictionary
 
@@ -164,7 +164,7 @@ draft: false
 
 ## Misc.
 
-- Olvasószerkesztő. Nemzetközi Statisztikai Figyelő. Budapest : KSH Könyvtár, 2015. https://www.kshkonyvtar.hu/article/67/25/nemzetkoezi-statisztikai-figyelo
+- Olvasószerkesztő. Nemzetközi Statisztikai Figyelő. Budapest : KSH Könyvtár, 2015. [Link](https://www.kshkonyvtar.hu/article/67/25/nemzetkoezi-statisztikai-figyelo)
 - Sebők László (szerk.): Az 1949. évi népszámlálás anyanyelvi és nemzetiségi adatai településenként. A fordítást ellenőrizte: Pékné Nagy Edit, Sárpátki Ádám. Budapest : KSH Könyvtár, 2014. (Számok és történelem, 4.) pp. 15–21.
 - Névmutató. In: Dukkon Ágnes: Az Aranykortól az Ezüstkorig – Fejezetek az orosz kritika és irodalomtudomány történetéből. Budapest : Protea Kulturális Egyesület, 2014. pp. 273–283.
 - Könyvtáros szakmai sztereotípiák és azok PR-vonatkozásai. [Szakdolgozat] Budapest : ELTE BTK, 2012. 67 p.
