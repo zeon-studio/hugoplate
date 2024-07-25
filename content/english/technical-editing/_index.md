@@ -56,20 +56,20 @@ This means that I will check: spelling, grammar, use of style, written instructi
 **I'm planning these services in the future:**
 
 - Tech editing for sweaters
+- Grading
 - Creating schematics
 - Creating style sheets
 - Layout design
 
 ### Fees
 
-Since I'm only starting out, for my first few clients I'm charging a flat fee:
+{{< highlight >}}
 
-| Service | Fee |
-| --- | --- |
-| Small, simple items </br> (e.g. items with basic brioche, simple charts and shaping) | €70 </br> (+ VAT if applicable) |
-| Complex items </br> (e.g. items with complicated charts and shaping) | €120 </br> (+ VAT if applicable) |
+**My hourly editing fee is €35 (+ VAT if applicable).** It includes three revision rounds, and a final check.
 
-The flat fee includes any necessary revision rounds.
+When you contact me, I will give you an estimated time-range, so you'll know what expense to expect. And I will contact you immediately if the editing requires more time.
+
+{{< /highlight >}}
 
 When you're ready to jump right in, please read the details below carefully. And if you're still unsure about some things, I would be happy to answer your questions, so just [drop me a line.](/contact)
 
@@ -93,17 +93,17 @@ The following outlines the ideal process, the happy path, but some minor changes
 
 - Whether there are parts of your pattern I should pay extra attention to, or if there are any parts I shouldn't bother with (e.g. if the pattern has a chart, and you exported the written instructions from Stitchmastery, they likely won't need to be checked).
 
-**Step 2.** — I respond to your e-mail with my turnaround time and my fee. I usually answer within 24-48 hours, except on weekends and holidays. I will let you know whether I can or cannot take on your pattern. I regularly check my spam folder, so it's highly unlikely I will miss your e-mail, but feel free to send a follow-up if I'm suspiciously silent. (For a list of public holidays in Hungary, [check this page](https://en.wikipedia.org/wiki/Public_holidays_in_Hungary) on Wikipedia. If I am out of office for some other reason, I will set up an auto-reply.)
+**Step 2.** — I respond to your e-mail with my turnaround time (usually 5-7 days), the estimated hours the project will require, my exact terms in the form of an agreement, and my estimated fee. I usually answer within 24-48 hours, except on weekends and holidays. I will let you know whether I can or cannot take on your pattern. I regularly check my spam folder, so it's highly unlikely I will miss your e-mail, but feel free to send a follow-up if I'm suspiciously silent. (For a list of public holidays in Hungary, [check this page](https://en.wikipedia.org/wiki/Public_holidays_in_Hungary) on Wikipedia. If I am out of office for some other reason, I will set up an auto-reply.)
 
-**Step 3.** — Hopefully you'll agree to my terms. If so, I'll send you a simple agreement to be signed digitally, through DocuSign. This way we'll both know what to expect, and can hopefully avoid any misunderstandings. (If you need help with DocuSign, check out [this article](https://support.docusign.com/s/articles/How-do-I-sign-a-DocuSign-document-Basic-Signing?language=en_US) on how to use their free service.)
+**Step 3.** — We sign the agreement through DocuSign. This way we'll both know what to expect, and can hopefully avoid any misunderstandings. (If you need help with DocuSign, check out [this article](https://support.docusign.com/s/articles/How-do-I-sign-a-DocuSign-document-Basic-Signing?language=en_US) on how to use their free service.)
 
-**Step 4.** — After we both sign the agreement, I start editing the pattern. I will contact you immediately if I have any questions or concerns.
+**Step 4.** — After we both sign the agreement, I start editing the pattern. I will contact you immediately if I have any questions or concerns, or if the work requires more time than I thought.
 
-**Step 5.** — I send you back my edits. You review them, make the necessary changes, then send me the corrected version, so I can check if everything's in order. If it is, I sign off on the pattern. If it's not, we repeat the process as many times as needed.
+**Step 5.** — I send you back my edits. You review them, make the necessary changes, then send me the corrected version, so I can check if everything's in order. If it is, I sign off on the pattern. If it's not, we repeat the process as many times as needed. (Important to note: my initial editing fee covers 3 rounds and a final check.)
 
-**Step 6.** —  When your pattern is in a good shape and can be sent to test knitters, I will send you my invoice which you can pay through Wise within 15 days. I will invoice my fee in Euros. You can [use this currency converter](https://wise.com/gb/currency-converter/) to check how much that will cost you in your own currency. (This step also applies if you don't send your pattern to test knitters, but instead choose to publish immediately.)
+**Step 6.** —  When your pattern is in a good shape and can be sent to test knitters or be published, I will send you my invoice which you can pay through Wise within 15 days. I will invoice my fee in Euros. You can [use this currency converter](https://wise.com/gb/currency-converter/) to check how much that will cost you in your own currency.
 
-**Step 7.** — After your pattern has been test knit, and you've received your feedback from your test knitters, I will be happy to take a look at the pattern again for any additional corrections, just in case we missed something. This step is free.
+**Step 7.** — After your pattern has been test knit, and you've received your feedback from your test knitters, I will be happy to take a look at the pattern again for any additional corrections, just in case we missed something. This step is free if there are no changes to be made, or they don't require much time, or if you still have revision rounds left.
 
 **Step 8.** — Publication day. Yay, you've got a finished pattern! Let's shout it from the rooftops! Do let me know when you publish it, so I can share the news with everyone. I will also add the pattern's link and photo to my portfolio (with your permission, of course).
 
@@ -115,13 +115,15 @@ If you have any questions, please start here. 😊
 
 While I do everything in my power to do a good job, mistakes happen. If you discover that I've made an error, **contact me immediately**, and I'll have another look at your pattern. Free of charge, of course. It doesn't matter if the error was discovered 3 days or 3 years after the publication of the pattern.
 
+If I didn't make the error, then I will still be happy to take a look at the pattern again. For free in the first year after publication, and for my current hourly fee after the first year.
+
 {{< /accordion >}}
 
 {{< accordion title="About test knitting before/instead of editing" class="border-indigo-900 border-1 bg-slate-50" >}}
 
 I firmly believe that test knitting should follow tech editing, since you don't want to give a pattern with errors to your test knitters. Think of it like this: it's not a reader's job to correct mistakes in an author's novel, but the editor's and the proofreader's. 🙂
 
-Test knitters will spend a lot of time creating an item using your design, so the process should be as smooth for them as possible. Let's be honest: test knitting is basically free marketing, and you want your test knitters to write good things about your pattern. They are not tech editors; it is not their job to edit your patterns, especially for free. So I highly, *highly* recommend that you start the test knitting process *after* your tech editor is finished with your pattern.
+Test knitters will spend a lot of time creating an item using your design, so the process should be as smooth for them as possible. Let's be honest: test knitting is free marketing most of the time, and you want your test knitters to write good things about your pattern. They are not tech editors; it is not their job to edit your patterns, especially for free. So I highly, *highly* recommend that you start the test knitting process *after* your tech editor is finished with your pattern.
 
 {{< /accordion >}}
 
@@ -132,6 +134,8 @@ When you send me your pattern, please send it as a PDF, just to make sure we don
 I always have the latest version of Microsoft Word and Pages, so their native format is always an option, but I'll most likely save your file as a PDF before I start working on it, so I don't change anything by mistake.
 
 I will send you back a flattened PDF, this way we won't run into any compatibility issues. (A flattened PDF just means that you won't be able to move or accidentally delete my comments. The quality will be unchanged, you'll still be able to zoom in, select the text, etc.)
+
+As part of the editing process, I won't change or rewrite the text of your pattern. I will give you my notes, and you can decide what to incorporate and what not to.
 
 {{< /accordion >}}
 
