@@ -33,9 +33,11 @@ I'm also an avid knitter who loves learning new techniques and exploring new des
   
 ## My philosophy
 
-Giving your pattern you've worked on so hard to someone else can be a nerve-wracking experience. I get it, I've been there—even after a decade I feel the same every time I turn in one of my translations. What if they'll mess everything up? What if they'll think I'm a fake or bad at my job?
+Giving your pattern you've worked on so hard to someone else can be a nerve-wracking experience. I get it, I've been there—even after a decade I feel the same way every time I turn in one of my translations. What if they'll mess everything up? What if they'll think I'm a fake or bad at my job?
 
 **Don't worry, I won't think that, and I won't mess up your pattern.** I'll point out errors and places where something is not right, but I won't change a comma, and most of the time won't even offer solutions—this way the final decision will always be yours on how to handle certain issues, and you won't have to check if my solution is the correct one.
+
+**You also retain all the intellectual property rights of the pattern.**
 
 So don't worry, I'm here to make your pattern look good, and to make this process go as painlessly as possible.
 
@@ -65,9 +67,9 @@ This means that I will check: spelling, grammar, use of style, written instructi
 
 {{< highlight >}}
 
-**My hourly editing fee is €35 (+ VAT if applicable).** It includes three revision rounds, and a final check.
+**My hourly editing fee is €35** (+ VAT if applicable). It includes three rounds of editing, and a final check.
 
-When you contact me, I will give you an estimated time-range, so you'll know what expense to expect. And I will contact you immediately if the editing requires more time.
+When you contact me, I will give you an estimated time-range, so you'll know what to expect. And I will contact you immediately if the editing requires more time.
 
 {{< /highlight >}}
 
@@ -75,7 +77,7 @@ When you're ready to jump right in, please read the details below carefully. And
 
 ## The process
 
-The following outlines the ideal process, the happy path, but some minor changes might occur, depending on when I get the pattern etc.
+The following outlines the ideal process, but I don't disclose every detail here that could be considered business information.
   
 **Step 1.** — You [contact me](/contact) for availability. Please include the following files and info, if you have them:
 
@@ -101,27 +103,19 @@ The following outlines the ideal process, the happy path, but some minor changes
 
 **Step 5.** — I send you back my edits. You review them, make the necessary changes, then send me the corrected version, so I can check if everything's in order. If it is, I sign off on the pattern. If it's not, we repeat the process as many times as needed. (Important to note: my initial editing fee covers 3 rounds and a final check.)
 
-**Step 6.** —  When your pattern is in a good shape and can be sent to test knitters or be published, I will send you my invoice which you can pay through Wise within 15 days. I will invoice my fee in Euros. You can [use this currency converter](https://wise.com/gb/currency-converter/) to check how much that will cost you in your own currency.
+**Step 6.** —  When your pattern is in a good shape and can be sent to test knitters or be published, I will send you my invoice which you can pay through Wise within 15 days. I will invoice my fee in Euros. You may [use this currency converter](https://wise.com/gb/currency-converter/) to check how much that will cost you in your own currency.
 
-**Step 7.** — After your pattern has been test knit, and you've received your feedback from your test knitters, I will be happy to take a look at the pattern again for any additional corrections, just in case we missed something. This step is free if there are no changes to be made, or they don't require much time, or if you still have revision rounds left.
+**Step 7.** — After your pattern has been test knitted, and you've received your feedback from your test knitters, I will be happy to take a look at the pattern again for any additional corrections, just in case we missed something. This step is free if there are no changes to be made, or they don't require much time, or if you still have revision rounds left.
 
-**Step 8.** — Publication day. Yay, you've got a finished pattern! Let's shout it from the rooftops! Do let me know when you publish it, so I can share the news with everyone. I will also add the pattern's link and photo to my portfolio (with your permission, of course).
+**Step 8.** — Publication day. Yay, you've got a finished pattern! Let's shout it from the rooftops! Do let me know when you publish it, so I can share the news with everyone. I will also add the pattern's photo and a link your website or Ravelry store to my portfolio (with your permission, of course).
 
 ## FAQ
 
 If you have any questions, please start here. 😊
 
-{{< accordion title="Guarantee" class="border-indigo-900 border-1 bg-slate-50" >}}
+{{< accordion title="Should test knitting or tech editing come first?" class="border-indigo-900 border-1 bg-slate-50" >}}
 
-While I do everything in my power to do a good job, mistakes happen. If you discover that I've made an error, **contact me immediately**, and I'll have another look at your pattern. Free of charge, of course. It doesn't matter if the error was discovered 3 days or 3 years after the publication of the pattern.
-
-If I didn't make the error, then I will still be happy to take a look at the pattern again. For free in the first year after publication, and for my current hourly fee after the first year.
-
-{{< /accordion >}}
-
-{{< accordion title="About test knitting before/instead of editing" class="border-indigo-900 border-1 bg-slate-50" >}}
-
-I firmly believe that test knitting should follow tech editing, since you don't want to give a pattern with errors to your test knitters. Think of it like this: it's not a reader's job to correct mistakes in an author's novel, but the editor's and the proofreader's. 🙂
+I firmly believe that test knitting should follow tech editing, since you don't want to give a pattern with errors to your test knitters. Think of it like this: correcting mistakes in an author's novel is not the reader's, but the editor's and proofreader's job. 🙂
 
 Test knitters will spend a lot of time creating an item using your design, so the process should be as smooth for them as possible. Let's be honest: test knitting is free marketing most of the time, and you want your test knitters to write good things about your pattern. They are not tech editors; it is not their job to edit your patterns, especially for free. So I highly, *highly* recommend that you start the test knitting process *after* your tech editor is finished with your pattern.
 
@@ -143,7 +137,7 @@ As part of the editing process, I won't change or rewrite the text of your patte
 
 I will keep our every e-mail and file confidential, and I will never send or say anyone anything about our work, unless you instruct me to. In return, I ask you to do the same.
 
-This obviously doesn't apply to the fact that I edited your pattern: I will proudly share the news of its publication on social media, and will include its link and photo in my portfolio (with your permission, of course).
+This obviously doesn't apply to the fact that I edited your pattern: I will proudly share the news of its publication on social media, and will include its photo in my portfolio (with your permission, of course), as well as a link to your website or Ravelry store.
 
 {{< /accordion >}}
 
