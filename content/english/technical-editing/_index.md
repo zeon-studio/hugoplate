@@ -39,7 +39,7 @@ Giving your pattern you've worked on so hard to someone else can be a nerve-wrac
 
 **You also retain all the intellectual property rights of the pattern.**
 
-So don't worry, I'm here to make your pattern look good, and to make this process go as painlessly as possible.
+I'm here to make your pattern look good, and to make this process go as painlessly as possible.
 
 ## My services
 
