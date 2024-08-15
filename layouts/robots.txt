@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /privacy-policy/
+Disallow: /404.html

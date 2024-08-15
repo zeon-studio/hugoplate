@@ -1,6 +1,6 @@
 ######################## default configuration ####################
 # The base URL of your site (required). This will be prepended to all relative URLs.
-baseURL = "/"
+baseURL = "https://adamsarpatki.com/"
 # Title of your website (required).
 title = "Ádám Sárpátki - Literary translator & technical editor"
 # Your theme name
@@ -15,6 +15,12 @@ summaryLength = 10 # see https://gohugo.io/content-management/excerpts/
 disableLanguages = [
 ] # example: ["fr"] for disable french language. see https://gohugo.io/content-management/multilingual/
 hasCJKLanguage = false #  If hasCJKLanguage true, auto-detect Chinese/Japanese/Korean Languages in the content. see: https://gohugo.io/getting-started/configuration/#hascjklanguage
+enableRobotsTXT = true
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+  exclude = ["404.html", "privacy-policy/"]
 
 
 ########################### Services #############################
