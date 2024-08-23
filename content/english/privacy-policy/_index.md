@@ -127,6 +127,6 @@ If you have any questions or requests regarding the data processing, please cont
 
 ### Icons and Illustrations Credit
 
-Page divider for newsletter images created by Alderdoodle at <a href="https://alderdoodle.co.uk">alderdoodle.co.uk</a>. Legendarus font for newsletter promo created by Fred Kroner at <a href="https://www.mapeffects.co/">Mapeffects</a>.
+Page divider for newsletter images created by Alderdoodle at <a href="https://alderdoodle.co.uk">alderdoodle.co.uk</a>. Legendarus font for newsletter promo created by Fred Kroner at <a href="https://www.mapeffects.co/">Map Effects</a>.
 
 <a href="https://www.flaticon.com/free-icons/research" title="research icons">Research icons created by Freepik - Flaticon</a> | <a href="https://www.flaticon.com/free-icons/calendar" title="calendar icons">Calendar icons created by Freepik - Flaticon</a> | <a href="https://www.flaticon.com/free-icons/advantage" title="advantage icons">Advantage icons created by zero_wing - Flaticon</a> | <a href="https://www.flaticon.com/free-icons/communications" title="communications icons">Communications icons created by Smashicons - Flaticon</a> | <a href="https://www.flaticon.com/free-icons/books" title="books icons">Books icons created by Freepik - Flaticon</a> | <a href="https://www.flaticon.com/free-icons/wool" title="wool icons">Wool icons created by Freepik - Flaticon</a> | <a href="https://www.flaticon.com/free-icons/person" title="person icons">Person icons created by Freepik - Flaticon</a>
