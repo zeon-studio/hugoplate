@@ -39,7 +39,7 @@ preloader = "" # use jpg, png, svg or gif format.
 [navigation_button]
 enable = true
 label = "Contact me"
-link = "contact"
+link = "contact/"
 
 # search
 # search module: https://github.com/gethugothemes/hugo-modules/tree/master/search
