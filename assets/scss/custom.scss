@@ -89,6 +89,14 @@ h6 {
   @apply font-secondary font-bold leading-tight text-slate-900 dark:text-darkmode-dark;
 }
 
+.privacy h2 {
+  @apply text-3xl my-6 font-secondary leading-relaxed font-bold text-slate-900 dark:text-darkmode-dark;
+}
+
+.privacy h3 {
+  @apply text-2xl my-4 font-secondary leading-relaxed font-bold text-slate-900 dark:text-darkmode-dark;
+}
+
 .content-box {
   @apply rounded-lg xl:w-2/5 bg-white dark:bg-darkmode-theme-light p-10 border border-indigo-100;
 }
