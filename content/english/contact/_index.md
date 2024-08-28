@@ -46,3 +46,5 @@ columns:
 **For publishers and designers:** Depending on whether you're interested in working with me on a translation/editing project, or a knitting pattern, you have different options of contacting me. You can email me at [hello@adamsarpatki.com,](mailto:hello@adamsarpatki.com) use the "Email me" buttons below, or even book a chat with me. I will have different timeslots available for each category, so please choose the one that best describes you.
 
 **If you just want to chat,** please use my social media channels linked in the footer. 😊
+
+*Before you contact me, make sure you familiarise yourself with my [Privacy Policy](/privacy-policy/).*
