@@ -240,7 +240,7 @@ The National Media and Infocommunications Authority is responsible for advertise
 
 This Privacy Policy is governed by the Hungarian law, especially by the provisions of Act CXII of 2011 on the Right of Informational Self-determination and Freedom of Information and the GDPR. 
 
-**Budapest, 2024**
+**Győrasszonyfa, 2024**
 
 ---
 
