@@ -11,7 +11,7 @@ columns:
   button:
     enable: true
     label: "Read more"
-    link: "/translation-and-editing"
+    link: "/translation-and-editing/"
   secondButton:
     enable: false
     label: ""
@@ -28,7 +28,7 @@ columns:
   button:
     enable: true
     label: "Read more"
-    link: "/technical-editing"
+    link: "/technical-editing/"
   secondButton:
     enable: false
     label: ""

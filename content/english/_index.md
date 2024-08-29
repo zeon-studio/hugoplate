@@ -13,6 +13,6 @@ banner:
   button:
     enable: true
     label: "Let's work together"
-    link: /contact
+    link: /contact/
 
 ---
