@@ -88,7 +88,7 @@ The following outlines the ideal process, but I don't disclose every detail here
   
 **Step 1.** — You [contact me](/contact) for availability. Please include the following files and info, if you have them:
 
-- Your pattern, even if it's not yet the version you want edited. A PDF file is preferred, but a Word file or a Pages file is good as well. (See FAQ for more on this.)
+- Your pattern, even if it's not yet the version you want edited. You can send me a PDF, but a Word file or a Pages file is good as well. (See FAQ for more on this.)
 
 - Some photos of the finished item, so I can check if the pattern would produce the item or not. These images don't have to be fancy, I just need to see details like the ribbing, the stitch pattern, the general shape etc.
 
@@ -134,11 +134,11 @@ Test knitters will spend a lot of time creating an item using your design, so th
 
 {{< accordion title="PDF, DOC or something else?" class="border-indigo-900 border-1 bg-slate-50" >}}
 
-When you send me your pattern, please send it as a PDF, just to make sure we don't run into any formatting issues between operating systems and word processing software.
+To avoid any formatting issues between operating systems and word processing software, ideally, I would prefer if you would send your pattern as a PDF.
 
-I always have the latest version of Microsoft Word and Pages, so their native format is always an option, but I'll most likely save your file as a PDF before I start working on it, so I don't change anything by mistake.
+I always have the latest version of Microsoft Word and Pages, so their native format is always an option, but I'll most likely save your file as a PDF before I start working on it, so I don't change anything by mistake. I will send you back a flattened PDF, this way we won't run into any compatibility issues. (A flattened PDF just means that you won't be able to move or accidentally delete my comments. The quality will be unchanged, you'll still be able to zoom in, select the text, etc.)
 
-I will send you back a flattened PDF, this way we won't run into any compatibility issues. (A flattened PDF just means that you won't be able to move or accidentally delete my comments. The quality will be unchanged, you'll still be able to zoom in, select the text, etc.)
+**Do let me know if you'd prefer a different approach,** like using Adobe Reader's commenting functionality, or "Track Changes" and commenting in Microsoft Word. I'm used to both.
 
 As part of the editing process, I won't change or rewrite the text of your pattern. I will give you my notes, and you can decide what to incorporate and what not to.
 
@@ -154,6 +154,6 @@ This obviously doesn't apply to the fact that I edited your pattern: I will prou
 
 {{< accordion title="Credit" class="border-indigo-900 border-1 bg-slate-50" >}}
 
-While it's not necessary to do so, I would be over the moon if you would credit me in the colophon of your pattern. I think it's generally a nice thing to do, and it also gives credibility to your work, showing people that "Yes, this pattern was professionally tech edited. This designer cares."
+While it's not necessary to do so, I would be over the moon if you would credit me in the colophon of your pattern. I think it's generally a nice thing to do, and including my name also gives credibility to your work, showing people that this pattern was professionally tech edited. If you credit me, you will still retain all the intellectual property rights of the pattern.
 
 {{< /accordion >}}
