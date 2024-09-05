@@ -110,9 +110,9 @@ The following outlines the ideal process, but I don't disclose every detail here
 
 **Step 5.** —  When your pattern is spotless and can be sent to test knitters or be published, I will send you my invoice which you can pay through Wise within 15 days. I will invoice my fee in Euros. You may [use this currency converter](https://wise.com/gb/currency-converter/) to check how much that will cost you in your own currency.
 
-**Step 7.** — After your pattern has been test knitted, and you've received your feedback from your test knitters, I will be happy to take a look at the pattern again for any additional corrections, just in case we missed something. This step is free if there are no changes to be made or they don't require much time.
+**Step 6.** — After your pattern has been test knitted, and you've received your feedback from your test knitters, I will be happy to take a look at the pattern again for any additional corrections, just in case we missed something. This step is free if there are no changes to be made or they don't require much time.
 
-**Step 8.** — Publication day. Yay, you've got a finished pattern! Let's shout it from the rooftops! Do let me know when you publish it, so I can share the news with everyone. I will also add the pattern's photo and a link to your website or Ravelry store to my portfolio (with your permission, of course).
+**Step 7.** — Publication day. Yay, you've got a finished pattern! Let's shout it from the rooftops! Do let me know when you publish it, so I can share the news with everyone. I will also add the pattern's photo and link your website or Ravelry store in my portfolio (with your permission, of course).
 
 <!-- Button -->
 <div class="flex flex-col items-center mb-20">
