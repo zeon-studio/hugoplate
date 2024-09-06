@@ -69,16 +69,17 @@ This means that I will check: spelling, grammar, use of style, written instructi
 
 **My hourly editing fee is €35** (+ VAT if applicable). It includes three rounds of editing, and a final check.
 
-When you contact me, I will give you an estimated time-range, so you'll know what to expect. And I will contact you immediately if the editing requires more time.
+When you contact me, I will give you an estimated time-range, so you'll know what to expect.
 
 Small, simple items might need 2-3 hours, while larger, more complicated designs could require 4-5 hours to edit.
 
 {{< /highlight >}}
 
-When you're ready to jump right in, please read the details below carefully. And if you're still unsure about some things, I would be happy to answer your questions.
+When you're ready to jump right in, please read the details below carefully.
 
 <!-- Button -->
-<div class="flex flex-col items-center my-14">
+<div class="flex flex-col items-center mb-20 text-center">
+    <p class="text-lg font-bold">If you're still unsure about some things, <br/>I would be happy to answer your questions.</p>
     <a class="btn btn-primary" href="mailto:hello@adamsarpatki.com" rel="noopener" {{ end }}>I have a question</a>
 </div>
 
@@ -104,18 +105,18 @@ The following outlines the ideal process, but I don't disclose every detail here
 
 **Step 2.** — In my response, I will let you know if I can take on the pattern or not, about my turnaround time (usually 5-7 days), the estimated hours the project will require, and my estimated fee. I usually answer within 24-48 hours, except on weekends and holidays, and have an auto-reply set up if I'm away for more time than that. I will also send you my agreement, so you can check my terms.
 
-**Step 3.** — We sign the agreement through DocuSign. (If you need assistance with DocuSign, I will gladly help, or check out [this article](https://support.docusign.com/s/articles/How-do-I-sign-a-DocuSign-document-Basic-Signing?language=en_US) on how to use their free service. You don't need to scan your signature to use this service.)
+**Step 3.** — We sign the agreement through DocuSign. (If you need assistance with it, I will gladly help, or check out [this article](https://support.docusign.com/s/articles/How-do-I-sign-a-DocuSign-document-Basic-Signing?language=en_US) on how to use their free service. You don't need to scan your signature to use this service.)
 
-**Step 4.** — After we're set, I start editing the pattern. When the first round is done, I will send it back to you to make the necessary changes. Then you send it back to me, to check it again for anything we missed. I will contact you immediately if I have any questions or concerns, or if the work requires more time than I thought.
+**Step 4.** — After we're set, I start editing the pattern. When the first round is done, I will send it back to you to make the necessary changes. Then you send it back to me, to check it again for anything we missed. I will contact you immediately if I have any questions or concerns, or if the work requires more time than I thought, to talk about the best course of action.
 
-**Step 5.** —  When your pattern is spotless and can be sent to test knitters or be published, I will send you my invoice which you can pay through Wise within 15 days. I will invoice my fee in Euros. You may [use this currency converter](https://wise.com/gb/currency-converter/) to check how much that will cost you in your own currency.
+**Step 5.** —  When your pattern is spotless and can be sent to test knitters or be published, I will send you my invoice which you can pay through Wise within 15 days. My fee will be in Euros or Hungarian Forint if you're based in Hungary. You may [use this currency converter](https://wise.com/gb/currency-converter/) to check how much that will cost you in your own currency.
 
 **Step 6.** — After your pattern has been test knitted, and you've received your feedback from your test knitters, I will be happy to take a look at the pattern again for any additional corrections, just in case we missed something. This step is free if there are no changes to be made or they don't require much time.
 
-**Step 7.** — Publication day. Yay, you've got a finished pattern! Let's shout it from the rooftops! Do let me know when you publish it, so I can share the news with everyone. I will also add the pattern's photo and link your website or Ravelry store in my portfolio (with your permission, of course).
+Yay, you've got a finished pattern! Let's shout it from the rooftops! Do let me know when you publish it, so I can share the news with everyone. I will include its photo in my portfolio (with your permission, of course), with your name, as well as a link to your website or Ravelry store.
 
 <!-- Button -->
-<div class="flex flex-col items-center mb-20">
+<div class="flex flex-col items-center mb-20 text-center">
     <p class="text-lg font-bold">If you're ready to dive in,</p>
     <a class="btn btn-primary" href="mailto:hello@adamsarpatki.com" rel="noopener" {{ end }}> Contact me for a free quote!</a>
 </div>
@@ -138,9 +139,9 @@ To avoid any formatting issues between operating systems and word processing sof
 
 I always have the latest version of Microsoft Word and Pages, so their native format is always an option, but I'll most likely save your file as a PDF before I start working on it, so I don't change anything by mistake. I will send you back a flattened PDF, this way we won't run into any compatibility issues. (A flattened PDF just means that you won't be able to move or accidentally delete my comments. The quality will be unchanged, you'll still be able to zoom in, select the text, etc.)
 
-**Do let me know if you'd prefer a different approach,** like using Adobe Reader's commenting functionality, or "Track Changes" and commenting in Microsoft Word. I'm used to both.
+**Do let me know if you'd prefer a different approach,** like using Adobe Reader's markup functionality, or "Track Changes" and commenting in Microsoft Word. I'm used to both.
 
-As part of the editing process, I won't change or rewrite the text of your pattern. I will give you my notes, and you can decide what to incorporate and what not to.
+During the editing process, I won't change or rewrite the text of your pattern without your knowledge. I will give you my notes and suggestions, and you can decide what to incorporate and what not to.
 
 {{< /accordion >}}
 
