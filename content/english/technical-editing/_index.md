@@ -9,7 +9,7 @@ draft: false
 
 ## What is technical editing?
 
-Anyone who publishes any kind of text needs an editor, a fresh set of eyes to catch mistakes. And since knitting is a specialized area, that editor needs to be a person who knows the ins and outs of knitting.
+Anyone who publishes any kind of text needs an editor, a fresh set of eyes to catch mistakes. Since knitting is a specialized area, that editor needs to be a person who knows the ins and outs of knitting.
 
 {{< highlight >}}
 
@@ -17,23 +17,23 @@ Anyone who publishes any kind of text needs an editor, a fresh set of eyes to ca
 
 {{< /highlight >}}
 
-A technical editor does not knit the pattern, but checks it theoretically, with a calculator and/or a spreadsheet. The process, depending on the pattern's complexity, takes only a few hours vs. the many weeks or even months a test knitter works on a pattern.
+A technical editor does not knit the pattern, but checks it theoretically, with a calculator and/or a spreadsheet. The process, depending on the pattern's complexity, takes only a few hours compared to the many weeks or even months a test knitter works on a pattern.
 
 **Tech editing has great value for pattern designers, since a well edited pattern results in a good experience for the makers.**
 
 ## My qualification
 
-**Since 2012, I've worked on over 60 novels and short stories as a literary translator, and edited more than 20 novels.** I've also written articles on various topics. I have extensive experience working with various genres and collaborating with translators and editors from diverse backgrounds.
+**Since 2012, I've worked on over 60 novels and short stories as a literary translator, and copyedited more than 20 novels.** I've also written articles on various topics. I have extensive experience working with various genres and collaborating with translators and editors from diverse backgrounds.
 
 Feel free to check out the list of my publications [here.](/publications)
 
 **In 2024, I completed the technical editing course offered by [The Tech Editor Hub.](https://www.thetecheditorhub.com/)** Joeli is a wonderful teacher who has taught me a great deal about the mechanics of tech editing for knitting patterns and the philosophy of working with pattern designers. And, since it offers a slightly different perspective, I enrolled in [the certification course offered by TKGA.](https://tkga.org/certification-for-technical-editors/)
 
-I'm also an avid knitter who loves learning new techniques and exploring new designs. Rest assured, if something is unfamiliar to me, I will don my librarian hat and start researching.
+I'm also an avid knitter who loves learning new techniques and exploring new designs. Rest assured, if something is unfamiliar to me, I will don my librarian hat and start researching, at no extra cost to you.
   
 ## My philosophy
 
-I know how nerve-wracking it can be to give something you've worked on really hard to someone else. I feel the same way each time a new editor works on my translations.
+I know it can be daunting to entrust someone with something you've put so much hard work and dedication into. I feel the same way each time a new editor works on my translations.
 
 This is why I strive to create a safe and friendly environment where you won't be judged if you make a mistake—instead, mistakes are just problems to be solved. No one has to know about them.
 
@@ -79,7 +79,7 @@ When you're ready to jump right in, please read the details below carefully.
 
 <!-- Button -->
 <div class="flex flex-col items-center mb-20 text-center">
-    <p class="text-lg font-bold">If you're still unsure about some things, <br/>I would be happy to answer your questions.</p>
+    <p class="text-lg font-bold">If you're still unsure about some things, I would be happy to answer your questions.</p>
     <a class="btn btn-primary" href="mailto:hello@adamsarpatki.com" rel="noopener" {{ end }}>I have a question</a>
 </div>
 
@@ -109,7 +109,7 @@ The following outlines the ideal process, but I don't disclose every detail here
 
 **Step 4.** — After we're set, I start editing the pattern. When the first round is done, I will send it back to you to make the necessary changes. Then you send it back to me, to check it again for anything we missed. I will contact you immediately if I have any questions or concerns, or if the work requires more time than I thought, to talk about the best course of action.
 
-**Step 5.** —  When your pattern is spotless and can be sent to test knitters or be published, I will send you my invoice which you can pay through Wise within 15 days. My fee will be in Euros or Hungarian Forint if you're based in Hungary. You may [use this currency converter](https://wise.com/gb/currency-converter/) to check how much that will cost you in your own currency.
+**Step 5.** —  When your pattern is ready to be sent to test knitters or published, I will send you my invoice, which you can pay via Wise within 15 days. My fee will be in Euros or, if you're based in Hungary, in Hungarian Forint. You may [use this currency converter](https://wise.com/gb/currency-converter/) to check how much that will cost you in your own currency.
 
 **Step 6.** — After your pattern has been test knitted, and you've received your feedback from your test knitters, I will be happy to take a look at the pattern again for any additional corrections, just in case we missed something. This step is free if there are no changes to be made or they don't require much time.
 
@@ -117,7 +117,7 @@ Yay, you've got a finished pattern! Let's shout it from the rooftops! Do let me 
 
 <!-- Button -->
 <div class="flex flex-col items-center mb-20 text-center">
-    <p class="text-lg font-bold">If you're ready to dive in,</p>
+    <p class="text-lg font-bold">Are you ready to dive in?</p>
     <a class="btn btn-primary" href="mailto:hello@adamsarpatki.com" rel="noopener" {{ end }}> Contact me for a free quote!</a>
 </div>
 
@@ -139,7 +139,7 @@ To avoid any formatting issues between operating systems and word processing sof
 
 I always have the latest version of Microsoft Word and Pages, so their native format is always an option, but I'll most likely save your file as a PDF before I start working on it, so I don't change anything by mistake. I will send you back a flattened PDF, this way we won't run into any compatibility issues. (A flattened PDF just means that you won't be able to move or accidentally delete my comments. The quality will be unchanged, you'll still be able to zoom in, select the text, etc.)
 
-**Do let me know if you'd prefer a different approach,** like using Adobe Reader's markup functionality, or "Track Changes" and commenting in Microsoft Word. I'm used to both.
+**Feel free to let me know if you'd prefer a different approach,** like using Adobe Reader's markup functionality, or "Track Changes" and commenting in Microsoft Word. I'm used to both.
 
 During the editing process, I won't change or rewrite the text of your pattern without your knowledge. I will give you my notes and suggestions, and you can decide what to incorporate and what not to.
 
