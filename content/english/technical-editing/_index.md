@@ -99,7 +99,7 @@ The following outlines the ideal process, but I don't disclose every detail here
 
 - Your deadline if you already have one.
 
-- Whether your pattern has already been test knitted or not. (See FAQ for more on this.)
+- Whether your pattern has already been test knitted or not.
 
 - Whether there are parts of your pattern I should pay extra attention to, or if there are any parts I shouldn't bother with (e.g. if the pattern has a chart, and you exported the written instructions from Stitchmastery, they likely won't need to be checked).
 
@@ -124,14 +124,6 @@ Yay, you've got a finished pattern! Let's shout it from the rooftops! Do let me 
 ## FAQ
 
 If you have any questions, please start here. 😊
-
-{{< accordion title="Should test knitting or tech editing come first?" class="border-indigo-900 border-1 bg-slate-50" >}}
-
-I firmly believe that test knitting should follow tech editing, since you don't want to give a pattern with errors to your test knitters. Think of it like this: correcting mistakes in an author's novel is not the reader's, but the editor's and proofreader's job. 🙂
-
-Test knitters will spend a lot of time creating an item using your design, so the process should be as smooth for them as possible. Let's be honest: test knitting is free marketing most of the time, and you want your test knitters to write good things about your pattern. They are not tech editors; it is not their job to edit your patterns, especially for free. So I highly, *highly* recommend that you start the test knitting process *after* your tech editor is finished with your pattern.
-
-{{< /accordion >}}
 
 {{< accordion title="PDF, DOC or something else?" class="border-indigo-900 border-1 bg-slate-50" >}}
 
