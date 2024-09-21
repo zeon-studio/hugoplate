@@ -2,3 +2,6 @@ User-agent: *
 Disallow: /privacy-policy/
 Disallow: /impressum/
 Disallow: /404.html
+Disallow: /sections/
+Disallow: /categories/
+Disallow: /tags/
