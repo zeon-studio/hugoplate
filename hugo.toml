@@ -2,7 +2,7 @@
 # The base URL of your site (required). This will be prepended to all relative URLs.
 baseURL = "https://adamsarpatki.com/"
 # Title of your website (required).
-title = "Ádám Sárpátki - Literary translator & technical editor"
+title = ""
 # Your theme name
 theme = "hugoplate"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
@@ -22,17 +22,18 @@ defaultContentLanguage = "en"
 
 [languages.en]
 languageName = "English"
-languageCode = "en-us"
+languageCode = "en-gb"
 contentDir = "content/english"
+title = "Ádám Sárpátki - Literary translator & technical editor"
 weight = 1
 
 [languages.hu]
 languageName = "Magyar"
 languageCode = "hu-hu"
 contentDir = "content/hungarian"
+title = "Sárpátki Ádám - Műfordító, szerkesztő, lektor"
 weight = 2
   [languages.hu.params]
-    title = "Sárpátki Ádám - Műfordító, szerkesztő, lektor"
     logo_text = "Sárpátki Ádám"
     copyright = "2024 © Sárpátki Ádám. Minden jog fenntartva."
 
