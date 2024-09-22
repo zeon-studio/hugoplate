@@ -16,6 +16,28 @@ disableLanguages = [
 ] # example: ["fr"] for disable french language. see https://gohugo.io/content-management/multilingual/
 hasCJKLanguage = false #  If hasCJKLanguage true, auto-detect Chinese/Japanese/Korean Languages in the content. see: https://gohugo.io/getting-started/configuration/#hascjklanguage
 enableRobotsTXT = true
+
+########################### Languages #############################
+defaultContentLanguage = "en"
+
+[languages.en]
+languageName = "English"
+languageCode = "en-us"
+contentDir = "content/english"
+weight = 1
+
+[languages.hu]
+languageName = "Magyar"
+languageCode = "hu-hu"
+contentDir = "content/hungarian"
+weight = 2
+  [languages.hu.params]
+    title = "Sárpátki Ádám - Műfordító, szerkesztő, lektor"
+    logo_text = "Sárpátki Ádám"
+    copyright = "2024 © Sárpátki Ádám. Minden jog fenntartva."
+
+
+########################### Sitemap #############################
 [sitemap]
   changefreq = "monthly"
   priority = 0.5

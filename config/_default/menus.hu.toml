@@ -1,0 +1,71 @@
+############# English navigation ##############
+
+# main menu
+[[main]]
+name = "Főoldal"
+url = "/"
+weight = 1
+
+[[main]]
+name = "Rólam"
+url = "about/"
+weight = 2
+
+[[main]]
+name = "Műfordítás & szerkesztés"
+url = "translation-and-editing/"
+weight = 3
+
+[[main]]
+name = "Szakmai lektorálás"
+url = "technical-editing/"
+weight = 4
+
+[[main]]
+name = "Publikációk"
+url = "publications/"
+weight = 5
+
+
+
+# footer menu
+
+[[footer]]
+name = "Főoldal"
+url = "/"
+weight = 1
+
+[[footer]]
+name = "Rólam"
+url = "about/"
+weight = 2
+
+[[footer]]
+name = "Műfordítás és szerkesztés"
+url = "translation-and-editing/"
+weight = 3
+
+[[footer]]
+name = "Szakmai lektorálás"
+weight = 4
+pageRef = "technical-editing/"
+
+[[footer]]
+name = "Publikációk"
+url = "publications/"
+weight = 5
+
+[[footer]]
+name = "Hírlevél"
+url = "https://yarnboundtales.substack.com/"
+weight = 6
+
+[[footer]]
+name = "Adatkezelési tájékoztató"
+url = "privacy-policy/"
+weight = 7
+
+[[footer]]
+name = "Impresszum"
+url = "impressum/"
+weight = 8

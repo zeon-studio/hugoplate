@@ -1,10 +1,10 @@
 <header
   class="header {{ if site.Params.navbar_fixed }}sticky top-0{{ end }} z-30">
-  <nav class="navbar container">
+  <nav class="container navbar">
     <!-- logo -->
     <div class="order-0">
       <!-- navbar brand/logo -->
-      <a class="navbar-brand block" href="{{ site.Home.RelPermalink }}">
+      <a class="block navbar-brand" href="{{ site.Home.RelPermalink }}">
         {{ partial "logo" }}
       </a>
     </div>
@@ -12,12 +12,12 @@
     <input id="nav-toggle" type="checkbox" class="hidden" />
     <label
       for="nav-toggle"
-      class="order-3 cursor-pointer flex items-center lg:hidden text-dark dark:text-white lg:order-1">
-      <svg id="show-button" class="h-6 fill-current block" viewBox="0 0 20 20">
+      class="flex items-center order-3 cursor-pointer lg:hidden text-dark dark:text-white lg:order-1">
+      <svg id="show-button" class="block h-6 fill-current" viewBox="0 0 20 20">
         <title>Menu Open</title>
         <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
       </svg>
-      <svg id="hide-button" class="h-6 fill-current hidden" viewBox="0 0 20 20">
+      <svg id="hide-button" class="hidden h-6 fill-current" viewBox="0 0 20 20">
         <title>Menu Close</title>
         <polygon
           points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
@@ -29,14 +29,14 @@
     <!-- main navbar -->
     <ul
       id="nav-menu"
-      class="navbar-nav order-3 hidden lg:flex w-full pb-6 lg:order-1 lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8">
+      class="order-3 hidden w-full pb-6 navbar-nav lg:flex lg:order-1 lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8">
       {{ $currentPage := . }}
       {{ range site.Menus.main }}
         {{ $menuURL := .URL | absLangURL }}
         {{ $pageURL:= $currentPage.Permalink | absLangURL }}
         {{ $active := eq $menuURL $pageURL }}
         {{ if .HasChildren }}
-          <li class="nav-item nav-dropdown group relative">
+          <li class="relative nav-item nav-dropdown group">
             <span
               class="nav-link {{ range .Children }}
                 {{ $childURL := .URL | absLangURL }}
@@ -44,7 +44,7 @@
                 {{ if $active }}active{{ end }}
               {{ end }} inline-flex items-center">
               {{ .Name }}
-              <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
                 <path
                   d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
               </svg>
@@ -96,7 +96,7 @@
         {{ end }}
       {{ end }}
       {{ if site.Params.navigation_button.enable }}
-        <li class="mt-4 inline-block lg:hidden">
+        <li class="inline-block mt-4 lg:hidden">
           <a
             class="btn btn-outline-primary btn-sm"
             href="{{ site.Params.navigation_button.link | relLangURL }}">
@@ -106,12 +106,12 @@
       {{ end }}
     </ul>
 
-    <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
+    <div class="flex items-center order-1 ml-auto md:order-2 lg:ml-0">
       {{ with site.Params.search }}
         {{ if .enable }}
           <button
             aria-label="search"
-            class="border-border text-dark hover:text-primary dark:border-darkmode-border mr-5 inline-block border-r pr-5 text-xl dark:text-white dark:hover:text-darkmode-primary"
+            class="inline-block pr-5 mr-5 text-xl border-r border-border text-dark hover:text-primary dark:border-darkmode-border dark:text-white dark:hover:text-darkmode-primary"
             data-target="search-modal">
             <i class="fa-solid fa-search"></i>
           </button>
@@ -126,7 +126,7 @@
       {{ if site.Params.navigation_button.enable }}
         <a
           href="{{ site.Params.navigation_button.link | relLangURL }}"
-          class="btn btn-outline-primary btn-sm hidden lg:inline-block">
+          class="hidden btn btn-outline-primary btn-sm lg:inline-block">
           {{ site.Params.navigation_button.label }}
         </a>
       {{ end }}
