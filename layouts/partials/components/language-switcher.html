@@ -1,24 +1,21 @@
-<!-- Language List -->
+<!-- Language Toggle -->
 {{ $class := .Class }}
 {{ $context := .Context }}
 {{ $pageLang := $context.Lang }}
-{{ $base:= urls.Parse site.Home.Permalink }}
+{{ $base := urls.Parse site.Home.Permalink }}
 {{ $siteLanguages := site.Home.AllTranslations }}
 {{ $pageLink := replace (replace $context.RelPermalink (add $pageLang "/") "") $base.Path "/" }}
 
 {{ if $context.IsTranslated }}
+<label class="relative inline-flex items-center justify-center p-1 bg-white rounded-md cursor-pointer select-none themeSwitcherTwo shadow-two dark:bg-dark-2">
+  <input type="checkbox" class="sr-only" onchange="location = this.checked ? '{{ (index $siteLanguages 1).RelPermalink }}' : '{{ (index $siteLanguages 0).RelPermalink }}';" {{ if eq (string $pageLang) (string (index $siteLanguages 1).Language) }}checked{{ end }} />
 
-<select class="{{ $class }}" onchange="location = this.value">
-  {{ range $siteLanguages }}
-  {{ if eq (string $pageLang) (string .Language) }}
-  <option id="{{ .Language }}" value="{{ replace (add .RelPermalink $pageLink) `//` `/` }}" selected>
-    {{ .Language.LanguageName }}
-  </option>
-  {{ else }}
-  <option id="{{ .Language }}" value="{{ replace (add .RelPermalink $pageLink) `//` `/` }}">
-    {{ .Language.LanguageName }}
-  </option>
-  {{ end }}
-  {{ end }}
-</select> 
+  <span class="flex items-center space-x-2 rounded py-2 px-4 {{ if eq (string $pageLang) (string (index $siteLanguages 0).Language) }}bg-gray-800 text-white{{ else }}bg-gray-200 text-black{{ end }}">
+    {{ (index $siteLanguages 0).Language.LanguageName }}
+  </span>
+
+  <span class="flex items-center space-x-2 rounded py-2 px-4 {{ if eq (string $pageLang) (string (index $siteLanguages 1).Language) }}bg-gray-800 text-white{{ else }}bg-gray-200 text-black{{ end }}">
+    {{ (index $siteLanguages 1).Language.LanguageName }}
+  </span>
+</label>
 {{ end }}
