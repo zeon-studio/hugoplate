@@ -52,10 +52,10 @@
 {{/* main style */}}
 {{ $styles = $styles | append (resources.Get "scss/main.scss" | toCSS) }}
 {{ $styles = $styles | resources.Concat "css/style.css" }}
-{{ $styles = $styles | resources.PostCSS }}
+{{ $styles = $styles | css.PostCSS }}
 
 {{ $stylesLazy = $stylesLazy | resources.Concat "css/style-lazy.css" }}
-{{ $stylesLazy = $stylesLazy | resources.PostCSS }}
+{{ $stylesLazy = $stylesLazy | css.PostCSS }}
 
 {{ if hugo.IsProduction }}
   {{ $styles = $styles | resources.ExecuteAsTemplate "css/style.css" . | minify | fingerprint | resources.PostProcess }}

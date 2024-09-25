@@ -7,8 +7,6 @@ title = "Hugoplate"
 # theme = "hugoplate"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
 timeZone = "America/New_York"
-# post pagination
-paginate = 2 # see https://gohugo.io/extras/pagination/
 # post excerpt
 summaryLength = 10 # see https://gohugo.io/content-management/excerpts/
 # disable language
@@ -31,6 +29,13 @@ shortname = 'themefisher-template' # we use disqus to show comments in blog post
 ########################## Permalinks ############################
 [permalinks.page]
 "pages" = "/:slugorfilename/"
+
+
+########################## Pagination ############################
+[pagination]
+disableAliases = false
+pagerSize = 10
+path = 'page'
 
 
 ############################# Modules ############################
