@@ -1,15 +1,15 @@
 ---
-title: "Publications"
-meta_title: "Publications"
-summary: "Publications by freelance literary translator and editor Ádám Sárpátki."
-description: "Updated: 2024-07-01"
+title: "Publikációk"
+meta_title: "Publikációk"
+summary: "Sárpátki Ádám, műfordító és szerkesztő publikációi"
+description: "Frissítve: 2024-07-01"
 image: false
 toc: true
 draft: false
 ---
 {{< toc >}}
 
-## Literary translations
+## Műfordítások
 
 - Michael Witwer: Dungeons and Dragons – Drizzt legendája. Képes útmutató. Budapest : Kolibri Kiadó, 2024. 200 p.
 - Adam Bray, Kelly Knox: Marvel Studios – Szereplők nagykönyve. Bővített kiadás. Budapest : Kolibri Kiadó, 2024. 240 p.
@@ -78,7 +78,7 @@ draft: false
 - Terry Pratchett: A Halál, és ami utána következik. In: Pofon – Antológia. Szerk. Hetényi Zsuzsa. Budapest : ELTE BTK, 2012. (Dolce Filologia, IX.) pp. 163–166. 
 - Terry Pratchett: A troll hídja. In: Pofon – Antológia. Szerk. Hetényi Zsuzsa. Budapest : ELTE BTK, 2012. (Dolce Filologia, IX.) pp. 151–162.
 
-## Editorial work
+## Szerkesztések
 
 - Jason M. Hough: Vérvonalak. Ford. Szántai Zsolt. Budapest : Delta Vision, 2024. 466 p.
 - Edward Ashton: Antianyag blues. Ford: Horváth Norbert. Budapest : Agave Könyvek, 2024. 288 p.
@@ -105,7 +105,7 @@ draft: false
 - Scott Lynch: Locke Lamora hazugságai. Ford. Novák Gábor. Budapest : Delta Vision, 2018. 656 p.
 - Brandon Sanderson: A lélek árnyai. Ford. Horváth Árpád. Budapest : Delta Vision, 2018. 472 p.
 
-## Articles about speculative fiction
+## Kritikai írások
 
 - Legendás állatok – Grindelwald bűntettei. In: SFmag, 2018. november 14. [Link](http://sfmag.hu/2018/11/14/legendas-allatok-grindelwald-buntettei-filmkritika/)
 - George R. R. Martin: Álomdalok (1. kötet). In: SFmag, 2018. február 28. [Link](http://sfmag.hu/2018/02/28/george-r-r-martin-alomdalok-1-kotet/)
@@ -140,14 +140,14 @@ draft: false
 - Philip Pullman: Grimm Tales. In: SFmag, 2014. november 10. [Link](http://sfmag.hu/2014/11/10/philip-pullman-grimm-tales/)
 - Tíz éves az új Galaktika. In: SFmag, 2014. november 3. [Link](http://sfmag.hu/2014/11/03/tiz-eves-az-uj-galaktika/)
 
-## Articles about library science
+## Könyvtárszakmai cikkek
 
 - E-könyv, e-olvasás, e-könyvészet. Szakmai nap az ELTE BTK-n. In: Könyvtári Levelező/lap, 26. évf. 11. sz. (2014) pp. 13–15. [Link](https://epa.oszk.hu/00300/00365/00158/pdf/EPA00365_konyvtari_levelezo_lap_2014_11_13-15.pdf)
 - „Könyvtáros vagyok. A hét minden napján. Még vasárnap is.” : Farkas Balázs könyvbemutatója a KSH Könyvtárban. In: Könyvtári Levelező/lap, 26. évf. 7. sz. (2014) pp. 10–11. [Link](https://epa.oszk.hu/00300/00365/00154/pdf/EPA00365_konyvtari_levelezo_lap_2014_07_10-11.pdf)
 - Mit gondolnak a tizenévesek az olvasási stratégiákról? In: Könyvtári Levelező/lap, 26. évf. 1–2. sz. (2014) pp. 32–33. [Link](https://epa.oszk.hu/00300/00365/00149/pdf/EPA00365_konyvtari_levelezo_lap_2014_01-02_32-33.pdf)
 - Könyvtáros szakmai sztereotípiák és azok PR-vonatkozásai. In: Tudományos és Műszaki Tájékoztatás, 60. évf. 8. sz. (2013) pp. 331–345. [Link](https://epa.oszk.hu/03000/03071/00068/pdf/EPA03071_tmt_2013_08_331-345.pdf)
 
-## Entries for a bibliographical dictionary
+## Lexikon szócikkek
 
 - Sárpátki Ádám: Asztalos József. In: Portrék a magyar statisztika és népességtudomány történetéből – Életrajzi lexikon a XVI. századtól napjainkig. Főszerk. Rózsa Dávid. Budapest : KSH Könyvtár, 2014. 67. p. 
 - Sárpátki Ádám: Horváth Róbert. In: Portrék a magyar statisztika és népességtudomány történetéből – Életrajzi lexikon a XVI. századtól napjainkig. Főszerk. Rózsa Dávid. Budapest : KSH Könyvtár, 2014. pp. 320–321.
@@ -162,7 +162,7 @@ draft: false
 - Kovács Csaba, Sárpátki Ádám: Teleszky János. In: Portrék a magyar statisztika és népességtudomány történetéből – Életrajzi lexikon a XVI. századtól napjainkig. Főszerk. Rózsa Dávid. Budapest : KSH Könyvtár, 2014. pp. 694–695.
 - Sárpátki Ádám: Venczel József. In: Portrék a magyar statisztika és népességtudomány történetéből – Életrajzi lexikon a XVI. századtól napjainkig. Főszerk. Rózsa Dávid. Budapest : KSH Könyvtár, 2014. pp. 740–741.
 
-## Misc.
+## Egyéb
 
 - Olvasószerkesztő. Nemzetközi Statisztikai Figyelő. Budapest : KSH Könyvtár, 2015. [Link](https://www.kshkonyvtar.hu/article/67/25/nemzetkoezi-statisztikai-figyelo)
 - Sebők László (szerk.): Az 1949. évi népszámlálás anyanyelvi és nemzetiségi adatai településenként. A fordítást ellenőrizte: Pékné Nagy Edit, Sárpátki Ádám. Budapest : KSH Könyvtár, 2014. (Számok és történelem, 4.) pp. 15–21.
