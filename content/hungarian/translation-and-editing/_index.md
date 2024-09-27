@@ -11,9 +11,9 @@ draft: false
 
 In 2011 and 2012, while at university, I attended a literary translation workshop led by Zsuzsa Hetényi, where we had the opportunity to work on texts both as translators and editors. At the end of the year, these texts were published in two anthologies that I’m still immensely proud of—my first proper translations were two short stories by Sir Terry Pratchett.
 
-Ever since then, I've been honing my craft and working with some of the pillars of the speculative fiction genre, such as [Agave Könyvek,](https://agavekonyvek.hu/) [Fumax,](https://fumax.hu/) [GABO,](https://gabo.hu/) and [Delta Vision,](https://www.facebook.com/DeltaVisionKiado) as well as [Kolibri,](https://www.facebook.com/kolibrikiado/?locale=hu_HU) a publisher of young adult and children's books. I have had the opportunity to work on the writings of some of the biggest names in the genre, like Brandon Sanderson, Robin Hobb, Shelley Parker-Chan, Jenn Lyons, Scott Lynch,  R. F. Kuang and Christopher Buehlman.
+Ever since then, I've been honing my craft and working with some of the pillars of the speculative fiction genre, such as [Agave Könyvek](https://agavekonyvek.hu/), [Fumax](https://fumax.hu/), [GABO](https://gabo.hu/), and [Delta Vision](https://www.facebook.com/DeltaVisionKiado), as well as [Kolibri](https://www.facebook.com/kolibrikiado/?locale=hu_HU), a publisher of young adult and children's books. I have had the opportunity to work on the writings of some of the biggest names in the genre, like Brandon Sanderson, Robin Hobb, Shelley Parker-Chan, Jenn Lyons, Scott Lynch,  R. F. Kuang and Christopher Buehlman.
 
-Feel free to check out the list of my publications [here.](/publications)
+Feel free to check out the list of my publications [here](/publications).
 
 ## My Philosophy
 
@@ -45,4 +45,4 @@ I think the best editors approach their work with sensitivity. They understand t
 
 **Authors whose works I especially enjoy:** Terry Pratchett, Brandon Sanderson, Anne Rice, Robin Hobb, Arthur Conan Doyle, Robert Jordan, Susanna Clarke.
 
-My calendar is usually quite full, but feel free to [contact me,](/contact) and let's have a chat. 😊
+My calendar is usually quite full, but feel free to [contact me](/contact), and let's have a chat. 😊

@@ -68,7 +68,7 @@ eras:
 
       I have a shamefully large stash of yet-to-be-used yarn, including quite a few hand-dyed hanks by some lovely indie dyers. I love attending fibre festivals and meeting new people who share the same hobby. As an introvert and a bit socially awkward among new people, that's saying a lot. Knitting is something I could do 24/7 if my hands allowed it.
 
-      As for tech editing, the lightbulb moment came in December 2023, when I was happily knitting away, not a care in the world, watching Roxanne Richardson's channel about some technique or another, and a video popped up that immediately caught my attention: [Knitting Tech Editors and Why They're So Important.](https://www.youtube.com/watch?v=FPJlHIBVyhA) I never realised knitting tech editors even existed! Of course they did, but why didn't I know about them? Why didn't I know this would be an ideal career for me? I knew I had to try it, so I immediately took a deep dive.
+      As for tech editing, the lightbulb moment came in December 2023, when I was happily knitting away, not a care in the world, watching Roxanne Richardson's channel about some technique or another, and a video popped up that immediately caught my attention: [Knitting Tech Editors and Why They're So Important](https://www.youtube.com/watch?v=FPJlHIBVyhA). I never realised knitting tech editors even existed! Of course they did, but why didn't I know about them? Why didn't I know this would be an ideal career for me? I knew I had to try it, so I immediately took a deep dive.
 
       This job combines my love of editing with my love of knitting, yet it's so different from my usual novels and short stories. It's not better or worse, just different—refreshing.
 

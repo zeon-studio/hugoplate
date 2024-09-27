@@ -37,13 +37,13 @@ columns:
 
     I like planning ahead, so **please contact me in time about your project.** The earlier you contact me, the more likely I will be able to fit your design into my schedule. 😊
 
-    Before contacting me, [please read about my Tech Editing services,](/technical-editing) if you haven't done so already.
+    Before contacting me, [please read about my Tech Editing services](/technical-editing), if you haven't done so already.
 
     If this would be our first contact, **please don't book a slot**, but instead e-mail me so we can hash out the details.
 
 ---
 
-**For publishers and designers:** Depending on whether you're interested in working with me on a translation/editing project, or a knitting pattern, you have different options of contacting me. You can email me at [hello@adamsarpatki.com,](mailto:hello@adamsarpatki.com) use the "Email me" buttons below, or even book a chat with me. I will have different timeslots available for each category, so please choose the one that best describes you.
+**For publishers and designers:** Depending on whether you're interested in working with me on a translation/editing project, or a knitting pattern, you have different options of contacting me. You can email me at [hello@adamsarpatki.com](mailto:hello@adamsarpatki.com), use the "Email me" buttons below, or even book a chat with me. I will have different timeslots available for each category, so please choose the one that best describes you.
 
 **If you just want to chat,** please use my social media channels linked in the footer. 😊
 
