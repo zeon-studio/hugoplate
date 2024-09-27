@@ -7,14 +7,14 @@
 {{ $pageLink := replace (replace $context.RelPermalink (add $pageLang "/") "") $base.Path "/" }}
 
 {{ if $context.IsTranslated }}
-<label class="relative inline-flex items-center justify-center p-1 bg-white rounded-md cursor-pointer select-none themeSwitcherTwo shadow-two dark:bg-dark-2">
+<label class="relative inline-flex items-center justify-center mx-3 rounded-lg cursor-pointer select-none shadow-two dark:bg-dark-2">
   <input type="checkbox" class="sr-only" onchange="location = this.checked ? '{{ (index $siteLanguages 1).RelPermalink }}' : '{{ (index $siteLanguages 0).RelPermalink }}';" {{ if eq (string $pageLang) (string (index $siteLanguages 1).Language) }}checked{{ end }} />
 
-  <span class="flex items-center space-x-2 rounded py-2 px-4 {{ if eq (string $pageLang) (string (index $siteLanguages 0).Language) }}bg-gray-800 text-white{{ else }}bg-gray-200 text-black{{ end }}">
+  <span class="btn-language rounded-l-lg {{ if eq (string $pageLang) (string (index $siteLanguages 0).Language) }}light-bg text-slate-950{{ else }}bg-indigo-800 hover:bg-indigo-900 text-slate-50{{ end }}">
     {{ (index $siteLanguages 0).Language.LanguageName }}
   </span>
 
-  <span class="flex items-center space-x-2 rounded py-2 px-4 {{ if eq (string $pageLang) (string (index $siteLanguages 1).Language) }}bg-gray-800 text-white{{ else }}bg-gray-200 text-black{{ end }}">
+  <span class="btn-language rounded-r-lg {{ if eq (string $pageLang) (string (index $siteLanguages 1).Language) }}light-bg text-slate-950{{ else }}bg-indigo-800 hover:bg-indigo-900 text-slate-50{{ end }}">
     {{ (index $siteLanguages 1).Language.LanguageName }}
   </span>
 </label>

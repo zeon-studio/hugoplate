@@ -17,3 +17,7 @@
 .btn-secondary {
   @apply border-indigo-900 border-2 light-bg hover:bg-indigo-900 transition-all duration-300;
 }
+
+.btn-language {
+  @apply text-sm font-normal border border-transparent align-middle items-center flex flex-row min-h-10 px-4 py-3 tracking-wide uppercase transition-all duration-300
+}

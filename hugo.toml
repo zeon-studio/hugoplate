@@ -21,14 +21,14 @@ enableRobotsTXT = true
 defaultContentLanguage = "en"
 
 [languages.en]
-languageName = "English"
+languageName = "EN"
 languageCode = "en-gb"
 contentDir = "content/english"
 title = "Ádám Sárpátki - Literary translator & technical editor"
 weight = 1
 
 [languages.hu]
-languageName = "Magyar"
+languageName = "HU"
 languageCode = "hu-hu"
 contentDir = "content/hungarian"
 title = "Sárpátki Ádám - Műfordító, szerkesztő, lektor"
