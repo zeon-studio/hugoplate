@@ -1,6 +1,6 @@
 ---
-title: "Privacy Policy"
-meta_title: "Privacy Policy"
+title: "Adatkezelési tájékoztató"
+meta_title: "Adatkezelési tájékoztató"
 description: ""
 image: false
 toc: true
