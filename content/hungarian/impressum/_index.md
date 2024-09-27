@@ -1,6 +1,6 @@
 ---
-title: "Impressum"
-meta_title: "Impressum"
+title: "Impresszum"
+meta_title: "Impresszum"
 description: ""
 image: false
 toc: true
