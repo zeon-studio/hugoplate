@@ -17,12 +17,12 @@ testimonials:
     company: "Hivatalos weboldal"
     link: "https://balazsfarkas.com/"
     avatar: "/images/testimonial_balazs.jpg"
-    content: "Ádám was my colleague in the Hungarian Central Statistical Office Library, and we stayed friends even after we eventually moved on to work in separate (but related) creative fields. I often turn to him for advice, as he always provides excellent insights. He is thorough, willing to double-check everything. Remarkably patient and generous. He even made this website from scratch - I’m always impressed by his versatility!"
+    content: "Ádám a Központi Statisztikai Hivatal könyvtárában volt a munkatársam, de később is barátok maradtunk, amikor mindketten más (de hasonló) területen kezdtünk dolgozni. Sokszor fordulok hozzá tanácsért, mindig van egy-egy kitűnő javaslata, alaposan dolgozik, hajlandó visszaellenőrizni mindent. Rendkívül türelmes és nagylelkű. Ezt a honlapot is önállóan, az alapjairól építette fel. Mindig lenyűgöz a sokoldalúsága!"
 
   - name: "Barsiné Gál Erika"
     designation: "Író, szerkesztő, műfordító"
     company: "Delta Vision"
-    link: "https://www.facebook.com/DeltaVisionKiado"
+    link: "https://deltavision.hu/"
     avatar: "/images/testimonial_erika.jpeg"
     content: "Ádám pontosságát és irodalmiságát tekintve is rendkívül igényes és precíz fordító, aki megbízhatóan teljesíti vállalásait és határidőit. Szakmai tudása magas szintű, nyelvi leleménye és kreativitása nagyfokú rendszerezőkészséggel párosul. Rugalmasan, szívvel-lélekkel dolgozik, az utómunkálatokban is maximálisan együttműködő, öröm vele a közös munka. Szerkesztőként következetes, megegyezésre törekszik, és szívesen segíti az erre nyitott kollégák fejlődését."
 
