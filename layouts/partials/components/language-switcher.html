@@ -10,11 +10,11 @@
 <label class="flex mx-3 rounded-lg cursor-pointer select-none">
   <input type="checkbox" class="sr-only" onchange="location = this.checked ? '{{ (index $siteLanguages 1).RelPermalink }}' : '{{ (index $siteLanguages 0).RelPermalink }}';" {{ if eq (string $pageLang) (string (index $siteLanguages 1).Language) }}checked{{ end }} />
 
-  <span class="btn-language rounded-l-lg {{ if eq (string $pageLang) (string (index $siteLanguages 0).Language) }}bg-indigo-100 border-1 border-indigo-400 font-semibold text-indigo-800{{ else }}bg-slate-800 text-slate-300 hover:bg-indigo-200 hover:text-indigo-800 hover:border-indigo-400{{ end }}">
+  <span class="btn-language rounded-l-lg {{ if eq (string $pageLang) (string (index $siteLanguages 0).Language) }}bg-indigo-800 border-1 border-indigo-800 font-semibold text-slate-50{{ else }}bg-slate-800 text-slate-300 hover:border-indigo-800 hover:text-slate-50{{ end }}">
     {{ (index $siteLanguages 0).Language.LanguageName }}
   </span>
 
-  <span class="btn-language rounded-r-lg {{ if eq (string $pageLang) (string (index $siteLanguages 1).Language) }}bg-indigo-100 border-1 border-indigo-400 font-semibold text-indigo-800{{ else }}bg-slate-800 text-slate-300 hover:bg-indigo-200 hover:text-indigo-800 hover:border-indigo-400{{ end }}">
+  <span class="btn-language rounded-r-lg {{ if eq (string $pageLang) (string (index $siteLanguages 1).Language) }}bg-indigo-800 border-1 border-indigo-800 font-semibold text-slate-50{{ else }}bg-slate-800 text-slate-300 hover:border-indigo-800 hover:text-slate-50{{ end }}">
     {{ (index $siteLanguages 1).Language.LanguageName }}
   </span>
 </label>
