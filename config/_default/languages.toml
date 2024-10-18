@@ -1,4 +1,8 @@
-################ English language ##################
+[ja]
+languageName = "Ja"
+languageCode = "ja"
+contentDir = "content/japanese"
+weight = 1
 [en]
 languageName = "En"
 languageCode = "en-us"
