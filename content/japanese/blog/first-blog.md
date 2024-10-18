@@ -6,29 +6,21 @@ date: 2024-10-18T02:00:00+09:00
 image: "/images/image-placeholder.png"
 categories: ["Technology", "Data"]
 author: "kittchy"
-tags: ["technology", "tailwind"]
+tags: ["technology"]
 draft: false
 ---
 
----
-
-title: "Blog Posts"
-meta_title: ""
-description: "this is meta description"
-
----
-
-# はじめに
+## はじめに
 
 ほげほげ
 
 ```python
-
-
 import numpy as np
 
 def main():
 print('Hello World')
-
-
 ```
+
+## 今日の天気
+
+## 今日は晴れです
