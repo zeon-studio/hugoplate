@@ -1,0 +1,82 @@
+{{ define "main" }}
+<!-- Banner -->
+{{ with .Params.banner }}
+<section class="section dark-bg">
+  <div class="container">
+    <div class="flex flex-col md:flex-row md:justify-between lg:px-0 md:gap-x-8">
+      <div class="flex flex-col mb-8 text-center md:text-left gap-y-2">
+        <div class="text-slate-500">
+            <p class="mb-2 italic text-h3 lg:text-l">
+              {{ .phonetics | markdownify }}
+            </p>
+          </div>
+        <h1 class="mb-8 tracking-wide text-h3 lg:text-h1 text-slate-50">
+          {{ .title | markdownify }}
+        </h1>
+        <div class="text-lg text-slate-50">
+          {{ range $j, $paragraph := split .intro "\n" }}
+          <p class="lg:pr-8 mb-6{{ if eq $j 0 }} mt-0{{ end }}">{{ $paragraph | markdownify }}</p>
+          {{ end }}
+        </div>
+        {{ with .button }}
+        {{ if .enable }}
+        <div class="flex flex-row justify-center md:justify-start">
+          <a class="btn btn-primary" href="{{ .link | absURL }}" {{ if strings.HasPrefix .link `http` }} 
+            rel="noopener" {{ end }}>
+            {{ .label }}
+          </a>
+        {{ end }}
+        {{ end }}
+        {{ with .secondButton }}
+        {{ if .enable }}
+          <a class="btn btn-secondary" href="{{ .link | absURL }}" {{ if strings.HasPrefix .link `http` }}
+            rel="noopener" {{ end }}>
+            {{ .label }}
+          </a>
+        {{ end }}
+        {{ end }}
+        </div>
+      </div>
+      <div class="xl:pl-10">
+        {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "rounded-lg") }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+<!-- /Banner -->
+
+<!-- Shape divider -->
+{{ partial "components/shape-divider-dark.html" . }}
+<!-- /Shape divider -->
+
+<!-- My Services -->
+{{ partial "services.html" . }}
+<!-- /My Services -->
+
+<!-- How I Work -->
+{{ partial "how-i-work.html" . }}
+<!-- /How I Work -->
+
+<!-- Testimonials -->
+{{ partial "testimonials.html" . }}
+<!-- /Testimonials -->
+
+<!-- Shape divider -->
+{{ partial "components/shape-divider-light.html" . }}
+<!-- /Shape divider -->
+
+<!-- Newsletter promo -->
+{{ partial "newsletter-promo.html" . }}
+<!-- /Newsletter promo -->
+
+
+<!-- Manticore promo -->
+{{ partial "manticore-promo.html" . }}
+<!-- /Manticore promo -->
+
+
+<!-- Modal partial -->
+{{ partial "newsletter-modal.html" . }}
+
+{{ end }}

@@ -1,18 +1,20 @@
 ---
 # Banner
 banner:
-  title: "Hi, I'm Ádám Sárpátki,"
-  phonetics: "[ʃaːɾpaːtki]"
+  title: "Sárpátki Ádám"
+  phonetics: "Műfordító, szerkesztő, szakmai lektor"
   intro: | 
-    a [literary translator and editor](/translation-and-editing/), mainly working in the fantasy and science fiction genres, but I have experience with YA fiction, non-fiction and popular science books as well.
+    Üdvözöllek a weboldalamon!
+    
+    [Műfordító és szerkesztő](/translation-and-editing/) vagyok, megjelent munkáim többsége a fantasy és science fiction műfajába tartozik, de jelentős tapasztalattal rendelkezem ifjúsági irodalom, non-fiction és ismeretterjesztő könyvek terén is.
 
-    As of 2024, I added [technical editing for knitting patterns](/technical-editing/) to my services.
+    2024-ben kibővítettem a szolgáltatásaimat [kötésminták szakmai lektorálásával](/technical-editing/).
 
 
   image: "/images/adam_sarpatki_avatar.jpg"
   button:
     enable: true
-    label: "Let's work together"
+    label: "Dolgozzunk együtt"
     link: /contact/
 
 ---
