@@ -1,6 +1,6 @@
 [hugoVersion]
 extended = true
-min = "0.134.3"
+min = "0.139.2"
 
 [[imports]]
 path = "github.com/zeon-studio/hugoplate"

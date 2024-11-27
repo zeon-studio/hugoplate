@@ -9,8 +9,8 @@ const toggleComment = ({ filepath, regex }) => {
     const matchedContent = match[0];
     const hasComment = matchedContent.startsWith("# ");
     if (hasComment) {
-      const hasBreakline = matchedContent.includes("\n");
-      if (hasBreakline) {
+      const hasLineBreak = matchedContent.includes("\n");
+      if (hasLineBreak) {
         updatedContent = updatedContent.replace(
           regex,
           matchedContent.replace(/# /gm, ""),
@@ -24,8 +24,8 @@ const toggleComment = ({ filepath, regex }) => {
   }
 };
 
-const createNewfolder = (rootfolder, folderName) => {
-  const newFolder = path.join(rootfolder, folderName);
+const createNewFolder = (rootFolder, folderName) => {
+  const newFolder = path.join(rootFolder, folderName);
   fs.mkdirSync(newFolder, { recursive: true });
   return newFolder;
 };
@@ -36,8 +36,8 @@ const deleteFolder = (folderPath) => {
   }
 };
 
-const getFolderName = (rootfolder) => {
-  const configPath = path.join(rootfolder, "exampleSite/hugo.toml");
+const getFolderName = (rootFolder) => {
+  const configPath = path.join(rootFolder, "exampleSite/hugo.toml");
   const getConfig = fs.readFileSync(configPath, "utf8");
   const match = getConfig.match(/theme\s*=\s*\[?"([^"\]]+)"\]?/);
   let selectedTheme = null;
@@ -52,7 +52,7 @@ const iterateFilesAndFolders = (rootFolder, { destinationRoot }) => {
   const items = fs.readdirSync(directory, { withFileTypes: true });
   items.forEach((item) => {
     if (item.isDirectory()) {
-      createNewfolder(destinationRoot, item.name);
+      createNewFolder(destinationRoot, item.name);
       iterateFilesAndFolders(path.join(directory, item.name), {
         currentFolder: item.name,
         destinationRoot: path.join(destinationRoot, item.name),
@@ -94,7 +94,7 @@ const setupTheme = () => {
       "static",
     ];
 
-    const folder = createNewfolder(rootFolder, "exampleSite");
+    const folder = createNewFolder(rootFolder, "exampleSite");
 
     fs.readdirSync(rootFolder, { withFileTypes: true }).forEach((file) => {
       if (includesFiles.includes(file.name)) {

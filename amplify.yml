@@ -4,16 +4,16 @@ frontend:
     preBuild:
       commands:
         - yum install -y curl
-        - curl -LO "https://github.com/gohugoio/hugo/releases/download/v0.134.3/hugo_extended_0.134.3_Linux-64bit.tar.gz"
-        - tar -xvf hugo_extended_0.134.3_Linux-64bit.tar.gz
+        - curl -LO "https://github.com/gohugoio/hugo/releases/download/v0.139.2/hugo_extended_0.139.2_Linux-64bit.tar.gz"
+        - tar -xvf hugo_extended_0.139.2_Linux-64bit.tar.gz
         - mv hugo /usr/local/bin/
-        - rm hugo_extended_0.134.3_Linux-64bit.tar.gz
-        - echo "HUGO 0.134.3 INSTALLED"
-        - curl -LO "https://dl.google.com/go/go1.22.2.linux-amd64.tar.gz"
-        - tar -C /usr/local -xzf go1.22.2.linux-amd64.tar.gz
+        - rm hugo_extended_0.139.2_Linux-64bit.tar.gz
+        - echo "HUGO 0.139.2 INSTALLED"
+        - curl -LO "https://dl.google.com/go/go1.23.3.linux-amd64.tar.gz"
+        - tar -C /usr/local -xzf go1.23.3.linux-amd64.tar.gz
         - export PATH=$PATH:/usr/local/go/bin
-        - rm go1.22.2.linux-amd64.tar.gz
-        - echo "GO 1.22.2 INSTALLED"
+        - rm go1.23.3.linux-amd64.tar.gz
+        - echo "GO 1.23.3 INSTALLED"
         - npm install
     build:
       commands:
