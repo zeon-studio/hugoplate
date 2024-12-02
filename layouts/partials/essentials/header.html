@@ -97,11 +97,20 @@
       {{ end }}
       {{ if site.Params.navigation_button.enable }}
         <li class="mt-4 inline-block lg:hidden">
+          {{ if site.Params.navigation_button.x_external }}
+          <a
+            target="_blank"
+            class="btn btn-outline-primary btn-sm"
+            href="{{ site.Params.navigation_button.link | relLangURL }}">
+            {{ site.Params.navigation_button.label }}
+          </a>
+          {{ else }}
           <a
             class="btn btn-outline-primary btn-sm"
             href="{{ site.Params.navigation_button.link | relLangURL }}">
             {{ site.Params.navigation_button.label }}
           </a>
+          {{ end }}
         </li>
       {{ end }}
     </ul>
@@ -128,11 +137,20 @@
 
       <!-- navigation btn -->
       {{ if site.Params.navigation_button.enable }}
+        {{ if site.Params.navigation_button.x_external }}
+        <a
+          target="_blank"
+          href="{{ site.Params.navigation_button.link | relLangURL }}"
+          class="btn btn-outline-primary btn-sm hidden lg:inline-block">
+          {{ site.Params.navigation_button.label }}
+        </a>
+        {{ else }}
         <a
           href="{{ site.Params.navigation_button.link | relLangURL }}"
           class="btn btn-outline-primary btn-sm hidden lg:inline-block">
           {{ site.Params.navigation_button.label }}
         </a>
+        {{ end }}
       {{ end }}
     </div>
   </nav>
