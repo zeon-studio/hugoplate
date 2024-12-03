@@ -5,6 +5,13 @@ const toggleComment = ({ filepath, regex }) => {
   let updatedContent = fs.readFileSync(filepath, "utf8");
   const match = updatedContent.match(regex);
 
+  if (filepath.endsWith("hugo.toml")) {
+    updatedContent = updatedContent.replace(
+      'baseURL = "/"',
+      'baseURL = "https://example.org"',
+    );
+  }
+
   if (match) {
     const matchedContent = match[0];
     const hasComment = matchedContent.startsWith("# ");
