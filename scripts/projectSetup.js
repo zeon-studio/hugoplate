@@ -5,6 +5,13 @@ const toggleComment = ({ filepath, regex }) => {
   let updatedContent = fs.readFileSync(filepath, "utf8");
   const match = updatedContent.match(regex);
 
+  if (filepath.endsWith("hugo.toml")) {
+    updatedContent = updatedContent.replace(
+      'baseURL = "https://example.org"',
+      'baseURL = "/"',
+    );
+  }
+
   if (match) {
     const matchedContent = match[0];
     const hasComment = matchedContent.startsWith("# ");
@@ -110,6 +117,8 @@ const setupProject = () => {
     const exampleSite = path.join(rootFolder, "exampleSite");
     iterateFilesAndFolders(exampleSite, { destinationRoot: rootFolder });
     deleteFolder(exampleSite);
+  } else {
+    console.log("Project already setup");
   }
 };
 
