@@ -1,0 +1,18 @@
+{
+  "filters": {},
+  "rules": {
+    "preset-ja-technical-writing": {
+      "ja-no-weak-phrase": false,
+      "ja-no-mixed-period": false,
+      "no-exclamation-question-mark": false
+    },
+    "preset-jtf-style": true,
+    "prh": {
+      "rulePaths": [
+       "node_modules/prh/prh-rules/media/WEB+DB_PRESS.yml",
+       "node_modules/prh/prh-rules/media/techbooster.yml"
+      ]
+    }
+  }
+}
+
