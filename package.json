@@ -35,5 +35,13 @@
       "tailwindcss": {},
       "autoprefixer": {}
     }
+  },
+  "dependencies": {
+    "textlint": "^14.4.0",
+    "textlint-rule-aws-service-name": "^1.11.0",
+    "textlint-rule-ja-no-redundant-expression": "^4.0.1",
+    "textlint-rule-ja-unnatural-alphabet": "^2.0.1",
+    "textlint-rule-no-doubled-joshi": "^5.1.0",
+    "textlint-rule-preset-ja-technical-writing": "github:textlint-ja/textlint-rule-preset-ja-technical-writing"
   }
 }
