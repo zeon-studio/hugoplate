@@ -21,7 +21,7 @@ defaultContentLanguageInSubdir = false
 ########################### Services #############################
 [services]
 [services.googleAnalytics]
-ID = 'G-NNPKS3L01X' # see https://gohugo.io/templates/internal/#configure-google-analytics
+ID = 'G-K4B85W22K' # see https://gohugo.io/templates/internal/#configure-google-analytics
 
 [services.disqus]
 shortname = 'themefisher-template' # we use disqus to show comments in blog posts . To install disqus please follow this tutorial https://portfolio.peter-baumgartner.net/2017/09/10/how-to-install-disqus-on-hugo/
