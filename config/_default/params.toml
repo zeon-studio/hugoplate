@@ -22,8 +22,8 @@ mainSections = ["blog"]
 # contact form action
 contact_form_action = "https://airform.io/drums.radwimps203@gmail.com" # contact form works with [https://airform.io/] or [https://formspree.io]
 # google tag manager, see https://developers.google.com/tag-manager/
-google_tag_manager = "" # example: G-XXXXXXXXXX
-google_adsense = ""     # example: ca-pub-xxxxxxxxxxxxxxxx
+google_tag_manager = "G-K4B85W22K"
+google_adsense = "ca-pub-3280279219327081"
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>"
 custom_script = ""
 # copyright
