@@ -52,6 +52,11 @@ show_description = true
 show_tags = true
 show_categories = true
 
+# highlight
+# hugo built-in highlight.js
+[highlight]
+enableCodeCopy = true
+
 # announcement
 # announcement module: https://github.com/gethugothemes/hugo-modules/tree/master/components/announcement
 [announcement]
