@@ -1,28 +1,35 @@
 <!-- Language List -->
+{{ if hugo.IsMultilingual }}
 {{ $class := .Class }}
 {{ $context := .Context }}
 {{ $pageLang := $context.Lang }}
-{{ $base:= urls.Parse site.Home.Permalink }}
-{{ $siteLanguages := site.Home.AllTranslations }}
-{{ $pageLink := replace (replace $context.RelPermalink (add $pageLang "/") "") $base.Path "/" }}
+{{ $pageTranslations := newScratch }}
+{{/* First, fill all translations of the Home page (failsafe) */}}
+{{ range site.Home.AllTranslations }}
+  {{ $pageTranslations.Set .Language.Lang .Permalink }}
+{{ end }}
+{{/* Second, if a translation exists for the current page for the target language, replace failsafe */}}
+{{ range $context.AllTranslations }}
+  {{ $pageTranslations.Set .Language.Lang .Permalink }}
+{{ end }}
 
-{{ if $context.IsTranslated }}
-  <select class="{{ $class }}" onchange="location = this.value">
-    {{ range $siteLanguages }}
-      {{ if eq (string $pageLang) (string .Language) }}
-        <option
-          id="{{ .Language }}"
-          value="{{ replace (add .RelPermalink $pageLink) `//` `/` }}"
-          selected>
-          {{ .Language.LanguageName }}
-        </option>
-      {{ else }}
-        <option
-          id="{{ .Language }}"
-          value="{{ replace (add .RelPermalink $pageLink) `//` `/` }}">
-          {{ .Language.LanguageName }}
-        </option>
+<select class="{{ $class }}" onchange="location = this.value">
+  {{ range site.Languages }}
+    {{/* Fill the dropdown with all known languages */}}
+    {{ $link := $pageTranslations.Get .Lang }}
+    {{ if $link }}
+      <option
+        id="{{ .Lang }}"
+        value="{{ $link }}"
+      {{ if eq .Lang $pageLang }}
+        selected
       {{ end }}
+        >
+        {{ .LanguageName }}
+      </option>
+    {{ else }}
+      {{/* if we can't safely redirect the user to the translated page or at least to translated home, discard the language from options */}}
     {{ end }}
-  </select>
+  {{ end }}
+</select>
 {{ end }}
