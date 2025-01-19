@@ -4,11 +4,11 @@ frontend:
     preBuild:
       commands:
         - yum install -y curl
-        - curl -LO "https://github.com/gohugoio/hugo/releases/download/v0.139.2/hugo_extended_0.139.2_Linux-64bit.tar.gz"
-        - tar -xvf hugo_extended_0.139.2_Linux-64bit.tar.gz
+        - curl -LO "https://github.com/gohugoio/hugo/releases/download/v0.141.0/hugo_extended_0.141.0_Linux-64bit.tar.gz"
+        - tar -xvf hugo_extended_0.141.0_Linux-64bit.tar.gz
         - mv hugo /usr/local/bin/
-        - rm hugo_extended_0.139.2_Linux-64bit.tar.gz
-        - echo "HUGO 0.139.2 INSTALLED"
+        - rm hugo_extended_0.141.0_Linux-64bit.tar.gz
+        - echo "HUGO 0.141.0 INSTALLED"
         - curl -LO "https://dl.google.com/go/go1.23.3.linux-amd64.tar.gz"
         - tar -C /usr/local -xzf go1.23.3.linux-amd64.tar.gz
         - export PATH=$PATH:/usr/local/go/bin
