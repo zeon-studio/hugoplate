@@ -192,6 +192,16 @@ s = "Python syntax highlighting"
 print s
 ```
 
+```c  { linenos=true }
+#include <stdio.h>
+
+int main(void)
+{
+    printf("hello, world\n");
+    return 0;
+}
+```
+
 ```mermaid
 flowchart TD
     A[Start] --> B{Is it?}
