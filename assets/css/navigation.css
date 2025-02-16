@@ -1,21 +1,8 @@
-// navbar toggler
-input#nav-toggle:checked + label #show-button {
-  @apply hidden;
-}
-
-input#nav-toggle:checked + label #hide-button {
-  @apply block;
-}
-
-input#nav-toggle:checked ~ #nav-menu {
-  @apply block;
-}
-
 .header {
   @apply bg-body dark:bg-darkmode-body py-6;
 }
 
-// navbar items
+/* navbar items */
 .navbar {
   @apply relative flex flex-wrap items-center justify-between;
 }
@@ -31,24 +18,20 @@ input#nav-toggle:checked ~ #nav-menu {
   @apply text-center lg:text-left;
 }
 
-// .nav-item {
-//   @apply mx-3;
-// }
-
 .nav-link {
   @apply text-dark hover:text-primary dark:text-darkmode-dark dark:hover:text-darkmode-primary block p-3 cursor-pointer font-semibold transition lg:px-2 lg:py-3;
 }
 
 .nav-dropdown {
   @apply mr-0;
-  & > svg {
-    @apply pointer-events-none;
-  }
-  &.active {
-    .nav-dropdown-list {
-      @apply block;
-    }
-  }
+}
+
+.nav-dropdown > svg {
+  @apply pointer-events-none;
+}
+
+.nav-dropdown.active .nav-dropdown-list {
+  @apply block;
 }
 
 .nav-dropdown-list {
@@ -63,7 +46,7 @@ input#nav-toggle:checked ~ #nav-menu {
   @apply text-dark hover:text-primary dark:text-darkmode-text dark:hover:text-darkmode-primary block py-1 font-semibold transition;
 }
 
-//theme-switcher
+/* theme-switcher */
 .theme-switcher {
   @apply inline-flex;
 

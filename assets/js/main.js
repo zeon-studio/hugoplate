@@ -10,7 +10,7 @@
 
   dropdownMenuToggler.forEach((toggler) => {
     toggler?.addEventListener("click", (e) => {
-      e.target.closest('.nav-item').classList.toggle("active");
+      e.target.closest(".nav-item").classList.toggle("active");
     });
   });
 

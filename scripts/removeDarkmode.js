@@ -4,10 +4,6 @@ const path = require("path");
 const rootDirs = ["assets/scss", "layouts"];
 const configFiles = [
   {
-    filePath: "exampleSite/tailwind.config.js",
-    patterns: ["darkmode:\\s*{[^}]*},", 'darkMode:\\s*"class",'],
-  },
-  {
     filePath: "exampleSite/data/theme.json",
     patterns: ["colors.darkmode"],
   },
@@ -75,13 +71,9 @@ function removeDarkModeFromPages(directoryPath) {
 
 function removeDarkMode(configFile) {
   const { filePath, patterns } = configFile;
-  if (filePath === "exampleSite/tailwind.config.js") {
-    removeDarkModeFromFiles(filePath, patterns);
-  } else {
-    const contentFile = JSON.parse(fs.readFileSync(filePath, "utf8"));
-    patterns.forEach((pattern) => deleteNestedProperty(contentFile, pattern));
-    fs.writeFileSync(filePath, JSON.stringify(contentFile));
-  }
+  const contentFile = JSON.parse(fs.readFileSync(filePath, "utf8"));
+  patterns.forEach((pattern) => deleteNestedProperty(contentFile, pattern));
+  fs.writeFileSync(filePath, JSON.stringify(contentFile));
 }
 
 function deleteNestedProperty(obj, propertyPath) {

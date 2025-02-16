@@ -9,7 +9,7 @@
         "theme_dark": ""
       },
       "text_color": {
-        "default": "#444444",
+        "text": "#444444",
         "dark": "#040404",
         "light": "#717171"
       }
@@ -23,7 +23,7 @@
         "theme_dark": ""
       },
       "text_color": {
-        "default": "#B4AFB6",
+        "text": "#B4AFB6",
         "dark": "#fff",
         "light": "#B4AFB6"
       }

@@ -66,8 +66,6 @@ We have included almost everything you need to start your Hugo project. Let's se
 
 - [Hugo](https://gohugo.io/)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [PostCSS](https://postcss.org/)
-- [PurgeCSS](https://purgecss.com/)
 - [AutoPrefixer](https://autoprefixer.github.io/)
 - [Hugo Modules](https://gohugo.io/hugo-modules/) by [Gethugothemes](https://gethugothemes.com/hugo-modules)
 - [Markdown](https://markdownguide.org/)
@@ -185,7 +183,7 @@ After you finish your development, you can build or deploy your project almost e
 
 ### 👉 Build Command
 
-To build your project locally, you can use the following command. It will purge all the unused CSS and minify all the files.
+To build your project locally, you can use the following command.
 
 ```bash
 npm run build

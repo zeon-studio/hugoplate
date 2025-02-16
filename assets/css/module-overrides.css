@@ -1,0 +1,54 @@
+/* table of contents */
+.table-of-content {
+  @apply overflow-hidden rounded;
+}
+
+/* share icons */
+.share-icons .share-link {
+  @apply h-9 w-9 rounded leading-9 bg-primary hover:bg-primary dark:bg-darkmode-primary dark:hover:bg-darkmode-primary;
+}
+
+.share-icons .share-icon svg {
+  @apply dark:fill-dark;
+}
+
+/* notice */
+.notice {
+  @apply rounded-lg;
+}
+
+/* tab */
+.tab {
+  @apply border-border dark:border-darkmode-border overflow-hidden rounded-lg border;
+}
+.tab-nav {
+  @apply border-border bg-theme-light dark:border-darkmode-border dark:bg-darkmode-theme-light pl-4;
+}
+.tab-nav-item {
+  @apply text-dark dark:text-darkmode-dark px-8 !text-lg;
+}
+.tab-nav-item.active {
+  @apply border-dark dark:border-darkmode-primary;
+}
+
+.tab-content-panel {
+  @apply px-4 !pt-0;
+}
+
+/* accordion */
+.accordion {
+  @apply border-border bg-theme-light dark:border-darkmode-border dark:bg-darkmode-theme-light mb-6 overflow-hidden rounded-lg border;
+}
+.accordion-header {
+  @apply text-dark dark:text-darkmode-dark;
+}
+
+/* cookie consent */
+.cookie-box {
+  @apply !rounded-lg;
+}
+
+/* slider */
+.gallery-slider {
+  @apply !ml-0;
+}
