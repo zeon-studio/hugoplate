@@ -94,7 +94,7 @@ const setupProject = () => {
       },
     ].forEach(toggleComment);
 
-    const folderList = ["layouts", "assets", "static"];
+    const folderList = ["layouts", "assets", "static", "tailwind-plugin"];
     const folderName = getFolderName(rootFolder);
     const newFolderName = createNewFolder(
       path.join(rootFolder, "themes"),

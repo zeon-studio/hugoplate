@@ -97,6 +97,7 @@ const setupTheme = () => {
       "content",
       "i18n",
       "static",
+      "tailwind-plugin",
     ];
 
     const folder = createNewFolder(rootFolder, "exampleSite");
