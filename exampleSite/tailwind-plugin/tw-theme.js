@@ -89,12 +89,25 @@ module.exports = plugin.withOptions(() => {
         colorUtils[`.text-${prefix}${cls}`] = { color: varRef };
         colorUtils[`.border-${prefix}${cls}`] = { borderColor: varRef };
         colorUtils[`.fill-${prefix}${cls}`] = { fill: varRef };
+        colorUtils[`.stroke-${prefix}${cls}`] = { stroke: varRef };
         colorUtils[`.from-${prefix}${cls}`] = {
           "--tw-gradient-from": varRef,
+          "--tw-gradient-via-stops":
+            "var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position))",
+          "--tw-gradient-stops":
+            "var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position))",
         };
-        colorUtils[`.to-${prefix}${cls}`] = { "--tw-gradient-to": varRef };
+        colorUtils[`.to-${prefix}${cls}`] = {
+          "--tw-gradient-to": varRef,
+          "--tw-gradient-via-stops":
+            "var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position))",
+          "--tw-gradient-stops":
+            "var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position))",
+        };
         colorUtils[`.via-${prefix}${cls}`] = {
-          "--tw-gradient-stops": varRef,
+          "--tw-gradient-via": varRef,
+          "--tw-gradient-via-stops":
+            "var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position)",
         };
       });
     });

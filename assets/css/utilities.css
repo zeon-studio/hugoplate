@@ -1,29 +1,3 @@
-/* navbar toggler */
-input#nav-toggle:checked + label #show-button {
-  @apply hidden;
-}
-
-input#nav-toggle:checked + label #hide-button {
-  @apply block;
-}
-
-input#nav-toggle:checked ~ #nav-menu {
-  @apply block;
-}
-
-.bg-gradient {
+@utility bg-gradient {
   @apply bg-linear-to-b from-[rgba(249,249,249,1)] from-[0.53%] to-white to-[83.28%] dark:from-darkmode-light dark:to-darkmode-body;
-}
-
-.shadow {
-  @apply shadow-[0px_4px_40px_rgba(0,0,0,0.05)];
-}
-
-/* form style */
-.form-input {
-  @apply w-full rounded border-transparent bg-light px-6 py-4 text-text-dark placeholder:text-text-light focus:border-primary dark:focus:border-darkmode-primary focus:ring-transparent dark:border-darkmode-border dark:bg-darkmode-light dark:text-darkmode-text-light;
-}
-
-.form-label {
-  @apply mb-4 block font-secondary text-xl font-normal text-text-dark dark:text-darkmode-text-light;
 }
