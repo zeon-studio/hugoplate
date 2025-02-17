@@ -22,10 +22,10 @@
   @apply border-border dark:border-darkmode-border overflow-hidden rounded-lg border;
 }
 .tab-nav {
-  @apply border-border bg-theme-light dark:border-darkmode-border dark:bg-darkmode-theme-light pl-4;
+  @apply border-border bg-light dark:border-darkmode-border dark:bg-darkmode-light pl-4;
 }
 .tab-nav-item {
-  @apply text-dark dark:text-darkmode-dark px-8 !text-lg;
+  @apply text-text-dark dark:text-darkmode-text-dark px-8 !text-lg;
 }
 .tab-nav-item.active {
   @apply border-dark dark:border-darkmode-primary;
@@ -37,10 +37,10 @@
 
 /* accordion */
 .accordion {
-  @apply border-border bg-theme-light dark:border-darkmode-border dark:bg-darkmode-theme-light mb-6 overflow-hidden rounded-lg border;
+  @apply border-border bg-light dark:border-darkmode-border dark:bg-darkmode-light mb-6 overflow-hidden rounded-lg border;
 }
 .accordion-header {
-  @apply text-dark dark:text-darkmode-dark;
+  @apply text-text-dark dark:text-darkmode-text-dark;
 }
 
 /* cookie consent */

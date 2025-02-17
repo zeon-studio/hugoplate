@@ -53,7 +53,7 @@
                   {{ range $i,$p:= $tags }}
                     <li class="inline-block">
                       <a
-                        class="bg-theme-light hover:bg-primary dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark m-1 block rounded px-3 py-1 hover:text-white"
+                        class="bg-light hover:bg-primary dark:bg-darkmode-light dark:hover:bg-darkmode-primary dark:hover:text-text-dark m-1 block rounded px-3 py-1 hover:text-white"
                         href="{{ `tags/` | relLangURL }}{{ . | urlize | lower }}/">
                         {{ . | humanize }}
                       </a>

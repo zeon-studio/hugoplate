@@ -12,7 +12,7 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 .bg-gradient {
-  @apply bg-linear-to-b from-[rgba(249,249,249,1)] from-[0.53%] to-white to-[83.28%] dark:from-darkmode-theme-light dark:to-darkmode-body;
+  @apply bg-linear-to-b from-[rgba(249,249,249,1)] from-[0.53%] to-white to-[83.28%] dark:from-darkmode-light dark:to-darkmode-body;
 }
 
 .shadow {
@@ -21,9 +21,9 @@ input#nav-toggle:checked ~ #nav-menu {
 
 /* form style */
 .form-input {
-  @apply w-full rounded border-transparent bg-theme-light px-6 py-4 text-dark placeholder:text-light focus:border-primary dark:focus:border-darkmode-primary focus:ring-transparent dark:border-darkmode-border dark:bg-darkmode-theme-light dark:text-darkmode-light;
+  @apply w-full rounded border-transparent bg-light px-6 py-4 text-text-dark placeholder:text-text-light focus:border-primary dark:focus:border-darkmode-primary focus:ring-transparent dark:border-darkmode-border dark:bg-darkmode-light dark:text-darkmode-text-light;
 }
 
 .form-label {
-  @apply mb-4 block font-secondary text-xl font-normal text-dark dark:text-darkmode-light;
+  @apply mb-4 block font-secondary text-xl font-normal text-text-dark dark:text-darkmode-text-light;
 }
