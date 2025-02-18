@@ -18,121 +18,124 @@ const fontFamilies = Object.entries(themeConfig.fonts.font_family)
     return acc;
   }, {});
 
-// main plugin
+const defaultColorGroups = [
+  { colors: themeConfig.colors.default.theme_color, prefix: "" },
+  { colors: themeConfig.colors.default.text_color, prefix: "" },
+];
+const darkColorGroups = [];
+if (themeConfig.colors.darkmode?.theme_color) {
+  darkColorGroups.push({
+    colors: themeConfig.colors.darkmode.theme_color,
+    prefix: "darkmode-",
+  });
+}
+if (themeConfig.colors.darkmode?.text_color) {
+  darkColorGroups.push({
+    colors: themeConfig.colors.darkmode.text_color,
+    prefix: "darkmode-",
+  });
+}
+
+const getVars = (groups) => {
+  const vars = {};
+  groups.forEach(({ colors, prefix }) => {
+    Object.entries(colors).forEach(([k, v]) => {
+      const cssKey = k.replace(/_/g, "-");
+      vars[`--color-${prefix}${cssKey}`] = v;
+    });
+  });
+  return vars;
+};
+
+const defaultVars = getVars(defaultColorGroups);
+const darkVars = getVars(darkColorGroups);
+
+const baseSize = Number(themeConfig.fonts.font_size.base);
+const scale = Number(themeConfig.fonts.font_size.scale);
+const calculateFontSizes = (base, scale) => {
+  const sizes = {};
+  let currentSize = scale;
+  for (let i = 6; i >= 1; i--) {
+    sizes[`h${i}`] = `${currentSize}rem`;
+    sizes[`h${i}-sm`] = `${currentSize * 0.9}rem`;
+    currentSize *= scale;
+  }
+  sizes.base = `${base}px`;
+  sizes["base-sm"] = `${base * 0.8}px`;
+  return sizes;
+};
+const fontSizes = calculateFontSizes(baseSize, scale);
+
+const fontVars = {};
+Object.entries(fontSizes).forEach(([key, value]) => {
+  fontVars[`--text-${key}`] = value;
+});
+Object.entries(fontFamilies).forEach(([key, font]) => {
+  fontVars[`--font-${key}`] = font;
+});
+
+const baseVars = { ...fontVars, ...defaultVars };
+
+// Build a colorsMap including both sets
+const colorsMap = {};
+[...defaultColorGroups, ...darkColorGroups].forEach(({ colors, prefix }) => {
+  Object.entries(colors).forEach(([key]) => {
+    const cssKey = key.replace(/_/g, "-");
+    colorsMap[prefix + cssKey] = `var(--color-${prefix}${cssKey})`;
+  });
+});
+
 module.exports = plugin.withOptions(() => {
-  return ({ addBase, addUtilities }) => {
-    const rootVars = {};
-
-    // Parse base font size and scaling factor.
-    const baseSize = Number(themeConfig.fonts.font_size.base);
-    const scale = Number(themeConfig.fonts.font_size.scale);
-
-    const calculateFontSizes = (base, scale) => {
-      const sizes = {};
-      let currentSize = scale;
-      for (let i = 6; i >= 1; i--) {
-        sizes[`h${i}`] = `${currentSize}rem`;
-        sizes[`h${i}-sm`] = `${currentSize * 0.9}rem`;
-        currentSize *= scale;
-      }
-      sizes.base = `${base}px`;
-      sizes["base-sm"] = `${base * 0.8}px`;
-      return sizes;
-    };
-
-    const fontSizes = calculateFontSizes(baseSize, scale);
-
-    // Set font and text size variables.
-    Object.entries(fontSizes).forEach(([key, value]) => {
-      rootVars[`--text-${key}`] = value;
-    });
-    Object.entries(fontFamilies).forEach(([key, font]) => {
-      rootVars[`--font-${key}`] = font;
+  return function ({ addBase, addUtilities, matchUtilities }) {
+    // Default vars on :root; dark vars on .dark
+    addBase({
+      ":root": baseVars,
+      ".dark": darkVars,
     });
 
-    // Define color groups.
-    const groups = [
-      { colors: themeConfig.colors.default.theme_color, prefix: "" },
-      { colors: themeConfig.colors.default.text_color, prefix: "" },
-      ...(themeConfig.colors.darkmode?.theme_color
-        ? [
-            {
-              colors: themeConfig.colors.darkmode.theme_color,
-              prefix: "darkmode-",
-            },
-          ]
-        : []),
-      ...(themeConfig.colors.darkmode?.text_color
-        ? [
-            {
-              colors: themeConfig.colors.darkmode.text_color,
-              prefix: "darkmode-",
-            },
-          ]
-        : []),
-    ];
-
-    // Set color variables.
-    groups.forEach(({ colors, prefix }) => {
-      Object.entries(colors).forEach(([k, v]) => {
-        const cssKey = k.replace(/_/g, "-");
-        rootVars[`--color-${prefix}${cssKey}`] = v;
-      });
-    });
-
-    // Add variables to root.
-    addBase({ ":root": rootVars });
-
-    const generateColorUtils = (colors, prefix) => {
-      const utils = {};
-      Object.keys(colors).forEach((k) => {
-        const cls = k.replace(/_/g, "-");
-        const varRef = `var(--color-${prefix}${cls})`;
-        utils[`.bg-${prefix}${cls}`] = { backgroundColor: varRef };
-        utils[`.text-${prefix}${cls}`] = { color: varRef };
-        utils[`.border-${prefix}${cls}`] = { borderColor: varRef };
-        utils[`.fill-${prefix}${cls}`] = { fill: varRef };
-        utils[`.stroke-${prefix}${cls}`] = { stroke: varRef };
-        utils[`.from-${prefix}${cls}`] = {
-          "--tw-gradient-from": varRef,
-          "--tw-gradient-via-stops":
-            "var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position))",
-          "--tw-gradient-stops":
-            "var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position))",
-        };
-        utils[`.to-${prefix}${cls}`] = {
-          "--tw-gradient-to": varRef,
-          "--tw-gradient-via-stops":
-            "var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position))",
-          "--tw-gradient-stops":
-            "var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position))",
-        };
-        utils[`.via-${prefix}${cls}`] = {
-          "--tw-gradient-via": varRef,
-          "--tw-gradient-via-stops":
-            "var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position)",
-        };
-      });
-      return utils;
-    };
-
-    const colorUtils = groups.reduce((acc, { colors, prefix }) => {
-      return { ...acc, ...generateColorUtils(colors, prefix) };
-    }, {});
-
-    // Add font and text size utilities.
     const fontUtils = {};
     Object.keys(fontFamilies).forEach((key) => {
       fontUtils[`.font-${key}`] = { fontFamily: `var(--font-${key})` };
     });
-    Object.keys(fontSizes).forEach((k) => {
-      fontUtils[`.text-${k}`] = { fontSize: `var(--text-${k})` };
+    Object.keys(fontSizes).forEach((key) => {
+      fontUtils[`.text-${key}`] = { fontSize: `var(--text-${key})` };
+    });
+    addUtilities(fontUtils, {
+      variants: ["responsive", "hover", "focus", "active", "disabled"],
     });
 
-    // Add the generated utilities with the desired variants.
-    addUtilities(
-      { ...colorUtils, ...fontUtils },
-      { variants: ["responsive", "hover", "focus", "active", "disabled"] },
+    matchUtilities(
+      {
+        bg: (value) => ({ backgroundColor: value }),
+        text: (value) => ({ color: value }),
+        border: (value) => ({ borderColor: value }),
+      },
+      { values: colorsMap, type: "color" },
+    );
+
+    matchUtilities(
+      {
+        from: (value) => ({
+          "--tw-gradient-from": value,
+          "--tw-gradient-via-stops":
+            "var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position))",
+          "--tw-gradient-stops":
+            "var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position))",
+        }),
+        to: (value) => ({
+          "--tw-gradient-to": value,
+          "--tw-gradient-via-stops":
+            "var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position))",
+          "--tw-gradient-stops":
+            "var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position))",
+        }),
+        via: (value) => ({
+          "--tw-gradient-via": value,
+          "--tw-gradient-via-stops":
+            "var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position)",
+        }),
+      },
+      { values: colorsMap, type: "color" },
     );
   };
 });
