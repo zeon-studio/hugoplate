@@ -5,7 +5,7 @@ const themePath = path.join(__dirname, "../data/theme.json");
 const themeRead = fs.readFileSync(themePath, "utf8");
 const themeConfig = JSON.parse(themeRead);
 
-// Find font name from font string
+// Helper to extract a clean font name.
 const findFont = (fontStr) =>
   fontStr.replace(/\+/g, " ").replace(/:[^:]+/g, "");
 
@@ -18,36 +18,39 @@ const fontFamilies = Object.entries(themeConfig.fonts.font_family)
     return acc;
   }, {});
 
+// main plugin
 module.exports = plugin.withOptions(() => {
   return ({ addBase, addUtilities }) => {
     const rootVars = {};
 
+    // Parse base font size and scaling factor.
     const baseSize = Number(themeConfig.fonts.font_size.base);
     const scale = Number(themeConfig.fonts.font_size.scale);
 
-    // Set font sizes
-    const fontSizes = {
-      base: `${baseSize}px`,
-      "base-sm": `${baseSize * 0.8}px`,
-      h1: `${scale ** 5}rem`,
-      "h1-sm": `${scale ** 5 * 0.9}rem`,
-      h2: `${scale ** 4}rem`,
-      "h2-sm": `${scale ** 4 * 0.9}rem`,
-      h3: `${scale ** 3}rem`,
-      "h3-sm": `${scale ** 3 * 0.9}rem`,
-      h4: `${scale ** 2}rem`,
-      h5: `${scale}rem`,
-      h6: `${scale}rem`,
+    const calculateFontSizes = (base, scale) => {
+      const sizes = {};
+      let currentSize = scale;
+      for (let i = 6; i >= 1; i--) {
+        sizes[`h${i}`] = `${currentSize}rem`;
+        sizes[`h${i}-sm`] = `${currentSize * 0.9}rem`;
+        currentSize *= scale;
+      }
+      sizes.base = `${base}px`;
+      sizes["base-sm"] = `${base * 0.8}px`;
+      return sizes;
     };
-    Object.entries(fontSizes).forEach(([k, v]) => {
-      rootVars[`--text-${k}`] = v;
-    });
 
+    const fontSizes = calculateFontSizes(baseSize, scale);
+
+    // Set font and text size variables.
+    Object.entries(fontSizes).forEach(([key, value]) => {
+      rootVars[`--text-${key}`] = value;
+    });
     Object.entries(fontFamilies).forEach(([key, font]) => {
       rootVars[`--font-${key}`] = font;
     });
 
-    // Define color groups
+    // Define color groups.
     const groups = [
       { colors: themeConfig.colors.default.theme_color, prefix: "" },
       { colors: themeConfig.colors.default.text_color, prefix: "" },
@@ -69,50 +72,55 @@ module.exports = plugin.withOptions(() => {
         : []),
     ];
 
-    // Set color variables
+    // Set color variables.
     groups.forEach(({ colors, prefix }) => {
       Object.entries(colors).forEach(([k, v]) => {
-        rootVars[`--color-${prefix}${k.replace(/_/g, "-")}`] = v;
+        const cssKey = k.replace(/_/g, "-");
+        rootVars[`--color-${prefix}${cssKey}`] = v;
       });
     });
 
-    // Add variables to root
+    // Add variables to root.
     addBase({ ":root": rootVars });
 
-    // Generate color utilities
-    const colorUtils = {};
-    groups.forEach(({ colors, prefix }) => {
+    const generateColorUtils = (colors, prefix) => {
+      const utils = {};
       Object.keys(colors).forEach((k) => {
         const cls = k.replace(/_/g, "-");
         const varRef = `var(--color-${prefix}${cls})`;
-        colorUtils[`.bg-${prefix}${cls}`] = { backgroundColor: varRef };
-        colorUtils[`.text-${prefix}${cls}`] = { color: varRef };
-        colorUtils[`.border-${prefix}${cls}`] = { borderColor: varRef };
-        colorUtils[`.fill-${prefix}${cls}`] = { fill: varRef };
-        colorUtils[`.stroke-${prefix}${cls}`] = { stroke: varRef };
-        colorUtils[`.from-${prefix}${cls}`] = {
+        utils[`.bg-${prefix}${cls}`] = { backgroundColor: varRef };
+        utils[`.text-${prefix}${cls}`] = { color: varRef };
+        utils[`.border-${prefix}${cls}`] = { borderColor: varRef };
+        utils[`.fill-${prefix}${cls}`] = { fill: varRef };
+        utils[`.stroke-${prefix}${cls}`] = { stroke: varRef };
+        utils[`.from-${prefix}${cls}`] = {
           "--tw-gradient-from": varRef,
           "--tw-gradient-via-stops":
             "var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position))",
           "--tw-gradient-stops":
             "var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position))",
         };
-        colorUtils[`.to-${prefix}${cls}`] = {
+        utils[`.to-${prefix}${cls}`] = {
           "--tw-gradient-to": varRef,
           "--tw-gradient-via-stops":
             "var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position))",
           "--tw-gradient-stops":
             "var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position))",
         };
-        colorUtils[`.via-${prefix}${cls}`] = {
+        utils[`.via-${prefix}${cls}`] = {
           "--tw-gradient-via": varRef,
           "--tw-gradient-via-stops":
             "var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position)",
         };
       });
-    });
+      return utils;
+    };
 
-    // Generate font utilities dynamically
+    const colorUtils = groups.reduce((acc, { colors, prefix }) => {
+      return { ...acc, ...generateColorUtils(colors, prefix) };
+    }, {});
+
+    // Add font and text size utilities.
     const fontUtils = {};
     Object.keys(fontFamilies).forEach((key) => {
       fontUtils[`.font-${key}`] = { fontFamily: `var(--font-${key})` };
@@ -121,6 +129,7 @@ module.exports = plugin.withOptions(() => {
       fontUtils[`.text-${k}`] = { fontSize: `var(--text-${k})` };
     });
 
+    // Add the generated utilities with the desired variants.
     addUtilities(
       { ...colorUtils, ...fontUtils },
       { variants: ["responsive", "hover", "focus", "active", "disabled"] },
