@@ -109,6 +109,8 @@ module.exports = plugin.withOptions(() => {
         bg: (value) => ({ backgroundColor: value }),
         text: (value) => ({ color: value }),
         border: (value) => ({ borderColor: value }),
+        fill: (value) => ({ fill: value }),
+        stroke: (value) => ({ stroke: value }),
       },
       { values: colorsMap, type: "color" },
     );

@@ -9,7 +9,7 @@
 }
 
 .share-icons .share-icon svg {
-  @apply dark:fill-current;
+  @apply dark:fill-darkmode-light;
 }
 
 /* notice */

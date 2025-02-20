@@ -47,7 +47,7 @@
           <div class="row items-start justify-between">
             {{ $tags:= .Params.tags }}
             {{ if $tags }}
-              <div class="lg:col-5 mb-10 flex items-center lg:mb-0">
+              <div class="lg:col-6 mb-10 flex items-center lg:mb-0">
                 <h5 class="mr-3">{{ T "tags" }} :</h5>
                 <ul>
                   {{ range $i,$p:= $tags }}
@@ -62,8 +62,8 @@
                 </ul>
               </div>
             {{ end }}
-            <div class="lg:col-4 flex items-center">
-              {{ partial "social-share" (dict "Context" . "Class" "share-icons" "Title" (T "share") "Whatsapp" false "Telegram" false "Linkedin" false "Pinterest" false "Tumblr" false "Vk" false) }}
+            <div class="lg:col-6 flex items-center">
+              {{ partial "social-share" (dict "Context" . "Class" "share-icons lg:ml-auto" "Title" (T "share") "Whatsapp" false "Telegram" false "Linkedin" false "Pinterest" false "Tumblr" false "Vk" false) }}
             </div>
           </div>
           <!-- comments -->
