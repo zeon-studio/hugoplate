@@ -1,13 +1,13 @@
 # Use an official node image as a parent image
-FROM node:20
+FROM node:23
 
 # Set environment variables for versions
-ARG HUGO_VERSION=0.126.1
-ARG GO_VERSION=1.22.3
+ARG HUGO_VERSION=0.139.4
+ARG GO_VERSION=1.23.4
 
 # Install dependencies
 RUN apt-get update && \
-    apt-get install -y ca-certificates openssl git curl && \
+    apt-get install -y ca-certificates openssl git curl wget build-essential && \
     rm -rf /var/lib/apt/lists/*
 
 # Determine architecture
@@ -15,7 +15,7 @@ RUN ARCH=$(uname -m) && \
     if [ "$ARCH" = "aarch64" ]; then ARCH=arm64; else ARCH=amd64; fi && \
     echo "Architecture: $ARCH"
 
-# Download and install Hugo
+# Download and install Hugo Extended
 RUN ARCH=$(uname -m) && \
     if [ "$ARCH" = "aarch64" ]; then ARCH=arm64; else ARCH=amd64; fi && \
     wget -O hugo_extended_${HUGO_VERSION}.tar.gz https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-${ARCH}.tar.gz && \
@@ -34,3 +34,11 @@ RUN ARCH=$(uname -m) && \
 
 # Export Go path
 ENV PATH=$PATH:/usr/local/go/bin
+
+# Verify versions
+RUN git --version && \
+    hugo version && \
+    go version
+
+# Default shell
+CMD ["/bin/bash"]
