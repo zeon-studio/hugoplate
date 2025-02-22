@@ -1,6 +1,6 @@
 <h1 align="center">Hugo + Tailwind CSS Starter and Boilerplate</h1>
 
-<p align="center">Hugoplate is a free starter template built with Hugo, and TailwindCSS, providing everything you need to jumpstart your Hugo project and save valuable time.</p>
+<p align="center">Hugoplate is a free starter template built with Hugo, and Tailwind CSS v4.0, providing everything you need to jumpstart your Hugo project and save valuable time.</p>
 
 <p align="center">Made with ♥ by <a href="https://zeon.studio/"> Zeon Studio</a></p>
 <p align=center> If you find this project useful, please give it a ⭐ to show your support.</p>
@@ -65,7 +65,7 @@ We have included almost everything you need to start your Hugo project. Let's se
 ### 📦 Tech Stack
 
 - [Hugo](https://gohugo.io/)
-- [Tailwind CSS](https://tailwindcss.com/)
+- [Tailwind CSS v4.0](https://tailwindcss.com/)
 - [AutoPrefixer](https://autoprefixer.github.io/)
 - [Hugo Modules](https://gohugo.io/hugo-modules/) by [Gethugothemes](https://gethugothemes.com/hugo-modules)
 - [Markdown](https://markdownguide.org/)
