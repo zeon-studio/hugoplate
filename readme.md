@@ -87,9 +87,9 @@ First you need to [clone](https://github.com/zeon-studio/hugoplate) or [download
 
 To start using this template, you need to have some prerequisites installed on your machine.
 
-- [Hugo Extended v0.124+](https://gohugo.io/installation/)
-- [Node v20+](https://nodejs.org/en/download/)
-- [Go v1.22+](https://go.dev/doc/install)
+- [Hugo Extended v0.144+](https://gohugo.io/installation/)
+- [Node v22+](https://nodejs.org/en/download/)
+- [Go v1.24+](https://go.dev/doc/install)
 
 ### 👉 Project Setup
 

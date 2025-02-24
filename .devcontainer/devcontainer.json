@@ -3,8 +3,8 @@
 	"build": {
 		"dockerfile": "Dockerfile",
 		"args": {
-			"GO_VERSION": "1.23.4",
-			"HUGO_VERSION": "0.139.4"
+			"GO_VERSION": "1.24.0",
+			"HUGO_VERSION": "0.144.2"
 		}
 	},
 	"customizations": {
