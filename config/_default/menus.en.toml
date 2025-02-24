@@ -1,0 +1,62 @@
+############# English navigation ##############
+
+# main menu
+[[main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[main]]
+name = "About Me"
+url = "/about"
+weight = 2
+
+[[main]]
+name = "Stuff I Do"
+url = "/stuff"
+weight = 3
+
+[[main]]
+parent = "Stuff I Do"
+name = "Computing"
+url = "/stuff/computers"
+weight = 1
+
+[[main]]
+parent = "Stuff I Do"
+name = "Audio Work"
+url = "/stuff/audio"
+weight = 2
+
+[[main]]
+parent = "Stuff I Do"
+name = "Performing"
+url = "/stuff/music"
+weight = 3
+
+[[main]]
+parent = "Stuff I Do"
+name = "Photos"
+url = "/stuff/photos"
+weight = 4
+
+[[main]]
+name = "Contact"
+url = "/contact"
+weight = 5
+
+# footer menu
+[[footer]]
+name = "About Me"
+url = "/about"
+weight = 1
+
+[[footer]]
+name = "Colophon"
+url = "/colophon"
+weight = 2
+
+[[footer]]
+name = "Contact"
+url = "/contact"
+weight = 5

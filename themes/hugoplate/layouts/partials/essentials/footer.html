@@ -9,7 +9,7 @@
           {{ partial "logo" }}
         </a>
       </div>
-      <div class="lg:col-6 mb-8 text-center text-xl lg:mb-0">
+      <div class="lg:col-6 mb-8 text-center lg:mb-0">
         <ul>
           {{ range site.Menus.footer }}
             <li class="m-3 inline-block">
@@ -47,14 +47,12 @@
       </div>
     </div>
   </div>
-  {{ with resources.Get site.Params.copyright }}
-    <div class="border-border dark:border-darkmode-border border-t py-7">
-      <div
-        class="text-text-light dark:text-darkmode-text-light container text-center">
-        <p>
-          {{ . | markdownify }}
-        </p>
-      </div>
+  <div class="border-border dark:border-darkmode-border border-t py-7">
+    <div
+      class="text-text-light dark:text-darkmode-text-light container text-center">
+      <p>
+        {{ site.Params.copyright | markdownify }}
+      </p>
     </div>
-  {{ end }}
+  </div>
 </footer>
