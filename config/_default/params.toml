@@ -2,16 +2,16 @@
 # favicon module: https://github.com/gethugothemes/hugo-modules/tree/master/images#favicon-implementation
 favicon = "images/favicon.png"
 # logo module: https://github.com/gethugothemes/hugo-modules/tree/master/images#logo-implementation
-logo = "images/logo.png"
-logo_darkmode = "images/logo-darkmode.png"
+logo = "images/melete-logo.png"
+logo_darkmode = "images/melete-logo-darkmode.webp"
 # use `px` or `x` with logo_width, example: "100px".
 # Note: logo_width is not work with .svg file
-logo_width = "160px"
+logo_width = "300px"
 logo_height = "32px"
 # if logo_webp set false, will not generate WEBP version of logo | default is true
 logo_webp = true
 # logo text will only show when logo is missing.
-logo_text = "Hugoplate"
+logo_text = "MELETE"
 # navbar fixed to top
 navbar_fixed = true
 # theme-mode
@@ -45,8 +45,8 @@ link = "contact"
 # search module: https://github.com/gethugothemes/hugo-modules/tree/master/search
 [search]
 enable = true
-primary_color = "#121212"
-include_sections = ["blog"]
+primary_color = "#2b4162"
+# include_sections = ["blog"]
 show_image = true
 show_description = true
 show_tags = true
