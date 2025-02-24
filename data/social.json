@@ -3,22 +3,27 @@
     {
       "name": "facebook",
       "icon": "fab fa-facebook",
-      "link": "https://www.facebook.com/"
+      "link": "https://www.facebook.com/jospurvis"
     },
     {
-      "name": "twitter",
-      "icon": "fab fa-twitter",
-      "link": "https://twitter.com/"
+      "name": "bluesky",
+      "icon": "fab fa-bluesky",
+      "link": "https://bsky.app/profile/castillar.bsky.social"
     },
     {
       "name": "github",
       "icon": "fab fa-github",
-      "link": "https://www.github.com/"
+      "link": "https://www.github.com/castillar"
     },
     {
       "name": "linkedin",
       "icon": "fab fa-linkedin",
-      "link": "https://www.linkedin.com/"
+      "link": "https://www.linkedin.com/in/jospurvis"
+    },
+    {
+      "name": "flickr",
+      "icon": "fab fa-flickr",
+      "link": "https://www.flickr.com/photos/singingbeagle"
     }
   ]
 }
