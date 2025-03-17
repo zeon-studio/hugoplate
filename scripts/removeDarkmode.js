@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const rootDirs = ["assets/scss", "layouts"];
+const rootDirs = ["assets/css", "layouts"];
 const configFiles = [
   {
     filePath: "exampleSite/data/theme.json",
