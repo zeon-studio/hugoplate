@@ -12,6 +12,16 @@
   @apply dark:fill-darkmode-light;
 }
 
+.fediverse-input-wrapper {
+  @apply bg-body dark:bg-darkmode-body rounded;
+  input {
+    @apply rounded focus:border-primary focus:ring-0;
+  }
+  button {
+    @apply rounded bg-primary dark:bg-darkmode-primary text-light dark:text-darkmode-light hover:bg-primary dark:hover:bg-darkmode-primary;
+  }
+}
+
 /* notice */
 .notice {
   @apply rounded-lg;
