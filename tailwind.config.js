@@ -1,5 +1,5 @@
-const twTheme = require('./tailwind-plugin/tw-theme.js')
-const twGrid = require('./tailwind-plugin/tw-bs-grid.js')
+const twTheme = require('./assets/tailwind-plugin/tw-theme.js')
+const twGrid = require('./assets/tailwind-plugin/tw-bs-grid.js')
 
 module.exports = {
   content: [
