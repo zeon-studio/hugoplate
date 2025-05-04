@@ -1,0 +1,10 @@
+{
+    "colors": {
+      "primary": "#ff0000",
+      "secondary": "#00ff00"
+    },
+    "fontFamily": {
+      "sans": ["Inter", "sans-serif"]
+    }
+  }
+  
