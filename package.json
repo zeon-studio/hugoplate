@@ -27,4 +27,5 @@
     "prettier-plugin-tailwindcss": "^0.6.11",
     "tailwindcss": "^4.1.4"
   }
+  
 }
