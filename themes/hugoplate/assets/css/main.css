@@ -20,15 +20,15 @@
   @import "./buttons.css";
 }
 
-@import "search.css";
-@import "social-share.css";
-@import "gallery-slider.css";
-@import "images.css";
-@import "toc.css";
-@import "tab.css";
-@import "accordion.css";
-@import "modal.css";
-@import "notice.css";
+@import "./search.css";
+@import "./social-share.css";
+@import "./gallery-slider.css";
+@import "./images.css";
+@import "./toc.css";
+@import "./tab.css";
+@import "./accordion.css";
+@import "./modal.css";
+@import "./notice.css";
 
-@import "module-overrides.css";
-@import "custom.css";
+@import "./module-overrides.css";
+@import "./custom.css";
