@@ -7,11 +7,17 @@ module.exports = {
     './content/**/*.{md,html}',
     './themes/**/*.{html,js}',
   ],
+  safelist: [
+    '!bg-light',
+    '!rounded-lg',
+    '!ml-0',
+    '!pt-0',
+  ],
   theme: {
     extend: {
       colors: {
-        light: '#f9fafb', // 💡 додаємо light вручну
-        dark: '#111827',  // і можна ще dark, якщо треба
+        light: '#f9fafb',
+        dark: '#111827',
       },
     },
   },
