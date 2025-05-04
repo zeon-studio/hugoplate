@@ -1,8 +1,8 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/forms";
 @plugin "@tailwindcss/typography";
-@plugin "../tailwind-plugin/tw-theme.js";
-@plugin "../tailwind-plugin/tw-bs-grid.js";
+@plugin "../tailwind-plugin/tw-theme";
+@plugin "../tailwind-plugin/tw-bs-grid";
 
 @source "hugo_stats.json";
 
