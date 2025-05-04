@@ -1,5 +1,5 @@
-const twTheme = require('./assets/tailwind-plugin/tw-theme.js')
-const twGrid = require('./assets/tailwind-plugin/tw-bs-grid.js')
+const twTheme = require('./themes/hugoplate/assets/tailwind-plugin/tw-theme.js')
+const twGrid = require('./themes/hugoplate/assets/tailwind-plugin/tw-bs-grid.js')
 
 module.exports = {
   content: [
