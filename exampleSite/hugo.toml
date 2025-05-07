@@ -28,7 +28,7 @@ shortname = 'themefisher-template' # we use disqus to show comments in blog post
 
 ########################## Permalinks ############################
 [permalinks.page]
-"pages" = "/:slugorcontentbasename/"
+"pages" = "/:slugorcontentbasename/" # If the server doesn't start due to an error, you can change this line to this one => "pages" = "/:slugorfilename/"
 
 
 ########################## Pagination ############################
