@@ -14,7 +14,7 @@
     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
   </h4>
   <p class="mb-4">
-    {{ .Summary }}
+    {{ .Summary | plainify }}
   </p>
   <ul class="social-icons">
     {{ range .Params.social }}
