@@ -2,20 +2,33 @@
 
 This repository contains the source code to build the website of the WebData Research Infrastructure Project. The project is run in partnership by the [National Library of Norway](https://github.com/NationalLibraryOfNorway/), [Norwegian Computing Centre](https://github.com/norskregnesentral), University of Oslo's [Language Technology Group](https://github.com/ltgoslo) and [HumIT](https://github.com/humit-oslo/), and Arctic University of Norway's [Giellatekno](https://github.com/giellatekno), and funded by the [Research Council of Norway](https://www.forskningsradet.no/).
 
-The site is built using [Hugo](https://gohugo.io/) and the [Hugoplate](https://github.com/zeon-studio/hugoplate) theme.
+The site is built using [Hugo](https://gohugo.io/) and the open source [Hugoplate](https://github.com/zeon-studio/hugoplate) theme.
 
 ![](image-screenshot)
 
-## Prerequisites
-To edit the content, you need some prerequisites installed on your machine.
+
+## Customisation
+To customise content, you need some prerequisites installed.
 - [Go v1.24](https://go.dev/doc/install) or later
 - [Hugo Extended v.0141](https://gohugo.io/installation/) or later
 - [Node v22](https://nodejs.org/en/download/) or later
 
+### Add news post
+... TO BE WRITTEN
 
+### Site config
+The site title, base URL, languages, theme, etc. is set in `hugo.toml`.
 
+### Site params
+All parameters can be customised in the `config/_default/params.toml` file. This includes logo, favicon, search, etc.
 
-The site is based on the 
+### Colour and Fonts
+Colours and fonts are controlled by the `data/theme.json`.
+
+Links to partners' external sites are set in `data/social.json`.
+
+## Build site
+To build the site that are hosted on our own server, run `hugo`. All necessary files will be produced within the `/pulic/` folder.
 
 
 
