@@ -1,3 +1,33 @@
+# WebData Website
+
+This repository contains the source code to build the website of the WebData Research Infrastructure Project. The project is run in partnership by the [National Library of Norway](https://github.com/NationalLibraryOfNorway/), [Norwegian Computing Centre](https://github.com/norskregnesentral), University of Oslo's [Language Technology Group](https://github.com/ltgoslo) and [HumIT](https://github.com/humit-oslo/), and Arctic University of Norway's [Giellatekno](https://github.com/giellatekno), and funded by the [Research Council of Norway](https://www.forskningsradet.no/).
+
+The site is built using [Hugo](https://gohugo.io/) and the [Hugoplate](https://github.com/zeon-studio/hugoplate) theme.
+
+![](image-screenshot)
+
+## Prerequisites
+To edit the content, you need some prerequisites installed on your machine.
+- [Go v1.24](https://go.dev/doc/install) or later
+- [Hugo Extended v.0141](https://gohugo.io/installation/) or later
+- [Node v22](https://nodejs.org/en/download/) or later
+
+
+
+
+The site is based on the 
+
+
+
+
+
+
+
+
+--
+
+## More documentation from the Hugoplate theme
+
 <h1 align="center">Hugo + Tailwind CSS Starter and Boilerplate</h1>
 
 <p align="center">Hugoplate is a free starter template built with Hugo, and Tailwind CSS v4.0, providing everything you need to jumpstart your Hugo project and save valuable time.</p>
