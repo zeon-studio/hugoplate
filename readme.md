@@ -13,8 +13,13 @@ To customise content, you need some prerequisites installed.
 - [Hugo Extended v.0141](https://gohugo.io/installation/) or later
 - [Node v22](https://nodejs.org/en/download/) or later
 
-### Add news post
-... TO BE WRITTEN
+### Run developer server
+Hugo sites allow for developing and editing content with a local live server.
+
+### Add or edit content
+All page content are written in markdown `.md`, and located within `/content/`.
+
+To add a new blog post, simple generate a new markdown file within the `/content/blog/` folder.
 
 ### Site config
 The site title, base URL, languages, theme, etc. is set in `hugo.toml`.
