@@ -32,18 +32,23 @@ copyright = "Built with Love to the Web and the open source [Hugoplate](https://
 # Footer logos
 [[footer_logos]]
 name = "National Library of Norway"
-image = "/assets/images/logos/logo-nb.png"
+image = "/images/logos/logo-nb.png"
 url = "https://www.nb.no"
 
 [[footer_logos]]
 name = "Norwegian Computing Centre"
-image = "/assets/images/logos/logo-nr.png"
-url = "https://partner2.com"
+image = "/images/logos/logo-nr.png"
+url = "https://www.nr.no"
 
 [[footer_logos]]
-name = "Partner 3"
-image = "/images/logo3.png"
-url = "https://partner3.com"
+name = "University of Oslo"
+image = "/images/logos/logo-uio.png"
+url = "https://www.uio.no"
+
+[[footer_logos]]
+name = "Arctic University of Norway"
+image = "/images/logos/logo-uit.png"
+url = "https://https://giellatekno.uit.no/"
 
 # Preloader
 # preloader module: https://github.com/gethugothemes/hugo-modules/tree/master/components/preloader

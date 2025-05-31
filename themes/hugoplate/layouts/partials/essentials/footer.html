@@ -2,13 +2,47 @@
   <div class="container">
     <div class="row items-center py-10">
       <div class="lg:col-3 mb-8 text-center lg:mb-0 lg:text-left">
-        <!-- navbar brand/logo -->
+        <!-- navbar brand/logo original code!
         <a
           class="navbar-brand inline-block"
           href="{{ site.Home.RelPermalink }}">
           {{ partial "logo" }}
         </a>
-      </div>
+        -->
+
+        <!-- partners logos start-->
+        {{- if site.Params.footer_logos }}
+        <div class="footer-logos mt-8">
+          <div class="container">
+            <div class="row justify-center">
+              <div class="col-12">
+                <h4 class="text-center mb-4">Partners</h4>
+                <div class="flex flex-wrap justify-center items-center">
+                  {{- range site.Params.footer_logos }}
+                  <div class="logo-item mx-4 mb-4">
+                    {{- if .url }}
+                    <a href="{{ .url }}" target="_blank" rel="noopener" class="block">
+                    {{- end }}
+                      <img 
+                        src="{{ .image | absURL }}" 
+                        alt="{{ .name }}" 
+                        class="opacity-100 transition-opacity"
+                        style="height: 3rem; width: auto;"
+                        loading="lazy"
+                      >
+                    {{- if .url }}
+                    </a>
+                    {{- end }}
+                  </div>
+                  {{- end }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {{- end }}
+<!-- multiple logos end-->
+      </div>     
       <div class="lg:col-6 mb-8 text-center lg:mb-0">
         <ul>
           {{ range site.Menus.footer }}
