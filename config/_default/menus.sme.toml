@@ -2,35 +2,35 @@
 
 # main menu
 [[main]]
-name = "Home"
+name = "Ruoktot"
 url = "/"
 weight = 1
 
 [[main]]
-name = "About"
-url = "/about"
+name = "Birra"
+url = "/birra"
 weight = 2
 
 [[main]]
-name = "Partners"
-url = "/partners"
+name = "Oassálas"
+url = "/oassalas"
 weight = 3
 
-[[main]]
-name = "News"
-url = "/blog"
-weight = 4
+#[[main]]
+#name = "Ođđasat"
+#url = "/oddasat"
+#weight = 4
 
 [[main]]
-name = "Contact"
-weight = 5
+name = "Oktavuohta"
 url = "/contact"
+weight = 5
 
 
 # footer menu
 [[footer]]
-name = "About"
-url = "/about"
+name = "Birra"
+url = "/birra"
 weight = 1
 
 [[footer]]

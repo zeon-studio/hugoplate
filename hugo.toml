@@ -1,12 +1,8 @@
 ######################## default configuration ####################
-# The base URL of your site (required). This will be prepended to all relative URLs.
-baseURL = "/"
-# Title of your website (required).
-title = "Hugoplate"
-# Your theme name
+baseURL = "https://webdata.nb.no/"
+title = "WebData Research Infrastructure"
 theme = "hugoplate"
-# Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
-timeZone = "America/New_York"
+timeZone = "Europe/Oslo"
 # post excerpt
 summaryLength = 10 # see https://gohugo.io/content-management/excerpts/
 # disable language
@@ -16,7 +12,7 @@ hasCJKLanguage = false #  If hasCJKLanguage true, auto-detect Chinese/Japanese/K
 # default language
 defaultContentLanguage = 'en'
 # defaultContentLanguageInSubdir need to be true if you want to use the language code as a subdirectory and language specific 404 page
-defaultContentLanguageInSubdir = false
+defaultContentLanguageInSubdir = true
 
 ########################### Services #############################
 [services]

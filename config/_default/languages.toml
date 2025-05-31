@@ -1,6 +1,20 @@
 ################ English language ##################
 [en]
-languageName = "En"
-languageCode = "en-us"
-contentDir = "content/english"
+languageName = "English"
+languageCode = "eng"
+contentDir = "content/en"
 weight = 1
+
+################ Norwegian language ##################
+[no]
+languageName = "Norsk bokmål"
+languageCode = "nob"
+contentDir = "content/no"
+weight = 2
+
+################ Northern Sámi language ##################
+[sme]
+languageName = "Davvisámegiella"
+languageCode = "sme"
+contentDir = "content/sme"
+weight = 3

@@ -1,39 +1,39 @@
-############# English navigation ##############
+############# Norwegian navigation ##############
 
 # main menu
 [[main]]
-name = "Home"
+name = "Forside"
 url = "/"
 weight = 1
 
 [[main]]
-name = "About"
-url = "/about"
+name = "Om oss"
+url = "/om"
 weight = 2
 
 [[main]]
-name = "Partners"
-url = "/partners"
+name = "Partnere"
+url = "/partnere"
 weight = 3
 
 [[main]]
-name = "News"
+name = "Nyheter"
 url = "/blog"
 weight = 4
 
 [[main]]
-name = "Contact"
+name = "Kontakt"
 weight = 5
 url = "/contact"
 
 
 # footer menu
 [[footer]]
-name = "About"
+name = "Om WebData"
 url = "/about"
 weight = 1
 
 [[footer]]
-name = "Privacy Policy"
+name = "Personvern"
 url = "/privacy-policy"
 weight = 2
