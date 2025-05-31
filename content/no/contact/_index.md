@@ -1,6 +1,6 @@
 ---
 title: "Kontakt"
 meta_title: ""
-description: "this is meta description"
+description: "Fyll ut skjemaet for å kontakte oss!"
 draft: false
 ---

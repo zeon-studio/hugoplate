@@ -1,6 +1,6 @@
 ---
-title: "Kontakt / Contact / Oktavuohta"
-meta_title: ""
-description: "this is meta description"
+title: "Contact"
+meta_title: "Contact form for WebData"
+description: "Fill in the form to contact us!"
 draft: false
 ---

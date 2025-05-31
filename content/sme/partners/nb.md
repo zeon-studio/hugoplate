@@ -1,8 +1,8 @@
 ---
-title: National Library of Norway
+title: Nasjonalbiblioteket
 email: webdata@nb.no
-image: "/assets/images/logos/logo-nb.png"
-description: National Library of Norway leads the project, and participates in WP-0, WP-1, WP-2, WP-3 and WP-5
+image: "/assets/images/logos"
+description: Nasjonalbiblioteket leder prosjektet, og deltar i arbeidspakkene WP-0, WP-1, WP-2, WP-3 and WP-5
 social:
   - name: github
     icon: fa-brands fa-github
@@ -17,4 +17,4 @@ social:
     link: https://www.linkedin.com/company/nasjonalbiblioteket-the-national-library-of-norway/
 ---
 
-National Library of Norway leads the project, and participates in WP-0, WP-1, WP-2, WP-3 and WP-5.
+Nasjonalbiblioteket leder prosjektet, og deltar i arbeidspakkene WP-0, WP-1, WP-2, WP-3 and WP-5.

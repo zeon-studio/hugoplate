@@ -8,18 +8,18 @@ weight = 1
 
 [[main]]
 name = "Birra"
-url = "/birra"
+url = "/about"
 weight = 2
 
 [[main]]
 name = "Oassálas"
-url = "/oassalas"
+url = "/partners"
 weight = 3
 
-#[[main]]
-#name = "Ođđasat"
-#url = "/oddasat"
-#weight = 4
+[[main]]
+name = "Ođđasat"
+url = "/blog"
+weight = 4
 
 [[main]]
 name = "Oktavuohta"
@@ -30,7 +30,7 @@ weight = 5
 # footer menu
 [[footer]]
 name = "Birra"
-url = "/birra"
+url = "/about"
 weight = 1
 
 [[footer]]

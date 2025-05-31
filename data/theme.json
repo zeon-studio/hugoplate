@@ -2,9 +2,9 @@
   "colors": {
     "default": {
       "theme_color": {
-        "primary": "#121212",
+        "primary": "#00c18a",
         "body": "#fff",
-        "border": "#eaeaea",
+        "border": "#00c18a",
         "light": "#f6f6f6",
         "dark": "#040404"
       },

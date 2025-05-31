@@ -8,12 +8,12 @@ weight = 1
 
 [[main]]
 name = "Om oss"
-url = "/om"
+url = "/about"
 weight = 2
 
 [[main]]
 name = "Partnere"
-url = "/partnere"
+url = "/partners"
 weight = 3
 
 [[main]]
