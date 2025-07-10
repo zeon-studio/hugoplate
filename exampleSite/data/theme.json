@@ -10,8 +10,8 @@
       },
       "text_color": {
         "text": "#444444",
-        "text-dark": "#040404",
-        "text-light": "#717171"
+        "text_dark": "#040404",
+        "text_light": "#717171"
       }
     },
     "darkmode": {
@@ -24,8 +24,8 @@
       },
       "text_color": {
         "text": "#B4AFB6",
-        "text-dark": "#fff",
-        "text-light": "#B4AFB6"
+        "text_dark": "#fff",
+        "text_light": "#B4AFB6"
       }
     }
   },
