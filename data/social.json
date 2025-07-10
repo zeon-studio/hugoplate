@@ -1,0 +1,24 @@
+{
+  "main": [
+    {
+      "name": "Bluesky",
+      "icon": "fab fa-bluesky",
+      "link": "https://bsky.app"
+    },
+    {
+      "name": "github",
+      "icon": "fab fa-github",
+      "link": "https://www.github.com/RunbookSolutions"
+    },
+    {
+      "name": "linkedin",
+      "icon": "fab fa-linkedin",
+      "link": "https://www.linkedin.com/RunbookSolutions"
+    },
+    {
+      "name": "e-mail",
+      "icon": "fas fa-envelope",
+      "link": "mailto:joe.loveless@runbooksolutions.com"
+    }
+  ]
+}

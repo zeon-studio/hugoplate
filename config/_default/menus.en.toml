@@ -1,0 +1,70 @@
+############# English navigation ##############
+
+# main menu
+[[main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[main]]
+name = "About"
+url = "/about"
+weight = 2
+
+[[main]]
+name = "Solutions"
+url = "/solutions"
+weight = 3
+
+[[main]]
+parent = "Solutions"
+name = "Group Policy"
+url = "/solutions-grouppolicy"
+weight = 1
+
+[[main]]
+parent = "Solutions"
+name = "Microsoft Entra"
+url = "/solutions-entra"
+weight = 2
+
+[[main]]
+parent = "Solutions"
+name = "Microsoft Intune"
+url = "/solutions-intune"
+weight = 3
+
+[[main]]
+parent = "Solutions"
+name = "Endpoint Security"
+url = "/solutions-endpointsecurity"
+weight = 4
+
+[[main]]
+parent = "Solutions"
+name = "Monthly Retainer Packages"
+url = "/solutions-monthlyretainer"
+weight = 5
+
+[[main]]
+parent = "Solutions"
+name = "Professional Solutions Packages"
+url = "/solutions-professionalsolutions"
+weight = 6
+
+[[main]]
+name = "Blog"
+url = "/blog"
+weight = 4
+
+
+# footer menu
+[[footer]]
+name = "About"
+url = "/about"
+weight = 1
+
+[[footer]]
+name = "Privacy Policy"
+url = "/privacy-policy"
+weight = 3
