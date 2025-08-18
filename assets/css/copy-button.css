@@ -1,0 +1,61 @@
+/* Code Copy */
+.highlight-wrapper {
+  display: block;
+}
+
+.highlight {
+  position: relative;
+  z-index: 0;
+}
+
+.highlight:hover > .copy-button {
+  visibility: visible;
+}
+
+.copy-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  visibility: invisible;
+  width: 5rem;
+  padding: 0.25rem 0;
+  font-family: monospace;
+  font-size: 0.875rem;
+  cursor: pointer;
+  opacity: 0.9;
+  background-color: #e5e5e5;
+  white-space: nowrap;
+  border-bottom-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  color: #525252;
+}
+
+@media (prefers-color-scheme: dark) {
+  .copy-button {
+    background-color: #3f3f3f;
+    color: #e5e5e5;
+  }
+}
+
+.copy-button:hover,
+.copy-button:focus,
+.copy-button:active,
+.copy-button:active:hover {
+  background-color: #f3e8ff;
+}
+
+@media (prefers-color-scheme: dark) {
+  .copy-button:hover,
+  .copy-button:focus,
+  .copy-button:active,
+  .copy-button:active:hover {
+    background-color: #5b21b6;
+  }
+}
+
+.copy-textarea {
+  position: absolute;
+  opacity: 0.05;
+  z-index: -10;
+}
