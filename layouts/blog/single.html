@@ -41,7 +41,13 @@
             </li>
           </ul>
           <div class="content mb-10">
-            {{ partial "toc.html" (dict "Class" "blog" "Collapsed" false "TableOfContents" .TableOfContents ) }}
+            {{ if site.Params.toc.enable }}
+              {{ partial "toc.html" (dict "Class" "blog" "Collapsed" false "TableOfContents" .TableOfContents ) }}
+              {{ if site.Params.navbar_fixed }}
+                {{ $jsAnchor := resources.Get "js/anchor.js" }}
+                <script src="{{ $jsAnchor.RelPermalink }}" integrity="{{ $jsAnchor.Data.Integrity }}" crossorigin="anonymous"></script>
+              {{ end }}
+            {{ end }}
             {{ .Content }}
           </div>
           <div class="row items-start justify-between">
