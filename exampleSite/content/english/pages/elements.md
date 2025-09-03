@@ -102,6 +102,10 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime 
 This is a simple note.
 {{< /notice >}}
 
+{{< notice "quote" >}}
+This is a simple quote.
+{{< /notice >}}
+
 {{< notice "tip" >}}
 This is a simple tip.
 {{< /notice >}}

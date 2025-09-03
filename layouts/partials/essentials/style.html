@@ -60,7 +60,7 @@
 {{ $stylesLazy = $stylesLazy | resources.Concat "css/style-lazy.css" }}
 
 {{ if hugo.IsProduction }}
-  {{ $styles = $styles | minify | fingerprint }}
+  {{ $styles = $styles | fingerprint }}
   {{ $stylesLazy = $stylesLazy | minify | fingerprint }}
 {{ end }}
 
