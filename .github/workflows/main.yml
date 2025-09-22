@@ -1,4 +1,4 @@
-# Sample workflow for building and deploying a Hugo site to GitHub Pages
+# workflow for building and deploying to GitHub Pages
 name: Deploy Hugo site to Pages
 
 on:
@@ -12,41 +12,44 @@ permissions:
   pages: write
   id-token: write
 
+# Default to bash
+defaults:
+  run:
+    shell: bash
+
 # Environment variables available to all jobs and steps in this workflow
 env:
   HUGO_ENV: production
-  HUGO_VERSION: "0.139.2"
+  HUGO_VERSION: "0.147.3"
   GO_VERSION: "1.23.3"
-  NODE_VERSION: "20.0.0"
-  TINA_CLIENT_ID: ${{ vars.TINA_CLIENT_ID }}
-  TINA_TOKEN: ${{ vars.TINA_TOKEN }}
+  TINA_CLIENT_ID: ${{ secrets.TINA_CLIENT_ID }}
+  TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
+  TINA_SEARCH_TOKEN: ${{ secrets.TINA_SEARCH_TOKEN }}
 
 jobs:
   # Build job
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04-arm
     steps:
-      - uses: actions/checkout@v4
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-
       - name: Install Hugo
         run: |
-          curl -LO "https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.tar.gz"
-          tar -xvf hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.tar.gz
-          sudo mv hugo /usr/local/bin/
-          rm hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.tar.gz
-          hugo version
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-arm64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
 
       - name: Install Go
         run: |
-          curl -LO "https://dl.google.com/go/go${{ env.GO_VERSION }}.linux-amd64.tar.gz"
-          sudo tar -C /usr/local -xzf go${{ env.GO_VERSION }}.linux-amd64.tar.gz
-          echo "export PATH=$PATH:/usr/local/go/bin" >> $GITHUB_ENV
-          rm go${{ env.GO_VERSION }}.linux-amd64.tar.gz
-          go version
+          wget -O ${{ runner.temp }}/go.deb https://dl.google.com/go/go${GO_VERSION}.linux-amd64.tar.gz \
+          && sudo tar -C /usr/local -xzf ${{ runner.temp }}/go.deb
+
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
 
       - name: Setup Project
         run: npm run project-setup
@@ -54,11 +57,11 @@ jobs:
       - name: Install npm dependencies
         run: npm install
 
-      - name: Publish to GitHub Pages
+      - name: Build site
         run: npm run build
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v3.0.1
         with:
           path: ./public
 
@@ -67,9 +70,9 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04-arm
     needs: build
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v4.0.5

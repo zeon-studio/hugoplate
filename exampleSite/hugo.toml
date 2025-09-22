@@ -1,6 +1,6 @@
 ######################## default configuration ####################
 # The base URL of your site (required). This will be prepended to all relative URLs.
-baseURL = "/"
+baseURL = "https://example.org"
 # Title of your website (required).
 title = "Hugoplate"
 # Your theme name
@@ -28,7 +28,7 @@ shortname = 'themefisher-template' # we use disqus to show comments in blog post
 
 ########################## Permalinks ############################
 [permalinks.page]
-"pages" = "/:slugorfilename/"
+"pages" = "/:slugorcontentbasename/"
 
 
 ########################## Pagination ############################
@@ -38,40 +38,23 @@ pagerSize = 10
 path = 'page'
 
 
-############################# Modules ############################
-[module]
-[[module.mounts]]
-source = "assets"
-target = "assets"
-
-[[module.mounts]]
-source = "hugo_stats.json"
-target = "assets/watching/hugo_stats.json"
-
 ############################# Build ##############################
 [build]
-noJSConfigInAssets = false
-useResourceCacheWhen = 'fallback'
 [build.buildStats]
 enable = true
 [[build.cachebusters]]
-source = 'assets/watching/hugo_stats\.json'
-target = 'style\.css'
-[[build.cachebusters]]
-source = '(postcss|tailwind)\.config\.js'
+source = 'assets/notwatching/hugo_stats\.json'
 target = 'css'
-[[build.cachebusters]]
-source = 'assets/.*\.(js|ts|jsx|tsx)'
-target = 'js'
-[[build.cachebusters]]
-source = 'assets/.*\.(css|scss|sass)'
-target = 'css'
-[[build.cachebusters]]
-source = 'data/.*\.(.*)$'
-target = 'css'
-[[build.cachebusters]]
-source = 'assets/.*\.(.*)$'
-target = '$1'
+
+############################# Modules ############################
+[module]
+[[module.mounts]]
+source = 'assets'
+target = 'assets'
+[[module.mounts]]
+disableWatch = true
+source = 'hugo_stats.json'
+target = 'assets/notwatching/hugo_stats.json'
 
 
 ############################# Outputs ############################
@@ -103,6 +86,7 @@ unsafe = true
 
 [markup.highlight]
 style = 'monokai' # see https://xyproto.github.io/splash/docs/all.html
+lineNumbersInTable = false
 
 [markup.tableOfContents]
 startLevel = 2

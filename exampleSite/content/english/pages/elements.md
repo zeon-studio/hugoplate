@@ -102,6 +102,10 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime 
 This is a simple note.
 {{< /notice >}}
 
+{{< notice "quote" >}}
+This is a simple quote.
+{{< /notice >}}
+
 {{< notice "tip" >}}
 This is a simple tip.
 {{< /notice >}}
@@ -190,6 +194,16 @@ alert(s);
 ```python
 s = "Python syntax highlighting"
 print s
+```
+
+```c  { linenos=true }
+#include <stdio.h>
+
+int main(void)
+{
+    printf("hello, world\n");
+    return 0;
+}
 ```
 
 ```mermaid

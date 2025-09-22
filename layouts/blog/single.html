@@ -47,13 +47,13 @@
           <div class="row items-start justify-between">
             {{ $tags:= .Params.tags }}
             {{ if $tags }}
-              <div class="lg:col-5 mb-10 flex items-center lg:mb-0">
+              <div class="lg:col-6 mb-10 flex items-center lg:mb-0">
                 <h5 class="mr-3">{{ T "tags" }} :</h5>
                 <ul>
                   {{ range $i,$p:= $tags }}
                     <li class="inline-block">
                       <a
-                        class="bg-theme-light hover:bg-primary dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark m-1 block rounded px-3 py-1 hover:text-white"
+                        class="bg-light hover:bg-primary dark:bg-darkmode-light dark:hover:bg-darkmode-primary dark:hover:text-text-dark m-1 block rounded px-3 py-1 hover:text-white"
                         href="{{ `tags/` | relLangURL }}{{ . | urlize | lower }}/">
                         {{ . | humanize }}
                       </a>
@@ -62,8 +62,9 @@
                 </ul>
               </div>
             {{ end }}
-            <div class="lg:col-4 flex items-center">
-              {{ partial "social-share" (dict "Context" . "Class" "share-icons" "Title" (T "share") "Whatsapp" false "Telegram" false "Linkedin" false "Pinterest" false "Tumblr" false "Vk" false) }}
+            <div class="lg:col-6 flex items-center lg:justify-end">
+              <h5>{{ T "share" }} :</h5>
+              {{ partial "social-share" (dict "Context" . "Class" "share-icons" "Title" .Title "Whatsapp" false "Telegram" false "Linkedin" false "Pinterest" false "Tumblr" false "Vk" false "Reddit" false) }}
             </div>
           </div>
           <!-- comments -->
@@ -76,7 +77,7 @@
       </div>
 
       <!-- Related posts -->
-      {{ $related := (where site.RegularPages "Section" "in" site.Params.mainSections) | intersect (where site.RegularPages ".Title" "!=" .Title) | union (site.RegularPages.Related . ) }}
+      {{ $related := .Site.RegularPages.Related . | first 10 }}
       {{ $related = $related | shuffle | first 3 }}
       {{ with $related }}
         <div class="section pb-0">

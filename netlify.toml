@@ -3,5 +3,5 @@ publish = "public"
 command = "yarn project-setup; yarn build"
 
 [build.environment]
-HUGO_VERSION = "0.139.2"
-GO_VERSION = "1.23.3"
+HUGO_VERSION = "0.147.3"
+GO_VERSION = "1.24.2"

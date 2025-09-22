@@ -1,0 +1,21 @@
+/* navbar toggler */
+input#nav-toggle:checked + label #show-button {
+  @apply hidden;
+}
+
+input#nav-toggle:checked + label #hide-button {
+  @apply block;
+}
+
+input#nav-toggle:checked ~ #nav-menu {
+  @apply block;
+}
+
+/* swiper pagination */
+.swiper-pagination-bullet {
+  @apply !h-2.5 !w-2.5 !bg-light !opacity-100 dark:!bg-darkmode-light;
+}
+
+.swiper-pagination-bullet-active {
+  @apply !h-4 !w-4 !bg-primary dark:!bg-darkmode-primary;
+}

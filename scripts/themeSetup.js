@@ -5,6 +5,13 @@ const toggleComment = ({ filepath, regex }) => {
   let updatedContent = fs.readFileSync(filepath, "utf8");
   const match = updatedContent.match(regex);
 
+  if (filepath.endsWith("hugo.toml")) {
+    updatedContent = updatedContent.replace(
+      'baseURL = "/"',
+      'baseURL = "https://example.org"',
+    );
+  }
+
   if (match) {
     const matchedContent = match[0];
     const hasComment = matchedContent.startsWith("# ");
@@ -82,8 +89,6 @@ const setupTheme = () => {
     ].forEach(toggleComment);
 
     const includesFiles = [
-      "tailwind.config.js",
-      "postcss.config.js",
       "go.mod",
       "hugo.toml",
       "assets",
@@ -92,6 +97,7 @@ const setupTheme = () => {
       "content",
       "i18n",
       "static",
+      "tailwind-plugin",
     ];
 
     const folder = createNewFolder(rootFolder, "exampleSite");

@@ -1,16 +1,8 @@
 #!/bin/bash
 
 # default versions
-NODE_VERSION='18.16.1';
-GO_VERSION='1.23.3';
-HUGO_VERSION='0.139.2';
-
-# install Node.js
-# echo "Installing Node.js $NODE_VERSION..."
-# curl -sSOL https://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}.tar.gz
-# tar -xzf node-v${NODE_VERSION}.tar.gz
-# export PATH=$PATH:/usr/local/bin
-# rm -rf node-v${NODE_VERSION}.tar.gz
+GO_VERSION='1.24.2';
+HUGO_VERSION='0.146.5';
 
 echo "USING NODE VERSION: $(node -v)"
 
