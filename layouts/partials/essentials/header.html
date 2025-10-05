@@ -37,7 +37,12 @@
         {{ $active := eq $menuURL $pageURL }}
         {{ if .HasChildren }}
           <li class="nav-item nav-dropdown group relative">
-            <span
+            <input
+              type="checkbox"
+              id="submenu-{{ .Name | urlize }}"
+              class="peer hidden lg:hidden" />
+            <label
+              for="submenu-{{ .Name | urlize }}"
               class="nav-link {{ range .Children }}
                 {{ $childURL := .URL | absLangURL }}
                 {{ $active := eq $childURL $pageURL }}
@@ -48,9 +53,9 @@
                 <path
                   d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
               </svg>
-            </span>
+            </label>
             <ul
-              class="nav-dropdown-list lg:group-hover:visible lg:group-hover:opacity-100">
+              class="nav-dropdown-list hidden peer-checked:block lg:invisible lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100">
               {{ range .Children }}
                 {{ $childURL := .URL | absLangURL }}
                 {{ $active := eq $childURL $pageURL }}
