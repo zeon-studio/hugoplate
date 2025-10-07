@@ -2,7 +2,7 @@
 FROM node:23
 
 # Set environment variables for versions
-ARG HUGO_VERSION=0.147.3
+ARG HUGO_VERSION=0.151.0
 ARG GO_VERSION=1.24.0
 
 # Install dependencies

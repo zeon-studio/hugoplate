@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # default versions
-GO_VERSION='1.24.2';
-HUGO_VERSION='0.146.5';
+GO_VERSION='1.25.1';
+HUGO_VERSION='0.151.0';
 
 echo "USING NODE VERSION: $(node -v)"
 
