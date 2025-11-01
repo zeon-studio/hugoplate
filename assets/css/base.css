@@ -1,3 +1,9 @@
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
 html {
   @apply text-base-sm md:text-base;
 }
