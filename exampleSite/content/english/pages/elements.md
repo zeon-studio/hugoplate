@@ -52,15 +52,11 @@ Strike through uses two tildes. ~~Scratch this.~~
 
 [I'm a relative reference to a repository file](../blob/master/LICENSE)
 
-Or leave it empty and use the [link text itself].
-
 URLs and URLs in angle brackets will automatically get turned into links.
 <http://www.example.com> or <http://www.example.com> and sometimes
 example.com (but not on Github, for example).
 
 Some text to show that the reference links can follow later.
-
-[link text itself]: https://www.getjekyllthemes.com
 
 <hr>
 
