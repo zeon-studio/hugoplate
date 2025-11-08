@@ -33,44 +33,123 @@
     </label>
   </div>
 
-  <!-- theme switcher -->
+  <!-- theme switcher with view transitions -->
   <script>
-    var darkMode = localStorage.getItem("theme") === "dark";
-
-    if (localStorage.getItem("theme") === null) {
-      darkMode = {{if eq site.Params.theme_default "dark"}}true{{else}}false{{end}};
-
+    const matchMedia = window.matchMedia("(prefers-color-scheme: dark)");
+    
+    // Get default theme based on Hugo config
+    function getDefaultTheme() {
       {{ if eq site.Params.theme_default "system" }}
-      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        darkMode = true;
-      }
+        return matchMedia.matches ? "dark" : "light";
+      {{ else }}
+        return "{{ site.Params.theme_default }}";
       {{ end }}
     }
 
-    if (darkMode) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
+    // Listen for system theme changes
+    matchMedia.addEventListener("change", () => {
+      toggleTheme(document.querySelectorAll("[data-theme-switcher]"));
+    });
+
+    function toggleTheme(themeSwitch) {
+      const defaultTheme = getDefaultTheme();
+      const currentTheme = localStorage.getItem("theme") || defaultTheme;
+      const isDarkTheme = currentTheme === "dark";
+      
+      themeSwitch.forEach((sw) => {
+        sw.checked = isDarkTheme;
+      });
+      
+      document.documentElement.classList.toggle("dark", isDarkTheme);
     }
 
-    // Show theme switcher after applying theme
-    document.addEventListener("DOMContentLoaded", () => {
-      var themeSwitch = document.querySelectorAll("[data-theme-switcher]");
-      var themeSwitcherContainer = document.querySelector('.theme-switcher');
+    async function animatedToggleTheme(switchElement, newTheme) {
+      // Check if View Transition API is supported
+      if (!document.startViewTransition) {
+        // Fallback to regular toggle if not supported
+        localStorage.setItem("theme", newTheme);
+        toggleTheme(document.querySelectorAll("[data-theme-switcher]"));
+        return;
+      }
 
-      [].forEach.call(themeSwitch, function (ts) {
-        ts.checked = darkMode;
-        ts.addEventListener("click", () => {
-          document.documentElement.classList.toggle("dark");
-          localStorage.setItem(
-            "theme",
-            document.documentElement.classList.contains("dark") ? "dark" : "light"
-          );
+      // Start the view transition
+      const transition = document.startViewTransition(() => {
+        localStorage.setItem("theme", newTheme);
+        toggleTheme(document.querySelectorAll("[data-theme-switcher]"));
+      });
+
+      // Wait for the transition to be ready
+      await transition.ready;
+
+      // Get the position of the theme switcher
+      const rect = switchElement.getBoundingClientRect();
+      const x = rect.left + rect.width / 2;
+      const y = rect.top + rect.height / 2;
+
+      // Calculate the maximum radius needed to cover the entire screen
+      const right = window.innerWidth - x;
+      const bottom = window.innerHeight - y;
+      const maxRadius = Math.hypot(
+        Math.max(x, right),
+        Math.max(y, bottom)
+      );
+
+      // Animate the clip-path
+      document.documentElement.animate(
+        {
+          clipPath: [
+            `circle(0px at ${x}px ${y}px)`,
+            `circle(${maxRadius}px at ${x}px ${y}px)`,
+          ],
+        },
+        {
+          duration: 500,
+          easing: 'ease-in-out',
+          pseudoElement: '::view-transition-new(root)',
+        }
+      );
+    }
+
+    function initializeTheme() {
+      const defaultTheme = getDefaultTheme();
+      const currentTheme = localStorage.getItem("theme") || defaultTheme;
+      const isDarkTheme = currentTheme === "dark";
+
+      // Apply theme immediately
+      if (isDarkTheme) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    }
+
+    function setDarkMode() {
+      const themeSwitch = document.querySelectorAll("[data-theme-switcher]");
+      const themeSwitcherContainer = document.querySelector('.theme-switcher');
+      
+      toggleTheme(themeSwitch);
+      
+      themeSwitch.forEach((sw) => {
+        sw.addEventListener("click", async function (event) {
+          const defaultTheme = getDefaultTheme();
+          const currentTheme = localStorage.getItem("theme") || defaultTheme;
+          const newTheme = currentTheme === "light" ? "dark" : "light";
+          
+          // Use the animated toggle
+          await animatedToggleTheme(sw, newTheme);
         });
       });
 
-      // Now make the switcher visible after the theme is applied
-      themeSwitcherContainer.classList.remove("invisible");
-    });
+      // Make the switcher visible after setup
+      if (themeSwitcherContainer) {
+        themeSwitcherContainer.classList.remove("invisible");
+      }
+    }
+
+    // Initialize theme immediately (before DOMContentLoaded to prevent flash)
+    initializeTheme();
+
+    // Set up theme switcher when DOM is ready
+    document.addEventListener("DOMContentLoaded", setDarkMode);
   </script>
 {{ end }}
