@@ -20,36 +20,15 @@ weight = 3
 weight = 4
 name = "Pages"
 
-# [[main]]
-# parent = "Pages"
-# name = "Blog"
-# url = "/blog"
-
 [[main]]
 parent = "Pages"
 name = "Contact"
 url = "/contact"
 
-# [[main]]
-# parent = "Pages"
-# name = "Authors"
-# url = "/authors"
-
 [[main]]
 parent = "Pages"
 name = "Categories"
 url = "/categories"
-
-[[main]]
-parent = "Pages"
-name = "404 Page"
-url = "/404"
-
-[[main]]
-parent = "Pages"
-name = "How to write"
-url = "/elements"
-
 
 # footer menu
 [[footer]]
@@ -61,8 +40,3 @@ weight = 1
 name = "Blog"
 url = "/blog"
 weight = 2
-
-# [[footer]]
-# name = "Privacy Policy"
-# url = "/privacy-policy"
-# weight = 3
