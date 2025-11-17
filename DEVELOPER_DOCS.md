@@ -201,9 +201,9 @@ Example shortcode usage:
 
 Key templates:
 
-- Base layout: `layouts/_default/baseof.html` (wraps all pages; includes head, header, footer, script/style partials).
-- Single page: `layouts/_default/single.html`.
-- List page: `layouts/_default/list.html`.
+- Base layout: `layouts/baseof.html` (wraps all pages; includes head, header, footer, script/style partials).
+- Single page: `layouts/single.html`.
+- List page: `layouts/list.html`.
 - Homepage: `layouts/index.html` (banner, features iteration, testimonial section).
 - Partials: `layouts/partials/essentials/*` (head/style/script/footer), `layouts/partials/components/`, `layouts/partials/widgets/`.
 

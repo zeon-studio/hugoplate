@@ -30,7 +30,7 @@
 
 <!-- google analytics -->
 {{ if and site.Config.Services.GoogleAnalytics.ID (ne site.Config.Services.GoogleAnalytics.ID "G-MEASUREMENT_ID") }}
-  {{ template "_internal/google_analytics.html" . }}
+  {{ partial "google_analytics.html" . }}
 {{ end }}
 
 
