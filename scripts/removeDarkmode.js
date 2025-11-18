@@ -12,12 +12,12 @@ const configFiles = [
 // asset paths
 const deleteAssetList = [
   "exampleSite/assets/images/logo-darkmode.png",
-  "layouts/partials/components/theme-switcher.html",
+  "layouts/_partials/components/theme-switcher.html",
 ];
 
 const filePaths = [
   {
-    filePath: "layouts/partials/essentials/header.html",
+    filePath: "layouts/_partials/essentials/header.html",
     patterns: [
       '{{\\s*partial\\s*"components\\/theme-switcher"\\s*\\([^)]*\\)\\s*}}',
     ],
