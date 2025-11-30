@@ -1,0 +1,72 @@
+{
+  "file": "exampleSite/content/english/blog/post-1.md",
+  "name": "blog",
+  "fileType": "md",
+  "fmType": "yaml",
+  "template": [
+    {
+      "name": "title",
+      "label": "Title",
+      "type": "string",
+      "value": "",
+      "defaultValue": ""
+    },
+    {
+      "name": "meta_title",
+      "label": "Meta Title",
+      "type": "string",
+      "value": "",
+      "defaultValue": ""
+    },
+    {
+      "name": "description",
+      "label": "Description",
+      "type": "string",
+      "value": "",
+      "defaultValue": ""
+    },
+    {
+      "name": "date",
+      "label": "Date",
+      "type": "Date",
+      "value": "",
+      "defaultValue": "",
+      "alwaysUseCurrentDate": false
+    },
+    {
+      "name": "image",
+      "label": "Image",
+      "type": "media",
+      "value": "",
+      "defaultValue": ""
+    },
+    {
+      "name": "categories",
+      "label": "Categories",
+      "type": "Array",
+      "value": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "author",
+      "label": "Author",
+      "type": "string",
+      "value": "",
+      "defaultValue": ""
+    },
+    {
+      "name": "tags",
+      "label": "Tags",
+      "type": "Array",
+      "value": [],
+      "defaultValue": ""
+    },
+    {
+      "name": "draft",
+      "label": "Draft",
+      "type": "boolean",
+      "value": false,
+      "defaultValue": ""
+    }
+  ]
+}

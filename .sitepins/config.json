@@ -1,0 +1,19 @@
+{
+  "media": {
+    "root": "exampleSite/assets/images",
+    "public": "exampleSite/assets"
+  },
+  "content": {
+    "root": "exampleSite/content/english"
+  },
+  "code": {
+    "root": "layouts"
+  },
+  "themeConfig": [
+    "exampleSite/config/_default",
+    "exampleSite/hugo.toml",
+    "exampleSite/data"
+  ],
+  "arrangement": [],
+  "showCommitModal": true
+}

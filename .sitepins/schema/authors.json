@@ -1,0 +1,66 @@
+{
+  "file": "exampleSite/content/english/authors/sam-wilson.md",
+  "name": "authors",
+  "fileType": "md",
+  "fmType": "yaml",
+  "template": [
+    {
+      "name": "title",
+      "label": "Title",
+      "type": "string",
+      "value": "",
+      "defaultValue": ""
+    },
+    {
+      "name": "email",
+      "label": "Email",
+      "type": "string",
+      "value": "",
+      "defaultValue": ""
+    },
+    {
+      "name": "image",
+      "label": "Image",
+      "type": "media",
+      "value": "",
+      "defaultValue": ""
+    },
+    {
+      "name": "description",
+      "label": "Description",
+      "type": "string",
+      "value": "",
+      "defaultValue": ""
+    },
+    {
+      "name": "social",
+      "label": "Social",
+      "type": "Array",
+      "value": [],
+      "defaultValue": "",
+      "fields": [
+        {
+          "name": "name",
+          "label": "Name",
+          "type": "string",
+          "value": "",
+          "defaultValue": ""
+        },
+        {
+          "name": "icon",
+          "label": "Icon",
+          "type": "string",
+          "value": "",
+          "defaultValue": ""
+        },
+        {
+          "name": "link",
+          "label": "Link",
+          "type": "string",
+          "value": "",
+          "defaultValue": ""
+        }
+      ]
+    }
+  ]
+}
