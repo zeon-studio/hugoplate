@@ -75,6 +75,9 @@ path = "github.com/gethugothemes/hugo-modules/shortcodes/button"
 path = "github.com/gethugothemes/hugo-modules/shortcodes/notice"
 
 [[imports]]
+path = "github.com/gethugothemes/hugo-modules/shortcodes/mermaid"
+
+[[imports]]
 path = "github.com/gethugothemes/hugo-modules/seo-tools/basic-seo"
 
 [[imports]]
@@ -94,6 +97,3 @@ path = "github.com/gethugothemes/hugo-modules/seo-tools/google-tag-manager"
 
 # [[imports]]
 # path = "github.com/gethugothemes/hugo-modules/seo-tools/counter-analytics"
-
-[[imports]]
-path = "github.com/hugomods/mermaid"

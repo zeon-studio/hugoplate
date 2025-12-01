@@ -1,11 +1,12 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/forms";
 @plugin "@tailwindcss/typography";
-@plugin "./tailwind-plugin/tw-theme";
-@plugin "./tailwind-plugin/tw-bs-grid";
+@plugin 'tailwind-bootstrap-grid';
 @source "hugo_stats.json";
-
 @custom-variant dark (&:where(.dark, .dark *));
+
+/* Auto-generated theme from "data/theme.json"*/
+@import "./generated-theme.css";
 
 @import "./safe.css";
 @import "./utilities.css";
