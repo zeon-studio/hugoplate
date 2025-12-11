@@ -7,7 +7,7 @@
     "root": "exampleSite/content"
   },
   "code": {
-    "root": ""
+    "root": "layouts"
   },
   "themeConfig": [
     "exampleSite/config/_default"
