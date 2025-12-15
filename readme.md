@@ -175,6 +175,16 @@ npm run remove-darkmode
 
 > **Note:** This command will work before running the `project-setup` script. If you have already run the `project-setup` command, then you have to run `npm run theme-setup` first, and then you can run this command. Afterward, you can run `npm run project-setup` again.
 
+### 👉 Remove Multilingual
+
+If you want to remove multilingual from your project, you can use the following command to remove multilingual from your project.
+
+```bash
+npm run remove-multilang
+```
+
+> **Note:** This command will work before running the `project-setup` script. If you have already run the `project-setup` command, then you have to run `npm run theme-setup` first, and then you can run this command. Afterward, you can run `npm run project-setup` again.
+
 ---
 
 ## 🚀 Build And Deploy
