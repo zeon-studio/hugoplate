@@ -117,13 +117,15 @@ notAlternative = true
 
 # CSS Plugins
 [[params.plugins.css]]
-link = "plugins/swiper/swiper-bundle.css"
+link = "plugins/swiper/swiper-bundle.css" # https://github.com/gethugothemes/hugo-modules/tree/master/gallery-slider
 lazy = true
 [[params.plugins.css]]
-link = "plugins/glightbox/glightbox.css"
+link = "plugins/glightbox/glightbox.css" 
+# https://github.com/gethugothemes/hugo-modules/tree/master/gallery-slider
 lazy = true
 [[params.plugins.css]]
-link = "plugins/font-awesome/v6/brands.css"
+link = "plugins/font-awesome/v6/brands.css" 
+# https://github.com/gethugothemes/hugo-modules/tree/master/icons/font-awesome
 lazy = true
 [[params.plugins.css]]
 link = "plugins/font-awesome/v6/solid.css"
@@ -134,29 +136,30 @@ lazy = true
 
 # JS Plugins
 [[params.plugins.js]]
-link = "js/search.js"
+link = "js/search.js" # https://github.com/gethugothemes/hugo-modules/tree/master/search
 lazy = false
 [[params.plugins.js]]
-link = "plugins/swiper/swiper-bundle.js"
+link = "plugins/swiper/swiper-bundle.js" 
+# https://github.com/gethugothemes/hugo-modules/tree/master/gallery-slider
 lazy = false
 [[params.plugins.js]]
-link = "plugins/cookie.js"
+link = "plugins/glightbox/glightbox.js" # https://github.com/gethugothemes/hugo-modules/tree/master/gallery-slider
+lazy = true
+[[params.plugins.js]]
+link = "js/gallery-slider.js" # https://github.com/gethugothemes/hugo-modules/tree/master/gallery-slider
+lazy = true
+[[params.plugins.js]]
+link = "plugins/cookie.js" # https://github.com/gethugothemes/hugo-modules/tree/master/components/cookie-consent
 lazy = false
 [[params.plugins.js]]
-link = "plugins/glightbox/glightbox.js"
+link = "js/accordion.js" # https://github.com/gethugothemes/hugo-modules/tree/master/accordion
+lazy = true
+[[params.plugins.js]] 
+link = "js/tab.js" # https://github.com/gethugothemes/hugo-modules/tree/master/accordion
 lazy = true
 [[params.plugins.js]]
-link = "js/gallery-slider.js"
+link = "js/modal.js" # https://github.com/gethugothemes/hugo-modules/tree/master/modal
 lazy = true
 [[params.plugins.js]]
-link = "js/accordion.js"
-lazy = true
-[[params.plugins.js]]
-link = "js/tab.js"
-lazy = true
-[[params.plugins.js]]
-link = "js/modal.js"
-lazy = true
-[[params.plugins.js]]
-link = "plugins/youtube-lite.js"
+link = "plugins/youtube-lite.js" # https://github.com/gethugothemes/hugo-modules/tree/master/videos
 lazy = true
