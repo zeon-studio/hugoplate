@@ -43,16 +43,20 @@
   src="{{ $scriptsLazy.RelPermalink }}"></script>
 
 <!-- progressive web app -->
+{{/* https://github.com/gethugothemes/hugo-modules/tree/master/pwa */}}
 {{ partialCached "pwa.html" . }}
 
 
 <!-- cookie consent -->
+{{/* https://github.com/gethugothemes/hugo-modules/tree/master/components/cookie-consent */}}
 {{ partialCached "cookie-consent.html" . }}
 
 
 <!-- google adsense -->
+{{/* https://github.com/gethugothemes/hugo-modules/tree/master/adsense */}}
 {{ partialCached "adsense-script.html" . }}
 
 
-<!-- cookie consent -->
+<!-- announcement -->
+{{/* https://github.com/gethugothemes/hugo-modules/tree/master/components/announcement */}}
 {{ partialCached "announcement-script.html" . }}
