@@ -48,7 +48,7 @@
             {{ $tags:= .Params.tags }}
             {{ if $tags }}
               <div class="lg:col-6 mb-10 flex items-center lg:mb-0">
-                <h5 class="mr-3">{{ T "tags" }} :</h5>
+                <h5 class="mr-3">{{ T "tags" | default "Tags" }} :</h5>
                 <ul>
                   {{ range $i,$p:= $tags }}
                     <li class="inline-block">
@@ -63,7 +63,7 @@
               </div>
             {{ end }}
             <div class="lg:col-6 flex items-center lg:justify-end">
-              <h5>{{ T "share" }} :</h5>
+              <h5>{{ T "share" | default "Share" }} :</h5>
               {{ partial "social-share" (dict "Context" . "Class" "share-icons" "Title" .Title "Whatsapp" false "Telegram" false "Linkedin" false "Pinterest" false "Tumblr" false "Vk" false "Reddit" false) }}
             </div>
           </div>
@@ -81,7 +81,9 @@
       {{ $related = $related | shuffle | first 3 }}
       {{ with $related }}
         <div class="section pb-0">
-          <h2 class="h3 mb-12">{{ T "related_posts" }}</h2>
+          <h2 class="h3 mb-12">
+            {{ T "related_posts" | default "Related Posts" }}
+          </h2>
           <div class="row">
             {{ range . }}
               <div class="lg:col-4 md:col-6 mb-14">
