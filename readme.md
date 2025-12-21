@@ -26,6 +26,28 @@
   </a>
 </p>
 
+## Table of Contents
+
+- [What's Included](#whats-included)
+  - [Key Features](#key-features)
+  - [15+ Pre-designed Pages](#15-pre-designed-pages)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Project Setup](#project-setup)
+  - [Install Dependencies](#install-dependencies)
+  - [Development Command](#development-command)
+- [Customization](#customization)
+  - [Site Config](#site-config)
+  - [Site Params](#site-params)
+  - [Colors and Fonts](#colors-and-fonts)
+  - [Social Links](#social-links)
+- [Advanced Usage](#advanced-usage)
+- [Build And Deploy](#build-and-deploy)
+- [Guide to Staying Compliant](#guide-to-staying-compliant)
+- [Showcase](#showcase)
+- [Need Customization?](#need-customization)
+
 ## 🎁 What's Included
 
 We have included almost everything you need to start your Hugo project. Let's see what's included in this template:
