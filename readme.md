@@ -28,25 +28,25 @@
 
 ## Table of Contents
 
-- [What's Included](#whats-included)
-  - [Key Features](#key-features)
-  - [15+ Pre-designed Pages](#15-pre-designed-pages)
-- [Tech Stack](#tech-stack)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Project Setup](#project-setup)
-  - [Install Dependencies](#install-dependencies)
-  - [Development Command](#development-command)
-- [Customization](#customization)
-  - [Site Config](#site-config)
-  - [Site Params](#site-params)
-  - [Colors and Fonts](#colors-and-fonts)
-  - [Social Links](#social-links)
-- [Advanced Usage](#advanced-usage)
-- [Build And Deploy](#build-and-deploy)
-- [Guide to Staying Compliant](#guide-to-staying-compliant)
-- [Showcase](#showcase)
-- [Need Customization?](#need-customization)
+- [What's Included](#-whats-included)
+  - [Key Features](#-key-features)
+  - [15+ Pre-designed Pages](#-15-pre-designed-pages)
+- [Tech Stack](#-tech-stack)
+- [Getting Started](#-getting-started)
+  - [Prerequisites](#-prerequisites)
+  - [Project Setup](#-project-setup)
+  - [Install Dependencies](#-install-dependencies)
+  - [Development Command](#-development-command)
+- [Customization](#-customization)
+  - [Site Config](#-site-config)
+  - [Site Params](#-site-params)
+  - [Colors and Fonts](#-colors-and-fonts)
+  - [Social Links](#-social-links)
+- [Advanced Usage](#-advanced-usage)
+- [Build And Deploy](#-build-and-deploy)
+- [Guide to Staying Compliant](#-guide-to-staying-compliant)
+- [Showcase](#-showcase)
+- [Need Customization?](#-need-customization)
 
 ## 🎁 What's Included
 
@@ -105,7 +105,7 @@ We have included almost everything you need to start your Hugo project. Let's se
 
 First you need to [clone](https://github.com/zeon-studio/hugoplate) or [download](https://github.com/zeon-studio/hugoplate/archive/refs/heads/main.zip) the template repository, and then let's get started with the following process:
 
-### ⚙️ Prerequisites
+### ⚙ Prerequisites
 
 To start using this template, you need to have some prerequisites installed on your machine.
 
@@ -254,7 +254,7 @@ Copyright (c) 2023 - Present, Designed & Developed by [Zeon Studio](https://zeon
 
 ---
 
-## 🖼️ Showcase
+## 🌠 Showcase
 
 List of some projects people are building with [**Hugoplate**!](https://github.com/zeon-studio/hugoplate/discussions/207)
 Don't forget to add yours.
