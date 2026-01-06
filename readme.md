@@ -237,6 +237,20 @@ And if you want to host some other hosting platforms. Then you can build your pr
 
 ---
 
+<!-- edit with sitepins -->
+
+## 📝 Edit Content with CMS
+
+This template comes pre-configured with [**Sitepins**](https://sitepins.com), a Git-based Headless CMS designed for seamless content management. You can update your website’s text, images, and configuration without touching a single line of code.
+
+**How to get started:**
+
+Click the Edit with Sitepins button below and follow the on-screen instructions to start editing your content visually.
+
+  <a target="_blank" href="https://app.sitepins.com/new/clone?name=Hugoplate&repository=https://github.com/zeon-studio/hugoplate/">
+    <img src="https://sitepins.com/button.svg" alt="Edit with Sitepins">
+  </a>
+
 ## 🔒 Guide to Staying Compliant
 
 ### 🐞 Reporting Issues
