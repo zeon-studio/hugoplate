@@ -38,8 +38,8 @@ preloader = "" # use jpg, png, svg or gif format.
 # Navigation button
 [navigation_button]
 enable = true
-label = "get a quote"
-link = "contact"
+label = "Github"
+link = "https://github.com/zeon-studio/hugoplate"
 
 # search
 # search module: https://github.com/gethugothemes/hugo-modules/tree/master/search

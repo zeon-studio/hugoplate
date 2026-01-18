@@ -2,8 +2,10 @@
   <section class="section-sm">
     <div class="container">
       <div class="row justify-center">
-        <div class="md:col-10 lg:col-7 text-center">
-          {{ partial "image" (dict "Src" .Params.image "Context" .Page "Alt" .Title "Class" "mx-auto mb-6" "Size" "200x200") }}
+        <div class="md:col-10 lg:col-8">
+          {{ if .Params.image }}
+            {{ partial "image" (dict "Src" .Params.image "Context" .Page "Alt" .Title "Class" "mx-auto rounded mb-6" ) }}
+          {{ end }}
           <h2 class="h3 mb-6">{{ .Title }}</h2>
           <div class="content">{{ .Content }}</div>
         </div>

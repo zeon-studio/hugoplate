@@ -105,7 +105,10 @@
         <li class="mt-4 inline-block lg:hidden">
           <a
             class="btn btn-outline-primary btn-sm"
-            href="{{ site.Params.navigation_button.link | relLangURL }}">
+            href="{{ site.Params.navigation_button.link | relLangURL }}"
+            {{ if (hasPrefix site.Params.navigation_button.link `http`) }}
+              target="_blank" rel="noopener"
+            {{ end }}>
             {{ site.Params.navigation_button.label }}
           </a>
         </li>
@@ -137,7 +140,8 @@
       {{ if site.Params.navigation_button.enable }}
         <a
           href="{{ site.Params.navigation_button.link | relLangURL }}"
-          class="btn btn-outline-primary btn-sm hidden lg:inline-block">
+          class="btn btn-outline-primary btn-sm hidden lg:inline-block"
+          {{ if (hasPrefix site.Params.navigation_button.link `http`) }}target="_blank" rel="noopener"{{ end }}>
           {{ site.Params.navigation_button.label }}
         </a>
       {{ end }}
