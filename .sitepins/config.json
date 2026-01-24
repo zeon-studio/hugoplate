@@ -1,13 +1,14 @@
 {
-  "media": "exampleSite/assets/images",
   "content": "exampleSite/content/english",
-  "code": "layouts",
-  "arrangement": [],
+  "media": "exampleSite/assets/images",
   "public": "exampleSite/static",
+  "code": "layouts",
   "configs": [
     "exampleSite/config/_default",
     "exampleSite/hugo.toml",
-    "exampleSite/data"
+    "exampleSite/data",
+    "exampleSite/i18n"
   ],
-  "custom-commit": true
+  "custom-commit": true,
+  "arrangement": []
 }
