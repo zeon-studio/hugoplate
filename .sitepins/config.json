@@ -1,7 +1,6 @@
 {
-  "content": "exampleSite/content/english",
   "media": "exampleSite/assets/images",
-  "public": "exampleSite/static",
+  "content": "exampleSite/content/english",
   "code": "layouts",
   "configs": [
     "exampleSite/config/_default",
@@ -9,6 +8,6 @@
     "exampleSite/data",
     "exampleSite/i18n"
   ],
-  "custom-commit": true,
-  "arrangement": []
+  "arrangement": [],
+  "custom-commit": false
 }
