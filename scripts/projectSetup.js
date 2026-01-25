@@ -76,6 +76,23 @@ const iterateFilesAndFolders = (rootFolder, { destinationRoot }) => {
   });
 };
 
+const updateSitepinsConfig = (rootFolder, folderName) => {
+  const configPath = path.join(rootFolder, ".sitepins/config.json");
+  if (fs.existsSync(configPath)) {
+    const config = JSON.parse(fs.readFileSync(configPath, "utf8"));
+    config.content = "content";
+    config.media = "assets/images";
+    config.public = "static";
+    config.code = `themes/${folderName}/layouts`;
+    config.configs = ["config/_default", "hugo.toml", "data", "i18n"];
+    fs.writeFileSync(
+      configPath,
+      JSON.stringify(config, null, 2) + "\n",
+      "utf8",
+    );
+  }
+};
+
 const setupProject = () => {
   const rootFolder = path.join(__dirname, "../");
   if (!fs.existsSync(path.join(rootFolder, "themes"))) {
@@ -117,6 +134,8 @@ const setupProject = () => {
     const exampleSite = path.join(rootFolder, "exampleSite");
     iterateFilesAndFolders(exampleSite, { destinationRoot: rootFolder });
     deleteFolder(exampleSite);
+
+    updateSitepinsConfig(rootFolder, folderName);
   } else {
     console.log("Project already setup");
   }
