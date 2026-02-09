@@ -1,8 +1,7 @@
 {
-  "content": "exampleSite/content",
+  "content": "exampleSite/content/english",
   "media": "exampleSite/assets/images",
   "public": "exampleSite/static",
-  "code": "layouts",
   "configs": [
     "exampleSite/config/_default",
     "exampleSite/hugo.toml",
