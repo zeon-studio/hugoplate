@@ -7,5 +7,5 @@ banner:
   button:
     enable: true
     label: "Lets find out some more! 🚀"
-    link: "Blog"
+    link: "blog"
 ---
