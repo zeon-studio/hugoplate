@@ -6,6 +6,6 @@ banner:
   image: "/images/Under-Construction-big.png"
   button:
     enable: true
-    label: "Lets find out some more! 🚀"
+    label: "Lets find out some more 🚀"
     link: "blog"
 ---
