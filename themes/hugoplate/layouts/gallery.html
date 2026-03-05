@@ -1,0 +1,23 @@
+{{ define "main" }}
+<section class="section">
+  <div class="container">
+    <h1 class="text-center mb-8">{{ .Title }}</h1>
+
+    {{ $randomizedItems := shuffle .Params.gallery_items }}
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {{ range $randomizedItems }}
+      <figure class="group border border-border p-2 rounded-lg">
+        <div class="overflow-hidden rounded-md">
+          {{ partial "image" (dict "Src" .image "Alt" .caption "Class" "w-full transition duration-300 group-hover:scale-105") }}
+        </div>
+        
+        <figcaption class="mt-3 text-center text-sm font-secondary italic text-text-light">
+          {{ .caption }}
+        </figcaption>
+      </figure>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
