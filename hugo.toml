@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "/"
+baseURL = "https://www.lightingdir.com/"
 title = "LightingDir.Com"
 author = "Richard Bowles"
 theme = "hugoplate"
