@@ -109,7 +109,7 @@ baseName = "searchindex"
 isPlainText = true
 notAlternative = true
 
-enableEmoji = true
+# enableEmoji = true
 
 ############################# Plugins ##############################
 
