@@ -1,0 +1,46 @@
+{{ $file := .Get "file" }}
+{{/* Remove leading slashes and extensions to help Hugo find the page */}}
+{{ $path := replace $file ".md" "" }}
+{{ $path = trim $path "/" }}
+
+{{ $galleryPage := .Site.GetPage $path }}
+
+{{ if $galleryPage }}
+  {{ with $galleryPage.Params.gallery_items }}
+    {{ $items := shuffle . }}
+    
+    <div class="gallery-container columns-1 sm:columns-2 lg:columns-3 gap-4 p-4">
+      {{ range $items }}
+      <div class="mb-4 break-inside-avoid">
+        <a href="{{ .image | relURL }}" 
+           class="glightbox block overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300" 
+           data-glightbox="title: {{ .caption }};">
+          <img 
+            src="{{ .image | relURL }}" 
+            alt="{{ .caption }}" 
+            class="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+          />
+        </a>
+      </div>
+      {{ end }}
+    </div>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script type="text/javascript">
+      if (typeof GLightbox !== 'undefined') {
+        const lightbox = GLightbox({
+            selector: '.glightbox',
+            touchNavigation: true,
+            loop: true,
+            descPosition: 'bottom'
+        });
+      }
+    </script>
+  {{ else }}
+    <p class="text-red-500 font-bold">Error: No "gallery_items" found in the frontmatter of {{ $path }}</p>
+  {{ end }}
+{{ else }}
+  <p class="text-red-500 font-bold">Error: Could not find the file at "content/{{ $path }}.md". Check your path!</p>
+{{ end }}

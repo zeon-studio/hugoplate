@@ -7,32 +7,25 @@ demosite = "https://zeon.studio/preview?project=hugoplate"
 min_version = "0.151.0"
 
 tags = [
-  "blog",
-  "responsive",
-  "minimal",
-  "personal",
-  "light",
-  "dark",
-  "multilingual",
-  "landing",
-  "contact",
-  "dark mode",
-  "tailwindcss",
+  "lighting",
+  "television",
+  "events",
+  "corporate",
+  "shows",
+  "music",
 ]
 
 features = [
-  "Multi-Authors",
   "Search",
-  "Multilingual",
   "Dark Mode",
   "Taxonomies",
 ]
 
 [author]
-name = "Zeon Studio"
-homepage = "https://zeon.studio"
+name = "LightingDir.com"
+homepage = "https://www.lightingdir.com"
 
 [original]
-author = "Zeon Studio"
-homepage = "https://zeon.studio"
-repo = "https://github.com/zeon-studio/themeplate"
+author = "LightingDir.com"
+homepage = "https://www.lightingdir.com"
+repo = "https://www.lightingdir.com"
