@@ -11,14 +11,14 @@
 {{ if gt $paginator.TotalPages 1 }}
   <nav
     class="flex items-center justify-center space-x-3"
-    aria-label="Pagination">
+    aria-label="{{ T "pagination" | default "Pagination" }}">
     <!-- Previous page. -->
     {{ if $paginator.HasPrev }}
       <a
         class="text-text-dark hover:bg-light dark:text-darkmode-text-dark dark:hover:bg-darkmode-light rounded px-2 py-1.5"
         href="{{ $paginator.Prev.URL }}"
-        aria-label="Pagination Arrow">
-        <span class="sr-only">Previous</span>
+        aria-label="{{ T "pagination-arrow" | default "Pagination Arrow" }}">
+        <span class="sr-only">{{ T "previous" | default "Previous" }}</span>
         <svg
           viewBox="0 0 20 20"
           fill="currentColor"
@@ -33,7 +33,7 @@
       </a>
     {{ else }}
       <span class="text-text-light rounded px-2 py-1.5">
-        <span class="sr-only">Previous</span>
+        <span class="sr-only">{{ T "previous" | default "Previous" }}</span>
         <svg
           viewBox="0 0 20 20"
           fill="currentColor"
@@ -104,7 +104,7 @@
       <a
         class="text-text-dark hover:bg-light dark:text-darkmode-text-dark dark:hover:bg-darkmode-light rounded px-2 py-1.5"
         href="{{ $paginator.Next.URL }}"
-        aria-label="Pagination Arrow">
+        aria-label="{{ T "pagination-arrow" | default "Pagination Arrow" }}">
         <span class="sr-only">Next</span>
         <svg
           viewBox="0 0 20 20"
