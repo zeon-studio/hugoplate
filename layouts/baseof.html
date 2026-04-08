@@ -16,7 +16,8 @@
 
   </head>
 
-  <body>
+  <body
+    class="flex flex-col min-h-screen items-center *:w-full [&>footer]:mt-auto">
     <!-- cache partial only in production -->
     {{ if hugo.IsProduction }}
       {{ partialCached "preloader.html" . }}
