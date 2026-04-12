@@ -6,7 +6,7 @@ description: "Experience the future of web development with Hugoplate and Hugo. 
 button:
   enable: true
   label: "Fork Deploy and Edit Online 🚀"
-  link: "https://app.sitepins.com/new/clone?name=Hugoplate&repository=https://github.com/zeon-studio/hugoplate/"
+  link: "https://app.sitepins.com/new/clone?name=Hugoplate&repository=https://github.com/zeon-studio/hugoplate?aff=hugoplate"
 
 # don't create a separate page
 build:
