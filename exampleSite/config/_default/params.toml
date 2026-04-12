@@ -41,6 +41,19 @@ enable = true
 label = "Github"
 link = "https://github.com/zeon-studio/hugoplate"
 
+[llms]
+# Set to false to disable /llms.txt generation
+enable = true
+
+# Set to false to disable /llms-full.txt generation
+enable_full = true
+
+# Limit to specific paths (e.g. "/about/", "/blog/*", "/blog/**"). Empty = all pages.
+include = []
+
+# Exclude specific paths (same wildcard formats as include). Include takes priority on conflicts.
+exclude = []
+
 # search
 # search module: https://github.com/gethugothemes/hugo-modules/tree/master/search
 [search]

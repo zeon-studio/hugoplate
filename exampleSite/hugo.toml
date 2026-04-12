@@ -59,7 +59,19 @@ target = 'assets/notwatching/hugo_stats.json'
 
 ############################# Outputs ############################
 [outputs]
-home = ["HTML", "RSS", "WebAppManifest", "SearchIndex"]
+home = ["HTML", "RSS", "WebAppManifest", "SearchIndex", "llms", "llmsfull"]
+
+[outputFormats.llms]
+baseName    = "llms"
+mediaType   = "text/plain"
+isPlainText = true
+notAlternative = true
+
+[outputFormats.llmsfull]
+baseName    = "llms-full"
+mediaType   = "text/plain"
+isPlainText = true
+notAlternative = true
 
 ############################# Imaging ############################
 [imaging]

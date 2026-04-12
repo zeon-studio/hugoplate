@@ -7,6 +7,9 @@ max = "0.160.0"
 path = "github.com/zeon-studio/hugoplate"
 
 [[imports]]
+path = "github.com/gethugothemes/hugo-modules/llms-txt"
+
+[[imports]]
 path = "github.com/gethugothemes/hugo-modules/search"
 
 [[imports]]
