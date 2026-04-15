@@ -24,7 +24,7 @@ Here is an example of headings. You can use this heading by the following markdo
 
 ###### Heading 6
 
-<hr>
+***
 
 ### Emphasis
 
@@ -36,13 +36,13 @@ The combined emphasis with **asterisks and _underscores_**.
 
 Strike through uses two tildes. ~~Scratch this.~~
 
-<hr>
+***
 
 ### Button
 
 {{< button label="Button" link="/" style="solid" >}}
 
-<hr>
+***
 
 ### Link
 
@@ -58,13 +58,13 @@ example.com (but not on Github, for example).
 
 Some text to show that the reference links can follow later.
 
-<hr>
+***
 
 ### Paragraph
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus, facilis placeat pariatur! Voluptatem, sed harum pariatur adipisci voluptates voluptatum cumque, porro sint minima similique magni perferendis fuga! Optio vel ipsum excepturi tempore reiciendis id quidem? Vel in, doloribus debitis nesciunt fugit sequi magnam accusantium modi neque quis, vitae velit, pariatur harum autem a! Velit impedit atque maiores animi possimus asperiores natus repellendus excepturi sint architecto eligendi non, omnis nihil. Facilis, doloremque illum. Fugit optio laborum minus debitis natus illo perspiciatis corporis voluptatum rerum laboriosam.
 
-<hr>
+***
 
 ### Ordered List
 
@@ -74,7 +74,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime 
 4. List item
 5. List item
 
-<hr>
+***
 
 ### Unordered List
 
@@ -84,7 +84,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime 
 - List item
 - List item
 
-<hr>
+***
 
 ### Notice
 
@@ -108,7 +108,7 @@ This is a simple info.
 This is a simple warning.
 {{< /notice >}}
 
-<hr>
+***
 
 ### Tab
 
@@ -142,7 +142,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 {{< /tab >}}
 {{< /tabs >}}
 
-<hr>
+***
 
 ### Accordions
 
@@ -170,7 +170,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 {{< /accordion >}}
 
-<hr>
+***
 
 ### Code and Syntax Highlighting
 
@@ -205,13 +205,13 @@ flowchart TD
     B -- No ----> E[End]
 ```
 
-<hr>
+***
 
 ### Blockquote
 
 > Did you come here for something in particular or just general Riker-bashing? And blowing into maximum warp speed, you appeared for an instant to be in two places at once.
 
-<hr>
+***
 
 ### Tables
 
@@ -221,31 +221,31 @@ flowchart TD
 | col 2 is      |   centered    |   $12 |
 | zebra stripes |   are neat    |    $1 |
 
-<hr>
+***
 
 ### Image
 
 {{< image src="images/image-placeholder.png" caption="" alt="alter-text" height="" width="" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" >}}
 
-<hr>
+***
 
 ### Gallery
 
 {{< gallery dir="images/gallery" class="" height="400" width="400" webp="true" command="Fit" option="" zoomable="true" >}}
 
-<hr>
+***
 
 ### Slider
 
 {{< slider dir="images/gallery" class="max-w-[600px] ml-0" height="400" width="400" webp="true" command="Fit" option="" zoomable="true" >}}
 
-<hr>
+***
 
 ### Youtube video
 
 {{< youtube ResipmZmpDU >}}
 
-<hr>
+***
 
 ### Custom video
 
