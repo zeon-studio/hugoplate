@@ -12,18 +12,13 @@ url = "/about"
 weight = 2
 
 [[main]]
-name = "Elements"
+name = "Pages"
 url = "/elements"
-weight = 3
+weight = 4
 
 [[main]]
 weight = 4
-name = "Pages"
-
-[[main]]
-parent = "Pages"
 name = "Blog"
-url = "/blog"
 
 [[main]]
 parent = "Pages"
@@ -39,6 +34,11 @@ url = "/authors"
 parent = "Pages"
 name = "Categories"
 url = "/categories"
+
+[[main]]
+parent = "Pages"
+name = "404 Page"
+url = "/404"
 
 [[main]]
 parent = "Pages"
