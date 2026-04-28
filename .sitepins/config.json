@@ -1,17 +1,10 @@
 {
-  "media": {
-    "root": "exampleSite/assets/images",
-    "public": "exampleSite/assets/"
-  },
-  "content": {
-    "root": "exampleSite/content"
-  },
-  "code": {
-    "root": "layouts"
-  },
-  "themeConfig": [
+  "media": "exampleSite/assets/images",
+  "content": "exampleSite/content",
+  "arrangement": [],
+  "public": "exampleSite/static",
+  "configs": [
     "exampleSite/config/_default"
   ],
-  "arrangement": [],
-  "showCommitModal": false
+  "customCommit": false
 }
