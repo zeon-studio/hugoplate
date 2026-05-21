@@ -1,6 +1,6 @@
 [build]
 publish = "public"
-command = "yarn project-setup; yarn build"
+command = "pnpm project-setup; pnpm build"
 
 [build.environment]
 HUGO_VERSION = "0.158.0"

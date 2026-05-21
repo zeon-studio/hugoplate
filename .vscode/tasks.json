@@ -5,7 +5,7 @@
     {
       "label": "Development",
       "type": "shell",
-      "command": "yarn dev:example",
+      "command": "pnpm dev:example",
       "isBackground": true,
       "group": {
         "kind": "test",
@@ -15,7 +15,7 @@
     {
       "label": "Build",
       "type": "shell",
-      "command": "yarn build:example",
+      "command": "pnpm build:example",
       "group": {
         "kind": "build",
         "isDefault": true

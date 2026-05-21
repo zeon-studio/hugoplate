@@ -11,6 +11,7 @@ This skill provides the best practices and architectural patterns for working wi
 ## 1. Core Architecture
 
 Hugoplate is a modern Hugo boilerplate built with:
+
 - **Hugo (Extended)**: Static site generator.
 - **Tailwind CSS v4**: Utility-first CSS using Hugo Pipes and the `@theme` directive.
 - **Hugo Modules**: Theme and feature functionality are imported as modules.
@@ -21,23 +22,27 @@ Hugoplate is a modern Hugo boilerplate built with:
 All design tokens (colors, fonts, sizes) are managed in `exampleSite/data/theme.json`.
 
 ### 2.1 Color Tokens
+
 - **Default (Light)**: `colors.default.theme_color` and `colors.default.text_color`.
 - **Dark Mode**: `colors.darkmode.theme_color` and `colors.darkmode.text_color`.
 - **Logic**: The `themeGenerator.js` script maps these to CSS variables (e.g., `--color-primary`, `--color-darkmode-primary`).
 
 ### 2.2 Typography
+
 - **Google Fonts**: Defined in `fonts.font_family`. Use the syntax `Family:wght@weights` (e.g., `Inter:wght@400;700`).
 - **Scale**: `fonts.font_size.scale` controls the heading hierarchy (H1-H6).
 - **Base**: `fonts.font_size.base` sets the root font size in pixels.
 
 ### 2.3 Workflow: Design Changes
+
 1. **Modify `theme.json`**: Update colors or fonts.
-2. **Run Dev Server**: `npm run dev` or `yarn dev`. This automatically runs `themeGenerator.js` and `hugo server`.
+2. **Run Dev Server**: `npm run dev` or `pnpm dev`. This automatically runs `themeGenerator.js` and `hugo server`.
 3. **Verify**: Check `assets/css/generated-theme.css` to see the updated variables.
 
 ## 3. Configuration System
 
 Configuration is split across several files in `exampleSite/config/_default/`:
+
 - `hugo.toml`: Core site settings, build options, and asset fingerprinting.
 - `params.toml`: Theme-specific toggles (dark mode, search, navigation, etc.).
 - `menus.en.toml`: Menu structures for English.
@@ -45,6 +50,7 @@ Configuration is split across several files in `exampleSite/config/_default/`:
 - `module.toml`: Import declarations for Hugo Modules.
 
 ### 3.1 Feature Toggles (`params.toml`)
+
 Most UI components (e.g., `preloader`, `announcement`, `cookies`) have an `enable` flag. Toggle them here without touching the code.
 
 ## 4. Content Development
@@ -52,9 +58,11 @@ Most UI components (e.g., `preloader`, `announcement`, `cookies`) have an `enabl
 Content is located in `exampleSite/content/english/`.
 
 ### 4.1 Section Content
+
 Files in `content/english/sections/` are typically used for homepage sections. They often use `build.render = "never"` because they are pulled into `index.html` via `site.GetPage`.
 
 ### 4.2 Front Matter Standards
+
 Always include `title`, `description` (for SEO), and `image` (feature image). Use `draft: false` to publish.
 
 ## 5. Layouts & Templates
