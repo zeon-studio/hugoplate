@@ -276,6 +276,8 @@
       "pb-6",
       "peer",
       "peer-checked:block",
+      "peer-checked:opacity-100",
+      "peer-checked:visible",
       "pl-2",
       "pl-6",
       "pr-5",
