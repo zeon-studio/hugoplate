@@ -90,6 +90,9 @@ path = "github.com/gethugothemes/hugo-modules/seo-tools/site-verifications"
 [[imports]]
 path = "github.com/gethugothemes/hugo-modules/seo-tools/google-tag-manager"
 
+[[imports]]
+path = "github.com/gethugothemes/hugo-modules/components/open-remark"
+
 # [[imports]]
 # path = "github.com/gethugothemes/hugo-modules/seo-tools/baidu-analytics"
 

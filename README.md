@@ -65,7 +65,7 @@ We have included almost everything you need to start your Hugo project. Let's se
 - 📞 Support contact form
 - 📱 Fully responsive
 - 📝 Write and update content in Markdown
-- 💬 Disqus Comment
+- 💬 Open-Remark Comment
 - 🔳 Syntax Highlighting
 
 ### 📄 15+ Pre-designed Pages

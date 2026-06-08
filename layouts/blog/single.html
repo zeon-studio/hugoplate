@@ -67,12 +67,13 @@
               {{ partial "social-share" (dict "Context" . "Class" "share-icons" "Title" .Title "Whatsapp" false "Telegram" false "Linkedin" false "Pinterest" false "Tumblr" false "Vk" false "Reddit" false) }}
             </div>
           </div>
-          <!-- comments -->
-          {{ if site.Config.Services.Disqus.Shortname }}
+          <!-- open-remark comment -->
+          {{ if site.Params.open_remark.enable }}
             <div class="mt-20">
-              {{ partial "disqus.html" . }}
+              {{ partial "open-remark.html" . }}
             </div>
           {{ end }}
+           
         </article>
       </div>
 
