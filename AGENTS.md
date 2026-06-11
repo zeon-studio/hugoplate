@@ -1,0 +1,90 @@
+<!-- BEGIN:hugo-agent-rules -->
+
+# Hugo: verify against docs, not memory
+
+Treat <https://gohugo.io/documentation/> as truth. Two project specifics your training data gets wrong:
+
+1. **New template system** (Hugo 0.146+): partials in `layouts/_partials/`, homepage is `home.html`, `baseof.html` is top-level. Never "fix" to `partials/`, `index.html`, or `_default/baseof.html`.
+2. **Tailwind CSS v4**, CSS-first via `@theme`/`data/theme.json` -> `generated-theme.css`, imported in `assets/css/main.css`. No `tailwind.config.js`.
+
+<!-- END:hugo-agent-rules -->
+
+<!-- BEGIN:setup-mode-detection-rules -->
+
+# Detect setup mode, then convert to project-setup FIRST before changing or reading anything, after project-setup check the edge case rules
+
+This theme ships in two structures; the same logical file lives at a different path in each. Detect before touching anything:
+
+- **`exampleSite/hugo.toml` exists → theme-setup** — theme at root (`layouts/`, `assets/`, `theme.toml`), demo site in `exampleSite/`.
+- **Root `hugo.toml` + `themes/` → project-setup** — site at root (`content/`, `config/`, `data/`, `hugo.toml`), theme vendored in `themes/<theme>/` (the single folder under `themes/` — run `ls themes/` to confirm its name; in this repo it's `hugoplate`).
+
+### Edge case
+
+If all of the following are true:
+
+- `exampleSite/` exists
+- `themes/<theme>/` exists
+- `exampleSite/hugo.toml` is the active Hugo config
+- `themes/<theme>/layouts/home.html` does **not** exist
+
+then treat the repository as **theme-setup**, not **project-setup**. So Before running `pnpm project-setup` or `pnpm dev` ask user if they want to delete the `themes/` directory and run `pnpm project-setup` to convert to project-setup, deleting `themes/` is required otherwise when running `pnpm project-setup`, it will detect current mode as `project-setup` which is false.
+
+**Always work in project-setup.** If the repo is currently in theme-setup, run `pnpm project-setup` BEFORE editing any content, config, layout, or style file — this is non-negotiable. The script is idempotent (it logs "Project already setup" and no-ops if already converted), so it's always safe to run. Never move files between modes by hand — only `pnpm project-setup` / `pnpm theme-setup` (reverse).
+
+Full detail and path-resolution table: `template-guidance` skill → `references/detect-mode.md`.
+
+<!-- END:setup-mode-detection-rules -->
+
+<!-- BEGIN:preflight-checks-rules -->
+
+# Pre-flight checks before running, starting or reading the project
+
+Before `pnpm install` / `pnpm dev` / `pnpm build` / `pnpm preview` (or any other request to run/build/preview the project), verify all of:
+
+1. **Setup mode** — project-setup (see above); run `pnpm project-setup` first if not.
+2. **Node** — `node -v` succeeds.
+3. **Hugo Extended ≥ 0.158.0** — run `hugo version`; output must contain `extended` and a version `>= 0.158.0`
+4. **pnpm** — `pnpm -v` succeeds.
+
+If any check fails — tool missing, Hugo not the extended build, or Hugo older than 0.158.0 — **stop and ask the user to install/upgrade it**; don't try to work around it. Recommend [mise](https://mise.jdx.dev/):
+
+- Install mise if missing (see mise's install docs for the OS).
+- `mise use hugo-extended@0.161.1` — installs and pins the correct extended Hugo build for this project.
+- Node/pnpm: `mise use node@lts` and `mise use pnpm@latest` (or the user's existing version manager).
+
+<!-- END:preflight-checks-rules -->
+
+<!-- BEGIN:running-the-project-rules -->
+
+# Running the project
+
+**Even for a plain "run/build/preview the project" request**: run the pre-flight checks above first. If the repo is in theme-setup, run `pnpm project-setup` first, then use the project-setup commands below — don't reach for the `:example` scripts as a shortcut to avoid converting.
+
+Package manager is **pnpm**. Always use these scripts — never run bare `hugo`/`hugo server`, since that skips `themeGenerator.js` and leaves `generated-theme.css` (Tailwind tokens) stale.
+
+| Command        | Use                                                               |
+| -------------- | ----------------------------------------------------------------- |
+| `pnpm install` | install dependencies (first run / after pulling)                  |
+| `pnpm dev`     | dev server with live theme regen, default `http://localhost:1313` |
+| `pnpm build`   | production build to `public/`                                     |
+| `pnpm preview` | production-flavored local server                                  |
+
+The `dev:example` / `build:example` / `preview:example` variants exist only for theme-setup (running against `exampleSite/`) — once converted via `pnpm project-setup`, they no longer apply.
+
+## Restart the dev server after changes
+
+After changing content, code, or layouts etc., restart it:
+
+```sh
+npx kill-port 1313 -y && pnpm dev
+```
+
+<!-- END:running-the-project-rules -->
+
+<!-- BEGIN:template-guidance-rules -->
+
+# Read template guidance before changing or reading structure
+
+Before modifying or reading structure, styles, pages, config, content, or scripts, trigger the `template-guidance` skill for the relevant reference so you follow project conventions (modes, theme tokens, Hugo Modules, the theme generator, adding languages).
+
+<!-- END:template-guidance-rules -->
