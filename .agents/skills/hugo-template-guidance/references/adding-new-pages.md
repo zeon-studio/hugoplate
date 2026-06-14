@@ -15,7 +15,7 @@ There are three distinct things you'll be asked for — pick the matching recipe
 Hugo's union filesystem makes root take precedence over the theme for the **same relative path**. This is the standard Hugo way to customize a theme without forking it, and it's how this theme stays upgradeable:
 
 - **New templates, template overrides, new sections, new partials/components** → create them under root `layouts/` at the same relative path the theme would use (e.g. `layouts/about.html`, `layouts/_partials/components/my-card.html`).
-- **Never create or edit files directly under `themes/<theme>/layouts/`** — those are vendored and reset/overwritten on theme updates (`pnpm update:theme` etc.).
+- **Never create or edit files directly under `themes/<theme>/layouts/`** — those are vendored and reset/overwritten on theme updates (`<pm> update-theme` etc.).
 - To override an existing theme template/partial, copy it from `themes/<theme>/layouts/...` to the identical path under root `layouts/...`, then edit the copy.
 - To add something brand new (a new partial, a new template, a new shortcode), just create it under root `layouts/...` directly — no theme copy needed.
 

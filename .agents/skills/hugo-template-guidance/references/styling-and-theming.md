@@ -4,7 +4,7 @@
 
 ## Tokens (`data/theme.json`)
 
-Colors, fonts, type scale live here. **Read it before editing** (schema may be customized). `scripts/themeGenerator.js` reads it → writes `generated-theme.css` (a Tailwind `@theme` block); runs automatically in `pnpm dev`/`build`.
+Colors, fonts, type scale live here. **Read it before editing** (schema may be customized). `scripts/themeGenerator.js` reads it → writes `generated-theme.css` (a Tailwind `@theme` block); runs automatically in `<pm> dev`/`build`.
 
 ```json
 "colors": {
@@ -20,7 +20,7 @@ Colors, fonts, type scale live here. **Read it before editing** (schema may be c
 - Colors → utilities: `default` → `--color-primary` → `text-primary`, `bg-body`; `darkmode` → `--color-darkmode-*` → use via `dark:` (`dark:bg-darkmode-body`).
 - Fonts: Google syntax `Family:wght@weights`, `_type` = fallback. `base`→`--text-base` (px); `scale`→ heading sizes `--text-h1…h6`. Stray spaces/bad weights break the font request.
 
-**Change flow:** edit `data/theme.json` → `pnpm dev` (generator watches) → verify in browser.
+**Change flow:** edit `data/theme.json` → `<pm> dev` (generator watches) → verify in browser.
 
 ## Tailwind v4 (`themes/<theme>/assets/css/main.css`)
 
@@ -55,7 +55,7 @@ CSS files (in `themes/<theme>/assets/css/`): `generated-theme.css` (**DO NOT EDI
 
 ## Dark Mode
 
-`.dark` on `<html>` activates `darkmode` tokens via the `dark:` variant. Toggle/default in `params.toml` (`theme_switcher`, `theme_default`). Remove entirely with `pnpm remove-darkmode`.
+`.dark` on `<html>` activates `darkmode` tokens via the `dark:` variant. Toggle/default in `params.toml` (`theme_switcher`, `theme_default`). Remove entirely with `<pm> remove-darkmode`.
 
 ## DO NOT
 

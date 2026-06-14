@@ -10,7 +10,7 @@ Multilingual via Hugo's standard system. Mirrors an existing language (`en`) —
 | Menu             | `config/_default/menus.<xx>.toml` |
 | i18n strings     | `i18n/<xx>.yaml`                  |
 | Content          | `content/<langdir>/`              |
-| Build/verify     | `pnpm dev` / `pnpm build`         |
+| Build/verify     | `<pm> dev` / `<pm> build`         |
 
 ## Adding New Language Checklist
 
@@ -32,9 +32,9 @@ Multilingual via Hugo's standard system. Mirrors an existing language (`en`) —
 
 ## Verify
 
-Build with `pnpm build` — **never bare `hugo`**
+Build with `<pm> build` — **never bare `hugo`**
 
 ## DO NOT
 
 - Don't translate paths/filenames in `content/<langdir>/` — Hugo matches translations by identical relative path.
-- Don't run `pnpm remove-multilang` to "reset" — it's destructive and permanent.
+- Don't run `<pm> remove-multilang` to "reset" — it's destructive and permanent.

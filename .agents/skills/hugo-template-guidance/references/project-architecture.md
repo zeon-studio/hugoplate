@@ -2,7 +2,7 @@
 
 This theme = **Hugo Extended (0.158+)** + **Tailwind v4** + **Hugo Modules**.
 
-This reference assumes the **project-setup** layout: site files at root, theme vendored in `themes/<theme>/`. If `exampleSite/hugo.toml` exists instead, run `pnpm project-setup` first (see `references/detect-mode.md`).
+This reference assumes the **project-setup** layout: site files at root, theme vendored in `themes/<theme>/`. If `exampleSite/hugo.toml` exists instead, run `<pm> project-setup` first (see `references/detect-mode.md`).
 
 ## Folder Structure
 
@@ -47,7 +47,7 @@ Much functionality (search, SEO, images, PWA, shortcodes, announcement…) comes
 
 ## Build Pipeline
 
-`pnpm dev` / `pnpm build` →
+`<pm> dev` / `<pm> build` →
 
 1. `themeGenerator.js` reads `data/theme.json` → writes `themes/<theme>/assets/css/generated-theme.css` (`--watch` in dev).
 2. Hugo build; `[build.buildStats]` writes `hugo_stats.json` which Tailwind scans (`@source "hugo_stats.json"`) for class detection.
