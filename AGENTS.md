@@ -58,7 +58,7 @@ Before `<pm> install` / `<pm> dev` / `<pm> build` / `<pm> preview` (or any other
 3. **Hugo Extended, version == `HUGO_VERSION` in `netlify.toml`** — read `[build.environment].HUGO_VERSION` from `netlify.toml`; run `hugo version` and confirm output contains `extended` AND the version matches **exactly** (not just `>=`).
 4. **Package manager (`<pm>`)** — see package-manager detection above; confirm `<pm> -v` succeeds.
 
-If any check fails — tool missing, Hugo not the extended build, or Hugo version doesn't match `HUGO_VERSION` from `netlify.toml` — **stop and ask the user to install/upgrade it**; don't try to work around it. Recommend [mise](https://mise.jdx.dev/):
+   If any check fails — tool missing, Hugo not the extended build, or Hugo version doesn't match `HUGO_VERSION` from `netlify.toml` — **stop and ask the user to install/upgrade it**; don't try to work around it. Recommend [mise](https://mise.jdx.dev/) also ask user to run `eval "$(mise activate zsh)"` to activate the correct environment after installing hugo version with mise.
 
 - Install mise if missing (see mise's install docs for the OS).
 - Version mismatch (wrong version or not extended) → `mise use hugo-extended@<HUGO_VERSION>` using the value from `netlify.toml` (currently `mise use hugo-extended@0.160.0`) — installs and pins the exact build this project requires.
