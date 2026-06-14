@@ -1,11 +1,11 @@
 ---
 name: hugo-template-guidance
-description: Use whenever you need to understand how this theme works — adding pages, managing content, configuring the site, using partials/components/modules, project architecture, scripts, or Tailwind v4 styling/theming. Use for ANY question about the structure, usage, or customization of the template or theme.
+description: Use whenever you need to understand how this theme works — adding pages, managing content, configuring the site, using partials/components/modules, project architecture, scripts, or styling/theming (Tailwind v4, Bootstrap 5, or a hybrid — verify which). Use for ANY question about the structure, usage, or customization of the template or theme.
 ---
 
 # Template Guidance
 
-Handbook for this theme (Hugo Extended + Tailwind v4 + Hugo Modules), assuming the standard **project-setup** layout (site at root, theme vendored in `themes/<theme>/` — the single folder under `themes/`; see `references/detect-mode.md` to find its name). Progressive disclosure: **read the matching `references/` file before acting.**
+Handbook for this theme (Hugo Extended + Hugo Modules; styling is Tailwind v4, Bootstrap 5, or a hybrid — verify before assuming), assuming the standard **project-setup** layout (site at root, theme vendored in `themes/<theme>/` — the single folder under `themes/`; see `references/detect-mode.md` to find its name). Progressive disclosure: **read the matching `references/` file before acting.**
 
 > If `exampleSite/hugo.toml` exists, the repo is still in theme-setup — run `<pm> project-setup` first (see `references/detect-mode.md`) before using anything below.
 >
@@ -25,7 +25,7 @@ Handbook for this theme (Hugo Extended + Tailwind v4 + Hugo Modules), assuming t
 | Add/configure a new language, multilingual, i18n, translate    | `references/i18n-guidance.md`        |
 | Site config, menus, social, feature toggles, SEO               | `references/page-configuration.md`   |
 | Package manager detection, scripts, generators, module updates | `references/script-usage.md`         |
-| Tailwind v4, dark mode, design tokens (`data/theme.json`)      | `references/styling-and-theming.md`  |
+| Styling/theming (Tailwind v4, Bootstrap 5, or hybrid — verify first), dark mode, design tokens | `references/styling-and-theming.md`  |
 
 ## Steps
 

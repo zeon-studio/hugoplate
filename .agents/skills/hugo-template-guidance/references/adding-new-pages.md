@@ -23,25 +23,24 @@ Hugo's union filesystem makes root take precedence over the theme for the **same
 
 Use when the page needs its own layout (hero image, custom sections) beyond plain content — not just a title + body.
 
-1. **Content** — `content/english/<section>/_index.md` (or `pages/my-page.md`).
+1. **Content** — `content/english/<page-name>/_index.md`. Page info goes in the frontmatter. follow related pages as example
 
 2. **Template** — `layouts/<layout-name>.html` (root, mirroring the theme path — see above). Define `"main"` and read `.Title`, `.Params.*`, `.Content`.
    - The frontmatter `layout: "<name>"` must match the template filename (`layouts/<name>.html`).
-   - **Analyze an existing template first** (`about.html`, `contact.html`)
-   - `baseof.html` supplies head/header/footer/SEO around `"main"` — never omit `{{ define "main" }}`.
+   - **Analyze an existing template first** (`about.html`, `contact.html`) for the structure, partials used, and how it reads frontmatter — copy it if needed.
 
 ## Recipe 2 — Generic markdown page (like `elements`, `privacy-policy`)
 
 Use when the page is just a title + long-form content — no custom layout needed.
 
-1. **Content only** — `content/english/pages/my-page.md`, frontmatter has **no `layout` field**:
+1. **Content only** — `content/english/pages/<page-name>.md`, frontmatter has **no `layout` field**:
 2. **No template needed** — falls through to the existing `single.html`.
 
 ## Recipe 3 — New section (like `call-to-action`)
 
 Use when adding a new block to the homepage or any other page that's toggled on/off and editable via content frontmatter.
 
-1. **Content block** — `content/english/sections/my-section.md`. Must include `enable: true/false` and `build.render: "never"` (so it doesn't become a standalone page); add whatever params the partial needs:
+1. **Content block** — `content/english/sections/<section-name>.md`. Must include `enable: true/false` and `build.render: "never"` (so it doesn't become a standalone page); add whatever params the partial needs:
 
    ```yaml
    ---
@@ -90,7 +89,7 @@ Use when adding a new block to the homepage or any other page that's toggled on/
 
 ## Navigation
 
-Surface a page (Recipes 1 & 2) via `config/_default/menus.en.toml` (don't hardcode links):
+Surface a page (Recipes 1 & 2) via `config/_default/menus.en.toml` (don't hardcode links), if not exists find it on other places.
 
 ```toml
 [[main]]

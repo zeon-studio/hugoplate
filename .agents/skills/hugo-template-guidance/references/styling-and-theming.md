@@ -1,5 +1,13 @@
 # Styling and Theming
 
+> [!IMPORTANT]
+> **Styling stack verification required:** This skill is reused across multiple theme builds. **Tailwind v4** below is the common pattern but **not universal** — some builds are **Bootstrap 5 (SCSS)**, or a hybrid of both. Check before describing or changing any styling:
+>
+> - `themes/<theme>/assets/css/main.css` importing `tailwindcss` → **Tailwind v4** — the rest of this doc applies.
+> - `themes/<theme>/assets/scss/` with a `style.scss`/`_bootstrap.scss` importing Bootstrap's SCSS, and/or `gohugoio/hugo-mod-bootstrap-scss` listed in `config/_default/module.toml` → **Bootstrap 5 (SCSS)** drives the theme. Variables live in SCSS (often fed by `site.Params.variables`), not `data/theme.json`.
+> - `data-bs-*` attributes, or `navbar`/`dropdown`/`collapse`/`modal`/`accordion` classes in layouts, plus `assets/js/bootstrap.js` importing Bootstrap JS components → those widgets are **Bootstrap-driven**. Don't treat them as dead Tailwind-migration leftovers, and don't rebuild them with Hugo Modules or custom JS.
+> - `@plugin 'tailwind-bootstrap-grid'` in `main.css` → Tailwind v4 **with** Bootstrap-style grid classes (`row`, `col-*`, `container`) as real utilities — both systems are active, neither is a mistake.
+
 **Tailwind v4** (CSS-first) + a **design-token engine** driven by `data/theme.json` (root). Generated/source CSS lives in `themes/<theme>/assets/css/`; your overrides go in root `assets/css/custom.css` (Hugo unions root over theme).
 
 ## Tokens (`data/theme.json`)

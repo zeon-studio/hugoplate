@@ -1,6 +1,6 @@
 # Project Architecture
 
-This theme = **Hugo Extended (0.158+)** + **Tailwind v4** + **Hugo Modules**.
+This theme = **Hugo Extended <version from netlify.toml>** + **Hugo Modules**, styled with **Tailwind v4**, **Bootstrap 5 (SCSS)**, or a hybrid depending on the build — verify in `references/styling-and-theming.md` before assuming Tailwind.
 
 This reference assumes the **project-setup** layout: site files at root, theme vendored in `themes/<theme>/`. If `exampleSite/hugo.toml` exists instead, run `<pm> project-setup` first (see `references/detect-mode.md`).
 
