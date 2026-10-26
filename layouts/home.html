@@ -27,7 +27,7 @@
           {{ with .image }}
             <div class="col-12">
               {{/* image modules comes from https://github.com/gethugothemes/hugo-modules/tree/master/images */}}
-              {{ partial "image" (dict "Src" . "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto lg:!max-w-[800px]" "DisplayXL" "800x" ) }}
+              {{ partial "image" (dict "Src" . "Alt" ($.Params.banner.alt | default "Banner image") "Loading" "eager" "Class" "mx-auto lg:!max-w-[800px]" "DisplayXL" "800x" ) }}
             </div>
           {{ end }}
         </div>
@@ -45,7 +45,7 @@
             class="mb:md-0 {{ if not (modBool $i 2) }}
               md:order-2
             {{ end }} md:col-5 mb-6">
-            {{ partial "image" (dict "Src" .image "Alt" "feature image" "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x") }}
+            {{ partial "image" (dict "Src" .image "Alt" (.alt | default "feature image") "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x") }}
           </div>
           <div
             class="{{ if not (modBool $i 2) }}

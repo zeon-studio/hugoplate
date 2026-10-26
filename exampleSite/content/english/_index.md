@@ -4,6 +4,7 @@ banner:
   title: "The Ultimate Starter Template You Need To Start Your Hugo Project"
   content: "Hugoplate is a free starter template built with Hugo and TailwindCSS, providing everything you need to jump-start your Hugo project and save valuable time."
   image: "/images/banner.png"
+  alt: "Illustration of a person working on a laptop at a desk"
   button:
     enable: true
     label: "Fork Deploy and Edit Online 🚀"
@@ -13,6 +14,7 @@ banner:
 features:
   - title: "What's Included in Hugoplate"
     image: "/images/service-1.png"
+    alt: "Illustration of interface cards: a video player, bar charts, sliders and a loading spinner"
     content: "Hugoplate is a comprehensive starter template that includes everything you need to get started with your Hugo project. What's Included in Hugoplate"
     bulletpoints:
       - "10+ Pre-build pages"
@@ -28,6 +30,7 @@ features:
 
   - title: "Discover the Key Features Of Hugo"
     image: "/images/service-2.png"
+    alt: "Illustration of chart cards: bar charts, a donut chart and a line graph"
     content: "Hugo is an all-in-one web framework for building fast, content-focused websites. It offers a range of exciting features for developers and website creators. Some of the key features are:"
     bulletpoints:
       - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
@@ -40,6 +43,7 @@ features:
 
   - title: "The Top Reasons to Choose Hugo for Your Hugo Project"
     image: "/images/service-3.png"
+    alt: "Illustration of dashboard widgets: a line graph, sliders, a progress list and a donut chart"
     content: "With Hugo, you can build modern and content-focused websites without sacrificing performance or ease of use."
     bulletpoints:
       - "Instantly load static sites for better user experience and SEO."
