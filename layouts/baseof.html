@@ -31,7 +31,9 @@
 
 
     <!-- announcement -->
-    {{ partialCached "announcement.html" . }}
+    {{ if templates.Exists "_partials/announcement.html" }}
+      {{ partialCached "announcement.html" . }}
+    {{ end }}
 
 
     <!-- header (don't cache it) -->

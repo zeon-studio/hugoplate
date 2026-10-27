@@ -15,7 +15,9 @@
 
 <!-- manifest -->
 {{/* https://github.com/gethugothemes/hugo-modules/tree/master/pwa */}}
-{{ partialCached "manifest" . }}
+{{ if templates.Exists "_partials/manifest.html" }}
+  {{ partialCached "manifest" . }}
+{{ end }}
 
 
 <!-- site verifications -->

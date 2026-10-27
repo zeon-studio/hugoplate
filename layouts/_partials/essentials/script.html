@@ -44,19 +44,27 @@
 
 <!-- progressive web app -->
 {{/* https://github.com/gethugothemes/hugo-modules/tree/master/pwa */}}
-{{ partialCached "pwa.html" . }}
+{{ if templates.Exists "_partials/pwa.html" }}
+  {{ partialCached "pwa.html" . }}
+{{ end }}
 
 
 <!-- cookie consent -->
 {{/* https://github.com/gethugothemes/hugo-modules/tree/master/components/cookie-consent */}}
-{{ partialCached "cookie-consent.html" . }}
+{{ if templates.Exists "_partials/cookie-consent.html" }}
+  {{ partialCached "cookie-consent.html" . }}
+{{ end }}
 
 
 <!-- google adsense -->
 {{/* https://github.com/gethugothemes/hugo-modules/tree/master/adsense */}}
-{{ partialCached "adsense-script.html" . }}
+{{ if templates.Exists "_partials/adsense-script.html" }}
+  {{ partialCached "adsense-script.html" . }}
+{{ end }}
 
 
 <!-- announcement -->
 {{/* https://github.com/gethugothemes/hugo-modules/tree/master/components/announcement */}}
-{{ partialCached "announcement-script.html" . }}
+{{ if templates.Exists "_partials/announcement-script.html" }}
+  {{ partialCached "announcement-script.html" . }}
+{{ end }}
