@@ -2,7 +2,7 @@
 
 # default versions
 GO_VERSION='1.25.1';
-HUGO_VERSION='0.158.0';
+HUGO_VERSION='0.165.0';
 
 echo "USING NODE VERSION: $(node -v)"
 

@@ -11,8 +11,8 @@
 </h2>
 
 <p align="center">
-  <a href="https://github.com/gohugoio/hugo/releases/tag/v0.158.0" alt="Contributors">
-    <img alt="hugo version" src="https://img.shields.io/static/v1?label=min-HUGO-version&message=0.158.0&color=f00&logo=hugo" />
+  <a href="https://github.com/gohugoio/hugo/releases/tag/v0.165.0" alt="Contributors">
+    <img alt="hugo version" src="https://img.shields.io/static/v1?label=min-HUGO-version&message=0.165.0&color=f00&logo=hugo" />
   </a>
 
   <a href="https://github.com/zeon-studio/hugoplate/blob/main/LICENSE">
@@ -111,7 +111,7 @@ First you need to [clone](https://github.com/zeon-studio/hugoplate) or [download
 
 To start using this template, you need to have some prerequisites installed on your machine.
 
-- [Hugo Extended v0.144+](https://gohugo.io/installation/)
+- [Hugo Extended v0.165+](https://gohugo.io/installation/)
 - [Node v22+](https://nodejs.org/en/download/)
 - [Go v1.24+](https://go.dev/doc/install)
 

@@ -76,16 +76,22 @@ const reverseSitepinsConfig = (rootFolder) => {
   const configPath = path.join(rootFolder, ".sitepins/config.json");
   if (fs.existsSync(configPath)) {
     const config = JSON.parse(fs.readFileSync(configPath, "utf8"));
-    config.content = "exampleSite/content";
-    config.media = "exampleSite/assets/images";
-    config.public = "exampleSite/static";
-    config.code = "layouts";
-    config.configs = [
-      "exampleSite/config/_default",
-      "exampleSite/hugo.toml",
-      "exampleSite/data",
-      "exampleSite/i18n",
-    ];
+    for (const [key, prefix] of [
+      ["content", "content"],
+      ["media", "assets/images"],
+      ["public", "static"],
+    ]) {
+      if (config[key] === prefix || config[key]?.startsWith(`${prefix}/`)) {
+        config[key] = `exampleSite/${config[key]}`;
+      }
+    }
+    if (Array.isArray(config.configs)) {
+      config.configs = config.configs.map((item) =>
+        /^(config\/|hugo\.toml$|data(?:\/|$)|i18n(?:\/|$))/.test(item)
+          ? `exampleSite/${item}`
+          : item,
+      );
+    }
     fs.writeFileSync(
       configPath,
       JSON.stringify(config, null, 2) + "\n",

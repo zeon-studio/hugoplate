@@ -1,6 +1,16 @@
+[exec]
+allow = [
+  "^(dart-)?sass$",
+  "^go$",
+  "^git$",
+  "^node$",
+  "^postcss$",
+  "^tailwindcss$",
+]
+
 [node]
-  [node.permissions]
-    allowAddons = ["tailwindcss"]
-    allowChildProcess = ["tailwindcss"]
-    allowRead = [".", "..", "/"]
-    allowWorker = ["tailwindcss"]
+[node.permissions]
+allowAddons = ["tailwindcss"]
+allowChildProcess = ["tailwindcss"]
+allowRead = ["."]
+allowWorker = ["tailwindcss"]

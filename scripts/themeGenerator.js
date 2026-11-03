@@ -171,8 +171,14 @@ function generateThemeCSS() {
       fs.mkdirSync(outputDir, { recursive: true });
     }
 
-    // Write the file
-    fs.writeFileSync(outputPath, cssLines.join("\n") + "\n");
+    // Avoid triggering Hugo rebuilds when a watch event produces identical CSS.
+    const css = cssLines.join("\n") + "\n";
+    try {
+      if (fs.readFileSync(outputPath, "utf8") === css) return;
+    } catch (error) {
+      if (error.code !== "ENOENT") throw error;
+    }
+    fs.writeFileSync(outputPath, css);
     console.log("✅ Theme CSS generated successfully at:", outputPath);
   } catch (error) {
     throw new Error(`Failed to generate theme CSS: ${error.message}`);
